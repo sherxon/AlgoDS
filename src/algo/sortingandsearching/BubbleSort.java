@@ -14,14 +14,13 @@ public class BubbleSort {
     public static void main(String[] args) {
         int n = (int) (Math.random() * 10);
         for (int i = 0; i < n; i++) {
-            Integer[] integer = new Integer[n];
-            int[] a = new int[n];
-            for (int j = 0; j < integer.length; j++) {
-                integer[j] = (int) (Math.random() * 10);
+            Integer[] a = new Integer[n];
+            //int[] a = new int[n];
+            for (int j = 0; j < a.length; j++) {
                 a[j] = (int) (Math.random() * 10);
             }
             System.out.print(Arrays.toString(a) + " ==>> ");
-            sortSimple(a);
+            sort(a);
             System.out.print(Arrays.toString(a));
             System.out.println();
         }
