@@ -1,7 +1,5 @@
 package algo.sortingandsearching;
 
-import java.util.Arrays;
-
 /**
  * Created by sherxon on 12/16/16.
  */
@@ -10,20 +8,6 @@ import java.util.Arrays;
 // used when write operation is expensive
 // swapping and shifting are the same complexity , takes constant time
 public class InsertionSort {
-    public static void main(String[] args) {
-        int n = (int) (Math.random() * 10);
-        for (int i = 0; i < n; i++) {
-            Integer[] a = new Integer[n];
-            //int[] a = new int[n];
-            for (int j = 0; j < a.length; j++) {
-                a[j] = (int) (Math.random() * 10);
-            }
-            System.out.print(Arrays.toString(a) + " ==>> ");
-            sortBySwap(a);
-            System.out.print(Arrays.toString(a));
-            System.out.println();
-        }
-    }
 
     // sorts by shifting
     public static  <T extends Comparable> void sort(T[] a){
@@ -48,8 +32,18 @@ public class InsertionSort {
             if(j!=i) a[j]=ii;
         }
     }
-
-
+    //simple version,  easy to understand.
+    public static void sortSimple(int[] a){
+        for (int i = 1; i <a.length ; i++) {
+            for (int j = i; j >0 ; j--) {
+                if(a[j-1]>a[j]){ //swap
+                    int temp=a[j-1];
+                    a[j-1]=a[j];
+                    a[j]=temp;
+                }
+            }
+        }
+    }
 
 
 }

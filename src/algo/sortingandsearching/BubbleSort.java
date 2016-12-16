@@ -1,31 +1,14 @@
 package algo.sortingandsearching;
 
 
-import java.util.Arrays;
-
 /**
  * Created by sherxon on 12/16/16.
  */
 // Time Complexity -> O(n^2);
 // Memory Complexity -> O(1);
+// never use this
 
 public class BubbleSort {
-
-    public static void main(String[] args) {
-        int n = (int) (Math.random() * 10);
-        for (int i = 0; i < n; i++) {
-            Integer[] a = new Integer[n];
-            //int[] a = new int[n];
-            for (int j = 0; j < a.length; j++) {
-                a[j] = (int) (Math.random() * 10);
-            }
-            System.out.print(Arrays.toString(a) + " ==>> ");
-            sort(a);
-            System.out.print(Arrays.toString(a));
-            System.out.println();
-        }
-
-    }
 
     public static <T extends Comparable> void sort(T[] a) {
         for (int i = 0; i < a.length; i++) {
