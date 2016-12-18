@@ -26,10 +26,10 @@ public class BST<K extends Comparable> implements Tree<K> {
     @Override
     public void delete(K k) {
         Node x = findNode(k, root);
-        delete(x);
+        deleteNode(x);
     }
 
-    private void delete(Node x) {
+    private void deleteNode(Node x) {
         if (x == null) return;
         Node p = x.parent;
         if (x.left == null && x.right == null) { // case 1 => when x has no children
@@ -53,10 +53,10 @@ public class BST<K extends Comparable> implements Tree<K> {
             }
         } else { // case 3 =>  x has two children
             Node successor = findMin(x.right); // smallest node on right subtree
-            K temp = x.value;
+            K temp = x.value; // swap
             x.value = successor.value;
             successor.value = temp;
-            delete(successor);
+            deleteNode(successor);
         }
     }
 
