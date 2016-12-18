@@ -9,43 +9,47 @@ package ds;
 // remove -> O(h) can be O(n) if input is sorted
 // no duplicate is allowed, for duplicate supported BST look BSTWithDuplicate.java
 // most methods are iterative, look BST.java for recursive approach BST
-public class BSTIterative<K extends Comparable>  implements Tree<K> {
+public class BSTIterative<K extends Comparable> implements Tree<K> {
 
     private Node root;
 
     @Override
     public void insert(K k) {
-        Node x=root;
-        Node p=root;
-        while (x!=null){
-            p=x;
-            if(x.value.equals(k))return;
-            if(x.value.compareTo(k)>0)
-                x=x.left;
-            else
-                x=x.right;
+        if(root==null){
+            root= new Node(k, null);
+            return;
         }
-        Node newNode= new Node(k, p);
-        if(p.value.compareTo(k)>0)
-            p.left=newNode;
+        Node x = root;
+        Node p = root;
+        while (x != null) {
+            p = x;
+            if (x.value.equals(k)) return;
+            if (x.value.compareTo(k) > 0)
+                x = x.left;
+            else
+                x = x.right;
+        }
+        Node newNode = new Node(k, p);
+        if (p.value.compareTo(k) > 0)
+            p.left = newNode;
         else
-            p.right=newNode;
+            p.right = newNode;
     }
 
 
     @Override
     public boolean search(K k) {
-        Node x= findNode(root, k);
-        return x!=null;
+        Node x = findNode(root, k);
+        return x != null;
     }
 
     private Node findNode(Node x, K k) {
-        while (x!=null){
-            if(x.value.equals(k))return x;
-            if(x.value.compareTo(k)>0)
-                x=x.left;
+        while (x != null) {
+            if (x.value.equals(k)) return x;
+            if (x.value.compareTo(k) > 0)
+                x = x.left;
             else
-                x=x.right;
+                x = x.right;
         }
         return null;
     }
@@ -53,7 +57,7 @@ public class BSTIterative<K extends Comparable>  implements Tree<K> {
 
     @Override
     public void delete(K k) {
-        Node x=findNode(root, k);
+        Node x = findNode(root, k);
         deleteNode(x);
     }
 
@@ -100,13 +104,14 @@ public class BSTIterative<K extends Comparable>  implements Tree<K> {
     }
 
     private Node findMin(Node x) {
-        if(x==null)return null;
-        while (x.left!=null)x=x.left;
+        if (x == null) return null;
+        while (x.left != null) x = x.left;
         return x;
     }
+
     private Node findMax(Node x) {
-        if(x==null)return null;
-        while (x.right!=null)x=x.right;
+        if (x == null) return null;
+        while (x.right != null) x = x.right;
         return x;
     }
 

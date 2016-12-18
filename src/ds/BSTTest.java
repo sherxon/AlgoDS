@@ -5,7 +5,7 @@ package ds;
  */
 public class BSTTest {
     public static void main(String[] args) {
-        BST<Integer> bst=new BST<>();
+        Tree<Integer> bst=new BSTIterative<>();
         bst.insert(5);
         bst.insert(3);
         bst.insert(1);
