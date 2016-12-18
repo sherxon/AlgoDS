@@ -9,17 +9,21 @@ package ds;
 // remove -> O(h) can be O(n) if input is sorted
 // no duplicate is allowed, for duplicate supported BST look BSTWithDuplicate.java
 // most methods are recursive, look BSTIterative.java for iterative approach BST
-public class BST<K extends Comparable> {
+public class BST<K extends Comparable> implements Tree<K> {
     private Node root;
 
+
+    @Override
     public void insert(K k) {
         root = put(root, k, null);
     }
 
+    @Override
     public boolean search(K k) {
         return findNode(k, root) != null;
     }
 
+    @Override
     public void delete(K k) {
         Node x = findNode(k, root);
         delete(x);
