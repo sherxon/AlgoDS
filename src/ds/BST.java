@@ -17,7 +17,7 @@ public class BST<K extends Comparable> {
     }
 
     public boolean search(K k) {
-        return findNode(k, root) == null;
+        return findNode(k, root) != null;
     }
 
     public void delete(K k) {
@@ -34,10 +34,16 @@ public class BST<K extends Comparable> {
         } else if (x.left == null || x.right == null) {// case 2 => when x has one child
             x.parent=null;
             if(x.left==null){ // x has one right child
-                p.right=x.right;
+                if(p.left==x) // x is left child
+                    p.left=x.right;
+                else          // x is right child
+                    p.right=x.right;
                 x.right.parent=p;
             }else { // x has one left child
-                p.left=x.left;
+                if(p.left==x)
+                    p.left=x.left;
+                else
+                    p.right=x.left;
                 x.left.parent=p;
             }
         }else{ // case 3 =>  x has two children
