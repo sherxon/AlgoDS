@@ -5,7 +5,7 @@ package algo.sortingandsearching;
  */
 // Time Complexity -> O(n^2);
 // Memory Complexity -> O(1);
-// used when write operation is expensive
+// In case of an almost sorted small array, use this
 // swapping and shifting are the same complexity , takes constant time
 public class InsertionSort {
 
