@@ -9,52 +9,55 @@ package ds;
 // remove -> O(h) can be O(n) if input is sorted
 // no duplicate is allowed, for duplicate supported BST look BSTWithDuplicate.java
 // most methods are recursive, look BSTIterative.java for iterative approach BST
-
 public class BST<K extends Comparable> {
     private Node root;
 
     public void insert(K k) {
-        root = putRecursive(root, k, null);
+        root = put(root, k, null);
     }
 
     public boolean search(K k) {
-        return findRecursive(k, root);
+        return findNode(k, root)==null;
     }
     public void delete(K k){
+        Node node=findNode(k, root);
+        if(node==null)return;
 
     }
+
+
     public K findMax(){
-       return findMaxRecursive(root);
+       return findMax(root);
     }
     public K findMin(){
-        return findMinRecursive(root);
+        return findMin(root);
     }
 
-    private K findMaxRecursive(Node x) {
+    private K findMax(Node x) {
         if(x.right==null)return x.value;
-        else return findMaxRecursive(x.right);
+        else return findMax(x.right);
     }
-    private K findMinRecursive(Node x) {
+    private K findMin(Node x) {
         if(x.left==null)return x.value;
-        else return findMinRecursive(x.left);
+        else return findMin(x.left);
     }
 
-    private boolean findRecursive(K k, Node x) {
-        if (x == null) return false;
+    private Node findNode(K k, Node x) {
+        if (x == null) return null;
         if (x.value.equals(k))
-            return true;
+            return x;
         else if (x.value.compareTo(k) > 0)
-            return findRecursive(k, x.left);
+            return findNode(k, x.left);
         else
-            return findRecursive(k, x.right);
+            return findNode(k, x.right);
     }
 
-    private Node putRecursive(Node x, K k, Node parent) {
+    private Node put(Node x, K k, Node parent) {
         if (x == null) return new Node(k, parent);
         if (x.value.compareTo(k) > 0)
-            x.left = putRecursive(x.left, k, x);
+            x.left = put(x.left, k, x);
         else if (x.value.compareTo(k) < 0)
-            x.right = putRecursive(x.right, k, x);
+            x.right = put(x.right, k, x);
         x.size = 1 + size(x.left) + size(x.right);
         return x;
     }
