@@ -17,28 +17,58 @@ public class BST<K extends Comparable> {
     }
 
     public boolean search(K k) {
-        return findNode(k, root)==null;
-    }
-    public void delete(K k){
-        Node node=findNode(k, root);
-        if(node==null)return;
-
+        return findNode(k, root) == null;
     }
 
-
-    public K findMax(){
-       return findMax(root);
+    public void delete(K k) {
+        Node x = findNode(k, root);
+        delete(x);
     }
-    public K findMin(){
-        return findMin(root);
+    private void delete(Node x){
+        if (x == null) return;
+        Node p = x.parent;
+        if (x.left == null && x.right == null) { // case 1 => when x has no children
+            x.parent = null;
+            if (p.left == x) p.left = null;
+            else p.right = null;
+        } else if (x.left == null || x.right == null) {// case 2 => when x has one child
+            x.parent=null;
+            if(x.left==null){ // x has one right child
+                p.right=x.right;
+                x.right.parent=p;
+            }else { // x has one left child
+                p.left=x.left;
+                x.left.parent=p;
+            }
+        }else{ // case 3 =>  x has two children
+            Node successor=findMin(x.right); // smallest node on right subtree
+            K temp=x.value;
+            x.value=successor.value;
+            successor.value=temp;
+            delete(successor);
+        }
     }
 
-    private K findMax(Node x) {
-        if(x.right==null)return x.value;
+
+    public K findMax() {
+        Node max=findMax(root);
+        return max==null ? null : max.value;
+    }
+
+    public K findMin() {
+        Node min=findMin(root);
+        return min==null ? null : min.value;
+    }
+
+    private Node findMax(Node x) {
+        if(x==null)return null;
+        if (x.right == null) return x;
         else return findMax(x.right);
     }
-    private K findMin(Node x) {
-        if(x.left==null)return x.value;
+
+    private Node findMin(Node x) {
+        if(x==null)return null;
+        if (x.left == null) return x;
         else return findMin(x.left);
     }
 
@@ -63,7 +93,6 @@ public class BST<K extends Comparable> {
     }
 
 
-
     //rank of tree
     private int size(Node x) {
         return x == null ? 0 : x.size;
@@ -73,10 +102,7 @@ public class BST<K extends Comparable> {
     private class Node {
         K value;
         int size = 1;
-        Node left;
-        Node right;
-        Node parent;
-
+        Node left, right, parent;
 
         public Node(K k, Node parent) {
             this.value = k;
