@@ -18,6 +18,7 @@ public class TestSorting {
             SelectionSort.sort(a);
             System.out.print(Arrays.toString(a));
             System.out.println();
+
         }
     }
 }
