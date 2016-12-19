@@ -7,8 +7,6 @@ package ds;
 // insert -> O(lgN), 2lgN max complexity
 // search -> O(lgN)
 // remove -> O(lgN)
-// no duplicate is allowed, for duplicate supported BST look BSTWithDuplicate.java
-// most methods are iterative, look BST.java for recursive approach BST
 
 public class AVLTree<K extends Comparable> implements Tree<K> {
 
