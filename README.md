@@ -13,6 +13,6 @@ The following Data Structure implementations are provided so far.
 
 Trees:
 1) Binary Search Tree (recursive, iterative, duplicate support, key-value pair)
-
+2) AVL Tree
 
 
