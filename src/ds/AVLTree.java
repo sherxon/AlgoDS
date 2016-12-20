@@ -12,30 +12,31 @@ public class AVLTree<K extends Comparable> implements Tree<K> {
 
     private Node root;
 
-
     private Node put(Node x, K k) {
         if (x == null) return new Node(k);
-        if (x.value.compareTo(k) > 0) {
+        if (x.value.compareTo(k) > 0)
             x.left = put(x.left, k);
-            x.lSize=1+size2(x.left);
-        } else if (x.value.compareTo(k) < 0) {
+         else if (x.value.compareTo(k) < 0)
             x.right = put(x.right, k);
-            x.rSize=1+size2(x.right);
-        }
-        if (x.lSize - x.rSize > 1) {
-            if (x.left.lSize >= x.left.rSize)
+
+        int balance= height(x.left) - height(x.right);
+        if ( balance > 1) {
+            if (height(x.left.left) >= height(x.left.right))
                 x = rotateRight(x);
             else {
                 x.left = rotateLeft(x.left);
                 x = rotateRight(x);
             }
-        } else if (x.lSize - x.rSize < -1) {
-            if(x.right.rSize>=x.right.lSize)
+        } else if (balance < -1) {
+            if(height(x.right.right)>=height(x.right.left))
                 x=rotateLeft(x);
             else{
                 x.right=rotateLeft(x.right);
                 x=rotateLeft(x);
             }
+        }else{
+            x.height=Math.max(height(x.left), height(x.right))+1;
+            x.size=size(x.left)+size(x.right)+1;
         }
         return x;
     }
@@ -44,12 +45,8 @@ public class AVLTree<K extends Comparable> implements Tree<K> {
         Node newRoot=x.right;
         x.right=newRoot.left;
         newRoot.left=x;
-
-        x.lSize = 1 + size2(x.left);
-        x.rSize = 1 + size2(x.right);
-        newRoot.lSize = 1 + size2(newRoot.left);
-        newRoot.rSize = 1 + size2(newRoot.right);
-
+        x.height=Math.max(height(x.left), height(x.right))+1;
+        newRoot.height=Math.max(height(newRoot.left), height(newRoot.right))+1;
         return newRoot;
     }
 
@@ -58,11 +55,8 @@ public class AVLTree<K extends Comparable> implements Tree<K> {
         Node newRoot = x.left;
         x.left = newRoot.right;
         newRoot.right = x;
-
-        x.lSize = 1 + size2(x.left);
-        x.rSize = 1 + size2(x.right);
-        newRoot.lSize = 1 + size2(newRoot.left);
-        newRoot.rSize = 1 + size2(newRoot.right);
+        x.height=Math.max(height(x.left), height(x.right))+1;
+        newRoot.height=Math.max(height(newRoot.left), height(newRoot.right))+1;
         return newRoot;
     }
 
@@ -71,8 +65,8 @@ public class AVLTree<K extends Comparable> implements Tree<K> {
         return x == null ? 0 : x.size;
     }
 
-    private int size2(Node x) {
-        return x == null ? -1 : x.lSize + x.rSize;
+    private int height(Node x) {
+        return x == null ? -1 : x.height;
     }
 
     @Override
@@ -102,7 +96,7 @@ public class AVLTree<K extends Comparable> implements Tree<K> {
 
     private class Node {
         K value;
-        int size, rSize, lSize;
+        int height, size;
         Node left, right;
 
         public Node(K k) {
