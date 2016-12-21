@@ -8,6 +8,8 @@ Sorting And Searching:
 1) Bubble Sort  
 2) Insertion Sort  
 3) Selection Sort  
+4) Counting Sort  
+
 
 The following Data Structure implementations are provided so far.    
 

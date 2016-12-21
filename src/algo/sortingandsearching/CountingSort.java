@@ -5,7 +5,9 @@ import java.util.Arrays;
 /**
  * Created by sherxon on 12/20/16.
  */
-
+// Time Complexity -> O(n)+O(A.max);
+// Memory Complexity -> O(1);
+// This is also called integer sorting, limited integer array can be sorted in O(1) time complexity
 public class CountingSort {
 
     public static void sort(int[] a){
