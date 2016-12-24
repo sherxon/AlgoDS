@@ -1,4 +1,4 @@
-package leetcode;
+package InterviewQuestions;
 
 /**
  * Created by sherxon on 12/24/16.
