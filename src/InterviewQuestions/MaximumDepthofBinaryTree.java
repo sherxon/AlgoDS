@@ -15,12 +15,5 @@ public class MaximumDepthofBinaryTree {
         return Math.max(maxDepth(root.left), maxDepth(root.right))+1;
     }
 
-     // Definition for a binary tree node.
 
-      public static class TreeNode {
-          int val;
-          TreeNode left;
-          TreeNode right;
-          TreeNode(int x) { val = x; }
-      }
 }
