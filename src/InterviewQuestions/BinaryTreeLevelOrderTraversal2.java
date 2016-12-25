@@ -8,10 +8,11 @@ import java.util.Queue;
 /**
  * Created by sherxon on 12/24/16.
  */
-public class BinaryTreeLevelOrderTraversal {
+public class BinaryTreeLevelOrderTraversal2 {
 
     public List<List<Integer>> levelOrder(TreeNode root) {
-        List<List<Integer>> l=new LinkedList<>();
+        LinkedList<List<Integer>> l=new LinkedList<>();
+        l.add(null);
         List<Integer> ll=new ArrayList<>();
         Queue<TreeNode> q=new LinkedList<>();
         Queue<TreeNode> qq=new LinkedList<>();
@@ -22,7 +23,7 @@ public class BinaryTreeLevelOrderTraversal {
             TreeNode t=q.remove();
             ll.add(t.val);
             if(q.isEmpty()){
-                l.add(new ArrayList<>(ll));
+                l.addFirst(new ArrayList<>(ll));
                 ll.clear();
             }
 
