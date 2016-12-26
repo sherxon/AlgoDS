@@ -5,7 +5,7 @@ package InterviewQuestions;
  * Created by sherxon on 12/24/16.
  */
 public class MinimumDepthofBinaryTree {
-    public int minDepth(MaximumDepthofBinaryTree.TreeNode root) {
+    public int minDepth(TreeNode root) {
         if(root==null)return 0;
 
         int left=minDepth(root.left);
