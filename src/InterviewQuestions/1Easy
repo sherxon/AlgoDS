@@ -49,3 +49,17 @@ Given a binary tree and a sum, determine if the tree has a root-to-leaf path suc
 Given an arbitrary ransom note string and another string containing letters from all the magazines, write a function that will return true if the ransom note can be constructed from the magazines ; otherwise, it will return false.
 Each letter in the magazine string can only be used once in your ransom note.
 
+12)Third Maximum Number
+Given a non-empty array of integers, return the third maximum number in this array. If it does not exist, return the maximum number. The time complexity must be in O(n).
+Input: [2, 2, 3, 1]
+Output: 1
+Explanation: Note that the third maximum here means the third maximum distinct number.
+Both numbers with value 2 are both considered as second maximum.
+
+Input: [1, 2]
+Output: 2
+Explanation: The third maximum does not exist, so the maximum (2) is returned instead.
+
+Input: [3, 2, 1]
+Output: 1
+Explanation: The third maximum is 1.
