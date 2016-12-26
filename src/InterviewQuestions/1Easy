@@ -35,8 +35,17 @@ For example:Given binary tree [3,9,20,null,null,15,7],
   [9,20],
   [3]
 ]
+
 8) Invert a binary tree.
+
 9) Same Tree
 Given two binary trees, write a function to check if they are equal or not.
 Two binary trees are considered equal if they are structurally identical and the nodes have the same value.
+
+10)Path Sum
+Given a binary tree and a sum, determine if the tree has a root-to-leaf path such that adding up all the values along the path equals the given sum.
+
+11)Ransom Note
+Given an arbitrary ransom note string and another string containing letters from all the magazines, write a function that will return true if the ransom note can be constructed from the magazines ; otherwise, it will return false.
+Each letter in the magazine string can only be used once in your ransom note.
 

@@ -9,25 +9,27 @@ public class Voting {
     public static void main(String[] args) {
         Scanner in =new Scanner(System.in);
         int n=in.nextInt();
-        String s=in.next();
+        in.nextLine();
+        char[] s=in.nextLine().toCharArray();
         int d=-1;
         int r=-1;
-        for (int k = 0; k <s.length(); k++) {
-            if(s.charAt(k)=='D' && d==-1){
+        for (int k = 0; k <s.length; k++) {
+            if(s[k]=='D' && d==-1){
               d=k;
-            }else if(s.charAt(k)=='R' && r==-1){
+            }else if(s[k]=='R' && r==-1){
                 r=k;
             }
             if(r>-1 && d>-1)break;
         }
         char c=0;
-        for (int i = 0; i < s.length(); i++) {
-            if(s.charAt(i)=='D'){
+
+        for (int i = 0; i < s.length; i++) {
+            if(s[i]=='D'){
                 if(i<d)continue;
                 int j = r+1;
-                for (; j <s.length(); j++)
-                    if(s.charAt(j)=='R') break;
-                if(j==s.length()){
+                for (; j<s.length; j++)
+                    if(s[i]=='R') break;
+                if(j==s.length){
                     c='D';
                     break;
                 }
@@ -35,9 +37,9 @@ public class Voting {
             }else{
                 if(i<r)continue;
                 int j = d+1;
-                for (; j <s.length(); j++)
-                    if(s.charAt(j)=='D') break;
-                if(j==s.length()) {
+                for (; j <s.length; j++)
+                    if(s[i]=='D') break;
+                if(j==s.length) {
                     c='R';
                     break;
                 }
@@ -46,9 +48,7 @@ public class Voting {
         }
         if(c>0) System.out.println(c);
         else{
-            if(r==s.length()-1 && d<s.length()) System.out.println("D");
-            else System.out.println("R");
+            System.out.println(r + " " + d);
         }
-
     }
 }

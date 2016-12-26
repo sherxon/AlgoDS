@@ -11,10 +11,13 @@ import java.util.StringTokenizer;
 public class PhoneNumbers1002 {
     public static void main(String[] args) {
         FastReader fastReader= new FastReader();
-        String num=fastReader.next();
         int n=0;
         while (n!=-1){
+             String num=fastReader.next();
              n=fastReader.nextInt();
+            for (int i = 0; i < n; i++) {
+
+            }
 
         }
 
