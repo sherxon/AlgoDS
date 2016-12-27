@@ -15,6 +15,8 @@ public class TwoSumSortedArray {
             if(a[i]+a[j]<t)i++;
             else j--;
         }
+
+
         return new int[]{i+1, j+1};
 
     }
