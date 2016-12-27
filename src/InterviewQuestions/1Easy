@@ -63,3 +63,11 @@ Explanation: The third maximum does not exist, so the maximum (2) is returned in
 Input: [3, 2, 1]
 Output: 1
 Explanation: The third maximum is 1.
+
+13)Two Sum
+Given an array of integers, return indices of the two numbers such that they add up to a specific target.
+You may assume that each input would have exactly one solution.
+
+14)Contains Duplicate II
+Given an array of integers and an integer k, find out whether there are two distinct indices i and j in the array such that nums[i] = nums[j] and the difference between i and j is at most k.
+
