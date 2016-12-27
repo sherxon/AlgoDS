@@ -16,6 +16,5 @@ public class RansomNote {
             a[c-'a']--;
         }
         return true;
-
     }
 }
