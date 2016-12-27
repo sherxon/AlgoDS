@@ -13,6 +13,7 @@ public class ContainsDuplicateII {
             if(map.containsKey(a[i]) && i- map.get(a[i]) <=k)return true;
             map.put(a[i], i);
         }
+
         return false;
     }
 }

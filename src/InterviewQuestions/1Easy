@@ -71,3 +71,19 @@ You may assume that each input would have exactly one solution.
 14)Contains Duplicate II
 Given an array of integers and an integer k, find out whether there are two distinct indices i and j in the array such that nums[i] = nums[j] and the difference between i and j is at most k.
 
+15)Best Time to Buy and Sell Stock
+Say you have an array for which the ith element is the price of a given stock on day i.
+If you were only permitted to complete at most one transaction (ie, buy one and sell one share of the stock), design an algorithm to find the maximum profit.
+Input: [7, 1, 5, 3, 6, 4]
+Output: 5
+
+16) Remove Element
+Given an array and a value, remove all instances of that value in place and return the new length.
+Do not allocate extra space for another array, you must do this in place with constant memory.
+The order of elements can be changed. It doesn't matter what you leave beyond the new length.
+
+17) Move Zeroes
+Given an array nums, write a function to move all 0's to the end of it while maintaining the relative order of the non-zero elements.
+For example, given nums = [0, 1, 0, 3, 12], after calling your function, nums should be [1, 3, 12, 0, 0].
+You must do this in-place without making a copy of the array.
+Minimize the total number of operations.
