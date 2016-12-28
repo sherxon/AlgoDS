@@ -1,9 +1,6 @@
 package InterviewQuestions;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Created by sherxon on 12/27/16.
@@ -25,6 +22,7 @@ public class IntersectOfTwoArrray2 {
         }
         int[] aa=new int[list.size()];
         int ii=0;
+
         for(Integer intr:list)
             aa[ii++]=intr;
         return aa;
