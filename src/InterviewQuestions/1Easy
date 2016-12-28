@@ -127,3 +127,25 @@ What if the given array is already sorted? How would you optimize your algorithm
 What if nums1's size is small compared to nums2's size? Which algorithm is better?
 What if elements of nums2 are stored on disk, and the memory is limited such that you cannot load all elements into the memory at once?
 
+24)Valid Anagram
+Given two strings s and t, write a function to determine if t is an anagram of s.
+For example,
+s = "anagram", t = "nagaram", return true.
+s = "rat", t = "car", return false.
+
+25)Count Primes
+Description:
+Count the number of prime numbers less than a non-negative number, n.
+
+26)  Ugly Number
+Write a program to check whether a given number is an ugly number.
+Ugly numbers are positive numbers whose prime factors only include 2, 3, 5. For example, 6, 8 are ugly while 14 is not ugly since it includes another prime factor 7.
+Note that 1 is typically treated as an ugly number.
+
+27)Longest Palindrome
+Given a string which consists of lowercase or uppercase letters, find the length of the longest palindromes that can be built with those letters.
+This is case sensitive, for example "Aa" is not considered a palindrome here.
+
+
+
+
