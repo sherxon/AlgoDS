@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="17d06015-47d9-45bb-be4d-bcf321a7b13b" name="Default" comment="added tree interface" />
-    <list id="dc0f56c6-a1bf-4e08-bcef-c7272c4b6960" name="New changelist" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    <list default="true" id="17d06015-47d9-45bb-be4d-bcf321a7b13b" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
     </list>
+    <list id="dc0f56c6-a1bf-4e08-bcef-c7272c4b6960" name="New changelist" comment="" />
     <ignored path="AlgoDS.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -28,64 +32,113 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="BSTIterative.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ds/BSTIterative.java">
+      <file leaf-file-name="1Easy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/InterviewQuestions/1Easy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7236181">
-              <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-              <folding>
-                <element signature="e#613#614#0" expanded="true" />
-                <element signature="e#641#642#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="-98.06896">
+              <caret line="158" column="0" selection-start-line="158" selection-start-column="0" selection-end-line="158" selection-end-column="0" />
+              <folding />
             </state>
+          </provider>
+          <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tree.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ds/Tree.java">
+      <file leaf-file-name="DeleteNodeSingleLinkedList.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/InterviewQuestions/DeleteNodeSingleLinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SelectionSort.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/algo/sortingandsearching/SelectionSort.java">
+      <file leaf-file-name="InvertBinaryTree.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/InterviewQuestions/InvertBinaryTree.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+              <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestSorting.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/algo/sortingandsearching/TestSorting.java">
+      <file leaf-file-name="2Medium" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/InterviewQuestions/2Medium">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.3448277">
+              <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InsertionSort.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/algo/sortingandsearching/InsertionSort.java">
+      <file leaf-file-name="LongestPalindrome.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/InterviewQuestions/LongestPalindrome.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+              <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BSTTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ds/BSTTest.java">
+      <file leaf-file-name="UglyNumber.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/InterviewQuestions/UglyNumber.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+              <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CountPrimes.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/InterviewQuestions/CountPrimes.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider editor-type-id="MarkdownFxPreviewEditor">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="FIRST">
+              <first_editor vertical-scroll-proportion="0.4293578">
+                <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ValidAnagram.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/InterviewQuestions/ValidAnagram.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -115,23 +168,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/Hello.java" />
-        <option value="$PROJECT_DIR$/src/Algo/Hello.java" />
-        <option value="$PROJECT_DIR$/src/algo/Hello.java" />
-        <option value="$PROJECT_DIR$/src/ds/todo" />
-        <option value="$PROJECT_DIR$/src/algo/sortingandsearching/BubbleSort.java" />
-        <option value="$PROJECT_DIR$/src/algo/todo" />
-        <option value="$PROJECT_DIR$/src/algo/Gender.java" />
-        <option value="$PROJECT_DIR$/src/algo/GuestListPreJava8.java" />
-        <option value="$PROJECT_DIR$/src/algo/GuestListJava8.java" />
         <option value="$PROJECT_DIR$/src/ds/BSTTest.java" />
         <option value="$PROJECT_DIR$/src/algo/sortingandsearching/TestSorting.java" />
-        <option value="$PROJECT_DIR$/src/algo/sortingandsearching/InsertionSort.java" />
-        <option value="$PROJECT_DIR$/src/algo/sortingandsearching/SelectionSort.java" />
-        <option value="$PROJECT_DIR$/src/ds/Tree.java" />
-        <option value="$PROJECT_DIR$/src/ds/BST.java" />
-        <option value="$PROJECT_DIR$/src/ds/BSTIterative.java" />
+        <option value="$PROJECT_DIR$/src/algo/sortingandsearching/CountingSort.java" />
+        <option value="$PROJECT_DIR$/src/leetcode/ReverseString.java" />
+        <option value="$PROJECT_DIR$/src/leetcode/FizzBuzz.java" />
+        <option value="$PROJECT_DIR$/src/leetcode/HammingDistance.java" />
+        <option value="$PROJECT_DIR$/src/leetcode/SumofTwoIntegers.java" />
+        <option value="$PROJECT_DIR$/src/leetcode/FindtheDifference389.java" />
+        <option value="$PROJECT_DIR$/src/leetcode/AddDigits258.java" />
+        <option value="$PROJECT_DIR$/src/leetcode/SingleNumber136.java" />
+        <option value="$PROJECT_DIR$/src/leetcode/DeleteNodeSingleLinkedList.java" />
+        <option value="$PROJECT_DIR$/src/leetcode/Easy" />
+        <option value="$PROJECT_DIR$/src/leetcode/MaximumDepthofBinaryTree.java" />
+        <option value="$PROJECT_DIR$/src/leetcode/MinimumDepthofBinaryTree.java" />
+        <option value="$PROJECT_DIR$/src/InterviewQuestions/MaximumDepthofBinaryTree.java" />
+        <option value="$PROJECT_DIR$/src/InterviewQuestions/TreeNode.java" />
+        <option value="$PROJECT_DIR$/src/InterviewQuestions/BinaryTreeLevelOrderTraversal.java" />
+        <option value="$PROJECT_DIR$/src/InterviewQuestions/IntegertoRoman.java" />
+        <option value="$PROJECT_DIR$/src/InterviewQuestions/BinaryTreeLevelOrderTraversal2.java" />
+        <option value="$PROJECT_DIR$/src/InterviewQuestions/InvertBinaryTree.java" />
+        <option value="$PROJECT_DIR$/src/InterviewQuestions/SameTree.java" />
+        <option value="$PROJECT_DIR$/src/codeforces/codeforces.java" />
+        <option value="$PROJECT_DIR$/src/InterviewQuestions/MinimumDepthofBinaryTree.java" />
+        <option value="$PROJECT_DIR$/src/codeforces/BachgoldProblem.java" />
+        <option value="$PROJECT_DIR$/src/codeforces/ParallelogramisBack.java" />
+        <option value="$PROJECT_DIR$/src/codeforces/Voting.java" />
+        <option value="$PROJECT_DIR$/src/Timus/PhoneNumbers1002.java" />
+        <option value="$PROJECT_DIR$/src/InterviewQuestions/PathSum.java" />
+        <option value="$PROJECT_DIR$/src/InterviewQuestions/PathSum2.java" />
+        <option value="$PROJECT_DIR$/src/InterviewQuestions/ThirdLargest.java" />
+        <option value="$PROJECT_DIR$/src/InterviewQuestions/RansomNote.java" />
+        <option value="$PROJECT_DIR$/src/InterviewQuestions/KthLargestElementinanArray.java" />
+        <option value="$PROJECT_DIR$/src/InterviewQuestions/TwoSum.java" />
+        <option value="$PROJECT_DIR$/src/InterviewQuestions/ContainsDuplicateII.java" />
+        <option value="$PROJECT_DIR$/src/InterviewQuestions/BestTimetoBuyandSellStock.java" />
+        <option value="$PROJECT_DIR$/src/InterviewQuestions/RemoveElement.java" />
+        <option value="$PROJECT_DIR$/src/InterviewQuestions/RemoveZeroes.java" />
+        <option value="$PROJECT_DIR$/src/InterviewQuestions/MissingNumber.java" />
+        <option value="$PROJECT_DIR$/src/InterviewQuestions/2Medium" />
+        <option value="$PROJECT_DIR$/src/InterviewQuestions/MergeSortedArray.java" />
+        <option value="$PROJECT_DIR$/src/InterviewQuestions/RotateArray.java" />
+        <option value="$PROJECT_DIR$/src/InterviewQuestions/TwoSumSortedArray.java" />
+        <option value="$PROJECT_DIR$/src/InterviewQuestions/IntersectionOfTwoArrays.java" />
+        <option value="$PROJECT_DIR$/src/InterviewQuestions/IntersectOfTwoArrray2.java" />
+        <option value="$PROJECT_DIR$/src/InterviewQuestions/ValidAnagram.java" />
+        <option value="$PROJECT_DIR$/src/InterviewQuestions/CountPrimes.java" />
+        <option value="$PROJECT_DIR$/src/InterviewQuestions/UglyNumber.java" />
+        <option value="$PROJECT_DIR$/src/InterviewQuestions/LongestPalindrome.java" />
+        <option value="$PROJECT_DIR$/src/InterviewQuestions/1Easy" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/InterviewQuestions/IsomorphicStrings.java" />
       </list>
     </option>
   </component>
@@ -178,6 +265,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -209,10 +297,6 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ds" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -228,29 +312,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="algo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AlgoDS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AlgoDS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sortingandsearching" />
+              <option name="myItemId" value="InterviewQuestions" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -259,7 +321,6 @@
       </pane>
       <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -276,18 +337,22 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/algo" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="InterviewQuestions" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.TestSorting">
-    <configuration default="false" name="InsertionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.TwoSumSortedArray">
+    <configuration default="false" name="FindtheDifference389" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="algo.sortingandsearching.*" />
+          <option name="PATTERN" value="InterviewQuestions.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="algo.sortingandsearching.InsertionSort" />
+      <option name="MAIN_CLASS_NAME" value="InterviewQuestions.FindtheDifference389" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -300,14 +365,14 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="BSTTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="BachgoldProblem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="ds.*" />
+          <option name="PATTERN" value="codeforces.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="ds.BSTTest" />
+      <option name="MAIN_CLASS_NAME" value="codeforces.BachgoldProblem" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -320,14 +385,14 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="GuestListPreJava8" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Voting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="algo.*" />
+          <option name="PATTERN" value="codeforces.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="algo.GuestListPreJava8" />
+      <option name="MAIN_CLASS_NAME" value="codeforces.Voting" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -340,14 +405,14 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="GuestListJava8" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="RotateArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="algo.*" />
+          <option name="PATTERN" value="InterviewQuestions.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="algo.GuestListJava8" />
+      <option name="MAIN_CLASS_NAME" value="InterviewQuestions.RotateArray" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -360,14 +425,14 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="TestSorting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="TwoSumSortedArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="algo.sortingandsearching.*" />
+          <option name="PATTERN" value="InterviewQuestions.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="algo.sortingandsearching.TestSorting" />
+      <option name="MAIN_CLASS_NAME" value="InterviewQuestions.TwoSumSortedArray" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -630,19 +695,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.InsertionSort" />
-      <item index="1" class="java.lang.String" itemvalue="Application.BSTTest" />
-      <item index="2" class="java.lang.String" itemvalue="Application.GuestListPreJava8" />
-      <item index="3" class="java.lang.String" itemvalue="Application.GuestListJava8" />
-      <item index="4" class="java.lang.String" itemvalue="Application.TestSorting" />
+      <item index="0" class="java.lang.String" itemvalue="Application.FindtheDifference389" />
+      <item index="1" class="java.lang.String" itemvalue="Application.BachgoldProblem" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Voting" />
+      <item index="3" class="java.lang.String" itemvalue="Application.RotateArray" />
+      <item index="4" class="java.lang.String" itemvalue="Application.TwoSumSortedArray" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.TestSorting" />
-        <item index="1" class="java.lang.String" itemvalue="Application.BSTTest" />
-        <item index="2" class="java.lang.String" itemvalue="Application.GuestListJava8" />
-        <item index="3" class="java.lang.String" itemvalue="Application.GuestListPreJava8" />
-        <item index="4" class="java.lang.String" itemvalue="Application.InsertionSort" />
+        <item index="0" class="java.lang.String" itemvalue="Application.TwoSumSortedArray" />
+        <item index="1" class="java.lang.String" itemvalue="Application.RotateArray" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Voting" />
+        <item index="3" class="java.lang.String" itemvalue="Application.BachgoldProblem" />
+        <item index="4" class="java.lang.String" itemvalue="Application.FindtheDifference389" />
       </list>
     </recent_temporary>
   </component>
@@ -660,6 +725,12 @@
       <workItem from="1481908066811" duration="20811000" />
       <workItem from="1481945310974" duration="2430000" />
       <workItem from="1481989999115" duration="18074000" />
+      <workItem from="1482097127996" duration="201000" />
+      <workItem from="1482099170138" duration="171000" />
+      <workItem from="1482099407784" duration="17456000" />
+      <workItem from="1482175727524" duration="25667000" />
+      <workItem from="1482284168812" duration="7455000" />
+      <workItem from="1482542241274" duration="74051000" />
     </task>
     <task id="LOCAL-00001" summary="sa">
       <created>1481908261802</created>
@@ -745,26 +816,239 @@
       <option name="project" value="LOCAL" />
       <updated>1482094420688</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="added tree interface">
+      <created>1482099182426</created>
+      <option name="number" value="00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1482099182426</updated>
+    </task>
+    <task id="LOCAL-00016" summary="added tree interface">
+      <created>1482099964977</created>
+      <option name="number" value="00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1482099964977</updated>
+    </task>
+    <task id="LOCAL-00017" summary="BST iterative">
+      <created>1482101841474</created>
+      <option name="number" value="00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1482101841474</updated>
+    </task>
+    <task id="LOCAL-00018" summary="BST iterative">
+      <created>1482101981517</created>
+      <option name="number" value="00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1482101981517</updated>
+    </task>
+    <task id="LOCAL-00019" summary="AVLTree">
+      <created>1482190566957</created>
+      <option name="number" value="00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1482190566958</updated>
+    </task>
+    <task id="LOCAL-00020" summary="updated readMe">
+      <created>1482190697181</created>
+      <option name="number" value="00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1482190697181</updated>
+    </task>
+    <task id="LOCAL-00021" summary="updated readMe">
+      <created>1482190794078</created>
+      <option name="number" value="00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1482190794078</updated>
+    </task>
+    <task id="LOCAL-00022" summary="update AVL Tree">
+      <created>1482190876525</created>
+      <option name="number" value="00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1482190876525</updated>
+    </task>
+    <task id="LOCAL-00023" summary="update AVL Tree">
+      <created>1482207752463</created>
+      <option name="number" value="00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1482207752464</updated>
+    </task>
+    <task id="LOCAL-00024" summary="CountingSort">
+      <created>1482291894447</created>
+      <option name="number" value="00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1482291894447</updated>
+    </task>
+    <task id="LOCAL-00025" summary="CountingSort">
+      <created>1482292119867</created>
+      <option name="number" value="00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1482292119867</updated>
+    </task>
+    <task id="LOCAL-00026" summary="leedCode3">
+      <created>1482542582885</created>
+      <option name="number" value="00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1482542582885</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Timus">
+      <created>1482542748295</created>
+      <option name="number" value="00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1482542748295</updated>
+    </task>
+    <task id="LOCAL-00028" summary="sumoftwo">
+      <created>1482556268496</created>
+      <option name="number" value="00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1482556268497</updated>
+    </task>
+    <task id="LOCAL-00029" summary="adddigits">
+      <created>1482562224389</created>
+      <option name="number" value="00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1482562224389</updated>
+    </task>
+    <task id="LOCAL-00030" summary="adddigits">
+      <created>1482565512218</created>
+      <option name="number" value="00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1482565512218</updated>
+    </task>
+    <task id="LOCAL-00031" summary="minmaxBinaryTree">
+      <created>1482615728695</created>
+      <option name="number" value="00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1482615728695</updated>
+    </task>
+    <task id="LOCAL-00032" summary="renamed package">
+      <created>1482615863684</created>
+      <option name="number" value="00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1482615863684</updated>
+    </task>
+    <task id="LOCAL-00033" summary="renamed package">
+      <created>1482616181012</created>
+      <option name="number" value="00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1482616181012</updated>
+    </task>
+    <task id="LOCAL-00034" summary="renamed package">
+      <created>1482616300264</created>
+      <option name="number" value="00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1482616300264</updated>
+    </task>
+    <task id="LOCAL-00035" summary="binTreetraversal">
+      <created>1482619637865</created>
+      <option name="number" value="00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1482619637865</updated>
+    </task>
+    <task id="LOCAL-00036" summary="binTreetraversal">
+      <created>1482642919560</created>
+      <option name="number" value="00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1482642919561</updated>
+    </task>
+    <task id="LOCAL-00037" summary="sametreecheck">
+      <created>1482657678398</created>
+      <option name="number" value="00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1482657678398</updated>
+    </task>
+    <task id="LOCAL-00038" summary="sametreecheck">
+      <created>1482715640701</created>
+      <option name="number" value="00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1482715640702</updated>
+    </task>
+    <task id="LOCAL-00039" summary="stringproblems">
+      <created>1482773385457</created>
+      <option name="number" value="00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1482773385457</updated>
+    </task>
+    <task id="LOCAL-00040" summary="thirdlargest">
+      <created>1482790498408</created>
+      <option name="number" value="00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1482790498408</updated>
+    </task>
+    <task id="LOCAL-00041" summary="thirdlargest">
+      <created>1482797573019</created>
+      <option name="number" value="00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1482797573019</updated>
+    </task>
+    <task id="LOCAL-00042" summary="thirdlargest">
+      <created>1482810434743</created>
+      <option name="number" value="00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1482810434743</updated>
+    </task>
+    <task id="LOCAL-00043" summary="thirdlargest">
+      <created>1482822279928</created>
+      <option name="number" value="00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1482822279928</updated>
+    </task>
+    <task id="LOCAL-00044" summary="twosum">
+      <created>1482876334156</created>
+      <option name="number" value="00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1482876334156</updated>
+    </task>
+    <task id="LOCAL-00045" summary="intersect">
+      <created>1482882000023</created>
+      <option name="number" value="00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1482882000023</updated>
+    </task>
+    <task id="LOCAL-00046" summary="intersect">
+      <created>1482887212181</created>
+      <option name="number" value="00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1482887212181</updated>
+    </task>
+    <task id="LOCAL-00047" summary="palindrome">
+      <created>1482955939490</created>
+      <option name="number" value="00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1482955939491</updated>
+    </task>
+    <task id="LOCAL-00048" summary="palindrome">
+      <created>1482957246568</created>
+      <option name="number" value="00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1482957246568</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41315000" />
+    <option name="totallyTimeSpent" value="166316000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="53" y="21" width="1313" height="747" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32961783" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32961783" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32961783" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32961783" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.638535" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6369427" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24940991" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -772,7 +1056,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.52707005" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4522293" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -800,11 +1084,29 @@
     <MESSAGE value="binarySearchSimple" />
     <MESSAGE value="selectionSort" />
     <MESSAGE value="added tree interface" />
-    <option name="LAST_COMMIT_MESSAGE" value="added tree interface" />
+    <MESSAGE value="BST iterative" />
+    <MESSAGE value="AVLTree" />
+    <MESSAGE value="updated readMe" />
+    <MESSAGE value="update AVL Tree" />
+    <MESSAGE value="CountingSort" />
+    <MESSAGE value="leedCode3" />
+    <MESSAGE value="Timus" />
+    <MESSAGE value="sumoftwo" />
+    <MESSAGE value="adddigits" />
+    <MESSAGE value="minmaxBinaryTree" />
+    <MESSAGE value="renamed package" />
+    <MESSAGE value="binTreetraversal" />
+    <MESSAGE value="sametreecheck" />
+    <MESSAGE value="stringproblems" />
+    <MESSAGE value="thirdlargest" />
+    <MESSAGE value="twosum" />
+    <MESSAGE value="intersect" />
+    <MESSAGE value="palindrome" />
+    <option name="LAST_COMMIT_MESSAGE" value="palindrome" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <option name="time" value="28" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -813,196 +1115,455 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ds/BST.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#553#554#0" expanded="true" />
-            <element signature="e#594#595#0" expanded="true" />
-            <element signature="e#642#643#0" expanded="true" />
-            <element signature="e#690#691#0" expanded="true" />
-            <element signature="e#3178#3179#0" expanded="true" />
-            <element signature="e#3223#3224#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/algo/sortingandsearching/BubbleSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ds/BST.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#553#554#0" expanded="true" />
-            <element signature="e#594#595#0" expanded="true" />
-            <element signature="e#642#643#0" expanded="true" />
-            <element signature="e#690#691#0" expanded="true" />
-            <element signature="e#3178#3179#0" expanded="true" />
-            <element signature="e#3223#3224#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ds/BSTTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/algo/todo">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ds/todo">
+    <entry file="file://$PROJECT_DIR$/src/Timus/A3801893.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.21">
-          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/local/java/jdk1.8.0_20/src.zip!/java/util/stream/Stream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6933333">
-          <caret line="806" column="13" selection-start-line="806" selection-start-column="13" selection-end-line="806" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/algo/sortingandsearching/BubbleSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/local/java/jdk1.8.0_20/src.zip!/java/lang/annotation/Target.java">
+    <entry file="file://$PROJECT_DIR$/src/InterviewQuestions/AddDigits258.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.55">
-          <caret line="78" column="26" selection-start-line="78" selection-start-column="26" selection-end-line="78" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.09">
+          <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
+          <folding>
+            <element signature="e#134#135#0" expanded="false" />
+            <element signature="e#199#200#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/InterviewQuestions/FindtheDifference389.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45">
+          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ds/BSTTest.java">
+    <entry file="file://$PROJECT_DIR$/src/InterviewQuestions/SumofTwoIntegers.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.57">
+          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/algo/sortingandsearching/TestSorting.java">
+    <entry file="file://$PROJECT_DIR$/src/InterviewQuestions/HammingDistance.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.21">
+          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+          <folding>
+            <element signature="e#153#154#0" expanded="false" />
+            <element signature="e#197#198#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/InterviewQuestions/SingleNumber136.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/algo/sortingandsearching/InsertionSort.java">
+    <entry file="jar:///usr/local/java/jdk1.8.0_20/src.zip!/javax/swing/tree/TreeNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="46" column="17" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/algo/sortingandsearching/SelectionSort.java">
+    <entry file="file://$PROJECT_DIR$/src/InterviewQuestions/3Hard">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/InterviewQuestions/TreeNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/InterviewQuestions/MaximumDepthofBinaryTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/InterviewQuestions/BinaryTreeLevelOrderTraversal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/local/java/jdk1.8.0_20/jre/lib/charsets.jar!/sun/nio/cs/ext/MacRoman.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5625">
+          <caret line="17" column="406" selection-start-line="17" selection-start-column="406" selection-end-line="17" selection-end-column="406" />
+          <folding>
+            <element signature="e#0#2134#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/InterviewQuestions/IntegertoRoman.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar:///usr/local/java/jdk1.8.0_20/src.zip!/java/util/LinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39">
-          <caret line="82" column="25" selection-start-line="82" selection-start-column="25" selection-end-line="82" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#39347#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/local/java/jdk1.8.0_20/src.zip!/java/util/SortedSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="107" column="17" selection-start-line="107" selection-start-column="17" selection-end-line="107" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="139" column="9" selection-start-line="139" selection-start-column="9" selection-end-line="139" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/local/java/jdk1.8.0_20/src.zip!/java/util/NavigableSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="85" column="46" selection-start-line="85" selection-start-column="46" selection-end-line="85" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/local/java/jdk1.8.0_20/src.zip!/java/util/TreeSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6">
-          <caret line="92" column="24" selection-start-line="92" selection-start-column="24" selection-end-line="92" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#20159#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ds/Tree.java">
+    <entry file="file://$PROJECT_DIR$/src/InterviewQuestions/BinaryTreeLevelOrderTraversal2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ds/BST.java">
+    <entry file="file://$PROJECT_DIR$/src/InterviewQuestions/SameTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.75">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/InterviewQuestions/MinimumDepthofBinaryTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/codeforces/BachgoldProblem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/codeforces/ParallelogramisBack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FastReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="52" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/codeforces/Voting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Timus/PhoneNumbers1002.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/InterviewQuestions/PathSum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/InterviewQuestions/PathSum2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/InterviewQuestions/ThirdLargest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19">
+          <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
           <folding>
-            <element signature="e#553#554#0" expanded="true" />
-            <element signature="e#594#595#0" expanded="true" />
-            <element signature="e#642#643#0" expanded="true" />
-            <element signature="e#690#691#0" expanded="true" />
-            <element signature="e#3178#3179#0" expanded="true" />
-            <element signature="e#3223#3224#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ds/BSTIterative.java">
+    <entry file="file://$PROJECT_DIR$/src/InterviewQuestions/RansomNote.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7236181">
-          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/InterviewQuestions/KthLargestElementinanArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
           <folding>
-            <element signature="e#613#614#0" expanded="true" />
-            <element signature="e#641#642#0" expanded="true" />
+            <element signature="e#163#164#0" expanded="true" />
+            <element signature="e#226#227#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/InterviewQuestions/TwoSum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/InterviewQuestions/ContainsDuplicateII.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/InterviewQuestions/BestTimetoBuyandSellStock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/InterviewQuestions/RemoveElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/InterviewQuestions/MissingNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/InterviewQuestions/RemoveZeroes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/InterviewQuestions/MergeSortedArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/InterviewQuestions/RotateArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/InterviewQuestions/TwoSumSortedArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.51">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="e#148#149#0" expanded="true" />
+            <element signature="e#225#226#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/local/java/jdk1.8.0_20/src.zip!/java/util/Arrays.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.78333336">
+          <caret line="1862" column="22" selection-start-line="1862" selection-start-column="22" selection-end-line="1862" selection-end-column="22" />
+          <folding>
+            <element signature="e#84738#84739#0" expanded="true" />
+            <element signature="e#84795#84796#0" expanded="true" />
+            <element signature="e#88329#88330#0" expanded="true" />
+            <element signature="e#88386#88387#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/InterviewQuestions/IntersectionOfTwoArrays.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/local/java/jdk1.8.0_20/src.zip!/java/util/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="239" column="6" selection-start-line="239" selection-start-column="6" selection-end-line="239" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/InterviewQuestions/IntersectOfTwoArrray2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/InterviewQuestions/ValidAnagram.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/InterviewQuestions/CountPrimes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/InterviewQuestions/UglyNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/InterviewQuestions/LongestPalindrome.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/InterviewQuestions/IsomorphicStrings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.51">
+          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor vertical-scroll-proportion="0.4293578">
+            <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/InterviewQuestions/1Easy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-98.06896">
+          <caret line="158" column="0" selection-start-line="158" selection-start-column="0" selection-end-line="158" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/InterviewQuestions/DeleteNodeSingleLinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/InterviewQuestions/InvertBinaryTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/InterviewQuestions/2Medium">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.3448277">
+          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
