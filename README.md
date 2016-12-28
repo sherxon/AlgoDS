@@ -1,8 +1,8 @@
 # AlgoDS
-This is the collection of algorithms, data structures and SE Interview Questions with solutions.  
+This is the collection of **algorithms, data structures** and **Interview Questions** with solutions.  
 You can see DS and algorithm implementation to-do list in each package  
 
-Interview Questions package include 3 text files (1Easy, 2Medium and 3Hard) and solutions for each question.      
+Interview Questions package include 3 text files (_1Easy, 2Medium and 3Hard_) and **solutions** for each question.      
 
 The following algorithms are provided so far.  
 
