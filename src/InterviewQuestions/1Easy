@@ -159,6 +159,14 @@ Given "paper", "title", return true.
 Given a linked list, determine if it has a cycle in it.
 Can you solve it without using extra space?
 
+30)Merge Two Sorted Lists
+Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists.
+
+31)Intersection of Two Linked Lists
+Write a program to find the node at which the intersection of two singly linked lists begins.
+
+
+
 
 
 
