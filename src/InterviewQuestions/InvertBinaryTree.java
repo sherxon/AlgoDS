@@ -17,4 +17,8 @@ public class InvertBinaryTree {
         x.left=x.right;
         x.right=temp;
     }
+
+    public static void main(String[] args) {
+        System.out.println("ab".hashCode()=="ba".hashCode());
+    }
 }
