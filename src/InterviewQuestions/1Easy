@@ -165,6 +165,28 @@ Merge two sorted linked lists and return it as a new list. The new list should b
 31)Intersection of Two Linked Lists
 Write a program to find the node at which the intersection of two singly linked lists begins.
 
+32)Remove Duplicates from Sorted List
+Given a sorted linked list, delete all duplicates such that each element appear only once.
+For example,
+Given 1->1->2, return 1->2.
+Given 1->1->2->3->3, return 1->2->3.
+
+33) Remove Linked List Elements
+Remove all elements from a linked list of integers that have value val.
+Example
+Given: 1 --> 2 --> 6 --> 3 --> 4 --> 5 --> 6, val = 6
+Return: 1 --> 2 --> 3 --> 4 --> 5
+
+34) Palindrome Linked List
+Given a singly linked list, determine if it is a palindrome.
+Follow up:
+Could you do it in O(n) time and O(1) space?
+
+35) Valid Palindrome
+Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.
+For example,
+"A man, a plan, a canal: Panama" is a palindrome.
+"race a car" is not a palindrome.
 
 
 

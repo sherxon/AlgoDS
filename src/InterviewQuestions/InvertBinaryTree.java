@@ -1,5 +1,8 @@
 package InterviewQuestions;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 /**
  * Created by sherxon on 12/24/16.
  */
@@ -9,7 +12,6 @@ public class InvertBinaryTree {
         swap(root);
         invertTree(root.left);
         invertTree(root.right);
-
         return root;
     }
     public void swap(TreeNode x){
@@ -17,8 +19,16 @@ public class InvertBinaryTree {
         x.left=x.right;
         x.right=temp;
     }
+    public void invertIterative(TreeNode node){
+        
+        Queue<TreeNode> q= new LinkedList<>();
+        q.add(node);
+        while (!q.isEmpty()){
+            TreeNode x=q.poll();
+            swap(x);
+            if(x.left!=null)q.add(x.left);
+            if(x.right!=null)q.add(x.right);
 
-    public static void main(String[] args) {
-        System.out.println("ab".hashCode()=="ba".hashCode());
+        }
     }
 }
