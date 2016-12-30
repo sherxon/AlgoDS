@@ -188,9 +188,40 @@ For example,
 "A man, a plan, a canal: Panama" is a palindrome.
 "race a car" is not a palindrome.
 
+36)First Bad Version
+You are a product manager and currently leading a team to develop a new product. Unfortunately, the latest version of your product fails the quality check. Since each version is developed based on the previous version, all the versions after a bad version are also bad.
+Suppose you have n versions [1, 2, ..., n] and you want to find out the first bad one, which causes all the following ones to be bad.
+You are given an API bool isBadVersion(version) which will return whether version is bad. Implement a function to find the first bad version. You should minimize the number of calls to the API.
 
 
+37)Guess Number Higher or Lower
+We are playing the Guess Game. The game is as follows:
+I pick a number from 1 to n. You have to guess which number I picked.
+Every time you guess wrong, I'll tell you whether the number is higher or lower.
+You call a pre-defined API guess(int num) which returns 3 possible results (-1, 1, or 0):
+-1 : My number is lower
+ 1 : My number is higher
+ 0 : Congrats! You got it!
 
+38) Arranging Coins
+You have a total of n coins that you want to form in a staircase shape, where every k-th row must have exactly k coins.
+Given n, find the total number of full staircase rows that can be formed.
+n is a non-negative integer and fits within the range of a 32-bit signed integer.
+
+39)Range Sum Query - Immutable
+Given an integer array nums, find the sum of the elements between indices i and j (i ≤ j), inclusive.
+Example:
+Given nums = [-2, 0, 3, -5, 2, -1]
+sumRange(0, 2) -> 1
+sumRange(2, 5) -> -1
+sumRange(0, 5) -> -3
+Note:
+You may assume that the array does not change.
+There are many calls to sumRange function.
+
+40)House Robber
+You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed, the only constraint stopping you from robbing each of them is that adjacent houses have security system connected and it will automatically contact the police if two adjacent houses were broken into on the same night.
+Given a list of non-negative integers representing the amount of money of each house, determine the maximum amount of money you can rob tonight without alerting the police.
 
 
 
