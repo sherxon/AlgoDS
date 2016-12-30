@@ -223,5 +223,35 @@ There are many calls to sumRange function.
 You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed, the only constraint stopping you from robbing each of them is that adjacent houses have security system connected and it will automatically contact the police if two adjacent houses were broken into on the same night.
 Given a list of non-negative integers representing the amount of money of each house, determine the maximum amount of money you can rob tonight without alerting the police.
 
+41) Climbing Stairs
+You are climbing a stair case. It takes n steps to reach to the top.
+Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
+
+42)Implement Queue using Stacks
+Implement the following operations of a queue using stacks.
+push(x) -- Push element x to the back of queue.
+pop() -- Removes the element from in front of queue.
+peek() -- Get the front element.
+empty() -- Return whether the queue is empty.
+Notes:
+You must use only standard operations of a stack -- which means only push to top, peek/pop from top, size, and is empty operations are valid.
+Depending on your language, stack may not be supported natively. You may simulate a stack by using a list or deque (double-ended queue), as long as you use only standard operations of a stack.
+You may assume that all operations are valid (for example, no pop or peek operations will be called on an empty queue).
+
+43)Sum of Left Leaves
+Find the sum of all left leaves in a given binary tree.
+
+44) Binary Tree Paths
+Given a binary tree, return all root-to-leaf paths.
+For example, given the following binary tree:
+
+   1
+ /   \
+2     3
+ \
+  5
+All root-to-leaf paths are:
+["1->2->5", "1->3"]
+
 
 
