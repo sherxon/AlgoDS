@@ -23,4 +23,43 @@ Given a complete binary tree, count the number of nodes.
 Definition of a complete binary tree from Wikipedia:
 In a complete binary tree every level, except possibly the last, is completely filled, and all nodes in the last level are as far left as possible. It can have between 1 and 2h nodes inclusive at the last level h.
 
-6)
+6)Minimum Path Sum
+Given a m x n grid filled with non-negative numbers, find a path from top left to bottom right which minimizes the sum of all numbers along its path.
+Note: You can only move either down or right at any point in time.
+
+7)Find Peak Element
+A peak element is an element that is greater than its neighbors.
+Given an input array where num[i] ≠ num[i+1], find a peak element and return its index.
+The array may contain multiple peaks, in that case return the index to any one of the peaks is fine.
+You may imagine that num[-1] = num[n] = -∞.
+For example, in array [1, 2, 3, 1], 3 is a peak element and your function should return the index number 2.
+
+8) Sum Root to Leaf Numbers
+Given a binary tree containing digits from 0-9 only, each root-to-leaf path could represent a number.
+An example is the root-to-leaf path 1->2->3 which represents the number 123.
+Find the total sum of all root-to-leaf numbers.
+For example,
+    1
+   / \
+  2   3
+The root-to-leaf path 1->2 represents the number 12.
+The root-to-leaf path 1->3 represents the number 13.
+Return the sum = 12 + 13 = 25.
+
+9) Path Sum II
+Given a binary tree and a sum, find all root-to-leaf paths where each path's sum equals the given sum.
+For example:
+Given the below binary tree and sum = 22,
+              5
+             / \
+            4   8
+           /   / \
+          11  13  4
+         /  \    / \
+        7    2  5   1
+return
+[
+   [5,4,11,2],
+   [5,8,4,5]
+]
+
