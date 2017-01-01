@@ -5,6 +5,7 @@ quickSort
 mergeSort
 radixSort
 heapSort
+bucket sort
 
 binarySearch
 quickSelect
@@ -14,4 +15,5 @@ DFS
 Prim's
 Kruskall
 Dijsktra
+topological sort(all types)
 
