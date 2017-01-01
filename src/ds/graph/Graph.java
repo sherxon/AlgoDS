@@ -1,4 +1,4 @@
-package ds;
+package ds.graph;
 
 import java.util.Collection;
 

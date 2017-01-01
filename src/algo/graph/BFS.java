@@ -1,8 +1,8 @@
 package algo.graph;
 
-import ds.DirectedGraph;
-import ds.Graph;
-import ds.Vertex;
+import ds.graph.Graph;
+import ds.graph.UndirectedGraph;
+import ds.graph.Vertex;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -12,7 +12,7 @@ import java.util.Queue;
  */
 public class BFS<T> {
     public static void main(String[] args) {
-        Graph<String> graph= new DirectedGraph<>();
+        Graph<String> graph= new UndirectedGraph<>();
         graph.addVertex("a");
         graph.addVertex("b");
         graph.addVertex("c");

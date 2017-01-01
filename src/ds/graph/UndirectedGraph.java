@@ -1,12 +1,14 @@
-package ds;
+package ds.graph;
 
-import java.util.*;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
 
 /**
  * Created by sherxon on 1/1/17.
  */
-public class DirectedGraph<T> implements Graph<T>{
-
+public class UndirectedGraph<T> implements Graph<T> {
     Map<T, Vertex<T>> vertexMap= new HashMap<>();
 
     @Override
@@ -34,7 +36,9 @@ public class DirectedGraph<T> implements Graph<T>{
         if(!vertexMap.containsKey(t1))return;
         if(!vertexMap.containsKey(t2))return;
         Vertex<T> from=vertexMap.get(t1);
-        from.addNeighbor(vertexMap.get(t2));
+        Vertex<T> to=vertexMap.get(t2);
+        from.addNeighbor(to);
+        to.addNeighbor(from);
     }
 
     @Override
@@ -47,7 +51,9 @@ public class DirectedGraph<T> implements Graph<T>{
         if(!vertexMap.containsKey(t1))return;
         if(!vertexMap.containsKey(t2))return;
         Vertex<T> from=vertexMap.get(t1);
-        from.removeNeighrbor(vertexMap.get(t2));
+        Vertex<T> to=vertexMap.get(t2);
+        from.removeNeighrbor(to);
+        to.removeNeighrbor(from);
     }
 
     @Override
@@ -59,5 +65,4 @@ public class DirectedGraph<T> implements Graph<T>{
     public Vertex<T> getVertex(T t) {
         return vertexMap.get(t);
     }
-
 }
