@@ -298,7 +298,15 @@ You may assume that the array is non-empty and the majority element always exist
 51)Contains Duplicate
 Given an array of integers, find if the array contains any duplicates. Your function should return true if any value appears at least twice in the array, and it should return false if every element is distinct.
 
-52)
+52)First Unique Character in a String
+Given a string, find the first non-repeating character in it and return it's index. If it doesn't exist, return -1.
+Examples:
+s = "leetcode"
+return 0.
+s = "loveleetcode",
+return 2.
+Note: You may assume the string contain only lowercase letters.
+
 
 
 

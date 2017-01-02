@@ -12,6 +12,7 @@ import java.util.Queue;
  */
 public class BFS<T> {
     public static void main(String[] args) {
+        //Graph<String> graph= new DirectedGraph<>();
         Graph<String> graph= new UndirectedGraph<>();
         graph.addVertex("a");
         graph.addVertex("b");
