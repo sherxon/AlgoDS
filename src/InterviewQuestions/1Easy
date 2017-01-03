@@ -307,8 +307,20 @@ s = "loveleetcode",
 return 2.
 Note: You may assume the string contain only lowercase letters.
 
+53)  Power of Two
+Given an integer, write a function to determine if it is a power of two.
 
+54) Power of Four
+Given an integer (signed 32 bits), write a function to check whether it is a power of 4.
+Example:
+Given num = 16, return true. Given num = 5, return false.
+Follow up: Could you solve it without loops/recursion?
 
+55)Reverse Integer
+Reverse digits of an integer.
+Example1: x = 123, return 321
+Example2: x = -123, return -321
+101
 
 
 

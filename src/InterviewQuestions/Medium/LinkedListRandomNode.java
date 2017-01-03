@@ -7,6 +7,8 @@ import InterviewQuestions.Easy.ListNode;
  */
 // there are two solutions 1) with arraylist 2) without any extra space
 public class LinkedListRandomNode {
+
+
     ListNode head;
     //List<ListNode> a;
     ListNode x;
