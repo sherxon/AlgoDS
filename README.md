@@ -15,6 +15,7 @@ Interview Questions package include 3 text files (_1Easy, 2Medium and 3Hard_) an
 3) [Find Peak Element](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Medium/FindPeakElement.java)  
 4) [Maximum Subarray](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Medium/MaximumSubarray.java)  
 5) [Kth Largest Element in an Array](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Medium/KthLargestElementinanArray.java)  
+[And many other array problems](https://github.com/sherxon/AlgoDS/tree/master/src/InterviewQuestions)
 
 ###Linked List
 1) [Delete Node in a Linked List](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Easy/DeleteNodeSingleLinkedList.java)  
@@ -23,6 +24,7 @@ Interview Questions package include 3 text files (_1Easy, 2Medium and 3Hard_) an
 4) [Intersection of Two Linked Lists](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Easy/IntersectionofTwoLinkedLists.java)  
 5) [Linked List Cycle](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Easy/LinkedListCycle.java)  
 5) [Remove Nth Node From End of List](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Easy/RemoveNthNodeFromEndofList) 
+ [And many other Linked list problems](https://github.com/sherxon/AlgoDS/tree/master/src/InterviewQuestions)
  
 ###Binary Tree
 1) [Binary Tree Level Order Traversal](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Easy/BinaryTreeLevelOrderTraversal.java)  
@@ -38,7 +40,7 @@ Interview Questions package include 3 text files (_1Easy, 2Medium and 3Hard_) an
 11) [Maximum Depth of Binary Tree](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Easy/MaximumDepthofBinaryTree.java)  
 12) [Balanced Binary Tree](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Easy/BalancedBinaryTree.java)  
 13) [Minimum Depth of Binary Tree](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Easy/MinimumDepthofBinaryTree.java)  
-
+ [And many other tree problems](https://github.com/sherxon/AlgoDS/tree/master/src/InterviewQuestions)  
  
  
 ##Algorithms
