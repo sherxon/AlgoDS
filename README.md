@@ -42,22 +42,24 @@ Interview Questions package include 3 text files (_1Easy, 2Medium and 3Hard_) an
 ##Algorithms
   
 ###Sorting And Searching:    
-1) Bubble Sort  
-2) Insertion Sort  
-3) Selection Sort  
-4) Counting Sort  
+1) [ Bubble Sort](https://github.com/sherxon/AlgoDS/blob/master/src/algo/sortingandsearching/BubbleSort.java)  
+2) [Insertion Sort](https://github.com/sherxon/AlgoDS/blob/master/src/algo/sortingandsearching/InsertionSort.java)  
+3) [Selection Sort](https://github.com/sherxon/AlgoDS/blob/master/src/algo/sortingandsearching/SelectionSort.java)  
+4) [Counting Sort](https://github.com/sherxon/AlgoDS/blob/master/src/algo/sortingandsearching/CountingSort.java)  
 
 ###Graphs:  
-1) Breadth First Search (BFS)  
+1) [Breadth First Search (BFS)](https://github.com/sherxon/AlgoDS/blob/master/src/algo/graph/BFS.java)  
 2) Depth First Search (DFS)  
 3) Prim's Minimum Spanning Tree (MST)  
 4) KrusKal's Minimum Spanning Tree (MST)    
 
 
 ##Data Structure:      
+
 ###Trees:  
-1) Binary Search Tree (recursive, iterative, duplicate support, key-value pair)  
-2) AVL Tree  
+1)[Binary Search Tree (recursive)](https://github.com/sherxon/AlgoDS/blob/master/src/ds/BST.java)  
+2)[Binary Search Tree (iterative)](https://github.com/sherxon/AlgoDS/blob/master/src/ds/BSTIterative.java)  
+3)[AVL Tree](https://github.com/sherxon/AlgoDS/blob/master/src/ds/AVLTree.java)    
 
 
 
