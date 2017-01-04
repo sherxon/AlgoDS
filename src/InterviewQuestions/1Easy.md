@@ -322,7 +322,7 @@ Example1: x = 123, return 321
 Example2: x = -123, return -321
 101
 
-56)** Minimum Moves to Equal Array Elements**
+56)**Minimum Moves to Equal Array Elements**
 Given a non-empty integer array of size n, find the minimum number of moves required to make all array elements equal, where a move is incrementing n - 1 elements by 1.
 Example:
 Input:
