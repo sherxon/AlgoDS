@@ -36,6 +36,8 @@ Interview Questions package include 3 text files (_1Easy, 2Medium and 3Hard_) an
 9) [Binary Tree Inorder Traversal](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Medium/BinaryTreeInorderTraversal.java)  
 10) [Same Tree](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Easy/SameTree.java)  
 11) [Maximum Depth of Binary Tree](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Easy/MaximumDepthofBinaryTree.java)  
+12) [Balanced Binary Tree](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Easy/BalancedBinaryTree.java)  
+13) [Minimum Depth of Binary Tree](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Easy/MinimumDepthofBinaryTree.java)  
 
  
  
