@@ -1,24 +1,24 @@
-1)Hamming Distance
+1)**Hamming Distance**
 The Hamming distance between two integers is the number of positions at which the corresponding bits are different.
 Given two integers x and y, calculate the Hamming distance.
 
-2)Single Number
+2)**Single Number**
 Given an array of integers, every element appears twice except for one. Find that single one.
 Note:Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?
 
-3)Delete Node in a Linked List
+3)**Delete Node in a Linked List**
 Write a function to delete a node (except the tail) in a singly linked list, given only access to that node.
 Supposed the linked list is 1 -> 2 -> 3 -> 4 and you are given the third node with value 3, the linked list should become 1 -> 2 -> 4 after calling your function.
 
-4)Maximum Depth of Binary Tree
+4)**Maximum Depth of Binary Tree**
 Given a binary tree, find its maximum depth.
 The maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
 
-5)Minimum Depth of Binary Tree
+5)**Minimum Depth of Binary Tree**
 Given a binary tree, find its minimum depth.
 The minimum depth is the number of nodes along the shortest path from the root node down to the nearest leaf node.
 
-6)Binary Tree Level Order Traversal I
+6)**Binary Tree Level Order Traversal I**
 Given a binary tree, return the level order traversal of its nodes' values. (ie, from left to right, level by level).
 For example:Given binary tree [3,9,20,null,null,15,7],
 [
@@ -27,7 +27,7 @@ For example:Given binary tree [3,9,20,null,null,15,7],
   [15,7]
 ]
 
-7)Binary Tree Level Order Traversal II
+7)**Binary Tree Level Order Traversal II**
 Given a binary tree, return the bottom-up level order traversal of its nodes' values. (ie, from left to right, level by level from leaf to root).
 For example:Given binary tree [3,9,20,null,null,15,7],
 [
