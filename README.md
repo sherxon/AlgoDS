@@ -4,7 +4,7 @@ You can see DS and algorithm implementation to-do list in each package
 
 Interview Questions package include 3 text files (_1Easy, 2Medium and 3Hard_) and **solutions** for each question.      
 
-**8 Algorithms, 2 Data Structures** and **68 Interview Questions with answers** are provided so far.    
+**8 Algorithms, 2 Data Structures** and **85 Interview Questions with answers** are provided so far.    
 
 Sorting And Searching:  
 1) Bubble Sort  
