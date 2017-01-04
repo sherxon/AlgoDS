@@ -1,6 +1,6 @@
 package InterviewQuestions.Medium;
 
-import InterviewQuestions.Easy.TreeNode;
+import InterviewQuestions.TreeNode;
 
 /**
  * Created by sherxon on 12/30/16.

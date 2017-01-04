@@ -1,6 +1,8 @@
 package InterviewQuestions.Easy;
 
 
+import InterviewQuestions.TreeNode;
+
 /**
  * Created by sherxon on 12/24/16.
  */

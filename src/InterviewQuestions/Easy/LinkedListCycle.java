@@ -1,5 +1,7 @@
 package InterviewQuestions.Easy;
 
+import InterviewQuestions.ListNode;
+
 /**
  * Created by sherxon on 12/28/16.
  */

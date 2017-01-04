@@ -1,6 +1,6 @@
 package InterviewQuestions.Medium;
 
-import InterviewQuestions.Easy.ListNode;
+import InterviewQuestions.ListNode;
 
 import java.util.Stack;
 

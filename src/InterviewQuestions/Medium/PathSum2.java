@@ -1,6 +1,6 @@
 package InterviewQuestions.Medium;
 
-import InterviewQuestions.Easy.TreeNode;
+import InterviewQuestions.TreeNode;
 
 import java.util.*;
 

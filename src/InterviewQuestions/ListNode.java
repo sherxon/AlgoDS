@@ -1,4 +1,4 @@
-package InterviewQuestions.Easy;
+package InterviewQuestions;
 
 /**
  * Created by sherxon on 12/28/16.
