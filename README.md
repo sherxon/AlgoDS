@@ -56,7 +56,7 @@ Interview Questions package include 3 text files (_1Easy, 2Medium and 3Hard_) an
 
 ###Graphs:  
 1) [Breadth First Search (BFS)](https://github.com/sherxon/AlgoDS/blob/master/src/algo/graph/BFS.java)  
-2) Depth First Search (DFS)  
+2) [Depth First Search (DFS)](https://github.com/sherxon/AlgoDS/blob/master/src/algo/graph/DFS.java)  
 3) Prim's Minimum Spanning Tree (MST)  
 4) KrusKal's Minimum Spanning Tree (MST)    
 
