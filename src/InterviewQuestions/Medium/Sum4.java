@@ -1,17 +1,12 @@
 package InterviewQuestions.Medium;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 /**
  * Created by sherxon on 12/31/16.
  */
 public class Sum4 {
-    public static void main(String[] args) {
-        List<List<Integer>> li= new Sum4().fourSum(new int[]{0,0,0,0}, 0);
-        System.out.println(li);
-    }
+
     public List<List<Integer>> fourSum(int[] a, int target) {
         Arrays.sort(a);
         List<List<Integer>>lists= new ArrayList<>();
