@@ -15,7 +15,7 @@ Interview Questions package include 3 text files (_1Easy, 2Medium and 3Hard_) an
 3) [Find Peak Element](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Medium/FindPeakElement.java)  
 4) [Maximum Subarray](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Medium/MaximumSubarray.java)  
 5) [Kth Largest Element in an Array](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Medium/KthLargestElementinanArray.java)  
-    
+6) [Find All Duplicates in an Array]()
 [And many other array problems](https://github.com/sherxon/AlgoDS/tree/master/src/InterviewQuestions)
 
 ###Linked List
@@ -24,8 +24,7 @@ Interview Questions package include 3 text files (_1Easy, 2Medium and 3Hard_) an
 3) [Reverse Linked List](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Easy/ReverseLinkedList.java)  
 4) [Intersection of Two Linked Lists](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Easy/IntersectionofTwoLinkedLists.java)  
 5) [Linked List Cycle](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Easy/LinkedListCycle.java)  
-5) [Remove Nth Node From End of List](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Easy/RemoveNthNodeFromEndofList) 
-  
+5) [Remove Nth Node From End of List](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Easy/RemoveNthNodeFromEndofList)   
  [And many other Linked list problems](https://github.com/sherxon/AlgoDS/tree/master/src/InterviewQuestions)
  
 ###Binary Tree
@@ -43,8 +42,11 @@ Interview Questions package include 3 text files (_1Easy, 2Medium and 3Hard_) an
 12) [Balanced Binary Tree](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Easy/BalancedBinaryTree.java)  
 13) [Minimum Depth of Binary Tree](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Easy/MinimumDepthofBinaryTree.java)  
 14) [Merge k Sorted Lists](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Medium/MergekSortedLists.java)   
+15) [Convert Sorted List to Balanced Binary Search Tree](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Medium/ConvertSortedListtoBinarySearchTree.java)   
  [And many other tree problems](https://github.com/sherxon/AlgoDS/tree/master/src/InterviewQuestions)  
  
+###Math
+1) [Integer Break](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Medium/IntegerBreak.java)
  
 ##Algorithms
   

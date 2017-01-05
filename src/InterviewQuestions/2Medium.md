@@ -267,3 +267,23 @@ You may assume k is always valid, 1 ≤ k ≤ number of unique elements.
 Your algorithm's time complexity must be better than O(n log n), where n is the array's size.
 
 32) **Merge k Sorted Lists**
+
+33) **Integer Break**
+Given a positive integer n, break it into the sum of at least two positive integers and maximize the product of those integers. Return the maximum product you can get.
+For example, given n = 2, return 1 (2 = 1 + 1); given n = 10, return 36 (10 = 3 + 3 + 4).
+Note: You may assume that n is not less than 2 and not larger than 58.
+
+34) Find All Duplicates in an Array
+Given an array of integers, 1 ≤ a[i] ≤ n (n = size of array), some elements appear twice and others appear once.
+Find all the elements that appear twice in this array.
+Could you do it without extra space and in O(n) runtime?
+Example:
+Input:
+[4,3,2,7,8,2,3,1]
+Output:
+[2,3]
+
+35)**Convert Sorted List to Binary Search Tree**
+Given a singly linked list where elements are sorted in ascending order, convert it to a height balanced BST.
+
+36) 
