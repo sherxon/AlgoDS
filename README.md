@@ -43,8 +43,9 @@ Interview Questions package include 3 text files (_1Easy, 2Medium and 3Hard_) an
 13) [Minimum Depth of Binary Tree](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Easy/MinimumDepthofBinaryTree.java)  
 14) [Merge k Sorted Lists](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Medium/MergekSortedLists.java)   
 15) [Convert Sorted List to Balanced Binary Search Tree](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Medium/ConvertSortedListtoBinarySearchTree.java)   
+16) [Validate Binary Search Tree](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Medium/ValidateBinarySearchTree.java)  
  [And many other tree problems](https://github.com/sherxon/AlgoDS/tree/master/src/InterviewQuestions)  
- 
+  
 ###Math
 1) [Integer Break](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Medium/IntegerBreak.java)
  
@@ -60,7 +61,8 @@ Interview Questions package include 3 text files (_1Easy, 2Medium and 3Hard_) an
 1) [Breadth First Search (BFS)](https://github.com/sherxon/AlgoDS/blob/master/src/algo/graph/BFS.java)  
 2) [Depth First Search (DFS)](https://github.com/sherxon/AlgoDS/blob/master/src/algo/graph/DFS.java)  
 3) Prim's Minimum Spanning Tree (MST)  
-4) KrusKal's Minimum Spanning Tree (MST)    
+4) KrusKal's Minimum Spanning Tree (MST)  
+5) [Topological Sorting](https://github.com/sherxon/AlgoDS/blob/master/src/algo/graph/TopologicalSorting.java)      
 
 
 ##Data Structure:      

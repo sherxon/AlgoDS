@@ -286,4 +286,11 @@ Output:
 35)**Convert Sorted List to Binary Search Tree**
 Given a singly linked list where elements are sorted in ascending order, convert it to a height balanced BST.
 
-36) 
+36) **Validate Binary Search Tree**
+Given a binary tree, determine if it is a valid binary search tree (BST).
+Assume a BST is defined as follows:
+The left subtree of a node contains only nodes with keys less than the node's key.
+The right subtree of a node contains only nodes with keys greater than the node's key.
+Both the left and right subtrees must also be binary search trees.
+
+37)
