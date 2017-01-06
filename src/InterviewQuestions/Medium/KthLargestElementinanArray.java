@@ -4,7 +4,7 @@ package InterviewQuestions.Medium;
  * Created by sherxon on 12/26/16.
  */
 public class KthLargestElementinanArray {
-    /*
+    /**
     * This is quick select algorithm and average time complexity is O(N).
     * We use k as a pivot.
     * */

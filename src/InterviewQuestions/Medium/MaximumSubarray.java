@@ -5,7 +5,7 @@ package InterviewQuestions.Medium;
  */
 public class MaximumSubarray {
 
-    /*
+    /**
     * We use two max, maxSoFar -> max sub array found so far and maxEndingHere -> maximum sub array size
     * that ends in this index. This is in place solution and time Complexity is O(N).
     * */

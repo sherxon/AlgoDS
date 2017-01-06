@@ -45,11 +45,13 @@ Interview Questions package include 3 text files (_1Easy, 2Medium and 3Hard_) an
 15) [Sorted List to Balanced Binary Search Tree](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Medium/ConvertSortedListtoBinarySearchTree.java)   
 16) [Validate Binary Search Tree](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Medium/ValidateBinarySearchTree.java)  
 17) [Sorted List to Balanced BST ](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Medium/ConvertSortedArraytoBinarySearchTree.java)  
+18) [Kth Smallest Element in a BST](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Medium/KthSmallestElementinaBST.java)  
  [And many other tree problems](https://github.com/sherxon/AlgoDS/tree/master/src/InterviewQuestions)  
   
 ###Math
-1) [Integer Break](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Medium/IntegerBreak.java)
- 
+1) [Integer Break](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Medium/IntegerBreak.java)  
+2) [Reverse Bits](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Easy/ReverseBits.java)   
+
 ##Algorithms
   
 ###Sorting And Searching:    
