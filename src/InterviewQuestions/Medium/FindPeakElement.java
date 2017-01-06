@@ -4,19 +4,24 @@ package InterviewQuestions.Medium;
  * Created by sherxon on 12/30/16.
  */
 public class FindPeakElement {
+    /*
+    * We use two pointers, low and high. if middle element is peak we return it.
+    * We continue searching right half if middle element is smaller than middle+1 element
+    * else left is searched. Time complexity in O(LgN);
+    * */
     public int findPeakElement(int[] a) {
-        int i = 0;
-        int j = a.length - 1;
-        while (i <= j) {
-            int mid = i + (j - i) / 2;
+        int lo = 0;
+        int hi = a.length - 1;
+        while (lo <= hi) {
+            int mid = lo + (hi - lo) / 2;
 
             if (mid > 0 && mid < a.length - 1 && a[mid] >= a[mid - 1] && a[mid] >= a[mid + 1]) return mid;
 
             if (mid < a.length - 1 && a[mid] < a[mid + 1])
-                i = mid + 1;
+                lo = mid + 1;
             else
-                j = mid - 1;
+                hi = mid - 1;
         }
-        return i;
+        return lo;
     }
 }
