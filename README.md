@@ -42,8 +42,9 @@ Interview Questions package include 3 text files (_1Easy, 2Medium and 3Hard_) an
 12) [Balanced Binary Tree](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Easy/BalancedBinaryTree.java)  
 13) [Minimum Depth of Binary Tree](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Easy/MinimumDepthofBinaryTree.java)  
 14) [Merge k Sorted Lists](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Medium/MergekSortedLists.java)   
-15) [Convert Sorted List to Balanced Binary Search Tree](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Medium/ConvertSortedListtoBinarySearchTree.java)   
+15) [Sorted List to Balanced Binary Search Tree](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Medium/ConvertSortedListtoBinarySearchTree.java)   
 16) [Validate Binary Search Tree](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Medium/ValidateBinarySearchTree.java)  
+17) [Sorted List to Balanced BST ](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Medium/ConvertSortedArraytoBinarySearchTree.java)  
  [And many other tree problems](https://github.com/sherxon/AlgoDS/tree/master/src/InterviewQuestions)  
   
 ###Math
