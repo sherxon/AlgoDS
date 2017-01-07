@@ -296,3 +296,23 @@ Both the left and right subtrees must also be binary search trees.
 37)**Convert Sorted Array to Binary Search Tree**
 38) **Clone Graph**
 Clone an undirected graph. Each node in the graph contains a label and a list of its neighbors.
+
+39)**PeekingIterator**
+Given an Iterator class interface with methods: next() and hasNext(), design and implement a PeekingIterator that support the peek() operation -- it essentially peek() at the element that will be returned by the next call to next().
+Here is an example. Assume that the iterator is initialized to the beginning of the list: [1, 2, 3].
+Call next() gets you 1, the first element in the list.
+Now you call peek() and it returns 2, the next element. Calling next() after that still return 2.
+You call next() the final time and it returns 3, the last element. Calling hasNext() after that should return false.
+
+40)**Reconstruct Original Digits from English**
+Given a non-empty string containing an out-of-order English representation of digits 0-9, output the digits in ascending order.
+Note:
+Input contains only lowercase English letters.
+Input is guaranteed to be valid and can be transformed to its original digits. That means invalid inputs such as "abc" or "zerone" are not permitted.
+Input length is less than 50,000.
+Example 1:
+Input: "owoztneoer"
+Output: "012"
+Example 2:
+Input: "fviefuro"
+Output: "45"
