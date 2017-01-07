@@ -1,5 +1,7 @@
 package InterviewQuestions.Easy;
 
+import java.util.HashSet;
+
 /**
  * Created by sherxon on 1/6/17.
  */
@@ -8,6 +10,8 @@ public class ReverseBits {
     * Reversing bits and returning integer.
     * */
     public int reverseBits(int n) {
+        HashSet<Integer> set= new HashSet<>();
+
         String padding = "00000000000000000000000000000000"; //
         String result = padding + Integer.toBinaryString(n);
         result = result.substring(result.length() - 32, result.length());  // take the right-most 64 digits
