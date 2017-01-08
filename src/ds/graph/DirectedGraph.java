@@ -2,55 +2,47 @@ package ds.graph;
 
 import java.util.Collection;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
 
 /**
  * Created by sherxon on 1/1/17.
  */
-public class DirectedGraph<T> implements Graph<T> {
+public class DirectedGraph<V> implements Graph<V> {
 
-    Map<T, Vertex<T>> vertexMap= new HashMap<>();
+   private Map<V, Vertex<V>> vertexMap= new HashMap<>();
 
     @Override
-    public void addVertex(T t) {
-        if(vertexMap.containsKey(t))return;
-        Vertex<T> vertex= new Vertex<>(t);
-        vertexMap.put(t, vertex);
+    public void addVertex(V v) {
+        vertexMap.put(v, new Vertex<>(v));
     }
 
-    @Override
-    public Collection<Vertex<T>> getNeighbors(T t){
-        if(!vertexMap.containsKey(t))return new HashSet<>();
-        return vertexMap.get(t).getNeighbors();
-    }
 
     @Override
-    public Collection<Vertex<T>> getVertices() {
+    public Collection<Vertex<V>> getVertices() {
         return vertexMap.values();
     }
 
 
 
     @Override
-    public void addEdge(T t1, T t2) {
-        if(!vertexMap.containsKey(t1))return;
-        if(!vertexMap.containsKey(t2))return;
-        Vertex<T> from=vertexMap.get(t1);
-        from.addNeighbor(vertexMap.get(t2));
+    public void addEdge(V v1, V v2) {
+        if(!vertexMap.containsKey(v1))return;
+        if(!vertexMap.containsKey(v2))return;
+        Vertex<V> from=vertexMap.get(v1);
+        from.addNeighbor(vertexMap.get(v2));
     }
 
     @Override
-    public void removeVertex(T t) {
+    public void removeVertex(V v) {
 
     }
 
     @Override
-    public void removeEdge(T t1, T t2) {
-        if(!vertexMap.containsKey(t1))return;
-        if(!vertexMap.containsKey(t2))return;
-        Vertex<T> from=vertexMap.get(t1);
-        from.removeNeighrbor(vertexMap.get(t2));
+    public void removeEdge(V v1, V v2) {
+        if(!vertexMap.containsKey(v1))return;
+        if(!vertexMap.containsKey(v2))return;
+        Vertex<V> from=vertexMap.get(v1);
+        from.removeNeighrbor(vertexMap.get(v2));
     }
 
     @Override
@@ -59,8 +51,8 @@ public class DirectedGraph<T> implements Graph<T> {
     }
 
     @Override
-    public Vertex<T> getVertex(T t) {
-        return vertexMap.get(t);
+    public Vertex<V> getVertex(V v) {
+        return vertexMap.get(v);
     }
 
 }

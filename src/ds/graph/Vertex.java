@@ -11,11 +11,20 @@ public class Vertex<T> {
     private Collection<Vertex<T>> neighbors; // used with Unweighted graphs
     private Vertex<T> parent; // used in dfs and bfs
     private boolean visited; //used for bfs and dfs
-
+    private Integer weight;
     public Vertex(T value) {
         this.value = value;
         this.neighbors= new ArrayList<>();
     }
+
+    public Integer getWeight() {
+        return weight;
+    }
+
+    public void setWeight(Integer weight) {
+        this.weight = weight;
+    }
+
     public void addNeighbor(Vertex<T> vertex){
         this.neighbors.add(vertex);
     }
