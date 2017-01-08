@@ -10,6 +10,12 @@ import java.util.Set;
 /**
  * Created by sherxon on 1/7/17.
  */
+/**
+* This is the algorithm to find shortest Path in weighted and non-negative edged graph. Graph can be directed
+* or undirected. This is not optimized version as shortestPath() method searches vertex with minimal weight
+* every time. To optimize fibonacci heap can be used. This algorithm finds shortest path from source vertex
+* to all other reachable vertexes. Time complexity is O(VE)
+* */
 public class Dijsktra<V, E extends Number> {
     WeightedGraph<V, E> graph;
 
@@ -17,31 +23,8 @@ public class Dijsktra<V, E extends Number> {
         this.graph = graph;
     }
 
-    public static void main(String[] args) {
-        WeightedGraph<String, Integer> graph= new WeightedGraph<>(true);
-        graph.addVertex("a");
-        graph.addVertex("b");
-        graph.addVertex("c");
-        graph.addVertex("d");
-        graph.addVertex("e");
-        graph.addVertex("f");
-        graph.addVertex("g");
-        graph.addVertex("h");
-        graph.addEdge("a", "f", 1);
-        graph.addEdge("a", "b", 2);
-        graph.addEdge("b", "g", 23);
-        graph.addEdge("b", "d", 4);
-        graph.addEdge("c", "d", 4);
-        graph.addEdge("d", "h", 2);
-        graph.addEdge("e", "d", 1);
-        graph.addEdge("f", "e", 3);
-        graph.addEdge("g", "c", 4);
-        Dijsktra<String, Integer> dijsktra= new Dijsktra<>(graph);
-        dijsktra.shortestPath("a");
-        dijsktra.printPath("g");
-    }
 
-    private void printPath(V h) {
+    public void printPath(V h) {
         Vertex<V> root=graph.getVertex(h);
         if(root==null)return;
         while (root.getParent()!=null){

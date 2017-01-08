@@ -66,7 +66,7 @@ Interview Questions package include 3 text files (_1Easy, 2Medium and 3Hard_) an
 3) Prim's Minimum Spanning Tree (MST)  
 4) KrusKal's Minimum Spanning Tree (MST)  
 5) [Topological Sorting](https://github.com/sherxon/AlgoDS/blob/master/src/algo/graph/TopologicalSorting.java)      
-
+6) [Shortest Path Dijsktra](https://github.com/sherxon/AlgoDS/blob/master/src/algo/graph/Dijsktra.java)  
 
 ##Data Structure:      
 
