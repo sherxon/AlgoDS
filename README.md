@@ -46,6 +46,7 @@ Interview Questions package include 3 text files (_1Easy, 2Medium and 3Hard_) an
 16) [Validate Binary Search Tree](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Medium/ValidateBinarySearchTree.java)  
 17) [Sorted List to Balanced BST ](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Medium/ConvertSortedArraytoBinarySearchTree.java)  
 18) [Kth Smallest Element in a BST](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Medium/KthSmallestElementinaBST.java)  
+19) [Binary Tree Zigzag Level Order Traversal](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Medium/ZigZagOrderLevelTraversalBST.java)  
  [And many other tree problems](https://github.com/sherxon/AlgoDS/tree/master/src/InterviewQuestions)  
   
 ###Math

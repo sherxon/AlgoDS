@@ -33,7 +33,7 @@ public class Test {
         System.out.println(list);
 
 
-        WeightedGraph<String, Integer> weightedGraph= new WeightedGraph<>(true);
+        WeightedGraph<String, Integer> weightedGraph= new WeightedGraph<>(false);
         weightedGraph.addVertex("a");
         weightedGraph.addVertex("b");
         weightedGraph.addVertex("c");
@@ -52,7 +52,12 @@ public class Test {
         weightedGraph.addEdge("f", "e", 3);
         weightedGraph.addEdge("g", "c", 4);
         Dijsktra<String, Integer> dijsktra= new Dijsktra<>(weightedGraph);
-        dijsktra.shortestPath("a");
-        dijsktra.printPath("g");
+        //dijsktra.shortestPath("a");
+        //dijsktra.printPath("h");
+        BellmanFord<String, Integer> bellmanFord= new BellmanFord<>(weightedGraph);
+        bellmanFord.shortestPath("a");
+        bellmanFord.printPath("h");
+
     }
 }
+//h 7 d 5 e 4 f 1 a 0

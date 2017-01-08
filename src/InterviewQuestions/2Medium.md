@@ -316,3 +316,40 @@ Output: "012"
 Example 2:
 Input: "fviefuro"
 Output: "45"
+
+41) **Binary Tree Zigzag Level Order Traversal**
+Given a binary tree, return the zigzag level order traversal of its nodes' values. (ie, from left to right, then right to left for the next level and alternate between).
+For example:
+Given binary tree [3,9,20,null,null,15,7],
+    3
+   / \
+  9  20
+    /  \
+   15   7
+return its zigzag level order traversal as:
+[
+  [3],
+  [20,9],
+  [15,7]
+]
+42)**Magical String** 
+A magical string S consists of only '1' and '2' and obeys the following rules:
+The string S is magical because concatenating the number of contiguous occurrences of characters '1' and '2' generates the string S itself.
+The first few elements of string S is the following: S = "1221121221221121122……"
+If we group the consecutive '1's and '2's in S, it will be:
+1 22 11 2 1 22 1 22 11 2 11 22 ......
+and the occurrences of '1's or '2's in each group are:
+1 2	2 1 1 2 1 2 2 1 2 2 ......
+You can see that the occurrence sequence above is the S itself.
+Given an integer N as input, return the number of '1's in the first N number in the magical string S.
+Note: N will not exceed 100,000.
+
+43)**License Key Formatting**
+Now you are given a string S, which represents a software license key which we would like to format. The string S is composed of alphanumerical characters and dashes. The dashes split the alphanumerical characters within the string into groups. (i.e. if there are M dashes, the string is split into M+1 groups). The dashes in the given string are possibly misplaced.
+We want each group of characters to be of length K (except for possibly the first group, which could be shorter, but still must contain at least one character). To satisfy this requirement, we will reinsert dashes. Additionally, all the lower case letters in the string must be converted to upper case.
+So, you are given a non-empty string S, representing a license key to format, and an integer K. And you need to return the license key formatted according to the description above.
+Example 1:
+Input: S = "2-4A0r7-4k", K = 4
+Output: "24A0-R74K"
+Explanation: The string S has been split into two parts, each part has 4 characters.
+
