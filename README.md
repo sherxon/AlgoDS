@@ -3,56 +3,56 @@ This is the collection of **algorithms, data structures** and **Interview Questi
 This repository contains my solutions for common algorithmic problems and implementation of Data Structures in Java.
 I've created this repository to learn about algorithms. I am adding solutions continuously.   
 
-Interview Questions package include 3 text files (_1Easy, 2Medium and 3Hard_) and **solutions** for each question.      
+Interview Questions package include 3 text files (_1easy, 2medium and 3Hard_) and **solutions** for each question.      
 
 **8 Algorithms, 2 Data Structures** and **106 Interview Questions with answers** are provided so far.
 
 ##Problems:
   
 ###Arrays
-1) [Rotate Array](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Easy/RotateArray.java)      
-2) [Contains Duplicate](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Easy/ContainsDuplicate.java)  
-3) [Find Peak Element](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Medium/FindPeakElement.java)  
-4) [Maximum Subarray](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Medium/MaximumSubarray.java)  
-5) [Kth Largest Element in an Array](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Medium/KthLargestElementinanArray.java)  
+1) [Rotate Array](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/RotateArray.java)      
+2) [Contains Duplicate](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/ContainsDuplicate.java)  
+3) [Find Peak Element](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/FindPeakElement.java)  
+4) [Maximum Subarray](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/MaximumSubarray.java)  
+5) [Kth Largest Element in an Array](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/KthLargestElementinanArray.java)  
 6) [Find All Duplicates in an Array]()
-[And many other array problems](https://github.com/sherxon/AlgoDS/tree/master/src/InterviewQuestions)
+[And many other array problems](https://github.com/sherxon/AlgoDS/tree/master/src/interviewquestions)
 
 ###Linked List
-1) [Delete Node in a Linked List](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Easy/DeleteNodeSingleLinkedList.java)  
-2) [Palindrome Linked List](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Easy/PalindromeLinkedList.java)  
-3) [Reverse Linked List](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Easy/ReverseLinkedList.java)  
-4) [Intersection of Two Linked Lists](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Easy/IntersectionofTwoLinkedLists.java)  
-5) [Linked List Cycle](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Easy/LinkedListCycle.java)  
-5) [Remove Nth Node From End of List](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Easy/RemoveNthNodeFromEndofList.java)   
-6) [Sort List](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Medium/SortList.java)  
- [And many other Linked list problems](https://github.com/sherxon/AlgoDS/tree/master/src/InterviewQuestions)
+1) [Delete Node in a Linked List](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/DeleteNodeSingleLinkedList.java)  
+2) [Palindrome Linked List](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/PalindromeLinkedList.java)  
+3) [Reverse Linked List](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/ReverseLinkedList.java)  
+4) [Intersection of Two Linked Lists](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/IntersectionofTwoLinkedLists.java)  
+5) [Linked List Cycle](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/LinkedListCycle.java)  
+5) [Remove Nth Node From End of List](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/RemoveNthNodeFromEndofList.java)   
+6) [Merge Sort List](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/SortList.java)  
+ [And many other Linked list problems](https://github.com/sherxon/AlgoDS/tree/master/src/interviewquestions)
  
 ###Binary Tree
-1) [Binary Tree Level Order Traversal](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Easy/BinaryTreeLevelOrderTraversal.java)  
-2) [Sum of Left Leaves](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Easy/SumofLeftLeaves.java)  
-3) [Invert Binary Tree](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Easy/InvertBinaryTree.java)  
-4) [Binary Search Tree Iterator](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Medium/BinarySearchTreeIterator.java)  
-5) [Binary Tree Postorder Traversal](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Hard/PostOrderTraversalTree.java)  
-6) [Binary Tree Preorder Traversal](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Medium/BinaryTreePreorderTraversal.java)  
-7) [Flatten Binary Tree to Linked List](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Medium/FlattenBinaryTreetoLinkedList.java)  
-8) [Symmetric Tree](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Easy/SymmetricTree.java)  
-9) [Binary Tree Inorder Traversal](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Medium/BinaryTreeInorderTraversal.java)  
-10) [Same Tree](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Easy/SameTree.java)  
-11) [Maximum Depth of Binary Tree](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Easy/MaximumDepthofBinaryTree.java)  
-12) [Balanced Binary Tree](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Easy/BalancedBinaryTree.java)  
-13) [Minimum Depth of Binary Tree](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Easy/MinimumDepthofBinaryTree.java)  
-14) [Merge k Sorted Lists](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Medium/MergekSortedLists.java)   
-15) [Sorted List to Balanced Binary Search Tree](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Medium/ConvertSortedListtoBinarySearchTree.java)   
-16) [Validate Binary Search Tree](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Medium/ValidateBinarySearchTree.java)  
-17) [Sorted List to Balanced BST ](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Medium/ConvertSortedArraytoBinarySearchTree.java)  
-18) [Kth Smallest Element in a BST](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Medium/KthSmallestElementinaBST.java)  
-19) [Binary Tree Zigzag Level Order Traversal](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Medium/ZigZagOrderLevelTraversalBST.java)  
- [And many other tree problems](https://github.com/sherxon/AlgoDS/tree/master/src/InterviewQuestions)  
+1) [Binary Tree Level Order Traversal](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/BinaryTreeLevelOrderTraversal.java)  
+2) [Sum of Left Leaves](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/SumofLeftLeaves.java)  
+3) [Invert Binary Tree](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/InvertBinaryTree.java)  
+4) [Binary Search Tree Iterator](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/BinarySearchTreeIterator.java)  
+5) [Binary Tree Postorder Traversal](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/hard/PostOrderTraversalTree.java)  
+6) [Binary Tree Preorder Traversal](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/BinaryTreePreorderTraversal.java)  
+7) [Flatten Binary Tree to Linked List](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/FlattenBinaryTreetoLinkedList.java)  
+8) [Symmetric Tree](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/SymmetricTree.java)  
+9) [Binary Tree Inorder Traversal](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/BinaryTreeInorderTraversal.java)  
+10) [Same Tree](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/SameTree.java)  
+11) [Maximum Depth of Binary Tree](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/MaximumDepthofBinaryTree.java)  
+12) [Balanced Binary Tree](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/BalancedBinaryTree.java)  
+13) [Minimum Depth of Binary Tree](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/MinimumDepthofBinaryTree.java)  
+14) [Merge k Sorted Lists](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/MergekSortedLists.java)   
+15) [Sorted List to Balanced Binary Search Tree](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/ConvertSortedListtoBinarySearchTree.java)   
+16) [Validate Binary Search Tree](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/ValidateBinarySearchTree.java)  
+17) [Sorted List to Balanced BST ](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/ConvertSortedArraytoBinarySearchTree.java)  
+18) [Kth Smallest Element in a BST](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/KthSmallestElementinaBST.java)  
+19) [Binary Tree Zigzag Level Order Traversal](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/ZigZagOrderLevelTraversalBST.java)  
+ [And many other tree problems](https://github.com/sherxon/AlgoDS/tree/master/src/interviewquestions)  
   
 ###Math
-1) [Integer Break](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Medium/IntegerBreak.java)  
-2) [Reverse Bits](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Easy/ReverseBits.java)   
+1) [Integer Break](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/IntegerBreak.java)  
+2) [Reverse Bits](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/ReverseBits.java)   
 
 ##Algorithms
   
@@ -69,6 +69,7 @@ Interview Questions package include 3 text files (_1Easy, 2Medium and 3Hard_) an
 4) KrusKal's Minimum Spanning Tree (MST)  
 5) [Topological Sorting](https://github.com/sherxon/AlgoDS/blob/master/src/algo/graph/TopologicalSorting.java)      
 6) [Shortest Path Dijsktra](https://github.com/sherxon/AlgoDS/blob/master/src/algo/graph/Dijsktra.java)  
+7) [Shortest Path Bellman-Ford](https://github.com/sherxon/AlgoDS/blob/master/src/algo/graph/BellmanFord.java)    
 
 ##Data Structure:      
 
