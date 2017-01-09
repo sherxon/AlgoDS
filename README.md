@@ -24,7 +24,8 @@ Interview Questions package include 3 text files (_1Easy, 2Medium and 3Hard_) an
 3) [Reverse Linked List](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Easy/ReverseLinkedList.java)  
 4) [Intersection of Two Linked Lists](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Easy/IntersectionofTwoLinkedLists.java)  
 5) [Linked List Cycle](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Easy/LinkedListCycle.java)  
-5) [Remove Nth Node From End of List](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Easy/RemoveNthNodeFromEndofList)   
+5) [Remove Nth Node From End of List](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Easy/RemoveNthNodeFromEndofList.java)   
+6) [Sort List](https://github.com/sherxon/AlgoDS/blob/master/src/InterviewQuestions/Medium/SortList.java)  
  [And many other Linked list problems](https://github.com/sherxon/AlgoDS/tree/master/src/InterviewQuestions)
  
 ###Binary Tree
