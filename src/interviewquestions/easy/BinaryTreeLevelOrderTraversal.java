@@ -38,4 +38,18 @@ public class BinaryTreeLevelOrderTraversal {
         }
         return l;
     }
+
+    void levelOrder2(TreeNode root){
+        if(root==null)return;;
+        Queue<TreeNode> q= new LinkedList<>();
+        q.add(root);
+        while (!q.isEmpty()){
+            TreeNode x=q.poll();
+            System.out.println(x.val);
+            if(x.left!=null)
+                q.add(x.left);
+            if(x.right!=null)
+                q.add(x.right);
+        }
+    }
 }

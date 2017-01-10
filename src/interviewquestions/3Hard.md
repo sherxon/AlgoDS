@@ -15,4 +15,6 @@ Note: Recursive solution is trivial, could you do it iteratively?
 A linked list is given such that each node contains an additional random pointer which could point to any node in the list or null.
 Return a deep copy of the list.
 
-3)  
+3)**Populating Next Right Pointers in Each Node II**
+Follow up for problem "Populating Next Right Pointers in Each Node".
+What if the given tree could be any binary tree? Would your previous solution still work?

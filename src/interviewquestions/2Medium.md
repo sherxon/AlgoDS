@@ -364,3 +364,54 @@ Given m, n satisfy the following condition:
 
 45)**Sort List** 
 Sort a linked list in O(n log n) time using constant space complexity.
+
+46)**Reverse Words in a String**
+Given an input string, reverse the string word by word.
+For example,
+Given s = "the sky is blue",
+return "blue is sky the".
+
+47) **Is Subsequence**
+Given a string s and a string t, check if s is subsequence of t.
+You may assume that there is only lower case English letters in both s and t. t is potentially a very long (length ~= 500,000) string, and s is a short string (<=100).
+A subsequence of a string is a new string which is formed from the original string by deleting some (can be none) of the characters without disturbing the relative positions of the remaining characters. (ie, "ace" is a subsequence of "abcde" while "aec" is not).
+
+48)**Binary Tree Right Side View**
+Given a binary tree, imagine yourself standing on the right side of it, return the values of the nodes you can see ordered from top to bottom.
+For example:
+Given the following binary tree,
+   1            <---
+ /   \
+2     3         <---
+ \     \
+  5     4       <---
+You should return [1, 3, 4].
+
+49) **Populating Next Right Pointers in Each Node**
+Given a binary tree
+    class TreeLinkNode {
+      TreeLinkNode left;
+      TreeLinkNode right;
+      TreeLinkNode next;
+      int val;
+    }
+Populate each next pointer to point to its next right node. If there is no next right node, the next pointer should be set to NULL.
+Initially, all next pointers are set to NULL.
+Note:
+You may only use constant extra space.
+You may assume that it is a perfect binary tree (ie, all leaves are at the same level, and every parent has two children).
+For example,
+Given the following perfect binary tree,
+         1
+       /  \
+      2    3
+     / \  / \
+    4  5  6  7
+After calling your function, the tree should look like:
+         1 -> NULL
+       /  \
+      2 -> 3 -> NULL
+     / \  / \
+    4->5->6->7 -> NULL
+
+50)    
