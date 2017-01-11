@@ -73,8 +73,8 @@ Interview Questions package include 3 text files (_1easy, 2medium and 3Hard_) an
 7) [Shortest Path Bellman-Ford](https://github.com/sherxon/AlgoDS/blob/master/src/algo/graph/BellmanFord.java)    
 
 ###Dynamic Programming
-1)Introduction
-2)Fibonacci Numbers
+1)[Introduction](https://github.com/sherxon/AlgoDS/blob/master/src/algo/DPIntroduction.md)  
+2)Fibonacci Numbers  
 
 
 ##Data Structure:      
