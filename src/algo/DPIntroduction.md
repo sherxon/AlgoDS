@@ -19,8 +19,8 @@ Notice that if we call, say, fib(5), we produce a call tree that calls the funct
 Now, suppose we have a simple map object, m, which maps each value of fib that has already been calculated to its result, and we modify our function to use it and update it. The resulting function requires only O(n) time instead of exponential time (but requires O(n) space):    
   
 var m := map(0 → 0, 1 → 1)  
-    function fib(n)  
-        if key n is not in map m   
+    + function fib(n)  
+        + if key n is not in map m   
             m[n] := fib(n − 1) + fib(n − 2)  
         return m[n]  
 We can also use constant space in bottom-up approach:  
