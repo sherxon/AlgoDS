@@ -28,7 +28,6 @@ public class BinaryTreeLevelOrderTraversal {
                 ll.clear();
             }
 
-
             if(t.left!=null)qq.add(t.left);
             if(t.right!=null)qq.add(t.right);
             if(q.isEmpty()){
