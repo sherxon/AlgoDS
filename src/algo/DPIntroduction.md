@@ -3,6 +3,22 @@ breaking it down into a collection of simpler subproblems, solving each of those
 and storing their solutions – ideally, using a memory-based data structure.
 For example, in order computer Nth fibonacci number or to find shortest path, we can use DP and get result in
 much easier and optimized way.   
+DP techniques help us to solve exponential problems in Polynomoil time.   
+<br>
+Notes From MIT(6.006)->   
+DP => careful brute force  
+DP => guessing + recursion + memoization  
+DP => shortest path in some DAG  
+Time complexity => # subproblems x time/subproblem (treating recursion calls as O(1))  
+  
+These are five interdependant steps to DP  
+1) define subproblems  
+2) guess ( part of subproblems)  
+3) relate subproblem solutions  
+4) build an algorithm => recurse and memoize or build DP table bottom up  
+5) solve original problem    
+  
+
 Naive approach to calculate Nth Fibonacci number is:  
    function fib(n)  
        if n <= 1 return n  
@@ -19,8 +35,8 @@ Notice that if we call, say, fib(5), we produce a call tree that calls the funct
 Now, suppose we have a simple map object, m, which maps each value of fib that has already been calculated to its result, and we modify our function to use it and update it. The resulting function requires only O(n) time instead of exponential time (but requires O(n) space):    
   
 var m := map(0 → 0, 1 → 1)  
-    + function fib(n)  
-        + if key n is not in map m   
+     function fib(n)  
+        if key n is not in map m   
             m[n] := fib(n − 1) + fib(n − 2)  
         return m[n]  
 We can also use constant space in bottom-up approach:  
