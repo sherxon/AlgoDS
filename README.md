@@ -53,6 +53,8 @@ Interview Questions package include 3 text files (_1easy, 2medium and 3Hard_) an
 ###Math
 1) [Integer Break](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/IntegerBreak.java)  
 2) [Reverse Bits](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/ReverseBits.java)   
+3) [Palindrome Number](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/PalindromeNumber.java)  
+4) [Math.pow](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/Pow.java)  
 
 ##Algorithms
   

@@ -7,9 +7,7 @@ import java.util.List;
  * Created by sherxon on 1/11/17.
  */
 public class LetterCombinationsofaPhoneNumber {
-    public static void main(String[] args) {
-        //System.out.println(letterCombinations("234"));
-    }
+
 
     List<String> letterCombinations(String digits) {
         if (digits == null || digits.length() == 0) return new ArrayList<>();
