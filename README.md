@@ -48,6 +48,8 @@ Interview Questions package include 3 text files (_1easy, 2medium and 3Hard_) an
 17) [Sorted List to Balanced BST ](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/ConvertSortedArraytoBinarySearchTree.java)  
 18) [Kth Smallest Element in a BST](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/KthSmallestElementinaBST.java)  
 19) [Binary Tree Zigzag Level Order Traversal](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/ZigZagOrderLevelTraversalBST.java)  
+20) [Delete Node in a BST](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/DeleteNodeinaBST.java)  
+21) [Lowest Common Ancestor of BST] (https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/LowestCommonAncestorBST.java)  
  [And many other tree problems](https://github.com/sherxon/AlgoDS/tree/master/src/interviewquestions)  
   
 ###Math
@@ -58,6 +60,11 @@ Interview Questions package include 3 text files (_1easy, 2medium and 3Hard_) an
 5) [Jug and Water Problem](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/WaterAndJugProblem.java)  
 
  
+###Misc
+1)[Permutations](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/Permutations.java)  
+2)[Subsets](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/SubSets.java)     
+
+
 ##Algorithms
   
 ###Sorting And Searching:    

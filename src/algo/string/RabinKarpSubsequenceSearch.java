@@ -23,6 +23,7 @@ public class RabinKarpSubsequenceSearch {
         System.out.println(rks.searchPattern("Sherxon".toCharArray(), "hs".toCharArray()));
         System.out.println(rks.searchPattern("Sherxon".toCharArray(), "erx".toCharArray()));
         System.out.println(rks.searchPattern("Sherxon".toCharArray(), "S".toCharArray()));
+
     }
 
     public int searchPattern(char[] text, char[] pattern) {
