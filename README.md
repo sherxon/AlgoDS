@@ -67,7 +67,6 @@ Interview Questions package include 3 text files (_1easy, 2medium and 3Hard_) an
 4) [Counting Sort](https://github.com/sherxon/AlgoDS/blob/master/src/algo/sortingandsearching/CountingSort.java)  
 
 ###Graphs:  
-0) Introduction  
 1) [Breadth First Search (BFS)](https://github.com/sherxon/AlgoDS/blob/master/src/algo/graph/BFS.java)  
 2) [Depth First Search (DFS)](https://github.com/sherxon/AlgoDS/blob/master/src/algo/graph/DFS.java)  
 3) Prim's Minimum Spanning Tree (MST)  
@@ -77,7 +76,6 @@ Interview Questions package include 3 text files (_1easy, 2medium and 3Hard_) an
 7) [Shortest Path Bellman-Ford](https://github.com/sherxon/AlgoDS/blob/master/src/algo/graph/BellmanFord.java)    
 
 ###Dynamic Programming
-0)[Introduction](https://github.com/sherxon/AlgoDS/blob/master/src/algo/DPIntroduction.md)  
 1)Fibonacci Numbers  
 
 ###String
