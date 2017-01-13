@@ -15,8 +15,8 @@ Interview Questions package include 3 text files (_1easy, 2medium and 3Hard_) an
 3) [Find Peak Element](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/FindPeakElement.java)  
 4) [Maximum Subarray](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/MaximumSubarray.java)  
 5) [Kth Largest Element in an Array](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/KthLargestElementinanArray.java)  
-6) [Find All Duplicates in an Array]()
-[And many other array problems](https://github.com/sherxon/AlgoDS/tree/master/src/interviewquestions)
+6) [Find All Duplicates in an Array](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/FindAllDuplicatesinanArray.java)  
+[And many other array problems](https://github.com/sherxon/AlgoDS/tree/master/src/interviewquestions)  
 
 ###Linked List
 1) [Delete Node in a Linked List](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/DeleteNodeSingleLinkedList.java)  
@@ -55,7 +55,9 @@ Interview Questions package include 3 text files (_1easy, 2medium and 3Hard_) an
 2) [Reverse Bits](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/ReverseBits.java)   
 3) [Palindrome Number](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/PalindromeNumber.java)  
 4) [Math.pow](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/Pow.java)  
+5) [Jug and Water Problem](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/WaterAndJugProblem.java)  
 
+ 
 ##Algorithms
   
 ###Sorting And Searching:    
@@ -78,6 +80,8 @@ Interview Questions package include 3 text files (_1easy, 2medium and 3Hard_) an
 0)[Introduction](https://github.com/sherxon/AlgoDS/blob/master/src/algo/DPIntroduction.md)  
 1)Fibonacci Numbers  
 
+###String
+1)[Rabin Karp Subsequence search](https://github.com/sherxon/AlgoDS/blob/master/src/algo/string/RabinKarpSubsequenceSearch.java)   
 
 ##Data Structure:      
 

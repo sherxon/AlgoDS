@@ -37,12 +37,12 @@ public class TopologicalSorting<T> {
     }
 
     private void dfs(Vertex<T> source, List<T> list) {
-        list.add(source.getValue());
         source.setVisited(true);
         for (Vertex<T> vertex : source.getNeighbors()) {
             if(!vertex.isVisited()){
                 dfs(vertex, list);
             }
         }
+        list.add(source.getValue());
     }
 }

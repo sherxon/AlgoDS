@@ -156,7 +156,7 @@ Given "egg", "add", return true.
 Given "foo", "bar", return false.
 Given "paper", "title", return true.
 
-29)** Linked List Cycle**
+29)**Linked List Cycle**
 Given a linked list, determine if it has a cycle in it.
 Can you solve it without using extra space?
 
@@ -172,7 +172,7 @@ For example,
 Given 1->1->2, return 1->2.
 Given 1->1->2->3->3, return 1->2->3.
 
-33)** Remove Linked List Elements**
+33)**Remove Linked List Elements**
 Remove all elements from a linked list of integers that have value val.
 Example
 Given: 1 --> 2 --> 6 --> 3 --> 4 --> 5 --> 6, val = 6
