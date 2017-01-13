@@ -410,4 +410,9 @@ According to the definition of LCA on Wikipedia: “The lowest common ancestor i
          3   5
 For example, the lowest common ancestor (LCA) of nodes 2 and 8 is 6. Another example is LCA of nodes 2 and 4 is 2, since a node can be a descendant of itself according to the LCA definition.
 
-66)
+66)**Number of Segments in a String**
+Count the number of segments in a string, where a segment is defined to be a contiguous sequence of non-space characters.
+Please note that the string does not contain any non-printable characters.
+Example:
+Input: "Hello, my name is John"
+Output: 5
