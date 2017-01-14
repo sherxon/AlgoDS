@@ -68,8 +68,8 @@ public class IntersectionofTwoLinkedLists {
         ListNode yhead=y;
 
         while (xhead != yhead){
-            xhead = xhead == null ? yhead : xhead.next;
-            yhead = yhead == null ? xhead : yhead.next;
+            xhead = xhead == null ? y : xhead.next;
+            yhead = yhead == null ? x : yhead.next;
         }
         return xhead;
     }
