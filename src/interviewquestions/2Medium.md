@@ -504,3 +504,17 @@ The two tuples are:
 There are N gas stations along a circular route, where the amount of gas at station i is gas[i].
 You have a car with an unlimited gas tank and it costs cost[i] of gas to travel from station i to its next station (i+1). You begin the journey with an empty tank at one of the gas stations.
 Return the starting gas station's index if you can travel around the circuit once, otherwise return -1.
+
+59)**Integer Replacement**
+Given a positive integer n and you can do operations as follow:
+
+If n is even, replace n with n/2.
+If n is odd, you can replace n with either n + 1 or n - 1.
+What is the minimum number of replacements needed for n to become 1?
+Example 1:
+Input:
+8
+Output:
+3
+Explanation:
+8 -> 4 -> 2 -> 1

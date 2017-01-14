@@ -5,7 +5,7 @@ I've created this repository to learn about algorithms. I am adding solutions co
 
 Interview Questions package include 3 text files (_1easy, 2medium and 3Hard_) and **solutions** for each question.      
 
-**8 Algorithms, 2 Data Structures** and **106 Interview Questions with answers** are provided so far.
+**8 Algorithms, 2 Data Structures** and **120 Interview Questions with answers** are provided so far.
 
 ##Problems:
   
@@ -58,8 +58,9 @@ Interview Questions package include 3 text files (_1easy, 2medium and 3Hard_) an
 3) [Palindrome Number](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/PalindromeNumber.java)  
 4) [Math.pow](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/Pow.java)  
 5) [Jug and Water Problem](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/WaterAndJugProblem.java)  
+6) [Sieve of Eratosthenes] (https://github.com/sherxon/AlgoDS/blob/master/src/algo/numerals/SieveofEratosthenes.java)  
+7) [Fermat's primality] (https://github.com/sherxon/AlgoDS/blob/master/src/algo/numerals/FermatPrimality.java)     
 
- 
 ###Misc
 1)[Permutations](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/Permutations.java)  
 2)[Subsets](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/SubSets.java)     
