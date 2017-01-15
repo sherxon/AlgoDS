@@ -3,9 +3,9 @@ package interviewquestions.medium;
 /**
  * Created by sherxon on 1/13/17.
  */
-public class IntegerReplacement {
+public class ReplacementInteger {
     public static void main(String[] args) {
-        IntegerReplacement ir = new IntegerReplacement();
+        ReplacementInteger ir = new ReplacementInteger();
         System.out.println(ir.integerReplacement(65535));
 
     }
