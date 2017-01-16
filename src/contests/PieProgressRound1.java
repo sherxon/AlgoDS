@@ -9,7 +9,7 @@ import java.util.StringTokenizer;
 /**
  * Created by sherxon on 1/14/17.
  */
-public class Round1Test001 {
+public class PieProgressRound1 {
     public static void main(String[] args) {
         FastReader reader = new FastReader();
         int t = reader.nextInt();
