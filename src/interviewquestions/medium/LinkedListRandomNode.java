@@ -1,6 +1,6 @@
 package interviewquestions.medium;
 
-import interviewquestions.ListNode;
+import interviewquestions.utils.ListNode;
 
 /**
  * Created by sherxon on 1/2/17.
@@ -12,6 +12,11 @@ public class LinkedListRandomNode {
     ListNode head;
     //List<ListNode> a;
     ListNode x;
+    /**
+     * Returns a random node's value.
+     */
+    int count = 0;
+
     /** @param head The linked list's head.
     Note that the head is guaranteed to be not null, so it contains at least one node. */
     public LinkedListRandomNode(ListNode head) {
@@ -25,9 +30,6 @@ public class LinkedListRandomNode {
         // }
 
     }
-
-    /** Returns a random node's value. */
-    int count=0;
 
     public int getRandom() {
         // int rand=(int) (Math.random()*a.size());

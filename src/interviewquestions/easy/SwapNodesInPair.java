@@ -1,6 +1,6 @@
 package interviewquestions.easy;
 
-import interviewquestions.ListNode;
+import interviewquestions.utils.ListNode;
 
 /**
  * Created by sherxon on 1/7/17.

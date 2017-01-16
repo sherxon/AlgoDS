@@ -1,11 +1,14 @@
 package interviewquestions.medium;
 
-import interviewquestions.ListNode;
+import interviewquestions.utils.ListNode;
 
 /**
  * Created by sherxon on 1/8/17.
  */
 public class ReorderList {
+    ListNode r = null;
+    boolean done = false;
+
     public static void main(String[] args) {
         ListNode listNode=new ListNode(1);
         listNode.next=new ListNode(2);
@@ -16,8 +19,7 @@ public class ReorderList {
         new ReorderList().reorderList(listNode);
         System.out.println(listNode);
     }
-    ListNode r =null;
-    boolean done=false;
+
     public void reorderList(ListNode head) {
         if(head==null)return;
         r=head;

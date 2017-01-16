@@ -1,6 +1,6 @@
 package interviewquestions.easy;
 
-import interviewquestions.TreeNode;
+import interviewquestions.utils.TreeNode;
 
 import java.util.LinkedList;
 import java.util.Queue;

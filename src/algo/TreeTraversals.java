@@ -1,6 +1,6 @@
 package algo;
 
-import interviewquestions.TreeNode;
+import interviewquestions.utils.TreeNode;
 
 /**
  * Created by sherxon on 1/3/17.

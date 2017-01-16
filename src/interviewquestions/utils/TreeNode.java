@@ -1,4 +1,4 @@
-package interviewquestions;
+package interviewquestions.utils;
 
 /**
  * Created by sherxon on 12/24/16.

@@ -1,6 +1,6 @@
 package interviewquestions.medium;
 
-import interviewquestions.UndirectedGraphNode;
+import interviewquestions.utils.UndirectedGraphNode;
 
 import java.util.HashMap;
 import java.util.Map;

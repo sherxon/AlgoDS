@@ -1,8 +1,9 @@
 package interviewquestions.medium;
 
-import interviewquestions.TreeNode;
+import interviewquestions.utils.TreeNode;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by sherxon on 12/25/16.

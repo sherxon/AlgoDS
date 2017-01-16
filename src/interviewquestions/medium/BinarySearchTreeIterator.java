@@ -1,6 +1,6 @@
 package interviewquestions.medium;
 
-import interviewquestions.TreeNode;
+import interviewquestions.utils.TreeNode;
 
 import java.util.Stack;
 

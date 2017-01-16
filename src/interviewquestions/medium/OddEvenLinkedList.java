@@ -1,6 +1,6 @@
 package interviewquestions.medium;
 
-import interviewquestions.ListNode;
+import interviewquestions.utils.ListNode;
 
 /**
  * Created by sherxon on 12/31/16.

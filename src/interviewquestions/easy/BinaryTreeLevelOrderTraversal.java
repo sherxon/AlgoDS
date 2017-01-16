@@ -1,6 +1,6 @@
 package interviewquestions.easy;
 
-import interviewquestions.TreeNode;
+import interviewquestions.utils.TreeNode;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -39,7 +39,7 @@ public class BinaryTreeLevelOrderTraversal {
     }
 
     void levelOrder2(TreeNode root){
-        if(root==null)return;;
+        if (root == null) return;
         Queue<TreeNode> q= new LinkedList<>();
         q.add(root);
         while (!q.isEmpty()){

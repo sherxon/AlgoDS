@@ -1,6 +1,6 @@
 package interviewquestions.hard;
 
-import interviewquestions.TreeNode;
+import interviewquestions.utils.TreeNode;
 
 import java.util.*;
 

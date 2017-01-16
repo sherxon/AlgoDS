@@ -1,6 +1,6 @@
 package interviewquestions.hard;
 
-import interviewquestions.RandomListNode;
+import interviewquestions.utils.RandomListNode;
 
 import java.util.HashMap;
 import java.util.Map;

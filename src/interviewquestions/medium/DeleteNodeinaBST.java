@@ -1,6 +1,6 @@
 package interviewquestions.medium;
 
-import interviewquestions.TreeNode;
+import interviewquestions.utils.TreeNode;
 
 /**
  * Created by sherxon on 1/12/17.
