@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
+import java.util.stream.Collectors;
 
 /**
  * Created by sherxon on 12/24/16.
@@ -14,25 +15,54 @@ public class BinaryTreeLevelOrderTraversal {
 
     public List<List<Integer>> levelOrder(TreeNode root) {
         List<List<Integer>> l=new LinkedList<>();
-        List<Integer> ll=new ArrayList<>();
-        Queue<TreeNode> q=new LinkedList<>();
+        if (root == null) return l;
+        List<Integer> helper = new ArrayList<>();
+        Queue<TreeNode> level = new LinkedList<>();
         Queue<TreeNode> qq=new LinkedList<>();
 
-        if(root!=null)q.add(root);
+        level.add(root);
 
-        while(!q.isEmpty()){
-            TreeNode t=q.remove();
-            ll.add(t.val);
-            if(q.isEmpty()){
-                l.add(new ArrayList<>(ll));
-                ll.clear();
+        while (!level.isEmpty()) {
+            TreeNode t = level.remove();
+            helper.add(t.val);
+            if (level.isEmpty()) {
+                l.add(new ArrayList<>(helper));
+                helper.clear();
             }
 
             if(t.left!=null)qq.add(t.left);
             if(t.right!=null)qq.add(t.right);
-            if(q.isEmpty()){
-                q.addAll(new LinkedList<>(qq));
+            if (level.isEmpty()) {
+                level.addAll(new LinkedList<>(qq));
                 qq.clear();
+            }
+        }
+        return l;
+    }
+
+    public List<List<Integer>> levelOrder3(TreeNode root) {
+        List<List<Integer>> l = new LinkedList<>();
+        if (root == null) return l;
+
+        Queue<TreeNode> level = new LinkedList<>();
+        Queue<TreeNode> qq = new LinkedList<>();
+
+        qq.add(root);
+        level.add(root);
+        List<Integer> temp = new ArrayList<>();
+        temp.add(root.val);
+        l.add(temp);
+        while (!qq.isEmpty()) {
+            TreeNode t = qq.remove();
+            level.remove();
+
+            if (t.left != null) qq.add(t.left);
+            if (t.right != null) qq.add(t.right);
+
+            if (level.isEmpty() && !qq.isEmpty()) {
+                List<Integer> lev = qq.stream().map(treeNode -> treeNode.val).collect(Collectors.toList());
+                l.add(lev);
+                level.addAll(new LinkedList<>(qq));
             }
         }
         return l;

@@ -7,10 +7,10 @@ import interviewquestions.utils.ListNode;
  */
 public class LinkedListCycle2 {
 
-    public ListNode detectCycle(ListNode x) {
-        if (x == null) return null;
-        ListNode slow = x;
-        ListNode fast = x.next;
+    public ListNode detectCycle(ListNode head) {
+        if (head == null) return null;
+        ListNode slow = head;
+        ListNode fast = head.next;
         while (fast != null && fast.next != null) {
             if (fast == slow) break;
             slow = slow.next;
@@ -18,7 +18,7 @@ public class LinkedListCycle2 {
         }
         ListNode temp = slow.next;
         slow.next = null;// break the link
-        ListNode link = findLink(x, temp);
+        ListNode link = findLink(head, temp);
         slow.next = temp; // link the break
         return link;
     }

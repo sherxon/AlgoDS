@@ -20,20 +20,20 @@ public class ReorderList {
         slow.next = null; // break the link
 
         // reverse the right
-        ListNode nh = right;
+        ListNode newHead = right;
         while (right != null && right.next != null) {
             ListNode temp = right.next;
             right.next = temp.next;
-            temp.next = nh;
-            nh = temp;
+            temp.next = newHead;
+            newHead = temp;
         }
-
+        // merge two lists
         ListNode xx = head;
         while (xx != null) {
             ListNode temp = xx.next;
-            xx.next = nh;
-            if (nh != null) {
-                nh = nh.next;
+            xx.next = newHead;
+            if (newHead != null) {
+                newHead = newHead.next;
                 xx.next.next = temp;
             }
 
