@@ -603,4 +603,8 @@ Return 3. The paths that sum to 8 are:
 2.  5 -> 2 -> 1
 3. -3 -> 11
 
-69)
+69)Unique Paths
+A robot is located at the top-left corner of a m x n grid (marked 'Start' in the diagram below).
+The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid (marked 'Finish' in the diagram below).
+How many possible unique paths are there?
+
