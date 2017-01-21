@@ -50,7 +50,7 @@ public class PieProgressRound1 {
                 if (mins.containsKey(jt) && !mins.get(jt).isEmpty())
                     mins.get(jt).poll();
 
-                //System.out.println(tempCost + " " + minCost);
+                //System.out.txt.println(tempCost + " " + minCost);
             }
             sb.append("Case #" + i + ": " + cost + "\n");
 

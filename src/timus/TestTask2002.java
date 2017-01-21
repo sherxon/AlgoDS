@@ -18,7 +18,7 @@ public class TestTask2002 {
             if(!logs.containsKey(s[1])){
                 if("login".equals(s[0]) || "logout".equals(s[0])) res= "fail: no such user";
                 else {
-                    logs.put(s[1], new Log(s[2], s[1], 0)); //registered log out
+                    logs.put(s[1], new Log(s[2], s[1], 0)); //registered log out.txt
                     res="success: new user added";
                 }
             }else{
@@ -31,9 +31,9 @@ public class TestTask2002 {
                        logs.get(s[1]).status=1;
                    }
                }else {
-                   if(logs.get(s[1]).status==0)res="fail: already logged out";
+                   if (logs.get(s[1]).status == 0) res = "fail: already logged out.txt";
                    else  {
-                       res="success: user logged out";
+                       res = "success: user logged out.txt";
                        logs.get(s[1]).status=0;
                    }
                }
