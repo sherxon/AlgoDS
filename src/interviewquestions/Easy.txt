@@ -452,3 +452,13 @@ For a web developer, it is very important to know how to design a web page's siz
 1. The area of the rectangular web page you designed must equal to the given target area.
 2. The width W should not be larger than the length L, which means L >= W.
 3. The difference between length L and width W should be as small as possible.
+
+72)Length of Last Word
+Given a string s consists of upper/lower-case alphabets and empty space characters ' ', return the length of last word in the string.
+If the last word does not exist, return 0.
+Note: A word is defined as a character sequence consists of non-space characters only.
+For example,
+Given s = "Hello World",
+return 5.
+
+73)
