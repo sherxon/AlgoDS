@@ -52,6 +52,8 @@ Interview Questions package include 3 text files (_1easy, 2medium and 3Hard_) an
 19) [Binary Tree Zigzag Level Order Traversal](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/ZigZagOrderLevelTraversalBST.java)  
 20) [Delete Node in a BST](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/DeleteNodeinaBST.java)  
 21) [Lowest Common Ancestor of BST] (https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/LowestCommonAncestorBST.java)  
+22) [Binary Tree Left Side View] (https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/BinaryTreeLeftSIdeView.java)  
+22) [Binary Tree Right Side View] (https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/BinaryTreeRightSideView.java)  
  [And many other tree problems](https://github.com/sherxon/AlgoDS/tree/master/src/interviewquestions)  
   
 ###Math
