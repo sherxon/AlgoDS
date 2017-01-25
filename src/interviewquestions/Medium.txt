@@ -670,4 +670,22 @@ Your output answer is guaranteed to be fitted in a 32-bit integer.
 
 74)Binary Tree Left Side View
 
-75)
+75)Summary Ranges
+Given a sorted integer array without duplicates, return the summary of its ranges.
+For example, given [0,1,2,4,5,7], return ["0->2","4->5","7"].
+
+76)Subsets II
+Given a collection of integers that might contain duplicates, nums, return all possible subsets.
+Note: The solution set must not contain duplicate subsets.
+For example,
+If nums = [1,2,2], a solution is:
+[
+  [2],
+  [1],
+  [1,2,2],
+  [2,2],
+  [1,2],
+  []
+]
+
+77)
