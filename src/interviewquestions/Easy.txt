@@ -468,4 +468,10 @@ Design an algorithm to find the maximum profit. You may complete as many transac
 74)Longest Common Prefix
 Write a function to find the longest common prefix string amongst an array of strings.
 
-75)
+75)Add Binary
+Given two binary strings, return their sum (also a binary string).
+
+For example,
+a = "11"
+b = "1"
+Return "100".
