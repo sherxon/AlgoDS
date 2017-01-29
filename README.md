@@ -95,6 +95,7 @@ Interview Questions package include 3 text files (_1easy, 2medium and 3Hard_) an
 1)[Rabin Karp Subsequence search](https://github.com/sherxon/AlgoDS/blob/master/src/algo/string/RabinKarpSubsequenceSearch.java)   
 2)[Ransom Note](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/RansomNote.java)  
 3)[Reverse String](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/ReverseString.java)  
+4)[Longest Common Prefix](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/LongestCommonPrefix.java)    
 
 ##Data Structure:      
 
