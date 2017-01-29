@@ -4,7 +4,6 @@ package interviewquestions.medium;
  * Created by sherxon on 1/28/17.
  */
 public class GameofLife {
-
     static void gameOfLife(int[][] a) {
         for (int i = 0; i < a.length; i++) {
             for (int j = 0; j < a[i].length; j++) {

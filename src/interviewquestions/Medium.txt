@@ -750,3 +750,12 @@ Write a function to compute the next state (after one update) of the board given
 Follow up:
 Could you solve it in-place? Remember that the board needs to be updated at the same time: You cannot update some cells first and then use their updated values to update other cells.
 In this question, we represent the board using a 2D array. In principle, the board is infinite, which would cause problems when the active area encroaches the border of the array. How would you address these problems?
+
+82)Merge Intervals
+Given a collection of intervals, merge all overlapping intervals.
+For example,
+Given [1,3],[2,6],[8,10],[15,18],
+return [1,6],[8,10],[15,18].
+
+83)
+
