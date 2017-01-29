@@ -13,10 +13,6 @@ import java.util.Map;
 public class FindModeinBST {
     int max = 1;
 
-    public static void main(String[] args) {
-
-    }
-
     public int[] findMode(TreeNode root) {
         if (root == null) return new int[0];
         Map<Integer, Integer> map = new HashMap<>();

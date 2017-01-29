@@ -4,9 +4,6 @@ package interviewquestions.easy;
  * Created by sherxon on 1/29/17.
  */
 public class BestTimeToBuyandSellStock2 {
-    public static void main(String[] args) {
-
-    }
 
     public int maxProfit(int[] a) {
         if (a.length < 2) return 0;
