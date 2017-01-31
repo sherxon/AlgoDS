@@ -1,16 +1,11 @@
-package contests;
+package interviewquestions.medium;
 
 /**
  * Created by sherxon on 1/28/17.
  */
 public class TeemoAttacking {
-    public static void main(String[] args) {
-        System.out.println(new TeemoAttacking().findPosisonedDuration(new int[]
-                        {1, 2, 3}, 5)
-        );
-    }
 
-    public int findPosisonedDuration(int[] a, int t) {
+    public int findPoisonedDuration(int[] a, int t) {
         if (a.length == 0 || t == 0) return 0;
         if (a.length == 1) return t;
 
