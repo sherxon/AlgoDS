@@ -67,8 +67,9 @@ Interview Questions package include 3 text files (_1easy, 2medium and 3Hard_) an
 7) [Fermat's primality] (https://github.com/sherxon/AlgoDS/blob/master/src/algo/numerals/FermatPrimality.java)     
 
 ###Misc
-1)[Permutations](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/Permutations.java)  
-2)[Subsets](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/SubSets.java)     
+1)[Union Find](https://github.com/sherxon/AlgoDS/blob/master/src/algo/UnionFind.java)  
+2)[Permutations](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/Permutations.java)  
+3)[Subsets](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/SubSets.java)     
 
 
 ##Algorithms
@@ -106,7 +107,5 @@ Interview Questions package include 3 text files (_1easy, 2medium and 3Hard_) an
 3)[AVL Tree](https://github.com/sherxon/AlgoDS/blob/master/src/ds/AVLTree.java)    
 
 
-###Misc
-1) [Union Find](https://github.com/sherxon/AlgoDS/blob/master/src/UnionFind.java)    
 
 
