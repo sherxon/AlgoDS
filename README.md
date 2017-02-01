@@ -3,7 +3,7 @@ This is the collection of **algorithms, data structures** and **Interview Questi
 This repository contains my solutions for common algorithmic problems and implementation of Data Structures in Java.
 I've created this repository to learn about algorithms. I am adding solutions continuously.   
 
-Interview Questions package include 3 text files (_1easy, 2medium and 3Hard_) and **solutions** for each question.      
+Interview Questions package include 3 text files (Easy.txt, Medium.txt and Hard.txt) and **solutions** for each question.      
 
 **Algorithms,  Data Structures** and **165 Interview Questions with answers** are provided so far.
 
