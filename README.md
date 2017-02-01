@@ -5,7 +5,7 @@ I've created this repository to learn about algorithms. I am adding solutions co
 
 Interview Questions package include 3 text files (_1easy, 2medium and 3Hard_) and **solutions** for each question.      
 
-**8 Algorithms, 2 Data Structures** and **158 Interview Questions with answers** are provided so far.
+**8 Algorithms, 2 Data Structures** and **165 Interview Questions with answers** are provided so far.
 
 ##Problems:
   
