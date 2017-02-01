@@ -15,24 +15,6 @@ public class UnionFind {
         }
     }
 
-    public static void main(String[] args) {
-        UnionFind unionFind = new UnionFind(10);
-        unionFind.union(1, 3);
-        unionFind.union(3, 5);
-        unionFind.union(2, 4);
-        unionFind.union(4, 6);
-        unionFind.union(6, 9);
-        System.out.println(unionFind.connected(2, 9));
-        System.out.println(unionFind.connected(9, 4));
-        System.out.println(unionFind.connected(1, 5));
-        System.out.println(unionFind.connected(3, 4));
-        unionFind.union(3, 6);
-        System.out.println(unionFind.connected(5, 1));
-        System.out.println(unionFind.connected(5, 9));
-        System.out.println(unionFind.connected(1, 2));
-        System.out.println(unionFind.connected(6, 10));
-    }
-
     public void union(int i, int j) {
         int ip = find(i);
         int jp = find(j);

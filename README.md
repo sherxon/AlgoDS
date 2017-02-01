@@ -106,4 +106,7 @@ Interview Questions package include 3 text files (_1easy, 2medium and 3Hard_) an
 3)[AVL Tree](https://github.com/sherxon/AlgoDS/blob/master/src/ds/AVLTree.java)    
 
 
+###Misc
+1) [Union Find](https://github.com/sherxon/AlgoDS/blob/master/src/UnionFind.java)    
+
 
