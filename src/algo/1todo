@@ -1,18 +1,11 @@
-bubbleSort
-insertionSort
-selectionSort
 quickSort
 mergeSort
 radixSort
 heapSort
 bucket sort
-
-binarySearch
 quickSelect
-
 
 Prim's
 Kruskall
-Dijsktra
 topological sort(all types)
 

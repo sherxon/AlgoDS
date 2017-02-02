@@ -13,6 +13,7 @@ public class UnionFind {
             a[i] = i;
             sz[i] = 1;
         }
+
     }
 
     public void union(int i, int j) {
