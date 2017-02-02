@@ -105,7 +105,7 @@ Interview Questions package include 3 text files (Easy.txt, Medium.txt and Hard.
 1)[Binary Search Tree (recursive)](https://github.com/sherxon/AlgoDS/blob/master/src/ds/BST.java)  
 2)[Binary Search Tree (iterative)](https://github.com/sherxon/AlgoDS/blob/master/src/ds/BSTIterative.java)  
 3)[AVL Tree](https://github.com/sherxon/AlgoDS/blob/master/src/ds/AVLTree.java)    
-
+4)[Trie (Prefix tree)](https://github.com/sherxon/AlgoDS/blob/master/src/algo/string/Trie.java)  
 
 
 
