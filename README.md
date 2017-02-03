@@ -17,6 +17,7 @@ Interview Questions package include 3 text files (Easy.txt, Medium.txt and Hard.
 5) [Kth Largest Element in an Array](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/KthLargestElementinanArray.java)  
 6) [Find All Duplicates in an Array](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/FindAllDuplicatesinanArray.java)  
 7) [Longest Increasing Subsequence](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/MaxIncreasingSubsequence.java)  
+8) [Rotate Image, matrix](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/RotateImage.java)  
 [And many other array problems](https://github.com/sherxon/AlgoDS/tree/master/src/interviewquestions)  
 
 ###Linked List
