@@ -7,6 +7,7 @@ package interviewquestions.medium;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 
 // This is the interface that allows for creating nested lists.
@@ -34,8 +35,7 @@ public class NestedIterator implements Iterator<Integer> {
 
     public NestedIterator(List<NestedInteger> nestedList) {
 
-        for (NestedInteger e : nestedList)
-            ll.add(e);
+        ll.addAll(nestedList.stream().collect(Collectors.toList()));
     }
 
     @Override
@@ -50,12 +50,8 @@ public class NestedIterator implements Iterator<Integer> {
 
         NestedInteger ni = ll.removeFirst();
         LinkedList<NestedInteger> temp = new LinkedList<>();
-        for (NestedInteger e : ni.getList()) {
-            temp.addFirst(e);
-        }
-        for (NestedInteger e : temp) {
-            ll.addFirst(e);
-        }
+        ni.getList().forEach(temp::addFirst);
+        temp.forEach(ll::addFirst);
         return hasNext();
     }
 }
