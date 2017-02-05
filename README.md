@@ -56,6 +56,7 @@ Interview Questions package include 3 text files (Easy.txt, Medium.txt and Hard.
 21) [Binary Tree Left Side View] (https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/BinaryTreeLeftSIdeView.java)  
 22) [Binary Tree Right Side View] (https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/BinaryTreeRightSideView.java)  
 23) [Mode in BST](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/FindModeinBST.java)   
+24) [Most Frequent Subtree Sum](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/MostFrequentSubtreeSum.java)  
  [And many other tree problems](https://github.com/sherxon/AlgoDS/tree/master/src/interviewquestions)  
   
 ###Math
