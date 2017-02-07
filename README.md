@@ -67,6 +67,7 @@ Interview Questions package include 3 text files (Easy.txt, Medium.txt and Hard.
 5) [Jug and Water Problem](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/WaterAndJugProblem.java)  
 6) [Sieve of Eratosthenes] (https://github.com/sherxon/AlgoDS/blob/master/src/algo/numerals/SieveofEratosthenes.java)  
 7) [Fermat's primality] (https://github.com/sherxon/AlgoDS/blob/master/src/algo/numerals/FermatPrimality.java)     
+8) [Evaluate Reverse Polish Notation](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/EvaluateReversePolishNotation.java)  
 
 ###Misc
 1)[Union Find](https://github.com/sherxon/AlgoDS/blob/master/src/algo/UnionFind.java)  
