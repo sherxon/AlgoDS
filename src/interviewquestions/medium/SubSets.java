@@ -7,7 +7,9 @@ import java.util.List;
  * Created by sherxon on 1/11/17.
  */
 public class SubSets {
+    public static void main(String[] args) {
 
+    }
 
     public List<List<Integer>> subsets(int[] a) {
         List<List<Integer>> list = new ArrayList<>();
