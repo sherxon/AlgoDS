@@ -37,6 +37,7 @@ public class SpiralMatrix {
                 list.add(a[a.length - j - 1][i]);
             }
         }
+
         System.out.println(list);
         return list;
     }
