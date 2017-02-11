@@ -16,7 +16,6 @@ public class FindMinimuminRotatedSortedArray {
         int j=a.length-1;
         while (i<=j){
             int mid=i+(j-i)/2;
-            System.out.println(a[i] + " " + a[mid] + " " + a[j]);
             if(i==mid || j==mid)return Math.min(a[i], Math.min(a[j], a[mid]));
             if(a[mid]>a[j])i=mid;
             else if(a[mid]<a[j])j=mid;
