@@ -15,6 +15,8 @@ public class SearchinRotatedSortedArray {
     /**
      * Solution is easy, we first find rotated pivot index and binary search both sides of pivot.
      * Time complexity is Log(N);
+     * This does not solve when there is duplicates in the array. please look at SearchinRotatedSortedArray.java
+     * for duplicate support
      */
     public static void main(String[] args) {
         System.out.println(search(new int[]{
