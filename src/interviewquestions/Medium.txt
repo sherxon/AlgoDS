@@ -943,4 +943,65 @@ Suppose an array sorted in ascending order is rotated at some pivot unknown to y
 Write a function to determine if a given target is in the array.
 The array may contain duplicates.
 
+100)Word Ladder
+Given two words (beginWord and endWord), and a dictionary's word list, find the length of shortest transformation sequence from beginWord to endWord, such that:
+
+Only one letter can be changed at a time.
+Each transformed word must exist in the word list. Note that beginWord is not a transformed word.
+For example,
+
+Given:
+beginWord = "hit"
+endWord = "cog"
+wordList = ["hot","dot","dog","lot","log","cog"]
+As one shortest transformation is "hit" -> "hot" -> "dot" -> "dog" -> "cog",
+return its length 5.
+
+Note:
+Return 0 if there is no such transformation sequence.
+All words have the same length.
+All words contain only lowercase alphabetic characters.
+You may assume no duplicates in the word list.
+You may assume beginWord and endWord are non-empty and are not the same.
+
+101)Find Largest Element in Each Row
+You need to find the largest value in each row of a binary tree.
+
+Example:
+Input:
+
+          1
+         / \
+        3   2
+       / \   \
+      5   3   9
+
+Output: [1, 3, 9]
+
+102)Find Left Most Element
+Given a binary tree, find the leftmost value in the last row of the tree.
+
+Example 1:
+Input:
+
+    2
+   / \
+  1   3
+
+Output:
+1
+Example 2:
+Input:
+
+        1
+       / \
+      2   3
+     /   / \
+    4   5   6
+       /
+      7
+
+Output: 7
+
+103)
 
