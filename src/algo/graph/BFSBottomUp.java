@@ -11,7 +11,7 @@ import java.util.Queue;
  */
 
 /**
- *
+ *This is not finished up yet, i could not find good sources
  * */
 public class BFSBottomUp<T> {
     Graph<T> graph;
