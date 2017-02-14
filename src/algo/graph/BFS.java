@@ -9,6 +9,10 @@ import java.util.Queue;
 /**
  * Created by sherxon on 1/1/17.
  */
+
+/**
+ * This is traditional top-down approach to traverse graph. This is advantageous when the frontier is small
+ */
 public class BFS<T> {
 
     Graph<T> graph;
