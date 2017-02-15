@@ -14,30 +14,30 @@ import java.util.stream.Collectors;
 public class BinaryTreeLevelOrderTraversal {
 
     public List<List<Integer>> levelOrder(TreeNode root) {
-        List<List<Integer>> l=new LinkedList<>();
-        if (root == null) return l;
-        List<Integer> helper = new ArrayList<>();
-        Queue<TreeNode> level = new LinkedList<>();
-        Queue<TreeNode> qq=new LinkedList<>();
+        List<List<Integer>> list = new ArrayList<>();
+        if (root == null) return list;
+        Queue<TreeNode> q = new LinkedList<>();
+        q.add(root);
+        List<Integer> l = new ArrayList<>();
+        l.add(root.val);
+        list.add(l);
+        int level = 1;
+        while (!q.isEmpty()) {
+            TreeNode x = q.remove();
+            level--;
+            if (x.left != null) q.add(x.left);
+            if (x.right != null) q.add(x.right);
 
-        level.add(root);
-
-        while (!level.isEmpty()) {
-            TreeNode t = level.remove();
-            helper.add(t.val);
-            if (level.isEmpty()) {
-                l.add(new ArrayList<>(helper));
-                helper.clear();
-            }
-
-            if(t.left!=null)qq.add(t.left);
-            if(t.right!=null)qq.add(t.right);
-            if (level.isEmpty()) {
-                level.addAll(new LinkedList<>(qq));
-                qq.clear();
+            if (level == 0 && !q.isEmpty()) {
+                l = new ArrayList<>();
+                for (TreeNode tr : q) {
+                    level++;
+                    l.add(tr.val);
+                }
+                list.add(l);
             }
         }
-        return l;
+        return list;
     }
 
     public List<List<Integer>> levelOrder3(TreeNode root) {
@@ -68,16 +68,15 @@ public class BinaryTreeLevelOrderTraversal {
         return l;
     }
 
-    void levelOrder2(TreeNode root){
+    void levelOrder2(TreeNode root) {
         if (root == null) return;
-        Queue<TreeNode> q= new LinkedList<>();
+        Queue<TreeNode> q = new LinkedList<>();
         q.add(root);
-        while (!q.isEmpty()){
-            TreeNode x=q.poll();
-            System.out.println(x.val);
-            if(x.left!=null)
+        while (!q.isEmpty()) {
+            TreeNode x = q.poll();
+            if (x.left != null)
                 q.add(x.left);
-            if(x.right!=null)
+            if (x.right != null)
                 q.add(x.right);
         }
     }
