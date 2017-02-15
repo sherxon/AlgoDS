@@ -18,9 +18,8 @@ public class ZigZagOrderLevelTraversalBST {
         l.add(root.val);
         list.add(l);
         LinkedList<TreeNode> q = new LinkedList<>();
-        LinkedList<TreeNode> level = new LinkedList<>();
+        int level = 1;
         q.add(root);
-        level.add(root);
         boolean flag = false;
         while (!q.isEmpty()) {
 
@@ -28,13 +27,12 @@ public class ZigZagOrderLevelTraversalBST {
             if (x.right != null) q.addLast(x.right);
             if (x.left != null) q.addLast(x.left);
 
-            level.removeFirst();
+            level--;
 
-            if (level.isEmpty() && !q.isEmpty()) {
+            if (level == 1 && !q.isEmpty()) {
                 LinkedList<Integer> ll = new LinkedList<>();
-
+                level += q.size();
                 for (TreeNode xx : q) {
-                    level.add(xx);
                     if (flag)
                         ll.addFirst(xx.val);
                     else
@@ -43,7 +41,6 @@ public class ZigZagOrderLevelTraversalBST {
                 flag = !flag;
                 list.add(ll);
             }
-
         }
         return list;
     }

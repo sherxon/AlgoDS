@@ -43,7 +43,18 @@ public class BalancedBinaryTree {
 
         if(Math.abs(rightsize-leftsize)>1)return -1;
         return Math.max(leftsize, rightsize)+1;
+    }
 
+    public boolean isBalanced3(TreeNode root) {
+        if (root == null) return true;
+        int left = height(root.left);
+        int right = height(root.right);
+        return Math.abs(left - right) < 2 && isBalanced3(root.left) && isBalanced3(root.right);
+    }
+
+    int height(TreeNode x) {
+        if (x == null) return 0;
+        return Math.max(height(x.left), height(x.right)) + 1;
     }
 
 }
