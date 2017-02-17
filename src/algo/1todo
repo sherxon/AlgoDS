@@ -12,6 +12,6 @@ topological sort(all types)
 BitSet
 BloomFilter
 
-
 insertion sort with stacks
+detect cycle in (un)directed graph
 

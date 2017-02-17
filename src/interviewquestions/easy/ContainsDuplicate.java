@@ -14,7 +14,7 @@ public class ContainsDuplicate {
     public boolean containsDuplicate(int[] nums) {
         Set<Integer> set = new HashSet<>();
         for (int i : nums) {
-            if (!set.add(i)) return true;
+            if (!set.add(-2 * i)) return true;
         }
         return false;
     }
