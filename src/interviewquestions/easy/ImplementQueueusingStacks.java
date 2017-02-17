@@ -1,7 +1,5 @@
 package interviewquestions.easy;
 
-import java.util.LinkedList;
-import java.util.Queue;
 import java.util.Stack;
 
 /**
@@ -12,11 +10,10 @@ public class ImplementQueueusingStacks {
 }
 class MyQueue {
     Stack<Integer> stack= new Stack<>();
-    Queue<Integer> q= new LinkedList<>();
+
 
     // Push element x to the back of queue.
     public void push(int x) {
-
         stack.push(x);
     }
 
