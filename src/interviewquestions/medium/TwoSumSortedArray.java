@@ -11,9 +11,9 @@ public class TwoSumSortedArray {
         int i=0;
         int j=a.length-1;
         while (i<j){
-            if(a[i]+a[j]==t)break;
-            if(a[i]+a[j]<t)i++;
-            else j--;
+            if (a[i] + a[j] > t) j--;
+            else if (a[i] + a[j] < t) i++;
+            else break;
         }
 
 
