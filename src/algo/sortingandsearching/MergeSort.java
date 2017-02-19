@@ -1,16 +1,9 @@
 package algo.sortingandsearching;
 
-import java.util.Arrays;
-
 /**
  * Created by sherxon on 2/19/17.
  */
 public class MergeSort {
-    public static void main(String[] args) {
-        int[] a = new int[]{4, 2, 1, 3, 4, 0};
-        sort(a);
-        System.out.println(Arrays.toString(a));
-    }
 
     public static void sort(int[] a) {
         int[] helper = new int[a.length];
