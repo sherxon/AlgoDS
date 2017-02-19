@@ -36,6 +36,7 @@ public class InsertionSort {
 
     //simple version,  easy to understand.
     public static void sortSimple(int[] a) {
+
         for (int i = 1; i < a.length; i++) {
             for (int j = i; j > 0; j--) {
                 if (a[j - 1] > a[j]) { //swap
@@ -45,6 +46,7 @@ public class InsertionSort {
                 }
             }
         }
+
     }
 
 
