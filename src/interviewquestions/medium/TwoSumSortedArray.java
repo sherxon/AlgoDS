@@ -1,11 +1,17 @@
 package interviewquestions.medium;
 
+import java.math.BigInteger;
+
 /**
  * Created by sherxon on 12/27/16.
  */
 public class TwoSumSortedArray {
     public static void main(String[] args) {
-        new TwoSumSortedArray().twoSum(new int[]{1,2,3,4,5,6,7,8}, 5);
+        BigInteger bigInteger = new BigInteger("76");
+        BigInteger.valueOf(1);
+        System.out.println(bigInteger);
+
+        //    new TwoSumSortedArray().twoSum(new int[]{1,2,3,4,5,6,7,8}, 5);
     }
     public int[] twoSum(int[] a, int t) {
         int i=0;
@@ -16,8 +22,8 @@ public class TwoSumSortedArray {
             else break;
         }
 
-
         return new int[]{i+1, j+1};
 
     }
+
 }
