@@ -1,5 +1,7 @@
 package algo.sortingandsearching;
 
+import java.util.Arrays;
+
 /**
  * Created by sherxon on 12/18/16.
  */
@@ -37,6 +39,22 @@ public class SelectionSort {
                 a[minIndex]=temp;
             }
 
+        }
+    }
+
+    public static void main(String[] args) {
+        int[] a = new int[]{1, 3, 4, 2, 0, 9};
+        sortt(a);
+        System.out.println(Arrays.toString(a));
+    }
+
+    static void sortt(int[] a) {
+        for (int i = 1; i < a.length; i++) {
+            int j = i;
+            int current = a[i];
+            while (j > 0 && current < a[j - 1])
+                a[j] = a[--j];
+            a[j] = current;
         }
     }
 }

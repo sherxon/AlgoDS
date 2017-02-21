@@ -43,7 +43,7 @@ public class InsertionSort {
                     int temp = a[j - 1];
                     a[j - 1] = a[j];
                     a[j] = temp;
-                }
+                } else break;
             }
         }
 

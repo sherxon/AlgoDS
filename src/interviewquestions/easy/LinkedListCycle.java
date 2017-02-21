@@ -17,7 +17,9 @@ public class LinkedListCycle {
         }
         return false;
     }
+
 }
+
 /*
 
 class ListNode {

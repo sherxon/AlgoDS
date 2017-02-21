@@ -1,5 +1,8 @@
 package algo.sortingandsearching;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Created by sherxon on 2/19/17.
  */
@@ -8,6 +11,7 @@ public class MergeSort {
     public static void sort(int[] a) {
         int[] helper = new int[a.length];
         sort(a, 0, a.length - 1, helper);
+        Map map = new HashMap<>();
     }
 
     private static void sort(int[] a, int lo, int hi, int[] helper) {
@@ -16,7 +20,6 @@ public class MergeSort {
         sort(a, lo, mid, helper);
         sort(a, mid + 1, hi, helper);
         merge(a, lo, mid, hi, helper);
-
     }
 
     private static void merge(int[] a, int lo, int mid, int hi, int[] helper) {
