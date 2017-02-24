@@ -21,4 +21,24 @@ public class RepeatedSubstringPattern {
 
         return false;
     }
+
+    public boolean repeatedSubstringPattern2(String s) {
+        int n = s.length();
+        int i = 2;
+        while (i <= n) {
+            if (n % i == 0) {
+                String ss = s.substring(0, n / i);
+                boolean b = true;
+                for (int j = n / i; j < n; j += n / i) {
+                    if (!ss.equals(s.substring(j, j + n / i))) {
+                        b = false;
+                        break;
+                    }
+                }
+                if (b) return true;
+            }
+            i++;
+        }
+        return false;
+    }
 }

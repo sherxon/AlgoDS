@@ -5,66 +5,36 @@ package interviewquestions.easy;
  */
 public class AddBinary {
 
-    static String addBinary(String a, String b) {
-        if (a.length() == 0) return b;
-        if (b.length() == 0) return a;
+    public String addBinary(String a, String b) {
+        StringBuilder sb = new StringBuilder();
         int i = a.length() - 1;
         int j = b.length() - 1;
-        StringBuilder sb = new StringBuilder();
-        int carry = 0;
+        boolean carry = false;
         while (i >= 0 || j >= 0) {
+            boolean f = false;
+            boolean s = false;
             if (i >= 0 && j >= 0) {
-                if (a.charAt(i) == '1' && b.charAt(j) == '1') {
-                    if (carry == 1) sb.append(1);
-                    else sb.append(0);
-                    carry = 1;
-                } else if (a.charAt(i) == '0' && b.charAt(j) == '0') {
-                    if (carry == 1) sb.append(1);
-                    else sb.append("0");
-                    carry = 0;
-                } else {
-                    if (carry == 1) sb.append("0");
-                    else sb.append("1");
-                }
-            } else if (i >= 0) {
-                if (a.charAt(i) == '1') {
-                    if (carry == 1) {
-                        sb.append(0);
-                    } else {
-                        sb.append(1);
-                        carry = 0;
-                    }
-                } else {
-                    if (carry == 1) {
-                        sb.append(1);
-                        carry = 0;
-                    } else {
-                        sb.append(0);
-                    }
-                }
-            } else if (j >= 0) {
-                if (b.charAt(j) == '1') {
-                    if (carry == 1) {
-                        sb.append(0);
-                    } else {
-                        sb.append(1);
-                        carry = 0;
-                    }
+                f = a.charAt(i--) == '1';
+                s = b.charAt(j--) == '1';
+            } else if (i >= 0)
+                f = a.charAt(i--) == '1';
+            else
+                s = b.charAt(j--) == '1';
 
-                } else {
-                    if (carry == 1) {
-                        sb.append(1);
-                        carry = 0;
-                    } else {
-                        sb.append(0);
-                    }
-                }
+            if (f && s) {
+                sb.insert(0, carry ? 1 : 0);
+                carry = true;
+            } else if (f || s) {
+                sb.insert(0, carry ? 0 : 1);
+            } else {
+                sb.insert(0, carry ? 1 : 0);
+                carry = false;
             }
-            i--;
-            j--;
         }
-        if (carry == 1) sb.append("1");
-        return sb.reverse().toString();
+        if (carry) sb.insert(0, 1);
+        return sb.toString();
+
+
     }
 
     public String addBinary2(String a, String b) {
