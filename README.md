@@ -108,7 +108,8 @@ Interview Questions package include 3 text files (Easy.txt, Medium.txt and Hard.
 2)[Ransom Note](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/RansomNote.java)  
 3)[Reverse String](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/ReverseString.java)  
 4)[Longest Common Prefix](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/LongestCommonPrefix.java)  
-5)[Is Anagram](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/ValidAnagram.java)    
+5)[Is Anagram](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/ValidAnagram.java)  
+6)[Needle and Haystack] (https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/ImplementstrSt.java)  
 
 ##Data Structure:      
 

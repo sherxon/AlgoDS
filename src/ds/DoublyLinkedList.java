@@ -45,7 +45,6 @@ public class DoublyLinkedList<E> {
     }
 
     public boolean delete(E element) {
-
         Node temp = head;
         while (temp != null && !temp.elem.equals(element)) {
             temp = temp.next;
