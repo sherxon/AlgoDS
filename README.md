@@ -24,15 +24,17 @@ Interview Questions package include 3 text files (Easy.txt, Medium.txt and Hard.
 [And many other array problems](https://github.com/sherxon/AlgoDS/tree/master/src/interviewquestions)  
 
 ###Linked List
-1) [Delete Node in a Linked List](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/DeleteNodeSingleLinkedList.java)  
-2) [Palindrome Linked List](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/PalindromeLinkedList.java)  
-3) [Reverse Linked List](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/ReverseLinkedList.java)  
-4) [Intersection of Two Linked Lists](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/IntersectionofTwoLinkedLists.java)  
-5) [Linked List Cycle](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/LinkedListCycle.java)  
-5) [Remove Nth Node From End of List](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/RemoveNthNodeFromEndofList.java)   
-6) [Merge Sort List](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/SortList.java)  
-7) [Find Linked List Cycle](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/LinkedListCycle2.java)  
-8) [Merge k Sorted Lists](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/MergekSortedLists.java)   
+1) [Singly Linked List Implementation](https://github.com/sherxon/AlgoDS/blob/master/src/ds/LinkedList.java)  
+1) [Doubly Linked List Implementation](https://github.com/sherxon/AlgoDS/blob/master/src/ds/DoublyLinkedList.java)  
+3) [Delete Node in a Linked List](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/DeleteNodeSingleLinkedList.java)  
+4) [Palindrome Linked List](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/PalindromeLinkedList.java)  
+5) [Reverse Linked List](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/ReverseLinkedList.java)  
+6) [Intersection of Two Linked Lists](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/IntersectionofTwoLinkedLists.java)  
+7) [Linked List Cycle](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/LinkedListCycle.java)  
+8) [Remove Nth Node From End of List](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/RemoveNthNodeFromEndofList.java)   
+9) [Merge Sort List](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/SortList.java)  
+10) [Find Linked List Cycle](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/LinkedListCycle2.java)  
+11) [Merge k Sorted Lists](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/MergekSortedLists.java)   
  [And many other Linked list problems](https://github.com/sherxon/AlgoDS/tree/master/src/interviewquestions)
  
 ###Binary Tree

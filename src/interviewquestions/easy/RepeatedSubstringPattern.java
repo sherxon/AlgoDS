@@ -18,7 +18,6 @@ public class RepeatedSubstringPattern {
             }
             i++;
         }
-
         return false;
     }
 
