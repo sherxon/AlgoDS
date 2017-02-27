@@ -5,12 +5,13 @@ package interviewquestions.easy;
  */
 public class ReverseVowels {
     public String reverseVowels(String s) {
-        char[] a = s.toCharArray();
         int i = 0;
-        int j = a.length - 1;
+        int j = s.length() - 1;
+        String v = "euioaEUIOA";
+        char[] a = s.toCharArray();
         while (i < j) {
-            while (i < a.length && !isVowel(a[i])) i++;
-            while (j >= 0 && !isVowel(a[j])) j--;
+            while (i < j && v.indexOf(a[i]) == -1) i++;
+            while (i < j && v.indexOf(a[j]) == -1) j--;
             if (i < j) {
                 char temp = a[i];
                 a[i] = a[j];
@@ -19,11 +20,7 @@ public class ReverseVowels {
                 j--;
             }
         }
-        return String.valueOf(a);
+        return new String(a);
     }
 
-    private boolean isVowel(char c) {
-        c = Character.toLowerCase(c);
-        return c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u';
-    }
 }

@@ -5,15 +5,14 @@ package interviewquestions.easy;
  */
 public class NumberofSegmentsinaString {
     public static int countSegments(String s) {
-        if (s.length() == 0) return 0;
         s = s.trim();
-        if (s.length() == 1 && s.charAt(0) != ' ') return 1;
-        int counter = 0;
-        for (int i = 0; i < s.length() - 1; i++) {
-            if (i == 0 && s.charAt(i) != ' ') counter++;
-            else if (s.charAt(i) == ' ' && s.charAt(i + 1) != ' ') counter++;
+        if (s.length() == 0) return 0;
+        int i = 0, count = 0;
+        while (i < s.length()) {
+            if (i > 0 && s.charAt(i) != ' ' && s.charAt(i - 1) == ' ') count++;
+            i++;
         }
 
-        return counter;
+        return count + 1;
     }
 }
