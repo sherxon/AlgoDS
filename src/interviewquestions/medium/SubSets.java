@@ -31,6 +31,5 @@ public class SubSets {
             b[n - 1] = false;
             generate(a, b, list, n - 1);
         }
-
     }
 }
