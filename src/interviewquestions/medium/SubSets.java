@@ -7,10 +7,10 @@ import java.util.List;
  * Created by sherxon on 1/11/17.
  */
 public class SubSets {
-    public static void main(String[] args) {
 
-    }
-
+    /**
+     * This generates all subsets of given set.
+     */
     public List<List<Integer>> subsets(int[] a) {
         List<List<Integer>> list = new ArrayList<>();
         boolean[] b = new boolean[a.length];
@@ -31,5 +31,15 @@ public class SubSets {
             b[n - 1] = false;
             generate(a, b, list, n - 1);
         }
+    }
+
+    /**
+     * This is DP solution to find subset Sum
+     */
+    boolean subsetSum(int[] a, int n, int k) {
+        if (k == 0) return true;
+        if (n == 0) return false;
+        if (a[n - 1] > k) return subsetSum(a, n - 1, k);
+        return subsetSum(a, n - 1, k) || subsetSum(a, n - 1, k - a[n - 1]);
     }
 }
