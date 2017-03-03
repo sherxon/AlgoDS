@@ -23,17 +23,23 @@ public class BubbleSort {
         }
     }
 
-    // simple version to understand easier
+    /**
+     * This is simple version of in-place, stable bubble sort, whose best case is O(n) and worst Case O(n^2);
+     */
     public static void sortSimple(int[] a) {
         for (int i = 0; i < a.length; i++) {
+            boolean sorted = true; // flag to check if any swapping made
             // last elements sorted
             for (int j = 1; j < a.length - i; j++) {
                 if (a[j] < a[j - 1]) { //swap
                     int temp = a[j - 1];
                     a[j - 1] = a[j];
                     a[j] = temp;
+                    sorted = false;
                 }
             }
+            // if any swapping has not occurred in the last iteration, we can say it is sorted now
+            if (sorted) break;
         }
     }
 
