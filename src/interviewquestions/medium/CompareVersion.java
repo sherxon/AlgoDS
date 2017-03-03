@@ -35,8 +35,8 @@ public class CompareVersion {
                 if (b) return 0;
                 return 1;
             }
-            Integer fi = Integer.parseInt(s[i]);
-            Integer se = Integer.parseInt(s2[i]);
+            int fi = Integer.parseInt(s[i]);
+            int se = Integer.parseInt(s2[i]);
             if (fi > se) return 1;
             if (se > fi) return -1;
         }

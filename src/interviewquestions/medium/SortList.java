@@ -14,6 +14,7 @@ public class SortList {
         if (head == null || head.next == null) return head;
         ListNode slow = head;
         ListNode fast = head.next;
+
         while (fast != null && fast.next != null) { // slow in middle element
             slow = slow.next;
             fast = fast.next.next;
