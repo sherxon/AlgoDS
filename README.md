@@ -110,6 +110,7 @@ Interview Questions package include 3 text files (Easy.txt, Medium.txt and Hard.
 4)[Longest Common Prefix](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/LongestCommonPrefix.java)  
 5)[Is Anagram](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/ValidAnagram.java)  
 6)[Needle and Haystack] (https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/ImplementstrSt.java)  
+7)[Word Break](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/WordBreak.java)  
 
 ##Data Structure:      
 
