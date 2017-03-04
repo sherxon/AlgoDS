@@ -16,4 +16,11 @@ public class FibonacciNumber {
         }
         return f1;
     }
+
+    int fin(int[] a, int n) {
+        if (n == 1 || n == 0) return 1;
+        if (a[n] != 0) return a[n];
+        a[n] = fin(a, n - 1) + fin(a, n - 2);
+        return a[n];
+    }
 }
