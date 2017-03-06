@@ -90,6 +90,7 @@ Interview Questions package include 3 text files (Easy.txt, Medium.txt and Hard.
 4) [Counting Sort](https://github.com/sherxon/AlgoDS/blob/master/src/algo/sortingandsearching/CountingSort.java)  
 5) [Binary Search , Lower & Upper Bounds](https://github.com/sherxon/AlgoDS/blob/master/src/algo/sortingandsearching/BinarySearch.java)  
 6) [MergeSort](https://github.com/sherxon/AlgoDS/blob/master/src/algo/sortingandsearching/MergeSort.java)  
+7) [QuickSort](https://github.com/sherxon/AlgoDS/blob/master/src/algo/sortingandsearching/QuickSort.java)  
 
 ###Graphs:  
 1) [Breadth First Search (BFS)](https://github.com/sherxon/AlgoDS/blob/master/src/algo/graph/BFS.java)  
