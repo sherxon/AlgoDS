@@ -1102,3 +1102,6 @@ Input:
 Output: 3
 Explanation: All the three 'B's are black lonely pixels.
 
+110) Calculate Diameter of Binary tree.
+
+

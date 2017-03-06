@@ -46,7 +46,6 @@ public class KthSmallestElementinaBST {
          else if (k > count + 1)
             return kthSmallest2(root.right, k - 1 - count); // 1 is current node
 
-
         return root.val;
     }
 
