@@ -6,12 +6,22 @@ import java.util.*;
  * Created by sherxon on 2/12/17.
  */
 public class WordLadder {
+    public static void main(String[] args) {
+        System.out.println();
+    }
     public int ladderLength(String a, String b, List<String> list) {
         Map<String, Set<String>> map = new HashMap<>();
         map.put(a, new HashSet<>());
         Queue<String> q = new LinkedList<>();
         for (String s : list) {
             addVertexAndEdge(s, map);
+//            map.put(s, new HashSet<>());
+//            for (String key : map.keySet()) {
+//                if (canBeConnected(key, s)) {
+//                    map.get(key).add(s);
+//                    map.get(s).add(key);
+//                }
+//            }
         }
         Set<String> visited = new HashSet<>(list.size());
         visited.add(a);

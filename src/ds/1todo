@@ -1,5 +1,3 @@
-Singly Linked List
-Doubly Linked list
 arrayList
 Binomial Queues
 Fibonacci Heap
@@ -10,7 +8,6 @@ Skew Heaps
 
 PriorityQueue
 HashTable
-BST
 REd-Black Tree
 B Tree
 Stack
@@ -21,3 +18,4 @@ Trie
 UnionFind (Disjoint Set)
 Suffix trees
 Skip List
+Splay tree
