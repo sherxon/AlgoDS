@@ -1,4 +1,4 @@
-package contests;
+package interviewquestions.medium;
 
 import interviewquestions.utils.TreeNode;
 

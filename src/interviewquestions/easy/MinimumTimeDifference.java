@@ -1,4 +1,4 @@
-package contests;
+package interviewquestions.easy;
 
 import java.util.ArrayList;
 import java.util.Arrays;
