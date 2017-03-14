@@ -7,9 +7,9 @@ Interview Questions package include 3 text files (Easy.txt, Medium.txt and Hard.
 
 **Algorithms,  Data Structures** and **180 Interview Questions with answers** are provided so far.
 
-##Problems:
+## Problems:
   
-###Arrays
+### Arrays
 1) [Rotate Array](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/RotateArray.java)      
 2) [Contains Duplicate](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/ContainsDuplicate.java)  
 3) [Find Peak Element](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/FindPeakElement.java)  
@@ -21,9 +21,9 @@ Interview Questions package include 3 text files (Easy.txt, Medium.txt and Hard.
 9) [Shuffle an Array](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/ShuffleanArray.java)  
 10)[Find Min in Rotated Array](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/FindMinimuminRotatedSortedArray.java)  
 11) [Search in Rotated Array](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/SearchinRotatedSortedArray.java)  
-[And many other array problems](https://github.com/sherxon/AlgoDS/tree/master/src/interviewquestions)  
+  
 
-###Linked List
+### Linked List
 1) [Singly Linked List Implementation](https://github.com/sherxon/AlgoDS/blob/master/src/ds/LinkedList.java)  
 1) [Doubly Linked List Implementation](https://github.com/sherxon/AlgoDS/blob/master/src/ds/DoublyLinkedList.java)  
 3) [Delete Node in a Linked List](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/DeleteNodeSingleLinkedList.java)  
@@ -71,8 +71,8 @@ Interview Questions package include 3 text files (Easy.txt, Medium.txt and Hard.
 3) [Palindrome Number](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/PalindromeNumber.java)  
 4) [Math.pow](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/Pow.java)  
 5) [Jug and Water Problem](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/WaterAndJugProblem.java)  
-6) [Sieve of Eratosthenes] (https://github.com/sherxon/AlgoDS/blob/master/src/algo/numerals/SieveofEratosthenes.java)  
-7) [Fermat's primality] (https://github.com/sherxon/AlgoDS/blob/master/src/algo/numerals/FermatPrimality.java)     
+6) [Sieve of Eratosthenes](https://github.com/sherxon/AlgoDS/blob/master/src/algo/numerals/SieveofEratosthenes.java)  
+7) [Fermat's primality](https://github.com/sherxon/AlgoDS/blob/master/src/algo/numerals/FermatPrimality.java)     
 8) [Evaluate Reverse Polish Notation](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/EvaluateReversePolishNotation.java)  
 
 ###Misc
@@ -112,7 +112,7 @@ Interview Questions package include 3 text files (Easy.txt, Medium.txt and Hard.
 3)[Reverse String](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/ReverseString.java)  
 4)[Longest Common Prefix](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/LongestCommonPrefix.java)  
 5)[Is Anagram](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/ValidAnagram.java)  
-6)[Needle and Haystack] (https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/ImplementstrSt.java)  
+6)[Needle and Haystack](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/ImplementstrSt.java)  
 7)[Word Break](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/WordBreak.java)  
 
 ##Data Structure:      
