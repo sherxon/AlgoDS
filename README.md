@@ -76,9 +76,9 @@ Interview Questions package include 3 text files (Easy.txt, Medium.txt and Hard.
 8) [Evaluate Reverse Polish Notation](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/EvaluateReversePolishNotation.java)  
 
 ### Misc
-1)[Union Find](https://github.com/sherxon/AlgoDS/blob/master/src/algo/UnionFind.java)  
-2)[Permutations](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/Permutations.java)  
-3)[Subsets](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/SubSets.java)     
+1) [Union Find](https://github.com/sherxon/AlgoDS/blob/master/src/algo/UnionFind.java)  
+2) [Permutations](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/Permutations.java)  
+3) [Subsets](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/SubSets.java)     
 
 
 ## Algorithms
@@ -102,26 +102,26 @@ Interview Questions package include 3 text files (Easy.txt, Medium.txt and Hard.
 7) [Shortest Path Bellman-Ford](https://github.com/sherxon/AlgoDS/blob/master/src/algo/graph/BellmanFord.java)    
 
 ### Dynamic Programming
-1)[Fibonacci Numbers](https://github.com/sherxon/AlgoDS/blob/master/src/algo/dp/FibonacciNumber.java)  
-2)[Word Break](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/WordBreak.java)  
-3)[Subset Sum](https://github.com/sherxon/AlgoDS/blob/master/src/algo/dp/SubsetSum.java)     
+1) [Fibonacci Numbers](https://github.com/sherxon/AlgoDS/blob/master/src/algo/dp/FibonacciNumber.java)  
+2) [Word Break](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/WordBreak.java)  
+3) [Subset Sum](https://github.com/sherxon/AlgoDS/blob/master/src/algo/dp/SubsetSum.java)     
 
 ### String
-1)[Rabin Karp Subsequence search](https://github.com/sherxon/AlgoDS/blob/master/src/algo/string/RabinKarpSubsequenceSearch.java)   
-2)[Ransom Note](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/RansomNote.java)  
-3)[Reverse String](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/ReverseString.java)  
-4)[Longest Common Prefix](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/LongestCommonPrefix.java)  
-5)[Is Anagram](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/ValidAnagram.java)  
-6)[Needle and Haystack](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/ImplementstrSt.java)  
-7)[Word Break](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/WordBreak.java)  
+1) [Rabin Karp Subsequence search](https://github.com/sherxon/AlgoDS/blob/master/src/algo/string/RabinKarpSubsequenceSearch.java)   
+2) [Ransom Note](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/RansomNote.java)  
+3) [Reverse String](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/ReverseString.java)  
+4) [Longest Common Prefix](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/LongestCommonPrefix.java)  
+5) [Is Anagram](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/ValidAnagram.java)  
+6) [Needle and Haystack](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/ImplementstrSt.java)  
+7) [Word Break](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/WordBreak.java)  
 
 ## Data Structure:      
 
 ### Trees:  
-1)[Binary Search Tree (recursive)](https://github.com/sherxon/AlgoDS/blob/master/src/ds/BST.java)  
-2)[Binary Search Tree (iterative)](https://github.com/sherxon/AlgoDS/blob/master/src/ds/BSTIterative.java)  
-3)[AVL Tree](https://github.com/sherxon/AlgoDS/blob/master/src/ds/AVLTree.java)    
-4)[Trie (Prefix tree)](https://github.com/sherxon/AlgoDS/blob/master/src/algo/string/Trie.java)  
+1) [Binary Search Tree (recursive)](https://github.com/sherxon/AlgoDS/blob/master/src/ds/BST.java)  
+2) [Binary Search Tree (iterative)](https://github.com/sherxon/AlgoDS/blob/master/src/ds/BSTIterative.java)  
+3) [AVL Tree](https://github.com/sherxon/AlgoDS/blob/master/src/ds/AVLTree.java)    
+4) [Trie (Prefix tree)](https://github.com/sherxon/AlgoDS/blob/master/src/algo/string/Trie.java)  
 
 
 
