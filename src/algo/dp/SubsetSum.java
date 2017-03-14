@@ -16,10 +16,10 @@ public class SubsetSum {
         for (int i = 1; i < a.length; i++) {
             a[i - 1][0] = true;
             for (int j = 1; j < a[i].length; j++) {
-                if (a[i - 1][j] || j < set[i])
+                if (j < set[i])
                     a[i][j] = a[i - 1][j];
                 else
-                    a[i][j] = a[i - 1][j - set[i]];
+                    a[i][j] = a[i - 1][j] || a[i - 1][j - set[i]];
             }
         }
         return a[set.length - 1][sum];
