@@ -19,7 +19,7 @@ Interview Questions package include 3 text files (Easy.txt, Medium.txt and Hard.
 7) [Longest Increasing Subsequence](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/MaxIncreasingSubsequence.java)  
 8) [Rotate Image, matrix](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/RotateImage.java)  
 9) [Shuffle an Array](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/ShuffleanArray.java)  
-10)[Find Min in Rotated Array](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/FindMinimuminRotatedSortedArray.java)  
+10) [Find Min in Rotated Array](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/FindMinimuminRotatedSortedArray.java)  
 11) [Search in Rotated Array](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/SearchinRotatedSortedArray.java)  
   
 
