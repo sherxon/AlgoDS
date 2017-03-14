@@ -104,7 +104,7 @@ Interview Questions package include 3 text files (Easy.txt, Medium.txt and Hard.
 ###Dynamic Programming
 1)[Fibonacci Numbers](https://github.com/sherxon/AlgoDS/blob/master/src/algo/dp/FibonacciNumber.java)  
 2)[Word Break](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/WordBreak.java)  
-
+3)[Subset Sum](https://github.com/sherxon/AlgoDS/blob/master/src/algo/dp/SubsetSum.java)   
 
 ###String
 1)[Rabin Karp Subsequence search](https://github.com/sherxon/AlgoDS/blob/master/src/algo/string/RabinKarpSubsequenceSearch.java)   
