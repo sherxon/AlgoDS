@@ -37,7 +37,7 @@ Interview Questions package include 3 text files (Easy.txt, Medium.txt and Hard.
 11) [Merge k Sorted Lists](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/MergekSortedLists.java)   
  [And many other Linked list problems](https://github.com/sherxon/AlgoDS/tree/master/src/interviewquestions)
  
-###Binary Tree
+### Binary Tree
 1) [Binary Tree Level Order Traversal](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/BinaryTreeLevelOrderTraversal.java)  
 2) [Sum of Left Leaves](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/SumofLeftLeaves.java)  
 3) [Invert Binary Tree](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/InvertBinaryTree.java)  
@@ -65,7 +65,7 @@ Interview Questions package include 3 text files (Easy.txt, Medium.txt and Hard.
 25) [ Find Largest Element in Each Row](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/FindLargestElementinEachRow.java)   
  [And many other tree problems](https://github.com/sherxon/AlgoDS/tree/master/src/interviewquestions)  
   
-###Math
+### Math
 1) [Integer Break](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/IntegerBreak.java)  
 2) [Reverse Bits](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/ReverseBits.java)   
 3) [Palindrome Number](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/PalindromeNumber.java)  
@@ -75,15 +75,15 @@ Interview Questions package include 3 text files (Easy.txt, Medium.txt and Hard.
 7) [Fermat's primality](https://github.com/sherxon/AlgoDS/blob/master/src/algo/numerals/FermatPrimality.java)     
 8) [Evaluate Reverse Polish Notation](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/EvaluateReversePolishNotation.java)  
 
-###Misc
+### Misc
 1)[Union Find](https://github.com/sherxon/AlgoDS/blob/master/src/algo/UnionFind.java)  
 2)[Permutations](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/Permutations.java)  
 3)[Subsets](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/SubSets.java)     
 
 
-##Algorithms
+## Algorithms
   
-###Sorting And Searching:    
+### Sorting And Searching:    
 1) [Bubble Sort](https://github.com/sherxon/AlgoDS/blob/master/src/algo/sortingandsearching/BubbleSort.java)  
 2) [Insertion Sort](https://github.com/sherxon/AlgoDS/blob/master/src/algo/sortingandsearching/InsertionSort.java)  
 3) [Selection Sort](https://github.com/sherxon/AlgoDS/blob/master/src/algo/sortingandsearching/SelectionSort.java)  
@@ -92,7 +92,7 @@ Interview Questions package include 3 text files (Easy.txt, Medium.txt and Hard.
 6) [MergeSort](https://github.com/sherxon/AlgoDS/blob/master/src/algo/sortingandsearching/MergeSort.java)  
 7) [QuickSort](https://github.com/sherxon/AlgoDS/blob/master/src/algo/sortingandsearching/QuickSort.java)  
 
-###Graphs:  
+### Graphs:  
 1) [Breadth First Search (BFS)](https://github.com/sherxon/AlgoDS/blob/master/src/algo/graph/BFS.java)  
 2) [Depth First Search (DFS)](https://github.com/sherxon/AlgoDS/blob/master/src/algo/graph/DFS.java)  
 3) Prim's Minimum Spanning Tree (MST)  
@@ -101,12 +101,12 @@ Interview Questions package include 3 text files (Easy.txt, Medium.txt and Hard.
 6) [Shortest Path Dijsktra](https://github.com/sherxon/AlgoDS/blob/master/src/algo/graph/Dijsktra.java)  
 7) [Shortest Path Bellman-Ford](https://github.com/sherxon/AlgoDS/blob/master/src/algo/graph/BellmanFord.java)    
 
-###Dynamic Programming
+### Dynamic Programming
 1)[Fibonacci Numbers](https://github.com/sherxon/AlgoDS/blob/master/src/algo/dp/FibonacciNumber.java)  
 2)[Word Break](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/WordBreak.java)  
 3)[Subset Sum](https://github.com/sherxon/AlgoDS/blob/master/src/algo/dp/SubsetSum.java)     
 
-###String
+### String
 1)[Rabin Karp Subsequence search](https://github.com/sherxon/AlgoDS/blob/master/src/algo/string/RabinKarpSubsequenceSearch.java)   
 2)[Ransom Note](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/RansomNote.java)  
 3)[Reverse String](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/ReverseString.java)  
@@ -115,9 +115,9 @@ Interview Questions package include 3 text files (Easy.txt, Medium.txt and Hard.
 6)[Needle and Haystack](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/ImplementstrSt.java)  
 7)[Word Break](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/WordBreak.java)  
 
-##Data Structure:      
+## Data Structure:      
 
-###Trees:  
+### Trees:  
 1)[Binary Search Tree (recursive)](https://github.com/sherxon/AlgoDS/blob/master/src/ds/BST.java)  
 2)[Binary Search Tree (iterative)](https://github.com/sherxon/AlgoDS/blob/master/src/ds/BSTIterative.java)  
 3)[AVL Tree](https://github.com/sherxon/AlgoDS/blob/master/src/ds/AVLTree.java)    
