@@ -1,4 +1,4 @@
-package algo;
+package algo.dp;
 
 /**
  * Created by sherxon on 3/2/17.

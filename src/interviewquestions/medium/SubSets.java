@@ -33,13 +33,4 @@ public class SubSets {
         }
     }
 
-    /**
-     * This is DP solution to find subset Sum
-     */
-    boolean subsetSum(int[] a, int n, int k) {
-        if (k == 0) return true;
-        if (n == 0) return false;
-        if (a[n - 1] > k) return subsetSum(a, n - 1, k);
-        return subsetSum(a, n - 1, k) || subsetSum(a, n - 1, k - a[n - 1]);
-    }
 }
