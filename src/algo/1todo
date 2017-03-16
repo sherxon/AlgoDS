@@ -1,17 +1,26 @@
-quickSort
-mergeSort
 radixSort
 heapSort
 bucket sort
-quickSelect
+
 
 Prim's
 Kruskall
 topological sort(all types)
+detect cycle in (un)directed graph
+Hamiltonian cycle
+Hachers graph
+vertex cover
+complement graph
+number of separate components
+is tree
+is Bipartite
+get spanning tree
+get components list
+toString
 
 BitSet
 BloomFilter
 
 insertion sort with stacks
-detect cycle in (un)directed graph
+
 
