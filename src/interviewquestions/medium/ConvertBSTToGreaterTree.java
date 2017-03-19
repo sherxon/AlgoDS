@@ -16,7 +16,6 @@ public class ConvertBSTToGreaterTree {
         if (root == null) return val;
         int r = f(root.right, val);
         root.val = r + root.val;
-        int l = f(root.left, root.val);
-        return l;
+        return f(root.left, root.val);
     }
 }
