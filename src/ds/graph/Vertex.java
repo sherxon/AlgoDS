@@ -6,7 +6,7 @@ import java.util.Collection;
 /**
  * Created by sherxon on 1/1/17.
  */
-public class Vertex<T> {
+public class Vertex<T> implements Comparable<Vertex<T>> {
     private T value;
     private Collection<Vertex<T>> neighbors; // used with Unweighted graphs
     private Vertex<T> parent; // used in dfs and bfs
@@ -60,5 +60,10 @@ public class Vertex<T> {
 
     public void removeNeighrbor(Vertex<T> vertex) {
         this.neighbors.remove(vertex);
+    }
+
+    @Override
+    public int compareTo(Vertex<T> o) {
+        return this.weight - o.weight;
     }
 }

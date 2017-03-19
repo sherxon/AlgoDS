@@ -4,8 +4,7 @@ import ds.graph.Edge;
 import ds.graph.Vertex;
 import ds.graph.WeightedGraph;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.TreeSet;
 
 /**
  * Created by sherxon on 1/7/17.
@@ -36,27 +35,22 @@ public class Dijsktra<V, E extends Number> {
 
     public void shortestPath(V a) {
         Vertex<V> source=graph.getVertex(a);
-        Set<Vertex<V>> set= new HashSet<>();
+        TreeSet<Vertex<V>> priorityQueue = new TreeSet<>();
         for (Vertex<V> vertex : graph.getVertices()) {
             if(source==vertex)vertex.setWeight(0);
             else vertex.setWeight(Integer.MAX_VALUE);
-            set.add(vertex);
+            priorityQueue.add(vertex);
         }
-        while (!set.isEmpty()){
-            Vertex<V> min=source;
-            int minValue=Integer.MAX_VALUE;
-            for (Vertex<V> vertex : set)
-                if(minValue > vertex.getWeight()){
-                    min=vertex;
-                    minValue=vertex.getWeight();
-                }
-            set.remove(min);
-            min.setVisited(true);
-            for (Edge<E> edge : graph.getEdges(min.getValue())) {
+        while (!priorityQueue.isEmpty()) {
+            Vertex<V> min = priorityQueue.pollFirst();
+            min.setVisited(true);// why needed?
+            for (Edge<E> edge : graph.getEdges(min.getValue())) { // TODO vertexes may have the same value
                 Integer newPath=min.getWeight() +edge.getWeight().intValue();
                 if(edge.getTo().getWeight() > newPath){
+                    priorityQueue.remove(edge.getTo());
                     edge.getTo().setWeight(newPath);
                     edge.getTo().setParent(min);
+                    priorityQueue.add(edge.getTo()); // TODO haha fix this problem even IDEA found this problem
                 }
             }
         }
