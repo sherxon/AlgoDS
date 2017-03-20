@@ -1,7 +1,10 @@
 radixSort
 heapSort
 bucket sort
-
+introsort
+mergesort plus
+quicksort plus
+timsort
 
 Prim's
 Kruskall
@@ -21,6 +24,5 @@ toString
 BitSet
 BloomFilter
 
-insertion sort with stacks
 
 
