@@ -10,6 +10,7 @@ Prim's
 Kruskall
 topological sort(all types)
 detect cycle in (un)directed graph
+detect oddcycle (of each componenent)
 Hamiltonian cycle
 Hachers graph
 vertex cover
@@ -23,6 +24,9 @@ toString
 
 BitSet
 BloomFilter
+
+hash, -> encodable, decodable, murmut, sha256
+
 
 
 

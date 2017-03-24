@@ -17,6 +17,22 @@ public class Vertex<T> implements Comparable<Vertex<T>> {
         this.neighbors= new ArrayList<>();
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Vertex<?> vertex = (Vertex<?>) o;
+
+        return value.equals(vertex.value);
+
+    }
+
+    @Override
+    public int hashCode() {
+        return value.hashCode();
+    }
+
     public Integer getWeight() {
         return weight;
     }

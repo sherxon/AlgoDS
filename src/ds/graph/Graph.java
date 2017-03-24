@@ -11,6 +11,8 @@ public interface Graph<T> {
      void removeVertex(T t);
      void removeEdge(T t1, T t2);
      Collection<Vertex<T>> getVertices();
+
+     Collection<Edge<Integer>> getEdges();
      int size();
      Vertex<T> getVertex(T t);
 }
