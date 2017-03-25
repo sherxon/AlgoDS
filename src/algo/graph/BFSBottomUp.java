@@ -26,7 +26,7 @@ public class BFSBottomUp<T> {
         Queue<Vertex<T>> frontier = new LinkedList<>();
         frontier.add(current);
         while (!frontier.isEmpty()) {
-            Vertex<T> v = frontier.remove(); // why needed?
+            Vertex<T> v = frontier.remove();
             for (Vertex<T> vertex : graph.getVertices()) {
                 if (!vertex.isVisited()) {
                     if (frontier.contains(vertex)) {

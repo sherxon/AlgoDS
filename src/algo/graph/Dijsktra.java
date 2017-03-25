@@ -22,17 +22,6 @@ public class Dijsktra<V, E extends Number> {
         this.graph = graph;
     }
 
-
-    public void printPath(V h) {
-        Vertex<V> root=graph.getVertex(h);
-        if(root==null)return;
-        while (root.getParent()!=null){
-            System.out.print(root.getValue() + " " + root.getWeight() + " ");
-            root=root.getParent();
-        }
-        System.out.println("a 0");
-    }
-
     public void shortestPath(V a) {
         Vertex<V> source=graph.getVertex(a);
         TreeSet<Vertex<V>> priorityQueue = new TreeSet<>();
