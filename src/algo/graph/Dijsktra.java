@@ -32,14 +32,16 @@ public class Dijsktra<V, E extends Number> {
         }
         while (!priorityQueue.isEmpty()) {
             Vertex<V> min = priorityQueue.pollFirst();
-            min.setVisited(true);// why needed?
-            for (Edge<E> edge : graph.getEdges(min.getValue())) { // TODO vertexes may have the same value
-                Integer newPath=min.getWeight() +edge.getWeight().intValue();
-                if(edge.getTo().getWeight() > newPath){
+            min.setVisited(true);
+            for (Edge<E, V> edge : graph.getEdges(min)) {
+                if (edge.getTo().isVisited()) continue;
+
+                Number newPath = min.getWeight().doubleValue() + edge.getWeight().doubleValue();
+                if (edge.getTo().getWeight().doubleValue() > newPath.doubleValue()) {
                     priorityQueue.remove(edge.getTo());
                     edge.getTo().setWeight(newPath);
                     edge.getTo().setParent(min);
-                    priorityQueue.add(edge.getTo()); // TODO haha fix this problem even IDEA found this problem
+                    priorityQueue.add(edge.getTo());
                 }
             }
         }

@@ -10,7 +10,7 @@ public class WeightedGraph<V, E extends Number>{
 
    private  boolean Undirected = false;
    private Map<V, Vertex<V>> map= new HashMap<>();
-   private Map<V, Set<Edge<E>>> edges= new HashMap<>();
+    private Map<Vertex<V>, Set<Edge<E, V>>> edges = new HashMap<>();
 
     public WeightedGraph(boolean Undirected) {
         this.Undirected = Undirected;
@@ -18,19 +18,19 @@ public class WeightedGraph<V, E extends Number>{
 
     public void addVertex(V v) {
         map.put(v, new Vertex<>(v));
-        edges.put(v, new HashSet<Edge<E>>());
+        edges.put(map.get(v), new HashSet<>());
     }
 
     public void addEdge(V v1, V v2, E weight) {
         if(!map.containsKey(v1))return;
         if(!map.containsKey(v2))return;
-        Edge<E> edge=new Edge<>(weight, map.get(v1), map.get(v2));
+        Edge<E, V> edge = new Edge<>(weight, map.get(v1), map.get(v2));
 
-        edges.get(v1).add(edge);
+        edges.get(map.get(v1)).add(edge);
 
         if(Undirected) {
-            Edge<E> edge2=new Edge<>(weight, map.get(v2), map.get(v1));
-            edges.get(v2).add(edge2);
+            Edge<E, V> edge2 = new Edge<>(weight, map.get(v2), map.get(v1));
+            edges.get(map.get(v2)).add(edge2);
         }
     }
 
@@ -46,7 +46,8 @@ public class WeightedGraph<V, E extends Number>{
     public Collection<Vertex<V>> getVertices() {
         return map.values();
     }
-    public Set<Edge<E>> getEdges(V v) {
+
+    public Set<Edge<E, V>> getEdges(Vertex<V> v) {
         return edges.get(v);
     }
 

@@ -11,7 +11,7 @@ public class Vertex<T> implements Comparable<Vertex<T>> {
     private Collection<Vertex<T>> neighbors; // used with Unweighted graphs
     private Vertex<T> parent; // used in dfs and bfs
     private boolean visited; //used for bfs and dfs
-    private Integer weight;
+    private Number weight;
     public Vertex(T value) {
         this.value = value;
         this.neighbors= new ArrayList<>();
@@ -33,11 +33,11 @@ public class Vertex<T> implements Comparable<Vertex<T>> {
         return value.hashCode();
     }
 
-    public Integer getWeight() {
+    public Number getWeight() {
         return weight;
     }
 
-    public void setWeight(Integer weight) {
+    public void setWeight(Number weight) {
         this.weight = weight;
     }
 
@@ -80,6 +80,6 @@ public class Vertex<T> implements Comparable<Vertex<T>> {
 
     @Override
     public int compareTo(Vertex<T> o) {
-        return this.weight - o.weight;
+        return (int) (this.weight.doubleValue() - o.weight.doubleValue());
     }
 }

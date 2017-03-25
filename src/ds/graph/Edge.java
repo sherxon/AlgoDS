@@ -3,27 +3,28 @@ package ds.graph;
 /**
  * Created by sherxon on 1/7/17.
  */
-public class Edge<T extends Number> {
+public class Edge<T extends Number, V> {
    private T weight;
-   private Vertex from;
-   private Vertex to;
+    private Vertex<V> from;
+    private Vertex<V> to;
 
     public Edge(T weight) {
         this.weight = weight;
     }
 
-    public Edge(T weight, Vertex from, Vertex to) {
+    public Edge(T weight, Vertex<V> from, Vertex<V> to) {
         this.weight = weight;
         this.from = from;
         this.to = to;
     }
+
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        Edge<?> edge = (Edge<?>) o;
+        Edge<?, ?> edge = (Edge<?, ?>) o;
 
         if (weight != null ? !weight.equals(edge.weight) : edge.weight != null) return false;
         if (from != null ? !from.equals(edge.from) : edge.from != null) return false;
@@ -55,11 +56,11 @@ public class Edge<T extends Number> {
         this.from = from;
     }
 
-    public Vertex getTo() {
+    public Vertex<V> getTo() {
         return to;
     }
 
-    public void setTo(Vertex to) {
+    public void setTo(Vertex<V> to) {
         this.to = to;
     }
 }
