@@ -1,4 +1,4 @@
-package contests;
+package contests.facebookHC;
 
 import java.io.*;
 import java.util.HashMap;

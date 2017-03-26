@@ -1,4 +1,4 @@
-package contests;
+package contests.facebookHC;
 
 /**
  * Created by sherxon on 1/6/17.
