@@ -15,8 +15,8 @@ public class PolynomialSolutionForVertexCover {
         int ran = (int) (Math.random() * 100);
         System.out.println("number of graphs" + ran);
         for (int i = 0; i < ran; i++) {
-            Graph<Integer> graph = new UndirectedGraph<>();
-            Graph<Integer> graphForBrute = new UndirectedGraph<>();
+            Graph<Integer, Number> graph = new UndirectedGraph<>();
+            Graph<Integer, Number> graphForBrute = new UndirectedGraph<>();
             int randomVertexNum = (int) (Math.random() * 100);
             System.out.println("number of vertices" + randomVertexNum);
             for (int j = 0; j < randomVertexNum; j++) {
@@ -52,7 +52,7 @@ public class PolynomialSolutionForVertexCover {
         }
     }
 
-    private static Set<Vertex<Integer>> getSolutionBrute(Graph<Integer> graph) {
+    private static Set<Vertex<Integer>> getSolutionBrute(Graph<Integer, Number> graph) {
         Set<Vertex<Integer>> set = new HashSet<>();
         List<List<Vertex<Integer>>> powerSet = getPowerSet(graph.getVertices());
         Collections.sort(powerSet, (a, b) -> a.size() - b.size());
@@ -68,13 +68,13 @@ public class PolynomialSolutionForVertexCover {
         return null;
     }
 
-    private static boolean isMinVCover(List<Vertex<Integer>> vertexes, Graph<Integer> graph) {
+    private static boolean isMinVCover(List<Vertex<Integer>> vertexes, Graph<Integer, Number> graph) {
         Set<Vertex<Integer>> set = new HashSet<>(vertexes);
 
         return false;
     }
 
-    private static Set<Vertex<Integer>> getSolution(Graph<Integer> graph) {
+    private static Set<Vertex<Integer>> getSolution(Graph<Integer, Number> graph) {
         Set<Vertex<Integer>> set = new HashSet<>();
         return set;
     }

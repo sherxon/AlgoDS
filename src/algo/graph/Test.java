@@ -11,7 +11,7 @@ import java.util.List;
  */
 public class Test {
     public static void main(String[] args) {
-        Graph<String> graph= new DirectedGraph<>();
+        Graph<String, Number> graph = new DirectedGraph<>();
         graph.addVertex("a");
         graph.addVertex("b");
         graph.addVertex("c");

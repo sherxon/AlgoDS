@@ -15,9 +15,9 @@ import java.util.Queue;
  */
 public class BFS<T> {
 
-    Graph<T> graph;
+    Graph<T, Number> graph;
 
-    public BFS(Graph<T> graph) {
+    public BFS(Graph<T, Number> graph) {
         this.graph = graph;
     }
 

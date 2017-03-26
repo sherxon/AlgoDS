@@ -10,14 +10,14 @@ import java.util.Stack;
  * Created by sherxon on 1/4/17.
  */
 public class DFS<T> {
-    Graph<T> graph;
+    Graph<T, Number> graph;
 
-    public DFS(Graph<T> graph) {
+    public DFS(Graph<T, Number> graph) {
         this.graph = graph;
     }
 
     public static void main(String[] args) {
-        Graph<String> graph= new DirectedGraph<>();
+        Graph<String, Number> graph = new DirectedGraph<>();
         graph.addVertex("a");
         graph.addVertex("b");
         graph.addVertex("c");

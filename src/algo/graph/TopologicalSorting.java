@@ -12,9 +12,9 @@ import java.util.Stack;
  * Created by sherxon on 1/4/17.
  */
 public class TopologicalSorting<T> {
-    private Graph<T> graph;
+    private Graph<T, Number> graph;
 
-    public TopologicalSorting(Graph<T> graph) {
+    public TopologicalSorting(Graph<T, Number> graph) {
         this.graph = graph;
     }
 

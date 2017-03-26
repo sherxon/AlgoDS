@@ -7,7 +7,7 @@ import java.util.Map;
 /**
  * Created by sherxon on 1/1/17.
  */
-public class DirectedGraph<V> implements Graph<V> {
+public class DirectedGraph<V, E extends Number> implements Graph<V, E> {
 
    private Map<V, Vertex<V>> vertexMap= new HashMap<>();
 
@@ -22,6 +22,10 @@ public class DirectedGraph<V> implements Graph<V> {
         return vertexMap.values();
     }
 
+    @Override
+    public Collection<Edge<E, V>> getEdges() {
+        return null;
+    }
 
 
     @Override

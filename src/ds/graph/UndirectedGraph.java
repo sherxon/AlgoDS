@@ -8,9 +8,9 @@ import java.util.Map;
 /**
  * Created by sherxon on 1/1/17.
  */
-public class UndirectedGraph<V> implements Graph<V> {
+public class UndirectedGraph<V, E extends Number> implements Graph<V, E> {
     private Map<V, Vertex<V>> vertexMap = new HashMap<>();
-    private Collection<Edge<Integer>> edges = new ArrayList<>();
+    private Collection<Edge<E, V>> edges = new ArrayList<>();
 
     @Override
     public void addVertex(V v) {
@@ -24,7 +24,7 @@ public class UndirectedGraph<V> implements Graph<V> {
     }
 
     @Override
-    public Collection<Edge<Integer>> getEdges() {
+    public Collection<Edge<E, V>> getEdges() {
         return edges;
     }
 
@@ -33,11 +33,15 @@ public class UndirectedGraph<V> implements Graph<V> {
     public void addEdge(V v1, V v2) {
         if(!vertexMap.containsKey(v1))return;
         if(!vertexMap.containsKey(v2))return;
+        addEdge(v1, v2, (E) Integer.valueOf(0));
+    }
+
+    public void addEdge(V v1, V v2, E weight) {
         Vertex<V> from=vertexMap.get(v1);
         Vertex<V> to=vertexMap.get(v2);
         from.addNeighbor(to);
         to.addNeighbor(from);
-        edges.add(new Edge<>(0, from, to));
+        edges.add(new Edge<>(weight, from, to));
     }
 
     @Override

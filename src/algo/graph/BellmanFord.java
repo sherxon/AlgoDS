@@ -40,12 +40,12 @@ public class BellmanFord<V, E extends Number>  {
        * */
        List<Edge> edges=new LinkedList<>();
        for (Vertex<V> vertex : graph.getVertices())
-           edges.addAll(graph.getEdges(vertex.getValue()));
+           edges.addAll(graph.getEdges(vertex));
 
        for (int i = 0; i < graph.size()-1; i++) {
            for (Edge edge : edges) {
-               Integer newPath=edge.getFrom().getWeight() +edge.getWeight().intValue();
-               if(edge.getFrom().getWeight()!=Integer.MAX_VALUE &&  edge.getTo().getWeight() > newPath){
+               Integer newPath = edge.getFrom().getWeight().intValue() + edge.getWeight().intValue();
+               if (edge.getFrom().getWeight().intValue() != Integer.MAX_VALUE && edge.getTo().getWeight().intValue() > newPath) {
                    edge.getTo().setWeight(newPath);
                    edge.getTo().setParent(edge.getFrom());
                }
@@ -58,8 +58,8 @@ public class BellmanFord<V, E extends Number>  {
         * there is a negative cycle
         * */
        for (Edge edge : edges) {
-           Integer newPath=edge.getFrom().getWeight() +edge.getWeight().intValue();
-           if(edge.getFrom().getWeight()!=Integer.MAX_VALUE &&  edge.getTo().getWeight() > newPath){
+           Integer newPath = edge.getFrom().getWeight().intValue() + edge.getWeight().intValue();
+           if (edge.getFrom().getWeight().intValue() != Integer.MAX_VALUE && edge.getTo().getWeight().intValue() > newPath) {
                System.out.println("Negative Cycle found");
                break;
            }
