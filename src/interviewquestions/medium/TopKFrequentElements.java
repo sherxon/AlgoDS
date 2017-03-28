@@ -9,8 +9,7 @@ public class TopKFrequentElements {
     public List<Integer> topKFrequent(int[] a, int k) {
         Map<Integer,Integer> map= new HashMap<>();
         for(int i:a){
-            if(!map.containsKey(i))
-                map.put(i, 1);
+            if (!map.containsKey(i)) map.put(i, 1);
             else map.put(i, map.get(i)+1);
         }
         TreeMap<Integer, Set<Integer>> tr= new TreeMap<>((c, b)->b.compareTo(c));

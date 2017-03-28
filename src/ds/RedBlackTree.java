@@ -1,5 +1,8 @@
 package ds;
 
+import java.util.Arrays;
+import java.util.stream.Collectors;
+
 /**
  * Created by sherxon on 3/20/17.
  */
@@ -27,7 +30,29 @@ public class RedBlackTree<K extends Comparable, V> {
         else if (x.key.compareTo(key) < 0)
             x.right = putRecursive(root.right, key, value);
         else x.value = value;
+        String s = "";
+        s = Arrays.stream(s.split("\\s+")).collect(Collectors.joining(" "));
         return x;
+    }
+
+    void rightRotate(RBNode root, boolean changeColor) {
+        RBNode parent = root.parent;
+        root.parent = parent.parent;
+        if (parent.parent != null) {
+            if (parent.parent.right == parent) {
+                parent.parent.right = root;
+            } else
+                parent.parent.left = root;
+        }
+        RBNode right = root.right;
+        root.right = parent;
+        parent.parent = root;
+        parent.left = right;
+        if (right != null) right.parent = parent;
+        if (changeColor) {
+            root.isRed = false;
+            parent.isRed = true;
+        }
     }
 
     private boolean isRed(RBNode x) {

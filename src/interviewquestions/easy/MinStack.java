@@ -6,28 +6,26 @@ import java.util.Stack;
  * Created by sherxon on 12/29/16.
  */
 public class MinStack {
-    Stack<Integer> stack= new Stack<>();
-    int min=Integer.MAX_VALUE;
-    /** initialize your data structure here. */
-    public MinStack() {
+    private Stack<Integer> stack;
+    private Stack<Integer> min;
 
+    /** initialize your data structure here. */
+
+    public MinStack() {
+        stack = new Stack<>();
+        min = new Stack<>();
     }
 
     public void push(int x) {
-        if(x<min)min=x;
         stack.push(x);
-
+        if (min.isEmpty() || x <= min.peek())
+            min.push(x);
     }
 
     public void pop() {
-        int p=stack.peek();
-        stack.pop();
-        if(p==min){
-            min=Integer.MAX_VALUE;
-            for(Integer i:stack){
-                min=Math.min(i, min);
-            }
-        }
+        int p = stack.pop();
+        if (min.peek() == p)
+            min.pop();
 
     }
 
@@ -36,6 +34,6 @@ public class MinStack {
     }
 
     public int getMin() {
-        return min;
+        return min.peek();
     }
 }

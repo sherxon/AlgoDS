@@ -75,6 +75,10 @@ Interview Questions package include 3 text files (Easy.txt, Medium.txt and Hard.
 7) [Fermat's primality](https://github.com/sherxon/AlgoDS/blob/master/src/algo/numerals/FermatPrimality.java)     
 8) [Evaluate Reverse Polish Notation](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/EvaluateReversePolishNotation.java)  
 
+### Stack & Queue
+1) [Min Stack](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/MinStack.java)  
+2) [Min Queue](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/QueuewithMinimum.java)  
+
 ### Misc
 1) [Union Find](https://github.com/sherxon/AlgoDS/blob/master/src/algo/UnionFind.java)  
 2) [Permutations](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/Permutations.java)  
