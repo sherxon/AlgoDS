@@ -78,6 +78,8 @@ Interview Questions package include 3 text files (Easy.txt, Medium.txt and Hard.
 ### Stack & Queue
 1) [Min Stack](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/MinStack.java)  
 2) [Min Queue](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/QueuewithMinimum.java)  
+3) [Implement Stack Using Queue](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/ImplementStackUsingQueues.java)  
+4) [Implement Queue Using Stack](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/ImplementQueueusingStacks.java)
 
 ### Misc
 1) [Union Find](https://github.com/sherxon/AlgoDS/blob/master/src/algo/UnionFind.java)  

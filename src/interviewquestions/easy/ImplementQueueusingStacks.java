@@ -7,39 +7,59 @@ import java.util.Stack;
  */
 public class ImplementQueueusingStacks {
 
-}
-class MyQueue {
-    Stack<Integer> stack= new Stack<>();
+    static class MyQueue {
+        Stack<Integer> stack;
+        Stack<Integer> helper;
+        Integer peek = null;
 
+        /**
+         * Initialize your data structure here.
+         */
+        public MyQueue() {
+            stack = new Stack<>();
+            helper = new Stack<>();
+        }
 
-    // Push element x to the back of queue.
-    public void push(int x) {
-        stack.push(x);
+        /**
+         * Push element x to the back of queue.
+         */
+        public void push(int x) {
+            stack.push(x);
+            if (peek == null) peek = x;
+        }
+
+        /**
+         * Removes the element from in front of queue and returns that element.
+         */
+        public int pop() {
+            helper.clear();
+
+            while (!stack.isEmpty())
+                helper.push(stack.pop());
+            int x = helper.pop();
+
+            if (!helper.isEmpty())
+                peek = helper.peek();
+            else peek = null;
+
+            while (!helper.isEmpty())
+                stack.push(helper.pop());
+            return x;
+        }
+
+        /**
+         * Get the front element.
+         */
+        public int peek() {
+            return peek;
+        }
+
+        /**
+         * Returns whether the queue is empty.
+         */
+        public boolean empty() {
+            return stack.isEmpty();
+        }
     }
 
-    // Removes the element from in front of queue.
-    public void pop() {
-        Stack<Integer> temp= new Stack<>();
-        while(!stack.isEmpty())
-            temp.add(stack.pop());
-        temp.pop();
-        while(!temp.isEmpty())
-            stack.add(temp.pop());
-    }
-
-    // Get the front element.
-    public int peek() {
-        Stack<Integer> temp= new Stack<>();
-        while(!stack.isEmpty())
-            temp.add(stack.pop());
-        int i=temp.peek();
-        while(!temp.isEmpty())
-            stack.add(temp.pop());
-        return i;
-    }
-
-    // Return whether the queue is empty.
-    public boolean empty() {
-        return stack.isEmpty();
-    }
 }
