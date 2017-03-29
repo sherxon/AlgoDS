@@ -81,6 +81,13 @@ Interview Questions package include 3 text files (Easy.txt, Medium.txt and Hard.
 3) [Implement Stack Using Queue](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/ImplementStackUsingQueues.java)  
 4) [Implement Queue Using Stack](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/ImplementQueueusingStacks.java)
 
+### Dynamic Programming
+1) [Fibonacci Numbers](https://github.com/sherxon/AlgoDS/blob/master/src/algo/dp/FibonacciNumber.java)  
+2) [Word Break](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/WordBreak.java)  
+3) [Subset Sum](https://github.com/sherxon/AlgoDS/blob/master/src/algo/dp/SubsetSum.java)     
+4) [0/1 Knapsack Problem](https://github.com/sherxon/AlgoDS/blob/master/src/algo/dp/Knapsack01.java)     
+5) [Shortest Palindrome](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/hard/ShortestPalindrome.java)    
+
 ### Misc
 1) [Union Find](https://github.com/sherxon/AlgoDS/blob/master/src/algo/UnionFind.java)  
 2) [Permutations](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/Permutations.java)  
@@ -108,11 +115,6 @@ Interview Questions package include 3 text files (Easy.txt, Medium.txt and Hard.
 7) [Shortest Path Bellman-Ford](https://github.com/sherxon/AlgoDS/blob/master/src/algo/graph/BellmanFord.java)  
 8) [A* Heuristic Path Finding](https://github.com/sherxon/AlgoDS/blob/master/src/algo/graph/AStar.java)  
 
-### Dynamic Programming
-1) [Fibonacci Numbers](https://github.com/sherxon/AlgoDS/blob/master/src/algo/dp/FibonacciNumber.java)  
-2) [Word Break](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/WordBreak.java)  
-3) [Subset Sum](https://github.com/sherxon/AlgoDS/blob/master/src/algo/dp/SubsetSum.java)     
-4) [0/1 Knapsack Problem](https://github.com/sherxon/AlgoDS/blob/master/src/algo/dp/Knapsack01.java)     
 
 ### String
 1) [Rabin Karp Subsequence search](https://github.com/sherxon/AlgoDS/blob/master/src/algo/string/RabinKarpSubsequenceSearch.java)   
