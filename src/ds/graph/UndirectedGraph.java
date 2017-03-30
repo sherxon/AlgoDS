@@ -1,9 +1,6 @@
 package ds.graph;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Created by sherxon on 1/1/17.
@@ -19,8 +16,8 @@ public class UndirectedGraph<V, E extends Number> implements Graph<V, E> {
 
 
     @Override
-    public Collection<Vertex<V>> getVertices() {
-        return vertexMap.values();
+    public Set<Vertex<V>> getVertices() {
+        return new HashSet<>(vertexMap.values());
     }
 
     @Override
@@ -39,6 +36,7 @@ public class UndirectedGraph<V, E extends Number> implements Graph<V, E> {
     public void addEdge(V v1, V v2, E weight) {
         Vertex<V> from=vertexMap.get(v1);
         Vertex<V> to=vertexMap.get(v2);
+        if (from == to) return;
         from.addNeighbor(to);
         to.addNeighbor(from);
         edges.add(new Edge<>(weight, from, to));
@@ -46,7 +44,14 @@ public class UndirectedGraph<V, E extends Number> implements Graph<V, E> {
 
     @Override
     public void removeVertex(V v) {
+        Vertex<V> vertex = vertexMap.get(v);
+        Set<Vertex<V>> neis = vertex.getNeighbors();
+        for (Vertex<V> nei : neis) {
+            nei.removeNeighrbor(vertex);
+        }
 
+        vertex.getNeighbors().clear();
+        vertexMap.remove(v);
     }
 
     @Override
@@ -68,4 +73,5 @@ public class UndirectedGraph<V, E extends Number> implements Graph<V, E> {
     public Vertex<V> getVertex(V v) {
         return vertexMap.get(v);
     }
+
 }

@@ -1,20 +1,26 @@
 package ds.graph;
 
-import java.util.ArrayList;
-import java.util.Collection;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Created by sherxon on 1/1/17.
  */
 public class Vertex<T> implements Comparable<Vertex<T>> {
     private T value;
-    private Collection<Vertex<T>> neighbors; // used with Unweighted graphs
+    private Set<Vertex<T>> neighbors; // used with Unweighted graphs
     private Vertex<T> parent; // used in dfs and bfs
     private boolean visited; //used for bfs and dfs
     private Number weight;
     public Vertex(T value) {
         this.value = value;
-        this.neighbors= new ArrayList<>();
+        this.neighbors = new HashSet<>();
+    }
+
+    @Override
+    public String toString() {
+        return "Vertex{" +
+                "value=" + value + '}';
     }
 
     @Override
@@ -53,7 +59,7 @@ public class Vertex<T> implements Comparable<Vertex<T>> {
         this.value = value;
     }
 
-    public Collection<Vertex<T>> getNeighbors() {
+    public Set<Vertex<T>> getNeighbors() {
         return neighbors;
     }
 

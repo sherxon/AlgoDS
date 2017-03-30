@@ -33,6 +33,14 @@ public class Edge<T extends Number, V> {
     }
 
     @Override
+    public String toString() {
+        return "Edge{" +
+                "from=" + from +
+                ", to=" + to +
+                '}';
+    }
+
+    @Override
     public int hashCode() {
         int result = weight != null ? weight.hashCode() : 0;
         result = 31 * result + (from != null ? from.hashCode() : 0);

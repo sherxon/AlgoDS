@@ -49,14 +49,13 @@ public class DFS<T> {
     }
     public void searchIterative(T source) {
         Vertex<T> vertex= graph.getVertex(source);
-        vertex.setVisited(true);
         Stack<Vertex<T>> stack= new Stack<>();
         stack.add(vertex);
         while (!stack.isEmpty()){
             Vertex<T> v=stack.pop();
+            v.setVisited(true);
             for (Vertex<T> tVertex : v.getNeighbors()) {
                 if(!tVertex.isVisited()){
-                    tVertex.setVisited(true);
                     tVertex.setParent(v);
                     stack.add(tVertex);
                 }

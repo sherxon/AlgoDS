@@ -1,8 +1,6 @@
 package ds.graph;
 
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Created by sherxon on 1/1/17.
@@ -18,8 +16,8 @@ public class DirectedGraph<V, E extends Number> implements Graph<V, E> {
 
 
     @Override
-    public Collection<Vertex<V>> getVertices() {
-        return vertexMap.values();
+    public Set<Vertex<V>> getVertices() {
+        return new HashSet<>(vertexMap.values());
     }
 
     @Override
