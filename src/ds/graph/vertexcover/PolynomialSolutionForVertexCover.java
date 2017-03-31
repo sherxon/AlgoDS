@@ -14,20 +14,20 @@ import java.util.concurrent.ThreadLocalRandom;
 public class PolynomialSolutionForVertexCover {
     public static void main(String[] args) {
 
-        int ran = (int) (Math.random() * 100);
-        System.out.println("number of graphs: " + ran);
-        for (int i = 0; i < ran; i++) {
+
+        System.out.println("number of graphs: " + 100);
+        for (int i = 0; i < 100; i++) {
             System.out.println("-----------------------------------------------");
             Graph<Integer, Number> graph = new UndirectedGraph<>();
             Graph<Integer, Number> graphForBrute = new UndirectedGraph<>();
-            int randomVertexNum = ThreadLocalRandom.current().nextInt(1, 10);
+            int randomVertexNum = ThreadLocalRandom.current().nextInt(2, 20);
             System.out.println("number of vertices: " + randomVertexNum);
             for (int j = 0; j < randomVertexNum; j++) {
                 graph.addVertex(j);
                 graphForBrute.addVertex(j);
             }
 
-            int numOfEdge = ThreadLocalRandom.current().nextInt(randomVertexNum);
+            int numOfEdge = ThreadLocalRandom.current().nextInt(randomVertexNum * (randomVertexNum - 1) / 2);
             System.out.println("number of edges: " + numOfEdge);
             for (int j = 0; j < numOfEdge; j++) {
                 int from = (int) (Math.random() * randomVertexNum);
@@ -35,13 +35,14 @@ public class PolynomialSolutionForVertexCover {
                 graph.addEdge(from, to);
                 graphForBrute.addEdge(from, to);
             }
+            long start = System.currentTimeMillis();
+            Set<Vertex<Integer>> mySolution = getSolution(graph);
+            long end = System.currentTimeMillis();
+            System.out.println("My Solution Takes: " + ((end - start) / 1000.0));
+            start = System.currentTimeMillis();
             Set<Vertex<Integer>> bruteSolution = getSolutionBrute(graphForBrute);
-            Set<Vertex<Integer>> mySolution = new HashSet<>();
-            try {
-                mySolution = getSolution(graph);
-            } catch (Exception e) {
-                System.out.println(graph);
-            }
+            end = System.currentTimeMillis();
+            System.out.println("Brute Solution Takes: " + ((end - start) / 1000.0));
             System.out.println("MySolution: " + mySolution.size() + " BruteSOlution: " + bruteSolution.size());
             // check solutions
             if (mySolution.size() != bruteSolution.size()) {
@@ -112,15 +113,29 @@ public class PolynomialSolutionForVertexCover {
         return set;
     }
 
+
     private static Vertex<Integer> getMaxDegreeVertex(Graph<Integer, Number> graph) {
         Vertex<Integer> maxVer = null;
-        int max = 0;
+        Comparator<Vertex<Integer>> comparator = (a, b) -> {
+
+            if (a.getNeighbors().size() > b.getNeighbors().size()) return 1;
+            else if (a.getNeighbors().size() < b.getNeighbors().size()) return -1;
+
+            int counta = 0;
+            for (Vertex<Integer> ane : a.getNeighbors()) {
+                counta += ane.getNeighbors().size();
+            }
+            int countb = 0;
+            for (Vertex<Integer> bne : b.getNeighbors()) {
+                countb += bne.getNeighbors().size();
+            }
+            return countb - counta;
+        };
         for (Vertex<Integer> integerVertex : graph.getVertices()) {
-            if (integerVertex.getNeighbors().size() > max) {
-                max = integerVertex.getNeighbors().size();
+            if (maxVer == null || comparator.compare(integerVertex, maxVer) > 0) {
                 maxVer = integerVertex;
             }
         }
-        return maxVer;
+        return maxVer == null || maxVer.getNeighbors().size() == 0 ? null : maxVer;
     }
 }
