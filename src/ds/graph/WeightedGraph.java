@@ -1,61 +1,55 @@
 package ds.graph;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
 
 /**
  * Created by sherxon on 1/7/17.
  */
-public class WeightedGraph<V, E extends Number>{
-
-
-   private  boolean Undirected = false;
-   private Map<V, Vertex<V>> map= new HashMap<>();
-    private Map<Vertex<V>, Set<Edge<E, V>>> edges = new HashMap<>();
+public class WeightedGraph {
+    Set<Edge> edges = new HashSet<>();
+    private boolean Undirected = false;
+    private Map<Integer, Set<Edge>> map = new HashMap<>();
 
     public WeightedGraph(boolean Undirected) {
         this.Undirected = Undirected;
     }
 
-    public void addVertex(V v) {
-        map.put(v, new Vertex<>(v));
-        edges.put(map.get(v), new HashSet<>());
+    public void addVertex(Integer v) {
+        map.put(v, new HashSet<>());
     }
 
-    public void addEdge(V v1, V v2, E weight) {
+    public void addEdge(Integer v1, Integer v2, Double weight) {
         if(!map.containsKey(v1))return;
         if(!map.containsKey(v2))return;
-        Edge<E, V> edge = new Edge<>(weight, map.get(v1), map.get(v2));
+        Edge edge = new Edge(v1, v2, weight);
 
-        edges.get(map.get(v1)).add(edge);
+        map.get(v1).add(edge);
+        edges.add(edge);
 
         if(Undirected) {
-            Edge<E, V> edge2 = new Edge<>(weight, map.get(v2), map.get(v1));
-            edges.get(map.get(v2)).add(edge2);
+            Edge edge2 = new Edge(v1, v2, weight);
+            map.get(v2).add(edge2);
+            edges.add(edge2);
         }
     }
 
-    public void removeVertex(V v) {
-
-    }
-
-    public void removeEdge(V t1, V t2) {
+    public void removeVertex(Integer v) {
 
     }
 
 
-    public Collection<Vertex<V>> getVertices() {
-        return map.values();
+    public Set<Integer> getVertices() {
+        return new HashSet<>(map.keySet());
     }
 
-    public Set<Edge<E, V>> getEdges(Vertex<V> v) {
-        return edges.get(v);
+    public Set<Edge> getEdges() {
+        return edges;
     }
 
     public int size() {
         return map.size();
-    }
-
-    public Vertex<V> getVertex(V v) {
-        return map.get(v);
     }
 }
