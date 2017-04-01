@@ -1,11 +1,12 @@
 package algo.graph;
 
 import ds.graph.Edge;
-import ds.graph.Vertex;
 import ds.graph.WeightedGraph;
 
+import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by sherxon on 1/7/17.
@@ -16,22 +17,24 @@ import java.util.List;
  * This is slower than Dijkstra shortest path algorithm which works for only non-negative edges in O(VLogV)
  * with fibonacci heap.
 * */
-public class BellmanFord<V, E extends Number>  {
-    WeightedGraph<V, E> graph;
+public class BellmanFord {
+    WeightedGraph graph;
+    Map<Integer, Double> distance;
 
-    public BellmanFord(WeightedGraph<V, E> graph) {
+    public BellmanFord(WeightedGraph graph) {
         this.graph = graph;
+        distance = new HashMap<>();
     }
 
-   public void shortestPath(V v){
+    public void shortestPath(Integer source) {
        /**
        * Step 1:
        * Initialization  step
        * */
-       Vertex<V> source=graph.getVertex(v);
-       for (Vertex<V> vertex : graph.getVertices()) {
-           if(source==vertex)vertex.setWeight(0);
-           else vertex.setWeight(Integer.MAX_VALUE);
+
+        for (Integer vertex : graph.getVertices()) {
+            if (source.equals(vertex)) distance.put(vertex, 0d);
+            else distance.put(vertex, Double.POSITIVE_INFINITY);
        }
        /**
        * Step 2:
@@ -39,15 +42,14 @@ public class BellmanFord<V, E extends Number>  {
        *
        * */
        List<Edge> edges=new LinkedList<>();
-       for (Vertex<V> vertex : graph.getVertices())
+        for (Integer vertex : graph.getVertices())
            edges.addAll(graph.getEdges(vertex));
 
        for (int i = 0; i < graph.size()-1; i++) {
            for (Edge edge : edges) {
-               Integer newPath = edge.getFrom().getWeight().intValue() + edge.getWeight().intValue();
-               if (edge.getFrom().getWeight().intValue() != Integer.MAX_VALUE && edge.getTo().getWeight().intValue() > newPath) {
-                   edge.getTo().setWeight(newPath);
-                   edge.getTo().setParent(edge.getFrom());
+               Double newPath = distance.get(edge.getFrom()) + edge.getWeight();
+               if (distance.get(edge.getTo()) > newPath) {
+                   distance.put(edge.getTo(), newPath);
                }
            }
        }
@@ -58,23 +60,12 @@ public class BellmanFord<V, E extends Number>  {
         * there is a negative cycle
         * */
        for (Edge edge : edges) {
-           Integer newPath = edge.getFrom().getWeight().intValue() + edge.getWeight().intValue();
-           if (edge.getFrom().getWeight().intValue() != Integer.MAX_VALUE && edge.getTo().getWeight().intValue() > newPath) {
+           Double newPath = distance.get(edge.getFrom()) + edge.getWeight();
+           if (distance.get(edge.getTo()) > newPath) {
                System.out.println("Negative Cycle found");
                break;
            }
        }
 
    }
-
-
-    public void printPath(V h) {
-        Vertex<V> root=graph.getVertex(h);
-        if(root==null)return;
-        while (root.getParent()!=null){
-            System.out.print(root.getValue() + " " + root.getWeight() + " ");
-            root=root.getParent();
-        }
-        System.out.println("a 0");
-    }
 }

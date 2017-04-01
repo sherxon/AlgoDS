@@ -30,7 +30,7 @@ public class WeightedGraph {
         edges.add(edge);
 
         if(Undirected) {
-            Edge edge2 = new Edge(v1, v2, weight);
+            Edge edge2 = new Edge(v2, v1, weight);
             map.get(v2).add(edge2);
             edges.add(edge2);
         }

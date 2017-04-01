@@ -3,7 +3,7 @@ package ds.graph;
 /**
  * Created by sherxon on 1/7/17.
  */
-public class Edge {
+public class Edge implements Comparable<Edge> {
     private Double weight;
     private Integer from;
     private Integer to;
@@ -29,6 +29,15 @@ public class Edge {
         if (from != null ? !from.equals(edge.from) : edge.from != null) return false;
         return !(to != null ? !to.equals(edge.to) : edge.to != null);
 
+    }
+
+    @Override
+    public String toString() {
+        return "Edge{" +
+                "weight=" + weight +
+                ", from=" + from +
+                ", to=" + to +
+                '}';
     }
 
     @Override
@@ -61,5 +70,10 @@ public class Edge {
 
     public void setTo(Integer to) {
         this.to = to;
+    }
+
+    @Override
+    public int compareTo(Edge o) {
+        return (int) (this.weight - o.weight);
     }
 }
