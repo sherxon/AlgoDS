@@ -13,8 +13,9 @@ import java.util.*;
  */
 public class BFS {
 
-    Map<Integer, Integer> path = new HashMap<>();
+    List<Integer> path = new LinkedList<>();
     private Graph graph;
+
 
     public BFS(Graph graph) {
         this.graph = graph;
@@ -22,17 +23,21 @@ public class BFS {
 
     public void search(Integer root) {
         if (root == null || !graph.getVertices().contains(root)) return;
+
         Set<Integer> visited = new HashSet<>();
         Queue<Integer> queue = new LinkedList<>();
+
         visited.add(root);
         queue.add(root);
-        path.put(root, null);
-        while (!queue.isEmpty()){
+
+
+        while (!queue.isEmpty()) {
+
             Integer vertex = queue.remove();
             proccessVertex(vertex);
+
             for (Integer neighbor : graph.getNeighbors(vertex))
                 if (!visited.contains(neighbor)) {
-                    path.put(neighbor, vertex);
                     visited.add(neighbor);
                     queue.add(neighbor);
                 }
@@ -40,22 +45,14 @@ public class BFS {
     }
 
     private void proccessVertex(Integer vertex) {
-        // process vertex: default not nothing;
+        path.add(vertex);
     }
 
 
-    public List<Integer> getPathFrom(Integer source, Integer sink) {
-        List<Integer> list = new ArrayList<>();
-        if (sink == null || !graph.getVertices().contains(sink))
-            return list;
-
+    public List<Integer> getPathFrom(Integer source) {
+        if (source == null || !graph.getVertices().contains(source))
+            return null;
         search(source);
-
-        Integer current = sink;
-        while (path.get(current) != null) {
-            list.add(current);
-            current = path.get(current);
-        }
-        return list;
+        return path;
     }
 }

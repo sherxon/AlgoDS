@@ -1,50 +1,46 @@
 package algo.graph;
 
 import ds.graph.Graph;
-import ds.graph.Vertex;
 
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-import java.util.Stack;
 
 /**
  * Created by sherxon on 1/4/17.
  */
-public class TopologicalSorting<T> {
-    private Graph<T, Number> graph;
+public class TopologicalSorting extends DFS {
+    List<Integer> list;
 
-    public TopologicalSorting(Graph<T, Number> graph) {
-        this.graph = graph;
+    public TopologicalSorting(Graph graph) {
+        super(graph);
+        list = new ArrayList<>();
     }
 
     // this works with DAG Only
     // first we will choose any vertex who that does not have incoming edges (sources)
     // sources can be found easier if incoming edge count is recorded in each vertex
-    List<T> topSort(){
-        Stack<T> stack=new Stack<>();//stack is also good option
-        Set<Vertex<T>> sources=new HashSet<>();
-        for (Vertex<T> vertex : graph.getVertices())
+    List<Integer> topSort() {
+
+        Set<Integer> sources = new HashSet<>();
+        for (Integer vertex : graph.getVertices())
             sources.add(vertex);
 
-        for (Vertex<T> vertex : graph.getVertices())
-            for (Vertex<T> tVertex : vertex.getNeighbors())
+        for (Integer vertex : graph.getVertices())
+            for (Integer tVertex : graph.getNeighbors(vertex))
                 sources.remove(tVertex);
 
-        for (Vertex<T> source : sources)
-            if(!source.isVisited())
-                dfs(source, stack);
+        for (Integer source : sources)
+            if (!visited.contains(source))
+                search(source);
 
-        return stack;
+        return list;
     }
 
-    private void dfs(Vertex<T> source, List<T> list) {
-        source.setVisited(true);
-        for (Vertex<T> vertex : source.getNeighbors()) {
-            if(!vertex.isVisited()){
-                dfs(vertex, list);
-            }
-        }
-        list.add(source.getValue());
+    @Override
+    public void processVertex(Integer source) {
+        super.processVertex(source);
+        list.add(source);
     }
 }

@@ -1,61 +1,68 @@
 package algo.graph;
 
 import ds.graph.Graph;
-import ds.graph.Vertex;
 
-import java.util.Stack;
+import java.util.*;
 
 /**
  * Created by sherxon on 1/4/17.
  */
-public class DFS<T> {
-    Graph<T, Number> graph;
+public class DFS {
+    protected Graph graph;
+    Set<Integer> visited;
+    List<Integer> path;
 
-    public DFS(Graph<T, Number> graph) {
+    public DFS(Graph graph) {
         this.graph = graph;
+        visited = new HashSet<>();
+        path = new LinkedList<>();
     }
 
-    public void search(T source) {
-        Vertex<T> vertex= graph.getVertex(source);
-        vertex.setVisited(true);
-        for (Vertex<T> tVertex : vertex.getNeighbors())
-            if(!tVertex.isVisited()){
-                tVertex.setParent(vertex);
-                search(tVertex.getValue());
+    public void search(Integer source) {
+
+        visited.add(source);
+        processVertex(source);
+
+        for (Integer neighbor : graph.getNeighbors(source))
+            if (!visited.contains(neighbor)) {
+                search(neighbor);
             }
     }
-    public void searchIterative(T source) {
-        Vertex<T> vertex= graph.getVertex(source);
-        Stack<Vertex<T>> stack= new Stack<>();
-        stack.add(vertex);
+
+    public void processVertex(Integer source) {
+        path.add(source);
+    }
+
+    public void searchIterative(Integer source) {
+        if (source == null || !graph.getVertices().contains(source)) return;
+
+        visited.clear();
+        path.clear();
+
+        Stack<Integer> stack = new Stack<>();
+        stack.add(source);
+
         while (!stack.isEmpty()){
-            Vertex<T> v=stack.pop();
-            v.setVisited(true);
-            for (Vertex<T> tVertex : v.getNeighbors()) {
-                if(!tVertex.isVisited()){
-                    tVertex.setParent(v);
-                    stack.add(tVertex);
-                }
+            Integer v = stack.pop();
+
+            visited.add(v);
+            processVertex(v);
+
+            for (Integer neighbor : graph.getNeighbors(v)) {
+                if (!visited.contains(neighbor))
+                    stack.add(neighbor);
             }
         }
 
     }
 
 
-    private  void clearGraph() {
-        for (Vertex<T> vertex : graph.getVertices()) {
-            vertex.setVisited(false);
-            vertex.setParent(null);
-        }
-    }
-    public void printPathFrom(T t){
-        Vertex<T> root=graph.getVertex(t);
-        if(root==null)return;
-        while (root.getParent()!=null){
-            System.out.print(root.getValue() + " -> ");
-            root=root.getParent();
-        }
-        System.out.println("a");
+    public List<Integer> getPathFrom(Integer source) {
+
+        if (source == null || !graph.getVertices().contains(source))
+            return null;
+        search(source);
+        return path;
     }
 
 

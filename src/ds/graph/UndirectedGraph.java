@@ -24,6 +24,11 @@ public class UndirectedGraph implements Graph {
         return new HashSet<>(vertexMap.keySet());
     }
 
+    @Override
+    public Set<Integer> getNeighbors(Integer ver) {
+        return vertexMap.get(ver);
+    }
+
 
     @Override
     public Double addEdge(Integer v1, Integer v2) {
