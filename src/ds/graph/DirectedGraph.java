@@ -1,6 +1,9 @@
 package ds.graph;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
 
 /**
  * Created by sherxon on 1/1/17.
@@ -20,11 +23,6 @@ public class DirectedGraph<V, E extends Number> implements Graph<V, E> {
         return new HashSet<>(vertexMap.values());
     }
 
-    @Override
-    public Collection<Edge<E, V>> getEdges() {
-        return null;
-    }
-
 
     @Override
     public void addEdge(V v1, V v2) {
@@ -32,6 +30,12 @@ public class DirectedGraph<V, E extends Number> implements Graph<V, E> {
         if(!vertexMap.containsKey(v2))return;
         Vertex<V> from=vertexMap.get(v1);
         from.addNeighbor(vertexMap.get(v2));
+    }
+
+    @Override
+    public void addEdge(V v1, V v2, E weight) {
+        // not supported
+        // use weighted graph
     }
 
     @Override
