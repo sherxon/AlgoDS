@@ -8,7 +8,7 @@ import ds.graph.Graph;
  */
 public class PrimsMST {
     public static void main(String[] args) {
-        Graph<Integer, Integer> graph = new DirectedGraph<>();
+        Graph graph = new DirectedGraph();
         for (int i = 0; i < 10; i++) graph.addVertex(i);
 
     }

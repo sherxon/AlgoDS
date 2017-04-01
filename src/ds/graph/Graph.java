@@ -5,17 +5,19 @@ import java.util.Set;
 /**
  * Created by sherxon on 1/1/17.
  */
-public interface Graph<T, E extends Number> {
-     void addVertex(T t);
-     void addEdge(T t1, T t2);
+public interface Graph {
+     boolean addVertex(Integer t);
 
-     void addEdge(T v1, T v2, E weight);
-     void removeVertex(T t);
-     void removeEdge(T t1, T t2);
-     Set<Vertex<T>> getVertices();
-     Vertex<T> getVertex(T t);
+     Double addEdge(Integer from, Integer to);
 
+     boolean addEdge(Integer from, Integer to, Double weight);
+
+     boolean removeVertex(Integer t);
+
+     boolean removeEdge(Integer from, Integer to);
+
+     Set<Integer> getVertices();
+
+     Set<Integer> getNeighbors(Integer ver);
      int size();
-
-
 }

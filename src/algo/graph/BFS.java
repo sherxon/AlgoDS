@@ -1,10 +1,8 @@
 package algo.graph;
 
 import ds.graph.Graph;
-import ds.graph.Vertex;
 
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.*;
 
 /**
  * Created by sherxon on 1/1/17.
@@ -13,46 +11,51 @@ import java.util.Queue;
 /**
  * This is traditional top-down approach to traverse graph. This is advantageous when the frontier is small
  */
-public class BFS<T> {
+public class BFS {
 
-    Graph<T, Number> graph;
+    Map<Integer, Integer> path = new HashMap<>();
+    private Graph graph;
 
-    public BFS(Graph<T, Number> graph) {
+    public BFS(Graph graph) {
         this.graph = graph;
     }
 
-    public void search(T s){
-        clearGraph();
-        Vertex<T> root=graph.getVertex(s);
-        if(root==null)return;
-        Queue<Vertex<T>> queue=new LinkedList<>();
-        root.setVisited(true);
+    public void search(Integer root) {
+        if (root == null || !graph.getVertices().contains(root)) return;
+        Set<Integer> visited = new HashSet<>();
+        Queue<Integer> queue = new LinkedList<>();
+        visited.add(root);
         queue.add(root);
+        path.put(root, null);
         while (!queue.isEmpty()){
-            Vertex<T> vertex=queue.remove();
-            for (Vertex<T> neighbor : vertex.getNeighbors())
-                if(!neighbor.isVisited()){
-                    neighbor.setParent(vertex);
-                    neighbor.setVisited(true);
+            Integer vertex = queue.remove();
+            proccessVertex(vertex);
+            for (Integer neighbor : graph.getNeighbors(vertex))
+                if (!visited.contains(neighbor)) {
+                    path.put(neighbor, vertex);
+                    visited.add(neighbor);
                     queue.add(neighbor);
                 }
         }
     }
 
-    private  void clearGraph() {
-        for (Vertex<T> vertex : graph.getVertices()) {
-            vertex.setVisited(false);
-            vertex.setParent(null);
-        }
+    private void proccessVertex(Integer vertex) {
+        // process vertex: default not nothing;
     }
 
-    public void printPathFrom(T t){
-        Vertex<T> root=graph.getVertex(t);
-        if(root==null)return;
-        while (root.getParent()!=null){
-            System.out.print(root.getValue() + " -> ");
-            root=root.getParent();
+
+    public List<Integer> getPathFrom(Integer source, Integer sink) {
+        List<Integer> list = new ArrayList<>();
+        if (sink == null || !graph.getVertices().contains(sink))
+            return list;
+
+        search(source);
+
+        Integer current = sink;
+        while (path.get(current) != null) {
+            list.add(current);
+            current = path.get(current);
         }
-        System.out.println("a");
+        return list;
     }
 }
