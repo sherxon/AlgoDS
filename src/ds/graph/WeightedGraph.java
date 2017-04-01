@@ -49,6 +49,10 @@ public class WeightedGraph {
         return edges;
     }
 
+    public Set<Edge> getEdges(Integer ver) {
+        return map.get(ver);
+    }
+
     public int size() {
         return map.size();
     }

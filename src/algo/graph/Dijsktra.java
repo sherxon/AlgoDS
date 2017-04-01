@@ -1,9 +1,11 @@
 package algo.graph;
 
 import ds.graph.Edge;
-import ds.graph.Vertex;
 import ds.graph.WeightedGraph;
 
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
 import java.util.TreeSet;
 
 /**
@@ -15,33 +17,41 @@ import java.util.TreeSet;
 * every time. To optimize fibonacci heap can be used. This algorithm finds shortest path from source vertex
 * to all other reachable vertexes. Time complexity is O(VE)
 * */
-public class Dijsktra<V, E extends Number> {
-    WeightedGraph<V, E> graph;
+public class Dijsktra {
+    Map<Integer, Double> distance;
+    private WeightedGraph graph;
 
-    public Dijsktra(WeightedGraph<V, E> graph) {
+    public Dijsktra(WeightedGraph graph) {
         this.graph = graph;
+        distance = new HashMap<>();
     }
 
-    public void shortestPath(V a) {
-        Vertex<V> source=graph.getVertex(a);
-        TreeSet<Vertex<V>> priorityQueue = new TreeSet<>();
-        for (Vertex<V> vertex : graph.getVertices()) {
-            if(source==vertex)vertex.setWeight(0);
-            else vertex.setWeight(Integer.MAX_VALUE);
-            priorityQueue.add(vertex);
-        }
-        while (!priorityQueue.isEmpty()) {
-            Vertex<V> min = priorityQueue.pollFirst();
-            min.setVisited(true);
-            for (Edge<E, V> edge : graph.getEdges(min)) {
-                if (edge.getTo().isVisited()) continue;
+    public void shortestPath(Integer source) {
 
-                Number newPath = min.getWeight().doubleValue() + edge.getWeight().doubleValue();
-                if (edge.getTo().getWeight().doubleValue() > newPath.doubleValue()) {
-                    priorityQueue.remove(edge.getTo());
-                    edge.getTo().setWeight(newPath);
-                    edge.getTo().setParent(min);
-                    priorityQueue.add(edge.getTo());
+        Set<Integer> openSet = new TreeSet<>();
+        for (Integer vertex : graph.getVertices()) {
+            if (source.equals(vertex)) distance.put(source, 0d);
+            else distance.put(source, Double.POSITIVE_INFINITY);
+            openSet.add(vertex);
+        }
+        while (!openSet.isEmpty()) {
+
+            Integer min = 0;
+            double minDis = Double.POSITIVE_INFINITY;
+            for (Integer vertex : openSet) {
+                if (minDis > distance.get(vertex)) {
+                    minDis = distance.get(vertex);
+                    min = vertex;
+                }
+            }
+
+            openSet.remove(min);
+
+            for (Edge edge : graph.getEdges(min)) {
+
+                Double newPath = distance.get(min) + edge.getWeight();
+                if (distance.get(edge.getTo()) > newPath) {
+                    distance.put(edge.getTo(), newPath);
                 }
             }
         }
