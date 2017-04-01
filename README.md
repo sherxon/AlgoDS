@@ -114,7 +114,7 @@ Interview Questions package include 3 text files (Easy.txt, Medium.txt and Hard.
 6) [Shortest Path Dijsktra](https://github.com/sherxon/AlgoDS/blob/master/src/algo/graph/Dijsktra.java)  
 7) [Shortest Path Bellman-Ford](https://github.com/sherxon/AlgoDS/blob/master/src/algo/graph/BellmanFord.java)  
 8) [A* Heuristic Path Finding](https://github.com/sherxon/AlgoDS/blob/master/src/algo/graph/AStar.java)  
-
+9) [Is Graph Bipartite](https://github.com/sherxon/AlgoDS/blob/master/src/algo/graph/IsBipartite.java)    
 
 ### String
 1) [Rabin Karp Subsequence search](https://github.com/sherxon/AlgoDS/blob/master/src/algo/string/RabinKarpSubsequenceSearch.java)   

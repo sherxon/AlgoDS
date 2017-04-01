@@ -13,8 +13,9 @@ import java.util.*;
  */
 public class BFS {
 
+    protected Graph graph;
     List<Integer> path = new LinkedList<>();
-    private Graph graph;
+    Queue<Integer> queue = new LinkedList<>();
 
 
     public BFS(Graph graph) {
@@ -25,26 +26,26 @@ public class BFS {
         if (root == null || !graph.getVertices().contains(root)) return;
 
         Set<Integer> visited = new HashSet<>();
-        Queue<Integer> queue = new LinkedList<>();
 
         visited.add(root);
         queue.add(root);
-
+        processVertex(root);
 
         while (!queue.isEmpty()) {
 
-            Integer vertex = queue.remove();
-            proccessVertex(vertex);
+            Integer vertex = queue.peek();
 
             for (Integer neighbor : graph.getNeighbors(vertex))
                 if (!visited.contains(neighbor)) {
                     visited.add(neighbor);
                     queue.add(neighbor);
+                    processVertex(vertex);
                 }
+            queue.remove();
         }
     }
 
-    private void proccessVertex(Integer vertex) {
+    public void processVertex(Integer vertex) {
         path.add(vertex);
     }
 
