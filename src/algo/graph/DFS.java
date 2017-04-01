@@ -1,6 +1,5 @@
 package algo.graph;
 
-import ds.graph.DirectedGraph;
 import ds.graph.Graph;
 import ds.graph.Vertex;
 
@@ -14,28 +13,6 @@ public class DFS<T> {
 
     public DFS(Graph<T, Number> graph) {
         this.graph = graph;
-    }
-
-    public static void main(String[] args) {
-        Graph<String, Number> graph = new DirectedGraph<>();
-        graph.addVertex("a");
-        graph.addVertex("b");
-        graph.addVertex("c");
-        graph.addVertex("d");
-        graph.addVertex("e");
-        graph.addVertex("f");
-        graph.addVertex("g");
-        graph.addEdge("a", "b");
-        graph.addEdge("a", "d");
-        graph.addEdge("a", "c");
-        graph.addEdge("b", "f");
-        graph.addEdge("c", "e");
-        graph.addEdge("e", "g");
-        DFS<String> dfs= new DFS<>(graph);
-        dfs.clearGraph();
-        //dfs.search("a");
-        dfs.searchIterative("a");
-        dfs.printPathFrom("g");
     }
 
     public void search(T source) {

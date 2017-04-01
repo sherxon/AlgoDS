@@ -37,6 +37,7 @@ public class UndirectedGraph<V, E extends Number> implements Graph<V, E> {
         Vertex<V> from=vertexMap.get(v1);
         Vertex<V> to=vertexMap.get(v2);
         if (from == to) return;
+        if (from.getNeighbors().contains(to) || to.getNeighbors().contains(from)) return;
         from.addNeighbor(to);
         to.addNeighbor(from);
         edges.add(new Edge<>(weight, from, to));

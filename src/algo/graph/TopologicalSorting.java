@@ -19,13 +19,14 @@ public class TopologicalSorting<T> {
     }
 
     // this works with DAG Only
-    // first we will choose any vertex who who does not have incoming edges (sources)
+    // first we will choose any vertex who that does not have incoming edges (sources)
     // sources can be found easier if incoming edge count is recorded in each vertex
     List<T> topSort(){
         Stack<T> stack=new Stack<>();//stack is also good option
         Set<Vertex<T>> sources=new HashSet<>();
         for (Vertex<T> vertex : graph.getVertices())
             sources.add(vertex);
+
         for (Vertex<T> vertex : graph.getVertices())
             for (Vertex<T> tVertex : vertex.getNeighbors())
                 sources.remove(tVertex);
@@ -33,6 +34,7 @@ public class TopologicalSorting<T> {
         for (Vertex<T> source : sources)
             if(!source.isVisited())
                 dfs(source, stack);
+
         return stack;
     }
 
