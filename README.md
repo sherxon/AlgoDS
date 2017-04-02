@@ -96,7 +96,7 @@ Interview Questions package include 3 text files (Easy.txt, Medium.txt and Hard.
 
 ## Algorithms
   
-### Sorting And Searching:    
+### Sorting And Searching    
 1) [Bubble Sort](https://github.com/sherxon/AlgoDS/blob/master/src/algo/sortingandsearching/BubbleSort.java)  
 2) [Insertion Sort](https://github.com/sherxon/AlgoDS/blob/master/src/algo/sortingandsearching/InsertionSort.java)  
 3) [Selection Sort](https://github.com/sherxon/AlgoDS/blob/master/src/algo/sortingandsearching/SelectionSort.java)  
@@ -105,7 +105,7 @@ Interview Questions package include 3 text files (Easy.txt, Medium.txt and Hard.
 6) [MergeSort](https://github.com/sherxon/AlgoDS/blob/master/src/algo/sortingandsearching/MergeSort.java)  
 7) [QuickSort](https://github.com/sherxon/AlgoDS/blob/master/src/algo/sortingandsearching/QuickSort.java)  
 
-### Graphs:  
+### Graphs  
 1) [Breadth First Search (BFS)](https://github.com/sherxon/AlgoDS/blob/master/src/algo/graph/BFS.java)  
 2) [Depth First Search (DFS)](https://github.com/sherxon/AlgoDS/blob/master/src/algo/graph/DFS.java)  
 3) [Prim's Minimum Spanning Tree (MST)](https://github.com/sherxon/AlgoDS/blob/master/src/algo/graph/PrimsMST.java)  
@@ -127,7 +127,7 @@ Interview Questions package include 3 text files (Easy.txt, Medium.txt and Hard.
 
 ## Data Structure:      
 
-### Trees:  
+### Trees
 1) [Binary Search Tree (recursive)](https://github.com/sherxon/AlgoDS/blob/master/src/ds/BST.java)  
 2) [Binary Search Tree (iterative)](https://github.com/sherxon/AlgoDS/blob/master/src/ds/BSTIterative.java)  
 3) [AVL Tree](https://github.com/sherxon/AlgoDS/blob/master/src/ds/AVLTree.java)    
