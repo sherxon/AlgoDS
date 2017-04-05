@@ -34,8 +34,8 @@ public class MergeIntervals {
                 if (current.end > prev.end)
                     prev.end = current.end;
             } else list.add(current);
-
         }
+
         return list;
     }
 
