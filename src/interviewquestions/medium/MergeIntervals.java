@@ -3,6 +3,7 @@ package interviewquestions.medium;
 import interviewquestions.utils.Interval;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -34,6 +35,27 @@ public class MergeIntervals {
                     prev.end = current.end;
             } else list.add(current);
 
+        }
+        return list;
+    }
+
+    static public List<Interval> merge2(List<Interval> intervals) {
+        if (intervals.size() <= 1) return intervals;
+        Collections.sort(intervals, (a, b) -> {
+            int c = a.start - b.start;
+            if (c == 0) c = a.end - b.end;
+            return c;
+        });
+        List<Interval> list = new ArrayList<>();
+        list.add(intervals.get(0));
+        for (int i = 1; i < intervals.size(); i++) {
+            Interval prev = list.get(list.size() - 1);
+            Interval cur = intervals.get(i);
+            if (prev.end >= cur.start && cur.end >= prev.end) {
+                prev.end = cur.end;
+            } else if (cur.start > prev.end) {
+                list.add(cur);
+            }
         }
         return list;
     }
