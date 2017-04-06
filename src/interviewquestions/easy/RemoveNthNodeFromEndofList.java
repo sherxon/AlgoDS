@@ -7,30 +7,11 @@ import interviewquestions.utils.ListNode;
  */
 public class RemoveNthNodeFromEndofList {
 
-    public ListNode removeNthFromEnd(ListNode h, int nu) {
-        int size=0;
-        ListNode head=h;
-        while(head!=null){
-            head=head.next;
-            size++;
-        }
-        int i=0;
-        ListNode n=h;
-        ListNode p=h;
-        while(i<size-nu){
-            i++;
-            p=n;
-            n=n.next;
-        }
-        if(i==0){
-            if(p.next==null)return null;
-            else h=p.next;
-        }
-        p.next=n.next;
-        return h;
+    /**
+     * This is the recursive approach
+     */
 
-    }
-
+    int n = 0;
 
     public ListNode removeNthFromEnd(ListNode h, int nu) {
         int size = 0;
@@ -56,11 +37,29 @@ public class RemoveNthNodeFromEndofList {
 
     }
 
-    /**
-     * This is the recursive approach
-     */
+    public ListNode removeNthFromEnd2(ListNode h, int nu) {
+        int size = 0;
+        ListNode head = h;
+        while (head != null) {
+            head = head.next;
+            size++;
+        }
+        int i = 0;
+        ListNode n = h;
+        ListNode p = h;
+        while (i < size - nu) {
+            i++;
+            p = n;
+            n = n.next;
+        }
+        if (i == 0) {
+            if (p.next == null) return null;
+            else h = p.next;
+        }
+        p.next = n.next;
+        return h;
 
-    int n = 0;
+    }
 
     public ListNode removeNthFromEndR(ListNode head, int n) {
         if (head == null || head.next == null) return null;
