@@ -5,7 +5,7 @@ package algo.string;
  */
 
 /**
- * This is prefix truee, which consumes alot memory but very fast.
+ * This is prefix tree, which consumes a lot memory but very fast.
  */
 public class Trie {
 
@@ -75,7 +75,7 @@ public class Trie {
 
 
 /*
-This is recursive, one-class aproach, but it has small bug that I could not find it in 2 hours.
+This is recursive, one-class approach, but it has small bug that I could not find it in 2 hours.
 public class Trie {
 
     int[] a= new int[26];

@@ -8,8 +8,8 @@ import java.util.Arrays;
 public class SegmentTree {
     public static void main(String[] args) {
         int[] a=new int[]{-1, 2, 4, 0};
-        int treeSize=a.length*2-1;// if power of two, just multiply by two and substract one
-        // else find nextpower of two and multiple by 2 and sabstruct one;
+        int treeSize=a.length*2-1;// if power of two, just multiply by two and subtract one
+        // else find next power of two and multiple by 2 and subtract one;
         int[] tree= new int[treeSize];
         for (int i = 0; i < treeSize; i++) {
             tree[i]=Integer.MAX_VALUE; // to build min segment tree

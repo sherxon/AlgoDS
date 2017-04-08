@@ -394,7 +394,7 @@ Here are few examples.
 [1,3,5,6], 0 → 0
 
 64)**Palindrome Number**
-Determine if given interger is palindrome, dont use extra space
+Determine if given integer is palindrome, don't use extra space
 
 65)**Lowest Common Ancestor of a Binary Search Tree**
 Given a binary search tree (BST), find the lowest common ancestor (LCA) of two given nodes in the BST.

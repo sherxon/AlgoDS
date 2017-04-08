@@ -14,7 +14,7 @@ package interviewquestions.easy;
 public class RansomNote {
 
     /**
-     * The idea is to create an array with length of 26 (english letters) and store each frequency of each letter.
+     * The idea is to create an array with length of 26 (English letters) and store each frequency of each letter.
      * and remove ransom note letters from array. if certain character count in array is 0, that means ransom note has a
      * character that is not included on magazine.
      */

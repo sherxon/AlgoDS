@@ -58,10 +58,10 @@ public class GenealogicalTree {
             V newV= new V(v);
             vertices.putIfAbsent(v, newV);
         }
-        public void addEdge(Integer from, Integer to, int weigth){
+        public void addEdge(Integer from, Integer to, int weight){
             V fromV=vertices.get(from);
             V toV=vertices.get(to);
-            E e= new E(fromV, toV, weigth);
+            E e= new E(fromV, toV, weight);
             fromV.edges.add(e); // directed graph
         }
 
