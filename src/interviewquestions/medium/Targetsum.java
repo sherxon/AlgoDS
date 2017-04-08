@@ -18,7 +18,6 @@ public class Targetsum {
     private static void findSum(int[] a, int i, int s) {
 
         if (i == 0) {
-            System.out.println(s + a[i] + " " + (s - a[i]));
             if (s + a[i] == 0) counter++;
             if (s - a[i] == 0) counter++;
             return;

@@ -7,38 +7,41 @@ import interviewquestions.utils.ListNode;
  */
 public class MergekSortedLists {
     public ListNode mergeKLists(ListNode[] a) {
-        if(a==null || a.length==0)return null;
+        if (a.length == 0) return null;
         if(a.length==1)return a[0];
-        return merge(a, 0, a.length-1);
 
+        return sort(a, 0, a.length - 1);
     }
-    ListNode merge(ListNode[] a, int lo, int hi){
-        if(lo>=hi)return a[lo];
-        int mid=lo+(hi-lo)/2;
-        ListNode m1= merge(a, lo, mid);
-        ListNode m2= merge(a, mid+1, hi);
-        return sort(m1, m2);
 
+    ListNode sort(ListNode[] a, int lo, int hi) {
+        if (lo >= hi) return a[lo];
+        int mid = lo + (hi - lo) / 2;
+        ListNode left = sort(a, lo, mid);
+        ListNode right = sort(a, mid + 1, hi);
+        return merge(left, right);
     }
-    ListNode sort(ListNode h1, ListNode h2){
+
+    ListNode merge(ListNode left, ListNode right) {
         ListNode x= new ListNode(0);
-        ListNode head=x;
-        while(h1!=null || h2!=null){
-            if(h1==null && h2!=null){
-                x.next=h2;
-                h2=h2.next;
-            }else if (h1!=null && h2==null){
-                x.next=h1;
-                h1=h1.next;
-            }else if (h1.val<h2.val){
-                x.next=h1;
-                h1=h1.next;
+        ListNode xx = x;
+        while (left != null || right != null) {
+            if (left == null) {
+                x.next = right;
+                break;
+            } else if (right == null) {
+                x.next = left;
+                break;
             }else{
-                x.next=h2;
-                h2=h2.next;
+                if (left.val < right.val) {
+                    x.next = left;
+                    left = left.next;
+                } else {
+                    x.next = right;
+                    right = right.next;
+                }
             }
             x=x.next;
         }
-        return head.next;
+        return xx.next;
     }
 }

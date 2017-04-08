@@ -3,7 +3,12 @@ This is the collection of **algorithms, data structures** and **Interview Questi
 This repository contains my solutions for common algorithmic problems and implementation of Data Structures in Java.
 I've created this repository to learn about algorithms. I am adding solutions continuously.   
 
-Interview Questions package include 3 text files (Easy.txt, Medium.txt and Hard.txt) and **solutions** for each question.      
+### Questions  
+Here are questions divided by difficulty level:  
+1) [Easy Questions](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/Easy.txt)   
+2) [Medium Questions](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/Medium.txt)   
+3) [Hard Questions](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/hard.txt)   
+       
 
 **Algorithms,  Data Structures** and **200 Interview Questions with Answers** are provided so far.
 
