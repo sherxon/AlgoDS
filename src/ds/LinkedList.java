@@ -24,7 +24,7 @@ class LinkedList<E> {
     }
 
     public E get(int index) {
-        if (index >= size && index < 0) // check boundaries
+        if (index >= size || index < 0) // check boundaries
             throw new NoSuchElementException();
 
         // find element at given index
