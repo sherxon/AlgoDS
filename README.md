@@ -9,7 +9,7 @@ I've created this repository to learn about algorithms. I am adding solutions co
 Here are questions divided by difficulty level:  
 1) [Easy Questions](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/Easy.txt)   
 2) [Medium Questions](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/Medium.txt)   
-3) [Hard Questions](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/Hard.txt)   
+3) [Hard Questions](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/Hard.txt)  
        
 
 ## Problems:
