@@ -3,7 +3,7 @@ package interviewquestions.medium;
 import java.util.Arrays;
 
 /**
- * Created by sherxon on 12/31/16.
+ * Created by sherxon on 2016-12-31.
  */
 public class HIndex {
     // O(NlgN) solution

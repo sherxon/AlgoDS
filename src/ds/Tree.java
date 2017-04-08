@@ -1,7 +1,7 @@
 package ds;
 
 /**
- * Created by sherxon on 12/18/16.
+ * Created by sherxon on 2016-12-18.
  */
 public interface Tree<K> {
     void insert(K k);

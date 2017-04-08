@@ -3,7 +3,7 @@ package timus;
 import java.util.Scanner;
 
 /**
- * Created by sherxon on 12/10/16.
+ * Created by sherxon on 2016-12-10.
  */
 public class Alchemy1573 {
     public static void main(String[] args) {

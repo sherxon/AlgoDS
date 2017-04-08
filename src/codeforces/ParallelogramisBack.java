@@ -3,7 +3,7 @@ package codeforces;
 import java.util.Scanner;
 
 /**
- * Created by sherxon on 12/25/16.
+ * Created by sherxon on 2016-12-25.
  */
 public class ParallelogramisBack {
     public static void main(String[] args) {

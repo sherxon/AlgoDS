@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.stream.LongStream;
 
 /**
- * Created by sherxon on 10/30/16.
+ * Created by sherxon on 2016-10-30.
  */
 public class Sum1068 {
     public static void main(String[] args) {

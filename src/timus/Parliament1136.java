@@ -3,7 +3,7 @@ package timus;
 import java.util.Scanner;
 
 /**
- * Created by sherxon on 11/23/16.
+ * Created by sherxon on 2016-11-23.
  */
 public class Parliament1136 {
 

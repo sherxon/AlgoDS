@@ -1,7 +1,7 @@
 package interviewquestions.easy;
 
 /**
- * Created by sherxon on 12/30/16.
+ * Created by sherxon on 2016-12-30.
  */
 public class IslandPerimeter {
     public int islandPerimeter(int[][] a) {

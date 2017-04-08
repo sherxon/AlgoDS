@@ -1,7 +1,7 @@
 package interviewquestions.easy;
 
 /**
- * Created by sherxon on 12/29/16.
+ * Created by sherxon on 2016-12-29.
  */
 public class HouseRobber {
     public int rob(int[] a) {

@@ -3,7 +3,7 @@ package interviewquestions.easy;
 import interviewquestions.utils.ListNode;
 
 /**
- * Created by sherxon on 12/28/16.
+ * Created by sherxon on 2016-12-28.
  */
 public class RemoveLinkedListElements {
     public ListNode removeElements(ListNode head, int val) {

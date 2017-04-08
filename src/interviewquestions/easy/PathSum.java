@@ -3,7 +3,7 @@ package interviewquestions.easy;
 import interviewquestions.utils.TreeNode;
 
 /**
- * Created by sherxon on 12/25/16.
+ * Created by sherxon on 2016-12-25.
  */
 public class PathSum {
     boolean r=false;

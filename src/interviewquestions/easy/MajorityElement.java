@@ -1,7 +1,7 @@
 package interviewquestions.easy;
 
 /**
- * Created by sherxon on 12/30/16.
+ * Created by sherxon on 2016-12-30.
  */
 // 1) using soring, 2) using quick select 3) given below
 public class MajorityElement {

@@ -1,7 +1,7 @@
 package interviewquestions.utils;
 
 /**
- * Created by sherxon on 12/28/16.
+ * Created by sherxon on 2016-12-28.
  */
 public class ListNode {
    public int val;

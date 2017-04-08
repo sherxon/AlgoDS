@@ -7,7 +7,7 @@ import java.util.StringTokenizer;
 import java.util.TreeSet;
 
 /**
- * Created by sherxon on 12/10/16.
+ * Created by sherxon on 2016-12-10.
  */
 public class ForFansofStatistics1613 {
     public static void main(String[] args) throws IOException {

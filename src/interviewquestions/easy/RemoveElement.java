@@ -1,7 +1,7 @@
 package interviewquestions.easy;
 
 /**
- * Created by sherxon on 12/26/16.
+ * Created by sherxon on 2016-12-26.
  */
 public class RemoveElement {
     public int removeElement(int[] a, int val) {

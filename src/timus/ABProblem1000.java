@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 
 /**
- * Created by sherxon on 10/30/16.
+ * Created by sherxon on 2016-10-30.
  */
 public class ABProblem1000 {
     public static void main(String[] args) throws IOException {

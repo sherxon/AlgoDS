@@ -3,7 +3,7 @@ package interviewquestions.medium;
 import interviewquestions.utils.ListNode;
 
 /**
- * Created by sherxon on 12/31/16.
+ * Created by sherxon on 2016-12-31.
  */
 public class InsertionSortList {
     public ListNode insertionSortList(ListNode head) {

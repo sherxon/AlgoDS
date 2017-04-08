@@ -5,7 +5,7 @@ import java.util.Scanner;
 //164601OZ
 
 /**
- * Created by sherxon on 10/30/16.
+ * Created by sherxon on 2016-10-30.
  */
 public class Factorials {
     public static void main(String[] args) {
