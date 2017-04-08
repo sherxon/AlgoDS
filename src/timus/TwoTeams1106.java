@@ -3,7 +3,7 @@ package timus;
 import java.util.*;
 
 /**
- * Created by sherxon on 11/23/16.
+ * Created by sherxon on 2016-11-23.
  */
 public class TwoTeams1106 {
     public static void main(String[] args) {

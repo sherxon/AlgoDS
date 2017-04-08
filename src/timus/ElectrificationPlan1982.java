@@ -3,7 +3,7 @@ package timus;
 import java.util.*;
 
 /**
- * Created by sherxon on 11/24/16.
+ * Created by sherxon on 2016-11-24.
  */
 public class ElectrificationPlan1982 {
     public static void main(String[] args) {

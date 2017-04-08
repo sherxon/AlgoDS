@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 /**
- * Created by sherxon on 10/30/16.
+ * Created by sherxon on 2016-10-30.
  */
 public class DemocracyinDanger1025 {
     public static void main(String[] args) {

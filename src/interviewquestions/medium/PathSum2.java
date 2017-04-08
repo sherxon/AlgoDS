@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by sherxon on 12/25/16.
+ * Created by sherxon on 2016-12-25.
  */
 public class PathSum2 {
     public List<List<Integer>> pathSum(TreeNode root, int sum) {

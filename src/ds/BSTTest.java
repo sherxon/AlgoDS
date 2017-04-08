@@ -1,7 +1,7 @@
 package ds;
 
 /**
- * Created by sherxon on 12/16/16.
+ * Created by sherxon on 2016-12-16.
  */
 public class BSTTest {
     public static void main(String[] args) {

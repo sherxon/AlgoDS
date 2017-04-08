@@ -3,7 +3,7 @@ package timus;
 import java.util.*;
 
 /**
- * Created by sherxon on 11/26/16.
+ * Created by sherxon on 2016-11-26.
  */
 public class Metro1119 {
     public static void main(String[] args) {

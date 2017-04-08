@@ -1,7 +1,7 @@
 package algo.sortingandsearching;
 
 /**
- * Created by sherxon on 12/16/16.
+ * Created by sherxon on 2016-12-16.
  */
 // Time Complexity -> O(n^2);
 // Memory Complexity -> O(1);

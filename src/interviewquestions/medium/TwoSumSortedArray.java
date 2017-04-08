@@ -3,7 +3,7 @@ package interviewquestions.medium;
 import java.math.BigInteger;
 
 /**
- * Created by sherxon on 12/27/16.
+ * Created by sherxon on 2016-12-27.
  */
 public class TwoSumSortedArray {
     public static void main(String[] args) {

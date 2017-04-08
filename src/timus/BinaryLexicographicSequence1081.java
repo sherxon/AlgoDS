@@ -3,7 +3,7 @@ package timus;
 import java.util.Scanner;
 
 /**
- * Created by sherxon on 12/11/16.
+ * Created by sherxon on 2016-12-11.
  */
 public class BinaryLexicographicSequence1081 {
     public static void main(String[] args) {

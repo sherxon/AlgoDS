@@ -3,7 +3,7 @@ package algo.sortingandsearching;
 import java.util.Arrays;
 
 /**
- * Created by sherxon on 12/16/16.
+ * Created by sherxon on 2016-12-16.
  */
 public class TestSorting {
     public static void main(String[] args) {

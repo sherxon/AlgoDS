@@ -3,7 +3,7 @@ package timus;
 import java.util.*;
 
 /**
- * Created by sherxon on 11/22/16.
+ * Created by sherxon on 2016-11-22.
  */
 public class IsenbaevNumber1837 {
     public static void main(String[] args) {

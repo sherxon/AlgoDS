@@ -3,7 +3,7 @@ package timus;
 import java.util.*;
 
 /**
- * Created by sherxon on 11/30/16.
+ * Created by sherxon on 2016-11-30.
  */
 public class TopologicalSorting1280 {
     public static void main(String[] args) {

@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 /**
- * Created by sherxon on 12/13/16.
+ * Created by sherxon on 2016-12-13.
  */
 public class PhoneNumbers1002 {
     public static void main(String[] args) {

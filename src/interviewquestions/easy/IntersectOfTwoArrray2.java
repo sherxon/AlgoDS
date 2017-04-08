@@ -3,7 +3,7 @@ package interviewquestions.easy;
 import java.util.*;
 
 /**
- * Created by sherxon on 12/27/16.
+ * Created by sherxon on 2016-12-27.
  */
 public class IntersectOfTwoArrray2 {
     public int[] intersect(int[] a, int[] nums2) {

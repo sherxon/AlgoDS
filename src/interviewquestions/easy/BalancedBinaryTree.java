@@ -3,7 +3,7 @@ package interviewquestions.easy;
 import interviewquestions.utils.TreeNode;
 
 /**
- * Created by sherxon on 12/30/16.
+ * Created by sherxon on 2016-12-30.
  */
 // there are 3 ways to break recursion stack
 //1) return magic number like below example(-1)

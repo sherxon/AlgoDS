@@ -3,7 +3,7 @@ package interviewquestions.easy;
 import interviewquestions.utils.TreeNode;
 
 /**
- * Created by sherxon on 12/29/16.
+ * Created by sherxon on 2016-12-29.
  */
 public class SumofLeftLeaves {
     public int sumOfLeftLeaves(TreeNode root) {

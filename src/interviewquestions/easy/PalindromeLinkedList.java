@@ -3,7 +3,7 @@ package interviewquestions.easy;
 import interviewquestions.utils.ListNode;
 
 /**
- * Created by sherxon on 12/29/16.
+ * Created by sherxon on 2016-12-29.
  */
 
 public class PalindromeLinkedList {

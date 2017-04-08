@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 /**
- * Created by sherxon on 12/11/16.
+ * Created by sherxon on 2016-12-11.
  */
 public class Magician1370 {
     public static void main(String[] args) {

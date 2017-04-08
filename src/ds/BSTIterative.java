@@ -1,7 +1,7 @@
 package ds;
 
 /**
- * Created by sherxon on 12/18/16.
+ * Created by sherxon on 2016-12-18.
  */
 // Binary Search Tree, two nodes (left, right) and one parent.
 // insert -> O(h) can be O(n) if input is sorted
