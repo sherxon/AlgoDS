@@ -17,10 +17,11 @@ public class BoundaryofBinaryTree {
         if (root == null) return list;
         list.add(root.val);
         if (root.left == null && root.right == null) return list;
+
         Set<TreeNode> set = new HashSet<>();
         LinkedList<TreeNode> leftView = new LinkedList<>();
-
         goLeft(root.left, leftView, 0);
+
         Iterator<TreeNode> itleft = leftView.iterator();
         while (itleft.hasNext()) {
             TreeNode cur = itleft.next();
