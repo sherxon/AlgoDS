@@ -14,7 +14,8 @@ public class FindAllAnagramsinString {
         List<Integer> list= new ArrayList<>();
         int[] a= new int[26];
         if(s==null || s.length()==0 || p==null || p.length()==0)return list;
-        for (char c:p.toCharArray())
+
+        for (char c : p.toCharArray()) // count all frequencies of each character
             a[c-'a']++;
 
         int start=0;
