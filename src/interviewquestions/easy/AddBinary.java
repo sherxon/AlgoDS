@@ -1,7 +1,11 @@
 package interviewquestions.easy;
 
 /**
- * Created by sherxon on 1/29/17.
+ * Created by sherxon on 2017-01-29.
+ */
+
+/**
+ * Problem: Given Two Binary Strings a, b return Binary representation of sum of a and b;
  */
 public class AddBinary {
 
@@ -9,7 +13,7 @@ public class AddBinary {
         StringBuilder sb = new StringBuilder();
         int i = a.length() - 1;
         int j = b.length() - 1;
-        boolean carry = false;
+        boolean carry = false; // this can only be 1 or 0
         while (i >= 0 || j >= 0) {
             boolean f = false;
             boolean s = false;

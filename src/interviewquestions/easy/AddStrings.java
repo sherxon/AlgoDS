@@ -3,9 +3,14 @@ package interviewquestions.easy;
 /**
  * Created by sherxon on 1/10/17.
  */
-//212
-public class AddStrings {
 
+/**
+ * Problem: Given two non-negative integers a and b (length of a and b < 5100) represented as string, return the sum of a and b.
+ */
+public class AddStrings {
+    /**
+     * Start adding from the least significant digit.
+     */
    static String addStrings(String a, String b) {
        int i=a.length()-1;
        int j=b.length()-1;
