@@ -8,13 +8,13 @@ import java.util.Set;
  */
 public class ContainsDuplicate {
     /**
-    * In iteration of array We keep track of elements and in each iteration check if this elements is
-    * in met already
+     * In iteration of array We keep track of elements and in each iteration we need to check if this elements is
+     * met already.
     * */
     public boolean containsDuplicate(int[] nums) {
         Set<Integer> set = new HashSet<>();
         for (int i : nums) {
-            if (!set.add(   i)) return true;
+            if (!set.add(i)) return true;
         }
         return false;
     }

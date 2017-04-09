@@ -4,10 +4,9 @@ package interviewquestions.easy;
  * Created by sherxon on 1/16/17.
  */
 public class CountAndSay {
-    public static void main(String[] args) {
-        System.out.println(countAndSay(5));
-    }
-
+    /**
+     * We build the count and say sequence starting from 1.
+     */
     public static String countAndSay(int n) {
         if (n < 1) return "";
         StringBuilder sb = new StringBuilder();

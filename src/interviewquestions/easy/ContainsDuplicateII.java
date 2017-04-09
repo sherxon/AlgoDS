@@ -10,7 +10,8 @@ import java.util.Set;
  */
 public class ContainsDuplicateII {
     /**
-     * This
+     * Maintain every element with last encountered index in the array. In each loop iteration check if
+     * this element is in map and check last encountered index to decide.
      */
     public boolean containsNearbyDuplicate(int[] a, int k) {
         Map<Integer, Integer> map= new HashMap<>();
