@@ -8,9 +8,6 @@ import java.util.Map;
  * Created by sherxon on 4/8/17.
  */
 public class BrickWall {
-    public static void main(String[] args) {
-
-    }
 
     static public int leastBricks(List<List<Integer>> wall) {
         if (wall.size() == 0) return 0;
