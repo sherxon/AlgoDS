@@ -10,8 +10,10 @@ import java.util.*;
  */
 
 /**
- * this only works for weighted connected graph. One can modify little to make it work for
- * graphs with many components
+ * This is Prim's greedy Minimum Spanning Tree algorithm which can be used in connected weighted graphs.
+ * Algorithms starts building MST by randomly choosing one vertex. Then, we add least weighted edge from already
+ * selected vertices and add its adjacent vertex to tree if it is not already in the tree.
+ * Running time is O(V^2). It can be done O(E+ V logV) by using Fibonacci heap.
  */
 public class PrimsMST {
 
@@ -34,19 +36,21 @@ public class PrimsMST {
         q.addAll(graph.getEdges(start));
 
         while (!q.isEmpty()) {
-            Edge minEdge = q.remove();
+            Edge minEdge = q.remove(); // get min weighted edge
             Integer vertex = minEdge.getTo();
-            if (mst.contains(vertex)) continue;
+            if (mst.contains(vertex)) continue; // if it is already in the MST tree, ignore it
 
             q.addAll(graph.getEdges(vertex));
 
             list.add(minEdge);
-            mst.add(vertex);
+            mst.add(vertex); // add this vertex to mst
 
         }
         return list;
     }
-
+    /**
+    * we can start any from any random vertex
+    * */
     private Integer getRandomVertex() {
 
         if (graph.getVertices().size() > 0)
