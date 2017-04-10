@@ -13,9 +13,9 @@ public class RotateArray {
     * */
     public void rotate(int[] a, int k) {
         k %= a.length;
-        reverse(a, 0, a.length);
+        reverse(a, 0, a.length - 1);
         reverse(a, 0, k - 1);
-        reverse(a, k, a.length);
+        reverse(a, k, a.length - 1);
     }
 
     private void reverse(int[] a, int lo, int hi) {
