@@ -18,32 +18,31 @@ public class FindLargestElementinEachRow {
 
     }
 
-    public int[] findValueMostElement(TreeNode root) {
-        if (root == null) return new int[0];
+    public List<Integer> findValueMostElement(TreeNode root) {
         List<Integer> res = new ArrayList<>();
-        LinkedList<Integer> level = new LinkedList<>();
-        LinkedList<TreeNode> list = new LinkedList<>();
-        level.add(root.val);
-        list.add(root);
+        if(root==null)return res;
+        LinkedList<TreeNode> queue = new LinkedList<>();
+        queue.add(root);
         res.add(root.val);
-        while (!list.isEmpty()) {
-            TreeNode x = list.removeFirst();
-            level.removeFirst();
-            if (x.left != null) list.addLast(x.left);
-            if (x.right != null) list.addLast(x.right);
-            if (level.isEmpty() && !list.isEmpty()) {
-                int max = Integer.MIN_VALUE;
-                for (TreeNode treeNode : list) {
-                    max = Math.max(treeNode.val, max);
-                    level.add(treeNode.val);
-                }
+        int level=1;
+        int max = Integer.MIN_VALUE;
+        while (!queue.isEmpty()) {
+            TreeNode x = queue.removeFirst();
+            level--;
+            if (x.left != null) {
+                queue.addLast(x.left);
+                max=Math.max(max, x.left.val);
+            }
+            if (x.right != null){
+                queue.addLast(x.right);
+                max=Math.max(max, x.right.val);
+            }
+            if (level==0 && !queue.isEmpty()) {
                 res.add(max);
+                max = Integer.MIN_VALUE;
+                level+=queue.size();
             }
         }
-        int[] a = new int[res.size()];
-        for (int i = 0; i < res.size(); i++) {
-            a[i] = res.get(i);
-        }
-        return a;
+        return res;
     }
 }
