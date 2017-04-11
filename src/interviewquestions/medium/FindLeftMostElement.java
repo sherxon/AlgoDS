@@ -2,7 +2,8 @@ package interviewquestions.medium;
 
 import interviewquestions.utils.TreeNode;
 
-import java.util.TreeMap;
+import java.util.LinkedList;
+import java.util.List;
 
 /**
  * Created by sherxon on 2/12/17.
@@ -11,24 +12,21 @@ import java.util.TreeMap;
 /**
  * Given a binary tree, find the leftmost value in the last row of the tree.
  */
+/**
+* We get left side view of binary tree and return last element.
+* */
 public class FindLeftMostElement {
 
     public int findBottomLeftValue(TreeNode root) {
-        return findLeftMostNode(root);
-    }
+        LinkedList<Integer> list=new LinkedList<>();
+        find(root, list, 0);
+        return list.getLast();
 
-    public int findLeftMostNode(TreeNode root) {
-        if (root == null) return 0;
-        TreeMap<Integer, Integer> map = new TreeMap<>((a, b) -> b.compareTo(a));
-        find(root, 0, map);
-        if (map.size() == 0) return root.val;
-        return map.values().iterator().next();
     }
-
-    private void find(TreeNode root, int i, TreeMap<Integer, Integer> map) {
-        if (root == null) return;
-        if (!map.containsKey(i)) map.put(i, root.val);
-        if (root.left != null) find(root.left, i + 1, map);
-        if (root.right != null) find(root.right, i + 1, map);
+    void find(TreeNode x, List<Integer> list, int level){
+        if(x==null)return;
+        if(list.size()==level)list.add(x.val);
+        find(x.left, list, level+1);
+        find(x.right, list, level+1);
     }
 }
