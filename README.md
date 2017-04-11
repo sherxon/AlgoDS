@@ -114,7 +114,7 @@ Here are questions divided by difficulty level:
 1) [Breadth First Search (BFS)](https://github.com/sherxon/AlgoDS/blob/master/src/algo/graph/BFS.java)  
 2) [Depth First Search (DFS)](https://github.com/sherxon/AlgoDS/blob/master/src/algo/graph/DFS.java)  
 3) [Prim's Minimum Spanning Tree (MST)](https://github.com/sherxon/AlgoDS/blob/master/src/algo/graph/PrimsMST.java)  
-4) KrusKal's Minimum Spanning Tree (MST)  
+4) [KrusKal's Minimum Spanning Tree (MST)](https://github.com/sherxon/AlgoDS/blob/master/src/algo/graph/KruskalsMST.java)  
 5) [Topological Sorting](https://github.com/sherxon/AlgoDS/blob/master/src/algo/graph/TopologicalSorting.java)      
 6) [Shortest Path Dijsktra](https://github.com/sherxon/AlgoDS/blob/master/src/algo/graph/Dijsktra.java)  
 7) [Shortest Path Bellman-Ford](https://github.com/sherxon/AlgoDS/blob/master/src/algo/graph/BellmanFord.java)  
