@@ -5,6 +5,7 @@ import interviewquestions.utils.TreeNode;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * Created by sherxon on 2/11/17.
@@ -15,7 +16,8 @@ import java.util.List;
  * */
 public class FindLargestElementinEachRow {
     public static void main(String[] args) {
-
+        List<Integer> list= new ArrayList<>();
+        String a=list.stream().map(String::valueOf).collect(Collectors.joining(","));
     }
 
     public List<Integer> findValueMostElement(TreeNode root) {

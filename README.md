@@ -68,6 +68,7 @@ Here are questions divided by difficulty level:
 23) [Mode in BST](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/FindModeinBST.java)   
 24) [Most Frequent Subtree Sum](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/MostFrequentSubtreeSum.java)  
 25) [ Find Largest Element in Each Row](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/FindLargestElementinEachRow.java)   
+26) [Serialize and Deserialize BT](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/hard/SerializeAndDeserializeBT.java)   
  [And many other tree problems](https://github.com/sherxon/AlgoDS/tree/master/src/interviewquestions)  
   
 ### Math
