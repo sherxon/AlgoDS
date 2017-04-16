@@ -9,8 +9,8 @@ import java.util.*;
  */
 public class DFS {
     protected Graph graph;
-    Set<Integer> visited;
-    List<Integer> path;
+    protected Set<Integer> visited;
+    protected List<Integer> path;
 
     public DFS(Graph graph) {
         this.graph = graph;

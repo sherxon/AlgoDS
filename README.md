@@ -121,6 +121,7 @@ Here are questions divided by difficulty level:
 7) [Shortest Path Bellman-Ford](https://github.com/sherxon/AlgoDS/blob/master/src/algo/graph/BellmanFord.java)  
 8) [A* Heuristic Path Finding](https://github.com/sherxon/AlgoDS/blob/master/src/algo/graph/AStar.java)  
 9) [Is Graph Bipartite](https://github.com/sherxon/AlgoDS/blob/master/src/algo/graph/IsBipartite.java)    
+10) [Is Graph Connected](https://github.com/sherxon/AlgoDS/blob/master/src/algo/graph/IsConnected.java)  
 
 ### String
 1) [Rabin Karp Subsequence search](https://github.com/sherxon/AlgoDS/blob/master/src/algo/string/RabinKarpSubsequenceSearch.java)   
