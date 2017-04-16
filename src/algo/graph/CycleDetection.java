@@ -11,7 +11,7 @@ import java.util.Set;
 /**
 * To find if the given graph has cycle , We need to maintain one additional set of exited vertices and do dfs.
 * In any step if iteration if a vertex is already in visited set and yet not exited from recusion stack, then
-* we can return true.
+* we can return true. We can optimize using one array with 3 different values.
 *
 * */
 public class CycleDetection {
