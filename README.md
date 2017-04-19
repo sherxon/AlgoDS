@@ -143,4 +143,7 @@ Here are questions divided by difficulty level:
 4) [Trie (Prefix tree)](https://github.com/sherxon/AlgoDS/blob/master/src/algo/string/Trie.java)  
 
 
+## Contribute
+
+Did you find a bug? any way to do it better? please feel free to pull-request it :)
 
