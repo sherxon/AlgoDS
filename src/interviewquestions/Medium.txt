@@ -1224,3 +1224,20 @@ Given word1 = "makes", word2 = "makes", return 3.
 
 Note:
 You may assume word1 and word2 are both in the list.
+
+119)Meta Strings
+Given two strings, the task is to check whether these strings are meta strings or not. Meta strings are the strings which can be made equal by exactly one swap in any of the strings.
+Equal string are not considered here as Meta strings.
+Input : str1 = "geeks"
+        str2 = "keegs"
+Output : Yes
+By just swapping 'k' and 'g' in any of string,
+both will become same.
+
+Input : str1 = "rsting"
+        str2 = "string
+Output : No
+
+Input :  str1 = "Converse"
+         str2 = "Conserve"
+Output Yes

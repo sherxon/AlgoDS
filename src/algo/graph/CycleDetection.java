@@ -14,10 +14,11 @@ import java.util.Set;
 * we can return true. We can optimize using one array with 3 different values.
 *
 * */
-public class CycleDetection {
+public abstract class CycleDetection {
    protected Graph graph;
    protected Set<Integer> visited;
    protected Set<Integer> exited;
+
 
     public CycleDetection(Graph graph) {
         this.graph = graph;

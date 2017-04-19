@@ -44,12 +44,10 @@ public class LowestCommonAncestorofaBinaryTree {
     Map<TreeNode, TreeNode> bfs(TreeNode x) {
         Queue<TreeNode> q = new LinkedList<>();
         q.add(x);
-        int l = 1;
         Map<TreeNode, TreeNode> map = new HashMap<>();
         map.put(x, null);
         while (!q.isEmpty()) {
             TreeNode xx = q.remove();
-            l--;
             if (xx.left != null) {
                 q.add(xx.left);
                 map.put(xx.left, xx);
@@ -58,7 +56,6 @@ public class LowestCommonAncestorofaBinaryTree {
                 q.add(xx.right);
                 map.put(xx.right, xx);
             }
-            if (l == 0) l += q.size();
         }
         return map;
     }
