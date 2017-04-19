@@ -132,6 +132,7 @@ Here are questions divided by difficulty level:
 5) [Is Anagram](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/ValidAnagram.java)  
 6) [Needle and Haystack](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/ImplementstrSt.java)  
 7) [Word Break](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/WordBreak.java)  
+8) [Meta Strings](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/MetaStrings.java)  
 
 ## Data Structure:      
 
