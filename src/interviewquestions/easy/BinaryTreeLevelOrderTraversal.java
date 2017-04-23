@@ -40,6 +40,7 @@ public class BinaryTreeLevelOrderTraversal {
         return list;
     }
 
+
     public List<List<Integer>> levelOrder3(TreeNode root) {
         List<List<Integer>> l = new LinkedList<>();
         if (root == null) return l;
