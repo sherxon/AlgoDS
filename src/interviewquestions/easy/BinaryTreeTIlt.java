@@ -9,6 +9,9 @@ import java.util.Map;
  * Created by sherxon on 4/23/17.
  */
 public class BinaryTreeTIlt {
+    public static void main(String[] args) {
+        System.out.println(( char)('0'+1));
+    }
     int sum=0;
     Map<TreeNode, Integer> tilts= new HashMap<>();
     Map<TreeNode, Integer> sums=new HashMap<>();
