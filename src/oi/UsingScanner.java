@@ -19,7 +19,7 @@ public class UsingScanner {
 
     public static void main(String[] args) throws IOException {
 
-/*        //-------------- Test reading 1 MB file. --------------------
+        //-------------- Test reading 1 MB file. --------------------
         StopWatch.start();
 
         Scanner scanner = new Scanner(new File(DumpDataWriter.input1MB));
@@ -46,7 +46,7 @@ public class UsingScanner {
 
         long duration3 = StopWatch.stop();
         System.out.println(duration3);
-        */
+
         //-------------- Test reading 1000 MB file. --------------------
         StopWatch.start();
 

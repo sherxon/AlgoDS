@@ -14,15 +14,15 @@ public class UsingInputStream {
         StopWatch.start();
 
         FileInputStream inputStream= new FileInputStream(new File(DumpDataWriter.input1MB));
+        long count =0; // use it inside while block to count bytes
         while (inputStream.read()!=-1){}
 
         long duration = StopWatch.stop();
         System.out.println(duration);
 
-
         //-------------- Test reading 10 MB file. --------------------
 
-        StopWatch.start();
+    /*    StopWatch.start();
 
         FileInputStream inputStream2= new FileInputStream(new File(DumpDataWriter.input10MB));
         while (inputStream2.read()!=-1){}
@@ -49,6 +49,6 @@ public class UsingInputStream {
         while (inputStream4.read()!=-1){}
 
         long duration4 = StopWatch.stop();
-        System.out.println(duration4);
+        System.out.println(duration4);*/
     }
 }

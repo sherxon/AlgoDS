@@ -7,7 +7,8 @@ import java.io.*;
  */
 public class UsingBufferedStreams {
     public static void main(String[] args) throws IOException {
-/*
+
+            //-------------- Test reading 1 MB file. --------------------
         StopWatch.start();
 
         BufferedInputStream inputStream= new BufferedInputStream(new FileInputStream(new File(DumpDataWriter.input1MB)));
@@ -30,7 +31,7 @@ public class UsingBufferedStreams {
         while (inputStream3.read()!=-1){}
 
         long duration3 = StopWatch.stop();
-        System.out.println(duration3);*/
+        System.out.println(duration3);
 
 
         StopWatch.start();
