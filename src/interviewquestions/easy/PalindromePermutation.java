@@ -7,8 +7,9 @@ import java.util.Set;
  * Created by sherxon on 4/28/17.
  */
 public class PalindromePermutation {
-    public static void main(String[] args) {
-    }
+    /**
+    * To be palindrome, string needs to have even number of the same characters and/or single character.
+    * */
     public boolean canPermutePalindrome(String s) {
         if(s.length()<=1)return true;
         Set<Character> set= new HashSet<>();
