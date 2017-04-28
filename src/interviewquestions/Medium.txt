@@ -1271,3 +1271,12 @@ Given a string representing the file system in the above format, return the leng
 Note:
 The name of a file contains at least a . and an extension.
 The name of a directory or sub-directory will not contain a .
+
+121)Palindrome Permutation II
+Given a string s, return all the palindromic permutations (without duplicates) of it. Return an empty list if no palindromic permutation could be form.
+
+For example:
+
+Given s = "aabb", return ["abba", "baab"].
+
+Given s = "abc", return [].

@@ -1,4 +1,4 @@
-package interviewquestions;
+package interviewquestions.medium;
 
 /**
  * Created by sherxon on 4/27/17.
