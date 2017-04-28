@@ -1,6 +1,9 @@
 package oi;
 
-import java.io.*;
+import java.io.BufferedInputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
 
 /**
  * Created by sherxon on 4/27/17.
@@ -13,9 +16,6 @@ public class UsingDirectBuffering {
     public static void main(String[] args) throws IOException {
 
         //-------------- Test reading 1 MB file. --------------------
-
-        StopWatch.start();
-
         BufferedInputStream inputStream= new BufferedInputStream(new FileInputStream(new File(DumpDataWriter.input1MB)));
         byte[] buffer= new byte[2048]; // 2KB
         while (inputStream.read(buffer)!=-1){} // 75 ms
