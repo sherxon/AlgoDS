@@ -11,14 +11,7 @@ import java.nio.channels.FileChannel;
 public class UsingMemoryMappedFile {
     public static void main(String[] args) throws IOException {
 
-        RandomAccessFile memoryFile = new RandomAccessFile(DumpDataWriter.input10MB, "rw");
-        MappedByteBuffer mappedByteBuffer = memoryFile.getChannel().map(FileChannel.MapMode.READ_ONLY, 0, DumpDataWriter.size10MB);
-        System.out.println(mappedByteBuffer.isLoaded());
-        mappedByteBuffer.array();
-        mappedByteBuffer.load();
-        System.out.println(mappedByteBuffer.isLoaded());
-
-        /*//-------------- Test reading 1 MB file. --------------------
+        //-------------- Test reading 1 MB file. --------------------
         StopWatch.start();
 
         RandomAccessFile memoryFile = new RandomAccessFile(DumpDataWriter.input1MB, "rw");
@@ -72,6 +65,6 @@ public class UsingMemoryMappedFile {
         long duration4 = StopWatch.stop();
         System.out.println(duration4);
 
-*/
+
     }
 }

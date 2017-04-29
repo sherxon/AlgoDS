@@ -17,6 +17,7 @@ public class UsingBufferedStreams {
         long duration = StopWatch.stop();
         System.out.println(duration);
 
+        //-------------- Test reading 10 MB file. --------------------
         StopWatch.start();
 
         BufferedInputStream inputStream2= new BufferedInputStream(new FileInputStream(new File(DumpDataWriter.input10MB)));
@@ -25,6 +26,7 @@ public class UsingBufferedStreams {
         long duration2 = StopWatch.stop();
         System.out.println(duration2);
 
+        //-------------- Test reading 100 MB file. --------------------
         StopWatch.start();
 
         BufferedInputStream inputStream3= new BufferedInputStream(new FileInputStream(new File(DumpDataWriter.input100MB)));
@@ -33,7 +35,7 @@ public class UsingBufferedStreams {
         long duration3 = StopWatch.stop();
         System.out.println(duration3);
 
-
+        //-------------- Test reading 1000 MB file. --------------------
         StopWatch.start();
 
         BufferedInputStream inputStream4= new BufferedInputStream(new FileInputStream(new File(DumpDataWriter.input1000MB)));
