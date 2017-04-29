@@ -1297,4 +1297,18 @@ Here are some examples. Inputs are in the left-hand column and its corresponding
 3,2,1 → 1,2,3
 1,1,5 → 1,5,1
 
-123)
+123)Permutations II
+Given a collection of numbers that might contain duplicates, return all possible unique permutations.
+
+For example,
+[1,1,2] have the following unique permutations:
+[
+  [1,1,2],
+  [1,2,1],
+  [2,1,1]
+]
+Show Company Tags
+Show Tags
+Show Similar Problems
+
+124)
