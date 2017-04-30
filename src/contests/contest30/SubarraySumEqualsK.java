@@ -9,7 +9,6 @@ import java.util.Map;
 public class SubarraySumEqualsK {
     public int subarraySum(int[] a, int k) {
         if(a.length == 0)return 0;
-
         for(int i=1; i<a.length; i++){
             a[i]+=a[i-1];
         }
