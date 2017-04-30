@@ -12,10 +12,10 @@ import java.util.Map;
  * Created by sherxon on 1/7/17.
  */
 /**
-* This Bellman Ford shortest path algorithm. It works with negative edges and and if there negative cycle
+* This Bellman Ford shortest path algorithm. It works with negative edges and if there negative cycle
  * the algorithm reports. Time complexity is O(V*E) if E is V^2 , we can say that O(V^3).
  * This is slower than Dijkstra shortest path algorithm which works for only non-negative edges in O(VLogV)
- * with fibonacci heap.
+ * with Fibonacci heap.
 * */
 public class BellmanFord {
     WeightedGraph graph;

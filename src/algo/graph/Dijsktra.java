@@ -14,7 +14,7 @@ import java.util.TreeSet;
 /**
 * This is the algorithm to find shortest Path in weighted and non-negative edged graph. Graph can be directed
 * or undirected. This is not optimized version as shortestPath() method searches vertex with minimal weight
-* every time. To optimize fibonacci heap can be used. This algorithm finds shortest path from source vertex
+* every time. To optimize Fibonacci heap can be used. This algorithm finds shortest path from source vertex
 * to all other reachable vertexes. Time complexity is O(VE)
 * */
 public class Dijsktra {

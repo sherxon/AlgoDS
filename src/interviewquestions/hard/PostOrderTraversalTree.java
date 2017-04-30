@@ -53,6 +53,6 @@ Do following while stack is not empty.
 
 2.3. push the right child of popped item to stack.
 
-reverse the ouput.
+reverse the output.
 
 * */

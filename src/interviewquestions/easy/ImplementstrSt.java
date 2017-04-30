@@ -6,7 +6,7 @@ package interviewquestions.easy;
 public class ImplementstrSt {
     /**
      * There are two solutions for this problem. One is using RabinKarp Algorithm and the second one is using
-     * Java's index of algorithm i.e searching starting point of needle from haystack and comparing neeedle.
+     * Java's index of algorithm i.e. searching starting point of needle from haystack and comparing needle.
      * Time complexity in both algorithms is average O(n+m) and in the worst case O(mn);
      */
 

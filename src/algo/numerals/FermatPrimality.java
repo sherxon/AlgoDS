@@ -15,7 +15,7 @@ package algo.numerals;
  * the value n is called a Fermat liar because it incorrectly implies that p is prime.
  * If np–1 Mod p ≠ 1, n is called a Fermat witness because it proves that p is
  * not prime
- * We can use many test to remove fermats lier. For example, if p passes the test 10 times, there is a 1/210 ≈ 0.00098 probability
+ * We can use many test to remove Fermat liar. For example, if p passes the test 10 times, there is a 1/210 ≈ 0.00098 probability
  * that p is not prime
  */
 public class FermatPrimality {
