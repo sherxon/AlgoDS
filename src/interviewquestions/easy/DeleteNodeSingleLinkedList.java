@@ -7,7 +7,7 @@ import interviewquestions.utils.ListNode;
  */
 public class DeleteNodeSingleLinkedList {
     /**
-     * Case: We have only list node which is not last element. To remove this node, we can chnage its value
+     * Case: We have only list node which is not last element. To remove this node, we can change its value
      * and set pointer to next of next.
      */
     public void deleteNode(ListNode x) {

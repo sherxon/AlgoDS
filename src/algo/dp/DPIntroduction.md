@@ -1,9 +1,9 @@
 According to Wikipedia, Dynamic programming (also known as dynamic optimization) is a method for solving a complex problem by
 breaking it down into a collection of simpler subproblems, solving each of those subproblems just once, 
 and storing their solutions – ideally, using a memory-based data structure.
-For example, in order computer Nth fibonacci number or to find shortest path, we can use DP and get result in
+For example, in order computer Nth Fibonacci number or to find shortest path, we can use DP and get result in
 much easier and optimized way.   
-DP techniques help us to solve exponential problems in Polynomoil time.   
+DP techniques help us to solve exponential problems in polynomial time.   
 <br>
 Notes From MIT(6.006)->   
 DP => careful brute force  
@@ -11,7 +11,7 @@ DP => guessing + recursion + memoization
 DP => shortest path in some DAG  
 Time complexity => # subproblems x time/subproblem (treating recursion calls as O(1))  
   
-These are five interdependant steps to DP  
+These are five interdependent steps to DP  
 1) define subproblems  
 2) guess ( part of subproblems)  
 3) relate subproblem solutions  
