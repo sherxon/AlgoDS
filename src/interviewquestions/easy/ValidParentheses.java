@@ -1,5 +1,7 @@
 package interviewquestions.easy;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Stack;
 
 /**
@@ -7,20 +9,21 @@ import java.util.Stack;
  */
 public class ValidParentheses {
     public boolean isValid(String s) {
-        char[] a=s.toCharArray();
+        char[] a= s.toCharArray();
         Stack<Character> stack= new Stack<>();
-        for(char c: a){
-            char cc=0;
-            if(!stack.isEmpty() && c==')' && stack.peek()=='(')stack.pop();
-            else if(!stack.isEmpty() && c=='}' && stack.peek()=='{')stack.pop();
-            else if(!stack.isEmpty() && c==']' && stack.peek()=='[')stack.pop();
-            else stack.push(c);
+        Map<Character, Character> map= new HashMap<>();
+        map.put(']', '[');
+        map.put(')', '(');
+        map.put('}', '{');
+        for(int i=0; i < a.length; i++){
+            if(a[i] =='(' || a[i] == '{' || a[i] == '['){
+                stack.add(a[i]);
+            }else{
+                if(stack.isEmpty() || stack.peek()!=map.get(a[i]))return false;
+                stack.pop();
+            }
+
         }
-        return stack.size()==0;
-    }
-
-    public static void main(String[] args) {
-        System.out.println(new ValidParentheses().isValid("()[]{}"));
-
+        return stack.isEmpty();
     }
 }
