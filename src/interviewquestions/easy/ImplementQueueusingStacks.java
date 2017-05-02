@@ -62,4 +62,48 @@ public class ImplementQueueusingStacks {
         }
     }
 
+    /**
+    * This is the second optimized solution with
+    * */
+    public class MyQueue2 {
+        Stack<Integer> stack;
+        Stack<Integer> helper;
+
+        /** Initialize your data structure here. */
+        public MyQueue2() {
+            stack= new Stack<>();
+            helper= new Stack<>();
+        }
+
+        /** Push element x to the back of queue. */
+        public void push(int x) {
+            stack.push(x);
+        }
+
+        /** Removes the element from in front of queue and returns that element. */
+        public int pop() {
+            if(helper.isEmpty()){
+
+                while(!stack.isEmpty())
+                    helper.push(stack.pop());
+            }
+
+            return helper.pop();
+        }
+
+        /** Get the front element. */
+        public int peek() {
+            if(helper.isEmpty()){
+
+                while(!stack.isEmpty())
+                    helper.push(stack.pop());
+            }
+            return helper.peek();
+        }
+
+        /** Returns whether the queue is empty. */
+        public boolean empty() {
+            return helper.isEmpty() && stack.isEmpty();
+        }
+    }
 }

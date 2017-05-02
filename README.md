@@ -86,6 +86,7 @@ Here are questions divided by difficulty level:
 2) [Min Queue](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/QueuewithMinimum.java)  
 3) [Implement Stack Using Queue](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/ImplementStackUsingQueues.java)  
 4) [Implement Queue Using Stack](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/easy/ImplementQueueusingStacks.java)
+5) [Sort Stack](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/medium/SortStack.java)  
 
 ### Dynamic Programming
 1) [Fibonacci Numbers](https://github.com/sherxon/AlgoDS/blob/master/src/algo/dp/FibonacciNumber.java)  
