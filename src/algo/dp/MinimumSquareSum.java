@@ -3,7 +3,7 @@ package algo.dp;
 /*
  Created by prafful1 on 5/2/2017
  Problem Statement: Minimum number of squares whose sum equals to given number n
- The below soluton contains both Bruteforce recursive solution with exponential complexity and DP solution with improved polynomial complexity.
+ The below solution contains both Brute force recursive solution with exponential complexity and DP solution with improved polynomial complexity.
 */
 
 public class MinimumSquareSum{
