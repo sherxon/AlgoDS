@@ -1325,3 +1325,11 @@ Implement a function popAt ( int index) which performs a pop operation on a spec
 Write a program to sort a stack such that the smallest items are on the top. You can use
 an additional temporary stack, but you may not copy the elements into any other data structure
 (such as an array). The stack supports the following operations: push, pop, peek, and is Empty.
+
+126)BST Sequences
+A binary search tree was created by traversing through an array from left to right
+and inserting each element. Given a binary search tree with distinct elements, print all possible
+arrays that could have led to this tree
+For example:
+2 1 3 tree
+Output: [[2,1,3], [2,3,1]]
