@@ -9,7 +9,6 @@ public class ArrangingCoins {
     }
 
     public int arrangeCoins(int n) {
-        long count= (-1 + ((long)Math.sqrt(1+4*2.0*n)))/2;
-        return Long.valueOf(count).intValue();
+        return (int) ((-1+(Math.sqrt(8l*n+1)))/2);
     }
 }
