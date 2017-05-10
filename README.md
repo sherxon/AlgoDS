@@ -94,8 +94,8 @@ Here are questions divided by difficulty level:
 3) [Subset Sum](https://github.com/sherxon/AlgoDS/blob/master/src/algo/dp/SubsetSum.java)     
 4) [0/1 Knapsack Problem](https://github.com/sherxon/AlgoDS/blob/master/src/algo/dp/Knapsack01.java)     
 5) [Shortest Palindrome (KMP)](https://github.com/sherxon/AlgoDS/blob/master/src/interviewquestions/hard/ShortestPalindrome.java) 
-6) [Minimum Square Sum](https://github.com/prafful1/AlgoDS/blob/master/src/algo/dp/MinimumSquareSum.java)
-7) [Maximum weight transformation of a String](https://github.com/prafful1/AlgoDS/blob/master/src/algo/dp/MaxWeightTransformation.java)
+6) [Minimum Square Sum](https://github.com/sherxon/AlgoDS/blob/master/src/algo/dp/MinimumSquareSum.java)
+7) [Maximum weight transformation of a String](https://github.com/sherxon/AlgoDS/blob/master/src/algo/dp/MaxWeightTransformation.java)
 
 ### Misc
 1) [Union Find](https://github.com/sherxon/AlgoDS/blob/master/src/algo/UnionFind.java)  
