@@ -3,7 +3,7 @@ This is the collection of **algorithms, data structures** and **Interview Questi
 This repository contains my solutions for common algorithmic problems and implementation of Data Structures in Java.
 I've created this repository to learn about algorithms. I am adding solutions continuously.   
 
-**Algorithms,  Data Structures** and **200 Interview Questions with Answers** are provided so far.  
+**Algorithms,  Data Structures** and **more than 200 Problems and Solutions** are provided so far.  
 
 ### Questions  
 Here are questions divided by difficulty level:  
