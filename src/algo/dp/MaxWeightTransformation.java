@@ -29,8 +29,7 @@ public class MaxWeightTransformation{
 	size: str.length() -1
 	lookup: int[str.length()] (initialize all lookup indexes with -1)
 	*/	
-	public int maxWeightTransformationDPSol(char str1[], int i, int size, int lookup[])
-		{
+	/*public int maxWeightTransformationDPSol(char str1[], int i, int size, int lookup[]) {
 		// If the counter has gone past maximum size 
 		// of string, then return 0
 		if (i > size)
@@ -65,7 +64,7 @@ public class MaxWeightTransformation{
 				}
 		}
 		return lookup[i] = res;
-		}
+		}*/
 		
 	/*
   Brute Force Solution  
@@ -73,8 +72,7 @@ public class MaxWeightTransformation{
 	i: first index of string (0)
 	size: str.length() -1
 	*/	
-	public int maxWeightTransformationNoDPSol(char str1[], int i, int size)
-		{
+	/*public int maxWeightTransformationNoDPSol(char str1[], int i, int size) {
 		// If the counter has gone past maximum size 
 		// of string, then return 0
 		if (i > size)
@@ -107,7 +105,7 @@ public class MaxWeightTransformation{
 		}
 
 		return res;
-		}
+		}*/
 	
 	
 	}
