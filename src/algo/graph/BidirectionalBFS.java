@@ -16,7 +16,7 @@ public class BidirectionalBFS{
         BFSHelper sourceData=new BFSHelper(graph, source);
         BFSHelper destData=new BFSHelper(graph, dest);
 
-        while (!sourceData.isDone() || !destData.isDone()){
+        while (!sourceData.isDone() && !destData.isDone()) {
 
              Set<Integer> frontierSource=sourceData.searchLevel();
              Set<Integer> frontierDest=destData.searchLevel();
