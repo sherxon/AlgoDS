@@ -2,7 +2,7 @@ package algo.graph;
 
 import ds.graph.Graph;
 
-import java.io.IOException;
+import java.util.Collections;
 import java.util.List;
 import java.util.Set;
 
@@ -11,17 +11,16 @@ import java.util.Set;
  */
 public class BidirectionalBFS{
 
-    public static void main(String[] args) throws IOException {
-        System.out.println();
-    }
 
     List<Integer> searchBi(Graph graph, Integer source, Integer dest){
         BFSHelper sourceData=new BFSHelper(graph, source);
         BFSHelper destData=new BFSHelper(graph, dest);
 
         while (!sourceData.isDone() || !destData.isDone()){
+
              Set<Integer> frontierSource=sourceData.searchLevel();
              Set<Integer> frontierDest=destData.searchLevel();
+
             for (Integer integer : frontierDest) {
                 if(frontierSource.contains(integer))
                     return mergePath(sourceData, destData, integer);
@@ -31,8 +30,13 @@ public class BidirectionalBFS{
     }
 
     private List<Integer> mergePath(BFSHelper sourceData, BFSHelper destData, Integer integer) {
+        List<Integer> pathFromSource = sourceData.getPath(integer);
+        List<Integer> pathFromDest = destData.getPath(integer);
+        Collections.reverse(pathFromSource);
+        pathFromDest.remove(0);
+        pathFromSource.addAll(pathFromDest);
 
-        return null;
+        return pathFromSource;
     }
 
 }

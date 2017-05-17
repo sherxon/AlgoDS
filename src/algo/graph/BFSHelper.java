@@ -11,11 +11,13 @@ public class BFSHelper {
     Queue<Integer> queue= new LinkedList<>();
     Graph graph;
     Set<Integer> visited=new HashSet<>();
+    Map<Integer, Integer> parent = new HashMap<>();
 
     public BFSHelper(Graph graph, Integer source) {
         queue.add(source);
         visited.add(source);
         this.graph=graph;
+        parent.put(source, null);
     }
 
     public boolean isDone() {
@@ -31,9 +33,19 @@ public class BFSHelper {
                 if(!visited.contains(nei)){
                     visited.add(nei);
                     queue.add(nei);
+                    parent.put(nei, current);
                 }
             }
         }
         return new HashSet<>(queue);
+    }
+
+    List<Integer> getPath(Integer from) {
+        List<Integer> list = new ArrayList<>();
+        while (from != null) {
+            list.add(from);
+            from = parent.get(from);
+        }
+        return list;
     }
 }
