@@ -46,7 +46,7 @@ public class MaxWeightTransformation{
 			return lookup[i];
 		
 		// If pair is not made, weight gained is 1
-		int res = 1 + max_len(str1, i+1, size, lookup);
+		int res = 1 + maxWeightTransformationDPSol(str1, i+1, size, lookup);
 		
 		// is pair is made
 		if(i+1 <= size)
@@ -55,13 +55,13 @@ public class MaxWeightTransformation{
 			// weight gained is 3 after transformation
 			if (str1[i] == str1[i+1])
 				{
-				res = Math.max(res, 3 + max_len(str1, i+2, size, lookup));
+				res = Math.max(res, 3 + maxWeightTransformationDPSol(str1, i+2, size, lookup));
 				}
 			// if consecutive elements are different
 			// weight gained is 4
 			else if(str1[i] != str1[i+1])
 				{
-				res = Math.max(res, 4 + max_len(str1, i+2, size, lookup));
+				res = Math.max(res, 4 + maxWeightTransformationDPSol(str1, i+2, size, lookup));
 				}
 		}
 		return lookup[i] = res;
@@ -87,7 +87,7 @@ public class MaxWeightTransformation{
 			return 1;
 	
 		// If pair is not made, weight gained is 1
-		int res = 1 + max_len(str1, i+1, size);
+		int res = 1 + maxWeightTransformationNoDPSol(str1, i+1, size);
 		
 		// is pair is made
 		if(i+1 <= size)
@@ -96,13 +96,13 @@ public class MaxWeightTransformation{
 			// weight gained is 3 after transformation
 			if (str1[i] == str1[i+1])
 				{
-				res = Math.max(res, 3 + max_len(str1, i+2, size));
+				res = Math.max(res, 3 + maxWeightTransformationNoDPSol(str1, i+2, size));
 				}
 			// if consecutive elements are different
 			// weight gained is 4
 			else if(str1[i] != str1[i+1])
 				{
-				res = Math.max(res, 4 + max_len(str1, i+2, size));
+				res = Math.max(res, 4 + maxWeightTransformationNoDPSol(str1, i+2, size));
 				}
 		}
 
