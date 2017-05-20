@@ -1341,4 +1341,5 @@ EXAMPLE
 Input: 3
 Output: ( ( () ) ) , ( () () ) , ( () ) () , () ( () ) , () () ()
 
-128)
+128)Alien Alphabet
+Given dictionary of alien language. You need to find order of alphabets based on dictionary
