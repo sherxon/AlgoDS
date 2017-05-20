@@ -1,6 +1,6 @@
 package contests.contest25;
 
-import interviewquestions.utils.TreeNode;
+import problems.utils.TreeNode;
 
 import java.util.*;
 

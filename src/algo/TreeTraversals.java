@@ -1,6 +1,6 @@
 package algo;
 
-import interviewquestions.utils.TreeNode;
+import problems.utils.TreeNode;
 
 import java.util.LinkedList;
 import java.util.Queue;
