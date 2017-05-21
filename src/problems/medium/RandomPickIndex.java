@@ -1,15 +1,12 @@
 package problems.medium;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.Random;
 
 /**
  * Created by sherxon on 1/16/17.
  */
 public class RandomPickIndex {
-    Map<Integer, List<Integer>> map = new HashMap<>();
+    /*Map<Integer, List<Integer>> map = new HashMap<>();
 
     public RandomPickIndex(int[] nums) {
         for (int i = 0; i < nums.length; i++) {
@@ -30,5 +27,35 @@ public class RandomPickIndex {
     public int pick(int target) {
         int random = (int) (Math.random() * map.get(target).size());
         return map.get(target).get(random);
+    }*/
+
+    /**
+     * This is reservoir sample solution
+     */
+    Random random;
+    int[] nums;
+
+    public RandomPickIndex(int[] nums) {
+        this.nums = nums;
+        this.random = new Random();
     }
+
+    public int pick(int target) {
+        int count = 0;
+        int result = -1;
+        for (int i = 0; i < nums.length; i++) {
+
+            if (nums[i] != target) {
+                continue;
+            }
+
+            if (random.nextInt(++count) == 0) {
+                result = i;
+            }
+
+        }
+        return result;
+    }
+
+
 }
