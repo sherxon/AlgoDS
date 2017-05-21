@@ -1,6 +1,7 @@
 package triplebyte;
 
 import java.util.Scanner;
+import java.util.concurrent.CountDownLatch;
 
 /**
  * Created by sherxon on 5/17/17.
@@ -8,6 +9,7 @@ import java.util.Scanner;
 public class Board {
 
     static char[][] a = new char[3][3];
+    CountDownLatch countDownLatch = new CountDownLatch(10);
 
     public static void main(String[] args) {
         clear();
