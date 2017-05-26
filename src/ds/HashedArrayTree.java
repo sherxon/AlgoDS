@@ -78,6 +78,17 @@ public class HashedArrayTree {
     System.out.println("Size: " + size + "; Capacity: " + cap + "; Busy: " + busy);
   }
 
+  public Object get(int index) {
+    if (index < 0 || index >= size) {
+      throw new IndexOutOfBoundsException();
+    }
+    int iiPointer = index / data.length;
+    int jjPointer = index % data.length;
+
+    return data[iiPointer][jjPointer];
+
+  }
+
   public int size() {
     return size;
   }
