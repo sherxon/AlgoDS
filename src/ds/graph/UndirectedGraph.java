@@ -35,6 +35,7 @@ public class UndirectedGraph implements Graph {
         if (!vertexMap.containsKey(v1)) return -1d;
         if (!vertexMap.containsKey(v2)) return -1d;
         vertexMap.get(v1).add(v2);
+        vertexMap.get(v2).add(v1);
         return 0d;
     }
 
