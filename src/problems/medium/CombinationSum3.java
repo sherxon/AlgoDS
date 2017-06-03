@@ -8,10 +8,6 @@ import java.util.List;
  */
 public class CombinationSum3 {
 
-  public static void main(String[] args) {
-    System.out.println(combinationSum3(3, 7));
-  }
-
   static public List<List<Integer>> combinationSum3(int k, int n) {
     List<List<Integer>> list = new ArrayList<>();
     if (k == 0 || n == 0) {
