@@ -6,19 +6,29 @@ package ds;
 
 /**
  * This is the implementation of Hashed Array Tree (HAT) data structure that is the same as Dynamic
- * Array (ArrayList in Java) in terms of time complexity, however, it wastes SQRT(N) extra space
+ * Array (ArrayList in Java) in terms of time complexity, however, it wastes O(SQRT(N)) extra space
  * when increasing capacity.
+ *
+ * Although name implies hashing, HAT does not use any hash.
+ *
+ * Initially, we start with base array  that stores only references to leaf arrays whose size is
+ * the same as base array. Every time current leaf array is full we create new leaf array and start
+ * to insert data into newly created leaf array.
+ *
+ * When increasing capacity, we double size of base array and leaf create leaf arrays with doubles
+ * size and copy entries from previous HAT. In this way, only quarter of newly created HAT is full
+ * and other leaf arrays will be null.
  */
 public class HashedArrayTree {
 
-  private Object[][] data;
+  private Object[][] data; // base array, used to store references to leaf arrays
 
   private int size;
   private int iPointer = -1;
-  private int jPointer = 17; // negative value means leaf array has not been created;
+  private int jPointer = 17;
 
   public HashedArrayTree() {
-    this.data = new Object[4][]; // should be power of 2, all leaf arrays are not initialized
+    this.data = new Object[16][]; // should be power of 2, all leaf arrays are not initialized
   }
 
   public void add(Integer elem) {
@@ -62,6 +72,9 @@ public class HashedArrayTree {
 
   }
 
+  /**
+   * helper method to see capacity and number of entries in HAT
+   */
   public void printStats() {
     int busy = 0;
     int cap = 0;
@@ -93,6 +106,10 @@ public class HashedArrayTree {
     return size;
   }
 
+  /**
+   * returns available leaf to insert data.
+   * if current leaf is already full,creates new leaf and returns it
+   */
   private Object[] getLeaf() {
 
     if (jPointer >= data.length) {
