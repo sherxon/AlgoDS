@@ -144,7 +144,7 @@ Here are questions divided by difficulty level:
 2) [Binary Search Tree (iterative)](https://github.com/sherxon/AlgoDS/blob/master/src/ds/BSTIterative.java)  
 3) [AVL Tree](https://github.com/sherxon/AlgoDS/blob/master/src/ds/AVLTree.java)    
 4) [Trie (Prefix tree)](https://github.com/sherxon/AlgoDS/blob/master/src/algo/string/Trie.java)  
-
+5) [Hashed Array Tree](https://github.com/sherxon/AlgoDS/blob/master/src/ds/HashedArrayTree.java)  
 
 ## Contribute
 
