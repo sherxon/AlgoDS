@@ -1,9 +1,8 @@
 package problems.easy;
 
-import problems.utils.TreeNode;
-
 import java.util.ArrayList;
 import java.util.List;
+import problems.utils.TreeNode;
 
 /**
  * Created by sherxon on 2016-12-30.
@@ -27,6 +26,40 @@ public class BinaryTreePaths {
             r.add(0, root.val + "");
 
         return r;
+
+    }
+
+    /**
+     * This is recursive solution with StringBuilder
+     */
+    public List<String> binaryTreePaths2(TreeNode root) {
+        List<String> list = new ArrayList<>();
+        if (root == null) {
+            return list;
+        }
+        StringBuilder sb = new StringBuilder();
+        sb.append(root.val + "");
+        if (root.left == null && root.right == null) {
+            list.add(sb.toString());
+        }
+        go(list, root.left, new StringBuilder(sb));
+        go(list, root.right, new StringBuilder(sb));
+
+        return list;
+    }
+
+    void go(List<String> list, TreeNode root, StringBuilder sb) {
+        if (root == null) {
+            return;
+        }
+
+        sb.append("->").append(root.val);
+
+        if (root.left == null && root.right == null) {
+            list.add(sb.toString());
+        }
+        go(list, root.left, new StringBuilder(sb));
+        go(list, root.right, new StringBuilder(sb));
 
     }
 }
