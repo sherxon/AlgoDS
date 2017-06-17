@@ -40,11 +40,11 @@ public class COnArray {
     }
 
     boolean valid(String s, String t) {
+        int[] a = new int[26];
         Arrays.fill(a, 0);
         for (int i = 0; i < s.length(); i++) {
             a[s.charAt(i) - 'a']++;
         }
-
         for (int i = 0; i < t.length(); i++) {
             int index = t.charAt(i) - 'a';
             if (a[index] == 0) return false;
