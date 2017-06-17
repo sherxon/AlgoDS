@@ -145,6 +145,7 @@ Here are questions divided by difficulty level:
 3) [AVL Tree](https://github.com/sherxon/AlgoDS/blob/master/src/ds/AVLTree.java)    
 4) [Trie (Prefix tree)](https://github.com/sherxon/AlgoDS/blob/master/src/algo/string/Trie.java)  
 5) [Hashed Array Tree](https://github.com/sherxon/AlgoDS/blob/master/src/ds/HashedArrayTree.java)  
+6) [LRU Cache](https://github.com/sherxon/AlgoDS/blob/master/src/problems/hard/LRUCache.java)  
 
 ## Contribute
 
