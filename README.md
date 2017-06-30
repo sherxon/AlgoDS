@@ -126,6 +126,7 @@ Here are questions divided by difficulty level:
 9) [Is Graph Bipartite](https://github.com/sherxon/AlgoDS/blob/master/src/algo/graph/IsBipartite.java)    
 10) [Is Graph Connected](https://github.com/sherxon/AlgoDS/blob/master/src/algo/graph/IsConnected.java)  
 11) [Cycle Detection](https://github.com/sherxon/AlgoDS/blob/master/src/algo/graph/CycleDetection.java)  
+12) [Undirected Graph Bridge Detection](https://github.com/prafful1/AlgoDS/blob/master/src/algo/graph/BridgeUndirectedGraph.java)
 
 ### String
 1) [Rabin Karp Subsequence search](https://github.com/sherxon/AlgoDS/blob/master/src/algo/string/RabinKarpSubsequenceSearch.java)   
