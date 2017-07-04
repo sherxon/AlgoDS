@@ -56,7 +56,8 @@ public class MaxWeightTransformation {
             // weight gained is 3 after transformation
             if (str1[i] == str1[i + 1]) {
                 res = Math.max(res, 3 + maxWeightTransformationDPSol(str1, i + 2, size, lookup));
-            } else if (str1[i] != str1[i + 1]) { // if consecutive elements are different  weight gained is 4
+            } else if (str1[i] != str1[i
+                    + 1]) { // if consecutive elements are different  weight gained is 4
                 res = Math.max(res, 4 + maxWeightTransformationDPSol(str1, i + 2, size, lookup));
             }
         }
@@ -86,14 +87,17 @@ public class MaxWeightTransformation {
 
         // is pair is made
         if (i + 1 <= size) {
-            if (str1[i] == str1[i + 1]) {// if consecutive elements are same, weight gained is 3 after transformation
+            if (str1[i] == str1[i
+                    + 1]) {// if consecutive elements are same, weight gained is 3 after transformation
                 res = Math.max(res, 3 + maxWeightTransformationNoDPSol(str1, i + 2, size));
-            } else if (str1[i] != str1[i + 1]) {// if consecutive elements are different,  weight gained is 4
+            } else if (str1[i] != str1[i
+                    + 1]) {// if consecutive elements are different,  weight gained is 4
                 res = Math.max(res, 4 + maxWeightTransformationNoDPSol(str1, i + 2, size));
             }
         }
 
         return res;
     }
+}
 
 
