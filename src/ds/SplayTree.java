@@ -4,6 +4,8 @@ package ds;
  * Created by sherxon on 6/30/17.
  */
 
+import problems.utils.TreeNode;
+
 /**
  * This is implementation os splay tree. Running time is amortized O(logN) for lookup, insertion,
  * deletion. Splay trees splay the tree after each insertion and lookup operations so that accessed
@@ -14,5 +16,6 @@ package ds;
  * Zig => when there is no grandparent of x. (parent is root )
  */
 public class SplayTree {
+    TreeNode root;
 
 }
