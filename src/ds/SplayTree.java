@@ -15,7 +15,7 @@ import problems.utils.TreeNode;
  * Zig-Zag =>p is not root and x is the right child and p is the left child, or vice versa
  * Zig => when there is no grandparent of x. (parent is root )
  */
-public class SplayTree {
+public class SplayTree<K extends Comparable<K>, V> {
     TreeNode root;
 
 }
