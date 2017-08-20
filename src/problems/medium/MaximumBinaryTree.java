@@ -1,3 +1,7 @@
+package problems.medium;
+
+import problems.utils.TreeNode;
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -7,7 +11,7 @@
  *     TreeNode(int x) { val = x; }
  * }
  */
-public class Solution {
+public class MaximumBinaryTree {
     public TreeNode constructMaximumBinaryTree(int[] a) {
         if(a==null || a.length==0)return null;
         return go(a, 0, a.length-1);
