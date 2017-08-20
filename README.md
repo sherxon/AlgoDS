@@ -96,6 +96,7 @@ Here are questions divided by difficulty level:
 5) [Shortest Palindrome (KMP)](https://github.com/sherxon/AlgoDS/blob/master/src/problems/hard/ShortestPalindrome.java) 
 6) [Minimum Square Sum](https://github.com/sherxon/AlgoDS/blob/master/src/algo/dp/MinimumSquareSum.java)
 7) [Maximum weight transformation of a String](https://github.com/sherxon/AlgoDS/blob/master/src/algo/dp/MaxWeightTransformation.java)
+8) [Coin Change](https://github.com/sherxon/AlgoDS/blob/master/src/problems/medium/CoinChange.java)  
 
 ### Misc
 1) [Union Find](https://github.com/sherxon/AlgoDS/blob/master/src/algo/UnionFind.java)  
