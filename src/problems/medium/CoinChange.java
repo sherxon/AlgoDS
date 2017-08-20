@@ -1,4 +1,8 @@
-public class Solution {
+package problems.medium;
+
+import java.util.Arrays;
+
+public class CoinChange {
     int count=Integer.MAX_VALUE;
     boolean found=false;
     public int coinChange2(int[] a, int n) {
