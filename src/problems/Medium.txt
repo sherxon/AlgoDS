@@ -1587,3 +1587,8 @@ The range of tree node value is in the range of [-100000, 100000].
 1 <= n <= 10000
 Discuss
 
+138) Single Number 2
+Given an array of integers, every element appears three times except for one, which appears exactly once. Find that single one.
+
+Note:
+Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?
