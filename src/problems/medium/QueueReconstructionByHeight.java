@@ -6,16 +6,6 @@ import java.util.Arrays;
  * @author Sherali Obidov.
  */
 public class QueueReconstructionByHeight {
-    public static void main(String[] args) {
-        reconstructQueue(new int[][]{
-                {7,0},
-                {4,4},
-                {7,1},
-                {5,0},
-                {6,1},
-                {5,2},
-        });
-    }
 
     static int[][] reconstructQueue(int[][] people) {
         if(people==null || people.length == 0)return people;
