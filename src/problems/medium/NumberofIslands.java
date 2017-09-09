@@ -19,8 +19,10 @@ public class NumberofIslands {
     }
 
     void countIt(char[][] a, int i, int j) {
-        if (i >= 0 && i < a.length && j >= 0 && j < a[i].length && a[i][j] == '1') a[i][j] = '0';
-        else return;
+        if (i >= 0 && i < a.length && j >= 0 && j < a[i].length && a[i][j] == '1')
+            a[i][j] = '0';
+        else
+            return;
         countIt(a, i + 1, j);
         countIt(a, i, j + 1);
         countIt(a, i - 1, j);
