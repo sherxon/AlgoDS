@@ -5,14 +5,24 @@ import java.util.*;
 /**
  * Why Did you create this class? what does it do?
  */
-public class CutOffTreesForGolfEvent {
+@SuppressWarnings("Duplicates") public class CutOffTreesForGolfEvent {
+    public static void main(String[] args) {
+        List<List<Integer>> list = new ArrayList<>();
+        list.add(Arrays.asList(54581641, 64080174, 24346381, 69107959));
+        list.add(Arrays.asList(86374198, 61363882, 68783324, 79706116));
+        list.add(Arrays.asList(668150, 92178815, 89819108, 94701471));
+        list.add(Arrays.asList(83920491, 22724204, 46281641, 47531096));
+        list.add(Arrays.asList(83920491, 22724204, 46281641, 47531096));
+        list.add(Arrays.asList(89078499, 18904913, 25462145, 60813308));
+        System.out.println(new CutOffTreesForGolfEvent().cutOffTree(list));
+    }
+
     public int cutOffTree(List<List<Integer>> forest) {
         int count = 0;
         if (forest == null || forest.size() == 0)
             return 0;
-        TreeMap<Integer, Pair> map = new TreeMap<>();
 
-        Map<Pair, Set<Pair>> gr = new HashMap<>();
+        PriorityQueue<int[]> q = new PriorityQueue<>((a, b) -> a[2] - b[2]);
 
         for (int i = 0; i < forest.size(); i++) {
             for (int j = 0; j < forest.get(i).size(); j++) {
@@ -20,112 +30,52 @@ public class CutOffTreesForGolfEvent {
                 if (v == 0)
                     continue;
                 if (v > 1)
-                    map.put(v, new Pair(i, j));
-                setNei(gr, i, j, forest);
+                    q.add(new int[] { i, j, v });
             }
         }
-        Pair current = new Pair(0, 0);
-        for (Integer tree : map.keySet()) {
-            Pair p = map.get(tree);
-            int cc = find(current, gr, p);
+        int[] current = new int[] { 0, 0, forest.get(0).get(0) };
+        while (!q.isEmpty()) {
+            int[] p = q.remove();
+            int cc = find(current, p, forest);
             if (cc == -1)
                 return -1;
-            forest.get(p.i).set(p.j, 1);
-            setNei(gr, p.i, p.j, forest);
             current = p;
             count += cc;
         }
         return count;
     }
 
-    int find(Pair current, Map<Pair, Set<Pair>> map, Pair target) {
-        Queue<Pair> q = new LinkedList<>();
-        Set<Pair> visited = new HashSet<>();
-        visited.add(current);
-        Map<Pair, Integer> dist = new HashMap<>();
-        dist.put(current, 0);
+    static int[][] dir = { { 0, 1 }, { 0, -1 }, { 1, 0 }, { -1, 0 } };
+
+    int find(int[] current, int[] target, List<List<Integer>> forest) {
+        int m = forest.size();
+        int n = forest.get(0).size();
+        boolean[][] visited = new boolean[m][n];
+
+        visited[current[0]][current[1]] = true;
+
+        Queue<int[]> q = new LinkedList<>();
+        q.add(current);
+        int count = 0;
         while (!q.isEmpty()) {
-            Pair c = q.remove();
+            int size = q.size();
+            for (int i = 0; i < size; i++) {
+                int[] c = q.remove();
+                if (c[0] == target[0] && c[1] == target[1])
+                    return count;
 
-            if (c.equals(target))
-                return dist.get(c);
-
-            if (map.get(c) != null)
-                for (Pair nei : map.get(c)) {
-                    if (!visited.contains(nei)) {
-                        visited.add(nei);
-                        dist.put(nei, dist.get(c) + 1);
-                    }
+                for (int[] d : dir) {
+                    int f = c[0] + d[0];
+                    int s = c[1] + d[1];
+                    if (f < 0 || s < 0 || f >= m || s >= n || forest.get(f).get(s) == 0 || visited[f][s])
+                        continue;
+                    q.add(new int[] { f, s });
+                    visited[f][s] = true;
                 }
+            }
+            count++;
         }
-        if (dist.get(target) == null)
-            return -1;
-        return dist.get(target);
+        return -1;
     }
 
-    void setNei(Map<Pair, Set<Pair>> map, int i, int j, List<List<Integer>> forest) {
-        int n = forest.size();
-        int m = forest.get(i).size();
-        Pair p;
-        Pair c = new Pair(i, j);
-
-        if (i - 1 >= 0 && j - 1 >= 0 && forest.get(i - 1).get(j - 1) == 1) {
-            p = new Pair(i - 1, j - 1);
-            if (!map.containsKey(c))
-                map.put(c, new HashSet<>());
-            map.get(c).add(p);
-
-            if (!map.containsKey(p))
-                map.put(p, new HashSet<>());
-            map.get(p).add(c);
-        }
-        if (i + 1 < n && j - 1 >= 0 && forest.get(i + 1).get(j - 1) == 1) {
-            p = new Pair(i + 1, j - 1);
-            if (!map.containsKey(c))
-                map.put(c, new HashSet<>());
-            map.get(c).add(p);
-
-            if (!map.containsKey(p))
-                map.put(p, new HashSet<>());
-            map.get(p).add(c);
-        }
-        if (i - 1 >= 0 && j + 1 < m && forest.get(i - 1).get(j + 1) == 1) {
-            p = new Pair(i - 1, j + 1);
-            if (!map.containsKey(c))
-                map.put(c, new HashSet<>());
-            map.get(c).add(p);
-
-            if (!map.containsKey(p))
-                map.put(p, new HashSet<>());
-            map.get(p).add(c);
-        }
-
-        if (i + 1 < n && j + 1 < m && forest.get(i + 1).get(j + 1) == 1) {
-            p = new Pair(i + 1, j + 1);
-            if (!map.containsKey(c))
-                map.put(c, new HashSet<>());
-            map.get(c).add(p);
-
-            if (!map.containsKey(p))
-                map.put(p, new HashSet<>());
-            map.get(p).add(c);
-        }
-
-    }
-
-    private class Pair {
-        int i, j;
-
-        Pair(int ii, int jj) {
-            i = ii;
-            j = jj;
-        }
-
-        public boolean equals(Object o) {
-            if (o == this)
-                return true;
-            Pair p = (Pair) o;
-            return p.i == i && p.j == j;
-        }
-    }
 }
