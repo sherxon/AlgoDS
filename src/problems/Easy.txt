@@ -814,4 +814,13 @@ Explanation: The longest continuous increasing subsequence is [2], its length is
 Note: Length of the array will not exceed 10,000.
 
 
+99) Valid Palindrome II
+Given a non-empty string s, you may delete at most one character. Judge whether you can make it a palindrome.
 
+Example 1:
+Input: "aba"
+Output: True
+Example 2:
+Input: "abca"
+Output: True
+Explanation: You could delete the character 'c'.

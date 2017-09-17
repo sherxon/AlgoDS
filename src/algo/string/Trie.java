@@ -7,7 +7,7 @@ package algo.string;
 /**
  * This is prefix tree, which consumes a lot memory but very fast.
  */
-public class Trie {
+@SuppressWarnings("Duplicates") public class Trie {
 
     TrieNode root = new TrieNode('0');
 
