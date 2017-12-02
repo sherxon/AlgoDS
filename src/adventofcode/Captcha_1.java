@@ -50,7 +50,6 @@ public class Captcha_1 {
             if (next == current)
                 sum += (current - '0');
         }
-
         return sum;
     }
 
