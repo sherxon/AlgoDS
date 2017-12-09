@@ -5,7 +5,8 @@ import java.util.*;
 /**
  * Why Did you create this class? what does it do?
  */
-@SuppressWarnings("Duplicates") public class RecursiveCircus {
+@SuppressWarnings("Duplicates")
+public class RecursiveCircus {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         List<String> list = new ArrayList<>();
@@ -98,7 +99,6 @@ import java.util.*;
         }
         if (counts.size() == 1)
             return sum;
-        System.out.println(counts);
         int one = 1;
         int more = 1;
         for (Integer key : counts.keySet()) {
