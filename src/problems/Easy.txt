@@ -965,3 +965,17 @@ nums = [1, 2, 3]
 Output: -1
 Explanation:
 There is no index that satisfies the conditions in the problem statement.
+
+
+106) Check whether the given string is Pangram
+Given a string, check whether it contains all alphabets from A to Z.
+
+Example 1:
+Input: The quick brown fox jumps over the lazy dog
+Output: True
+Explanation: The above sentence contains all alphabets from A to Z. Upper Case or Lower Case don't matter. Also, repeatition don't matter.
+
+Example 2:
+Input: Hello GitHub
+Output: False
+Explanation: Only 9 alphabets are present in the string - "b, e, g, h, i, l, o, t, u". Hence, the string is not a Pangram.
