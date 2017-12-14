@@ -1,3 +1,9 @@
+/*
+ * LCM is the smallest positive integer that is divisible by both a and b.
+ * Product of any two numbers is equal to the product of their LCM and GCD.
+ * Hence, LCM will be the product of two numbers divided by their GCD. 
+ */
+
 public class LCM {
 
 	public static int gcd(int num1, int num2) {
