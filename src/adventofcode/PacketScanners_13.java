@@ -5,16 +5,19 @@ import java.util.Map;
 import java.util.Scanner;
 
 /**
- * Why Did you create this class? what does it do?
+ * http://adventofcode.com/2017/day/13
  */
-@SuppressWarnings("Duplicates") public class PacketScanners_13 {
+@SuppressWarnings("Duplicates")
+public class PacketScanners_13 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         StringBuilder builder = new StringBuilder();
         while (scanner.hasNextLine()) {
             String s = scanner.nextLine();
+
             if (s.equals("1"))
                 break;
+
             if (s.length() > 0)
                 builder.append(s).append("\n");
         }
