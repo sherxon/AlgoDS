@@ -32,7 +32,6 @@ public class Superstack {
                         j++;
                     }
                 }
-
             }
             if (list.isEmpty())
                 System.out.println("EMPTY");

@@ -8,9 +8,9 @@ import java.util.stream.Collectors;
  */
 public class NumberOfAtoms {
 
-    public static void main(String[] args) {
-        System.out.println(countOfAtoms("K4(ON(SO3)2)2"));
-    }
+    //    public static void main(String[] args) {
+    //        System.out.println(countOfAtoms("K4(ON(SO3)2)2"));
+    //    }
 
     // 2(2(3OS)NO)4K
     static public String countOfAtoms(String formula) {
@@ -71,39 +71,6 @@ public class NumberOfAtoms {
     //        return result;
     //    }
 
-    public int shoppingOffers(List<Integer> price, List<List<Integer>> special, List<Integer> needs) {
-        if (needs.size() == 0)
-            return 0;
-        int sumNeed = 0;
-        int sumCost = 0;
-        for (int i = 0; i < needs.size(); i++) {
-            sumNeed += needs.get(i);
-            sumCost += price.get(i) * needs.get(i);
-        }
-        if (sumNeed == 0)
-            return 0;
-        int total = 0;
-        for (List<Integer> list : special) {
-            int offerCost = 0;
-            int actualCost = 0;
-            List<Integer> afterOffer = new ArrayList<>();
-            for (int i = 0; i < list.size(); i++) {
-                if (list.get(i) > needs.get(i)) {
-                    offerCost = actualCost = 0;
-                    break;
-                }
-                offerCost += needs.get(i) * list.get(i);
-                actualCost += needs.get(i) * price.get(i);
-                afterOffer.set(i, needs.get(i) - list.get(i));
-            }
-            if (offerCost < actualCost) {
-                int useOfferCost = shoppingOffers(price, special, afterOffer);
-            } else {
 
-            }
 
-        }
-        return total;
-
-    }
 }
