@@ -1,7 +1,6 @@
 package adventofcode;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -13,10 +12,10 @@ import java.util.List;
     public static void main(String[] args) {
         //List<Integer> list = Arrays.asList(227, 169, 3, 166, 246, 201, 0, 47, 1, 255, 2, 254, 96, 3, 97, 144);
         //System.out.println(solve(list));
-        System.out.println(solve2("227,169,3,166,246,201,0,47,1,255,2,254,96,3,97,144"));
+        System.out.println(calculateKnotHash("227,169,3,166,246,201,0,47,1,255,2,254,96,3,97,144"));
     }
 
-    private static String solve2(String s) {
+    public static String calculateKnotHash(String s) {
         List<Integer> list = new ArrayList<>();
         for (int i = 0; i < s.length(); i++) {
             list.add((int) s.charAt(i));
@@ -56,7 +55,6 @@ import java.util.List;
             String ss = Integer.toHexString(xor);
             builder.append(ss.length() == 1 ? "0" + ss : ss);
         }
-        System.out.println("length " + builder.length());
         return builder.toString();
 
     }
