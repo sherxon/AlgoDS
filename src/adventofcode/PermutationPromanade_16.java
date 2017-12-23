@@ -3,7 +3,7 @@ package adventofcode;
 import java.util.*;
 
 /**
- * Why Did you create this class? what does it do?
+ http://adventofcode.com/2017/day/16
  */
 @SuppressWarnings("Duplicates") public class PermutationPromanade_16 {
     public static void main(String[] args) {
