@@ -5,7 +5,8 @@ import java.util.*;
 /**
  http://adventofcode.com/2017/day/16
  */
-@SuppressWarnings("Duplicates") public class PermutationPromanade_16 {
+@SuppressWarnings("Duplicates")
+public class PermutationPromanade_16 {
     public static void main(String[] args) {
         StringBuilder builder = new StringBuilder();
         Scanner scanner = new Scanner(System.in);
