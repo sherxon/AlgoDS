@@ -5,7 +5,8 @@ import java.util.*;
 /**
  * Why Did you create this class? what does it do?
  */
-@SuppressWarnings("Duplicates") public class SporificaVirus_22 {
+@SuppressWarnings("Duplicates")
+public class SporificaVirus_22 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         StringBuilder builder = new StringBuilder();
