@@ -1,3 +1,5 @@
+English | [简体中文](https://github.com/yunshuipiao/AlgoDS/blob/swensun/README-CN.md)
+
 # Algorithms and Data Structures
 This is the collection of **algorithms, data structures** and **Interview Questions** with solutions.
 This repository contains my solutions for common algorithmic problems and implementation of Data Structures in Java.
