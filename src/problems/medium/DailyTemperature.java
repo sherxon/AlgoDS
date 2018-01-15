@@ -8,11 +8,11 @@ import java.util.*;
 public class DailyTemperature {
     public static void main(String[] args) {
         System.out.println(Arrays.toString(dailyTemperatures(new int[] {
-                73, 74, 75, 71, 69, 72, 76, 73
-        })));
+                73, 74, 75, 71, 69, 72, 76, 73,
+                })));
     }
 
-    static public int[] dailyTemperatures(int[] a) {
+    static int[] dailyTemperatures(int[] a) {
         if (a == null || a.length == 0) {
             return a;
         }
@@ -27,13 +27,15 @@ public class DailyTemperature {
             Integer k = 0;
             Map.Entry<Integer, TreeSet<Integer>> entry = null;
             int search = a[i];
+            int min = Integer.MAX_VALUE;
             while ((entry = map.higherEntry(search)) != null) {
                 k = entry.getValue().higher(i);
-                if (k != null && k - i > 0)
-                    break;
+                if (k != null && k - i > 0) {
+                    min = Math.min(min, k - i);
+                }
                 search = entry.getKey();
             }
-            res[i] = k == null ? 0 : k > i ? k - i : 0;
+            res[i] = min == Integer.MAX_VALUE ? 0 : min;
         }
 
         return res;
