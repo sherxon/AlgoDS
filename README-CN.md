@@ -64,7 +64,7 @@
 13) [Minimum Depth of Binary Tree：二叉树的最小深度](https://github.com/sherxon/AlgoDS/blob/master/src/problems/easy/MinimumDepthofBinaryTree.java)     
 14) [Sorted List to Balanced Binary Search Tree：有序链表转换平衡二叉查找树](https://github.com/sherxon/AlgoDS/blob/master/src/problems/medium/ConvertSortedListtoBinarySearchTree.java)   
 15) [Validate Binary Search Tree：验证二叉搜索树](https://github.com/sherxon/AlgoDS/blob/master/src/problems/medium/ValidateBinarySearchTree.java)  
-16) [Sorted List to Balanced BST ：有序链表转换二叉查找树](https://github.com/sherxon/AlgoDS/blob/master/src/problems/medium/ConvertSortedArraytoBinarySearchTree.java)  
+16) [Sorted Array to Balanced BST ：有序数组转换二叉查找树](https://github.com/sherxon/AlgoDS/blob/master/src/problems/medium/ConvertSortedArraytoBinarySearchTree.java)  
 17) [Kth Smallest Element in a BST：二叉搜索树的第k小元素](https://github.com/sherxon/AlgoDS/blob/master/src/problems/medium/KthSmallestElementinaBST.java)  
 18) [Binary Tree Zigzag Level Order Traversal：二叉树的锯齿形层次遍历](https://github.com/sherxon/AlgoDS/blob/master/src/problems/medium/ZigZagOrderLevelTraversalBST.java)  
 19) [Delete Node in a BST：删除二叉查找树的节点](https://github.com/sherxon/AlgoDS/blob/master/src/problems/medium/DeleteNodeinaBST.java)  
