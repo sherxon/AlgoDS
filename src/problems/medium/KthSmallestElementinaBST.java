@@ -47,16 +47,17 @@ public class KthSmallestElementinaBST {
         //     return kthSmallest2(root.right, k - 1 - count); // 1 is current node
 
         // return root.val;
-        if (root == null || k < 0):
-            return -1
-        int leftCount = nodeCount(root.left)
+        if (root == null || k < 0) {
+            return -1;
+        }
+        int leftCount = nodeCount(root.left);
         if (k == leftCount + 1) {
-            return root.val
+            return root.val;
         }
         if (k < leftCount + 1) {
-            return kthSmallest2(root.left, k)
+            return kthSmallest2(root.left, k);
         } else {
-            return kthSmallest2(root.right, k - 1 - leftCount)
+            return kthSmallest2(root.right, k - 1 - leftCount);
         }
     }
 
