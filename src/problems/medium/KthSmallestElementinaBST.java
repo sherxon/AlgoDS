@@ -38,15 +38,26 @@ public class KthSmallestElementinaBST {
      * any extra memory. We can use O(N) space in order to keep size of all nodes to make DP solution.
      */
     public int kthSmallest2(TreeNode root, int k) {
-        int count = nodeCount(root);
+        // int count = nodeCount(root);
 
-        if (k < count)
-            return kthSmallest2(root.left, k);
+        // if (k < count)
+        //     return kthSmallest2(root.left, k);
 
-         else if (k > count + 1)
-            return kthSmallest2(root.right, k - 1 - count); // 1 is current node
+        //  else if (k > count + 1)
+        //     return kthSmallest2(root.right, k - 1 - count); // 1 is current node
 
-        return root.val;
+        // return root.val;
+        if (root == null || k < 0):
+            return -1
+        int leftCount = nodeCount(root.left)
+        if (k == leftCount + 1) {
+            return root.val
+        }
+        if (k < leftCount + 1) {
+            return kthSmallest2(root.left, k)
+        } else {
+            return kthSmallest2(root.right, k - 1 - leftCount)
+        }
     }
 
     private int nodeCount(TreeNode root) {
