@@ -1,4 +1,4 @@
-English | [简体中文](https://github.com/yunshuipiao/AlgoDS/blob/swensun/README-CN.md)
+English | [简体中文](https://github.com/yunshuipiao/AlgoDS/blob/master/README-CN.md)
 
 # Algorithms and Data Structures
 This is the collection of **algorithms, data structures** and **Interview Questions** with solutions.
