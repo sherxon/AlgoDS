@@ -10,18 +10,16 @@ public class ArrayNesting {
       return 0;
     }
 
-    int[] a = new int[nums.length];
-    int counter = 1;
+    boolean[] a = new boolean[nums.length];
     int max = 0;
     for (int i = 0; i < a.length; i++) {
       int j = i;
       int k = 0;
-      while (a[j] == 0) {
-        a[j] = counter;
+      while (!a[j]) {
+        a[j] = true;
         j = nums[j];
         k++;
       }
-      counter++;
       max = Math.max(k, max);
     }
     return max;
