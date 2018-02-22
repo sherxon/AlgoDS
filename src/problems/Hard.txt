@@ -195,3 +195,13 @@ Note:
 
 sx, sy, tx, ty will all be integers in the range [1, 10^9].
 
+14) First Missing Positive
+Given an unsorted integer array, find the first missing positive integer.
+
+For example,
+Given [1,2,0] return 3,
+and [3,4,-1,1] return 2.
+
+Your algorithm should run in O(n) time and uses constant space.
+
+

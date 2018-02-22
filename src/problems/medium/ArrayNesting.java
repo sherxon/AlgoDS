@@ -6,9 +6,8 @@ package problems.medium;
 public class ArrayNesting {
 
   public int arrayNesting(int[] nums) {
-    if (nums == null || nums.length == 0) {
+    if (nums == null || nums.length == 0)
       return 0;
-    }
 
     boolean[] a = new boolean[nums.length];
     int max = 0;
