@@ -2531,4 +2531,20 @@ Notes:
 1 < grid.length = grid[0].length <= 50.
 All heights grid[i][j] are in the range [0, 100].
 All buildings in grid[i][j] occupy the entire grid cell: that is, they are a 1 x 1 x grid[i][j] rectangular prism.
+179)Binary Tree Pruning
+We are given the head node root of a binary tree, where additionally every node's value is either a 0 or a 1.
 
+Return the same tree where every subtree (of the given tree) not containing a 1 has been removed.
+
+(Recall that the subtree of a node X is X, plus every node that is a descendant of X.)
+
+Example 1:
+Input: [1,null,0,0,1]
+Output: [1,null,0,null,1]
+
+Explanation:
+Only the red nodes satisfy the property "every subtree not containing a 1".
+The diagram on the right represents the answer.
+
+The binary tree will have at most 100 nodes.
+The value of each node will only be 0 or 1.

@@ -21,11 +21,11 @@ public class Solution1 {
         Set<String> ex = new HashSet<>(wordsToExclude);
         String[] a = literatureText.split(" ");
         Map<String, Integer> map = new HashMap<>();
-        for (String s : a) {
-            if (ex.contains(s))
-                continue;
-            map.put(s, map.getOrDefault(s, 0) + 1);
-        }
+
+        Arrays.stream(a)
+                .filter(s -> !ex.contains(s))
+                .forEach(s -> map.put(s, map.getOrDefault(s, 0) + 1));
+
         Set<String> res = new HashSet<>();
         int max = 0;
         for (String s : map.keySet()) {
@@ -37,6 +37,7 @@ public class Solution1 {
                 res.add(s);
             }
         }
+
         return new ArrayList<>(res);
     }
     // METHOD SIGNATURE ENDS
