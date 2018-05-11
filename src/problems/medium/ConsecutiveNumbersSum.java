@@ -1,11 +1,14 @@
 package problems.medium;
 
+import java.util.PriorityQueue;
+
 /**
  * Why Did you create this class? what does it do?
  */
 public class ConsecutiveNumbersSum {
 
     public int consecutiveNumbersSum(int n) {
+
         if (n == 1)
             return 1;
         int count = 1 + n % 2;
