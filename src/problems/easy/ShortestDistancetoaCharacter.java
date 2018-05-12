@@ -1,5 +1,8 @@
 package problems.easy;
 
+import java.util.ArrayList;
+import java.util.HashSet;
+
 /**
  * Why Did you create this class? what does it do?
  */
