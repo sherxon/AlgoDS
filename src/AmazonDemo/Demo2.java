@@ -1,7 +1,4 @@
-package temp;
-
-import java.util.LinkedHashMap;
-import java.util.Map;
+package AmazonDemo;
 
 /**
  * Why Did you create this class? what does it do?
