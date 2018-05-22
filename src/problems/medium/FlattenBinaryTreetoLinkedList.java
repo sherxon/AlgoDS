@@ -7,6 +7,33 @@ import problems.utils.TreeNode;
  */
 public class FlattenBinaryTreetoLinkedList {
 
+    public static void main(String[] args) {
+        TreeNode root = new TreeNode(1);
+        root.left = new TreeNode(2);
+        root.right = new TreeNode(5);
+        root.right.right = new TreeNode(6);
+        root.left.left = new TreeNode(3);
+        root.left.right = new TreeNode(4);
+        new FlattenBinaryTreetoLinkedList().flatten2(root);
+    }
+
+    public void flatten2(TreeNode root) {
+        if (root == null)
+            return;
+        flatten2(root.left);
+        flatten2(root.right);
+
+        TreeNode left = root.left;
+        root.left = null;
+        if (left != null) {
+            TreeNode t = left;
+            while (t.right != null)
+                t = t.right;
+            t.right = root.right;
+            root.right = left;
+        }
+    }
+
     public void flatten(TreeNode root) {
         if (root == null) return;
         f(root);
