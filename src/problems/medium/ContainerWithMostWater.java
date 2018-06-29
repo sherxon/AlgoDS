@@ -1,5 +1,7 @@
 package problems.medium;
 
+import java.util.*;
+
 /**
  * Why Did you create this class? what does it do?
  */
