@@ -1,5 +1,7 @@
 package problems.medium;
 
+import problems.utils.TreeNode;
+
 import java.util.Collections;
 import java.util.List;
 
