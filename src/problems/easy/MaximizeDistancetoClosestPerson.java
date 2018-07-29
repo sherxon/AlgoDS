@@ -18,6 +18,8 @@ public class MaximizeDistancetoClosestPerson {
                 count = 0;
             }
         }
+        int r = 0;
+        r += (a[0] < a[1] ? 1 : 0);
         return Math.max(Math.max(result, firstZeros), count);
 
     }
