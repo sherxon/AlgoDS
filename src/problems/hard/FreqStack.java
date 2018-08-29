@@ -13,7 +13,7 @@ public class FreqStack {
 
     public FreqStack() {
         q = new PriorityQueue<>();
-        Map<Integer, Pair> map = new HashMap<>();
+        map = new HashMap<>();
     }
 
     public void push(int x) {
