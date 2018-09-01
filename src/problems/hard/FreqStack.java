@@ -2,10 +2,6 @@ package problems.hard;
 
 import java.util.*;
 
-/**
- *
- */
-
 public class FreqStack {
     PriorityQueue<Pair> q;
     Map<Integer, Pair> map;
@@ -53,7 +49,6 @@ public class FreqStack {
                 return false;
 
             Pair pair = (Pair) o;
-
             return val == pair.val;
         }
 
