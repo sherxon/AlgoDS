@@ -1,0 +1,65 @@
+/* Print nodes at distance k from node
+   
+   Given a binary tree, a node and an integer K, 
+   print nodes which are at K distance from the given node.
+*/
+
+
+public class Solution {
+
+	public static void nodesAtDistanceK(BinaryTreeNode<Integer> root, int node, int distance) {
+      if(distance==0){
+        System.out.print(node);
+        return;
+      }
+      int pl = Pathlength(root, node)-1;
+		Path(root, node, pl, distance);
+	}
+
+	public static void print(BinaryTreeNode<Integer> root, int node, BinaryTreeNode<Integer> prev, int k,boolean searchingDown) {
+		if (root != null) {
+			if (k == 0 && (int)root.data != node) {
+				System.out.println((int)root.data);
+			}
+			if (searchingDown) {
+				print(root.left, node, prev, --k, searchingDown);
+				print(root.right, node, prev, k, searchingDown);
+			} else {
+				if (root.left != prev) {
+					print(root.left, node, prev, k-1, searchingDown);
+				}
+				if (root.right != prev) {
+					print(root.right, node, prev, k-1, searchingDown);
+				}
+			}
+		}
+	}
+
+	public static BinaryTreeNode Path(BinaryTreeNode<Integer> root, int dest, int k, int n) {
+		if (root == null)
+			return null;
+		BinaryTreeNode<Integer>x=null;
+		if ((int)root.data == dest || (x = Path(root.left, dest, k - 1, n)) != null || (x = Path(root.right, dest, k - 1, n)) != null) {
+			if (k == 0) {
+				print(root, dest, x, n - k, true);
+			} else {
+				print(root, dest, x, n - k, false);
+			}
+
+			return root;
+		}
+		return null;
+	}
+
+	public static int Pathlength(BinaryTreeNode<Integer> root, int n1) {
+		if (root == null) 
+          return 0;
+      
+			int x = 0;
+			if (((int)root.data == n1) || (x = Pathlength(root.left, n1)) > 0 || (x = Pathlength(root.right, n1)) > 0) {
+				return x + 1;
+			}
+			return 0;
+		}
+    // call void nodesAtDistanceK(BinaryTreeNode<Integer> root, int node, int distance) in main()
+}
