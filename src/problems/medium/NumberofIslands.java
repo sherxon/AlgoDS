@@ -14,7 +14,6 @@ public class NumberofIslands {
                 }
             }
         }
-
         return counter - 1;
     }
 
