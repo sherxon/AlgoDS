@@ -8,16 +8,6 @@ import java.util.*;
  * Why Did you create this class? what does it do?
  */
 public class CBTInserter {
-    public static void main(String[] args) {
-
-        CBTInserter inserter = new CBTInserter(new TreeNode(1));
-        inserter.insert(2);
-        inserter.insert(3);
-        inserter.insert(4);
-        inserter.insert(5);
-        inserter.insert(6);
-        System.out.println(inserter.get_root());
-    }
 
     TreeNode root;
     int level = 0;
