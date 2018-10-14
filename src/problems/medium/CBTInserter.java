@@ -40,7 +40,6 @@ public class CBTInserter {
     }
 
     public int insert(int v) {
-
         TreeNode nn = new TreeNode(v);
         int levelSize = map.get(level).size();
         if (levelSize == (int) Math.pow(2, level - 1)) {
@@ -60,7 +59,6 @@ public class CBTInserter {
             map.get(level).add(nn);
             return parent.val;
         }
-
     }
 
     public TreeNode get_root() {
