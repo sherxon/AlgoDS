@@ -1,6 +1,9 @@
 package problems.medium;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 /**
  * @author Sherali Obidov.
@@ -33,5 +36,41 @@ public class QueueReconstructionByHeight {
 
         }
         return people;
+    }
+
+    public int[][] reconstructQueue2(int[][] people) {
+        if (people == null || people.length <= 1)
+            return people;
+        int[][] a = new int[people.length][];
+        List<Integer>[] map = new List[1100];
+        for (int i = 0; i < people.length; i++) {
+            int index = people[i][0];
+            if (map[index] == null)
+                map[index] = new ArrayList<>();
+            map[people[i][0]].add(people[i][1]);
+        }
+        for (int i = 0; i < map.length; i++) {
+            place(a, i, map[i]);
+        }
+        return a;
+    }
+
+    void place(int[][] a, int h, List<Integer> nums) {
+        if (nums == null || nums.size() == 0)
+            return;
+        for (Integer n : nums) {
+            int count = 0;
+            int i = 0;
+            while (i < a.length) {
+                if (a[i] == null && count >= n) {
+                    break;
+                }
+                if (a[i] == null || a[i][0] >= h) {
+                    count++;
+                }
+                i++;
+            }
+            a[i] = new int[] { h, n };
+        }
     }
 }

@@ -171,3 +171,191 @@ Output: 6
 Explanation: You started from the point (0,0) and you can cut off the tree in (0,0) directly without walking.
 Hint: size of the given matrix will not exceed 50x50.
 
+13) Reaching Points
+A move consists of taking a point (x, y) and transforming it to either (x, x+y) or (x+y, y).
+
+Given a starting point (sx, sy) and a target point (tx, ty), return True if and only if a sequence of moves exists to transform the point (sx, sy) to (tx, ty). Otherwise, return False.
+
+Examples:
+Input: sx = 1, sy = 1, tx = 3, ty = 5
+Output: True
+Explanation:
+One series of moves that transforms the starting point to the target is:
+(1, 1) -> (1, 2)
+(1, 2) -> (3, 2)
+(3, 2) -> (3, 5)
+
+Input: sx = 1, sy = 1, tx = 2, ty = 2
+Output: False
+
+Input: sx = 1, sy = 1, tx = 1, ty = 1
+Output: True
+
+Note:
+
+sx, sy, tx, ty will all be integers in the range [1, 10^9].
+
+14) First Missing Positive
+Given an unsorted integer array, find the first missing positive integer.
+
+For example,
+Given [1,2,0] return 3,
+and [3,4,-1,1] return 2.
+
+Your algorithm should run in O(n) time and uses constant space.
+
+14)768. Max Chunks To Make Sorted II
+This question is the same as "Max Chunks to Make Sorted" except the integers of the given array are not necessarily distinct, the input array could be up to length 2000, and the elements could be up to 10**8.
+
+Given an array arr of integers (not necessarily distinct), we split the array into some number of "chunks" (partitions), and individually sort each chunk.  After concatenating them, the result equals the sorted array.
+
+What is the most number of chunks we could have made?
+
+Example 1:
+
+Input: arr = [5,4,3,2,1]
+Output: 1
+Explanation:
+Splitting into two or more chunks will not return the required result.
+For example, splitting into [5, 4], [3, 2, 1] will result in [4, 5, 1, 2, 3], which isn't sorted.
+Example 2:
+
+Input: arr = [2,1,3,4,4]
+Output: 4
+Explanation:
+We can split into two chunks, such as [2, 1], [3, 4, 4].
+However, splitting into [2, 1], [3], [4], [4] is the highest number of chunks possible.
+Note:
+
+arr will have length in range [1, 2000].
+arr[i] will be an integer in range [0, 10**8].
+
+
+
+15) Swim in Rising Water
+On an N x N grid, each square grid[i][j] represents the elevation at that point (i,j).
+
+Now rain starts to fall. At time t, the depth of the water everywhere is t. You can swim from a square to another 4-directionally adjacent square if and only if the elevation of both squares individually are at most t. You can swim infinite distance in zero time. Of course, you must stay within the boundaries of the grid during your swim.
+
+You start at the top left square (0, 0). What is the least time until you can reach the bottom right square (N-1, N-1)?
+
+Example 1:
+
+Input: [[0,2],[1,3]]
+Output: 3
+Explanation:
+At time 0, you are in grid location (0, 0).
+You cannot go anywhere else because 4-directionally adjacent neighbors have a higher elevation than t = 0.
+
+You cannot reach point (1, 1) until time 3.
+When the depth of water is 3, we can swim anywhere inside the grid.
+Example 2:
+
+Input: [[0,1,2,3,4],[24,23,22,21,5],[12,13,14,15,16],[11,17,18,19,20],[10,9,8,7,6]]
+Output: 16
+Explanation:
+ 0  1  2  3  4
+24 23 22 21  5
+12 13 14 15 16
+11 17 18 19 20
+10  9  8  7  6
+
+The final route is marked in bold.
+We need to wait until time 16 so that (0, 0) and (4, 4) are connected.
+Note:
+
+2 <= N <= 50.
+grid[i][j] is a permutation of [0, ..., N*N - 1].
+
+16) Find K-th Smallest Pair Distance
+Given an integer array, return the k-th smallest distance among all the pairs. The distance of a pair (A, B) is defined as the absolute difference between A and B.
+
+Example 1:
+Input:
+nums = [1,3,1]
+k = 1
+Output: 0
+Explanation:
+Here are all the pairs:
+(1,3) -> 2
+(1,1) -> 0
+(3,1) -> 2
+Then the 1st smallest distance pair is (1,1), and its distance is 0.
+Note:
+2 <= len(nums) <= 10000.
+0 <= nums[i] < 1000000.
+1 <= k <= len(nums) * (len(nums) - 1) / 2.
+
+17)Similar String Groups
+Two strings X and Y are similar if we can swap two letters (in different positions) of X, so that it equals Y.
+
+For example, "tars" and "rats" are similar (swapping at positions 0 and 2), and "rats" and "arts" are similar, but "star" is not similar to "tars", "rats", or "arts".
+
+Together, these form two connected groups by similarity: {"tars", "rats", "arts"} and {"star"}.  Notice that "tars" and "arts" are in the same group even though they are not similar.  Formally, each group is such that a word is in the group if and only if it is similar to at least one other word in the group.
+
+We are given a list A of unique strings.  Every string in A is an anagram of every other string in A.  How many groups are there?
+
+Example 1:
+
+Input: ["tars","rats","arts","star"]
+Output: 2
+Note:
+
+A.length <= 2000
+A[i].length <= 1000
+A.length * A[i].length <= 20000
+All words in A consist of lowercase letters only.
+All words in A have the same length and are anagrams of each other.
+The judging time limit has been increased for this question.
+
+18) Interleaving String
+Given s1, s2, s3, find whether s3 is formed by the interleaving of s1 and s2.
+
+Example 1:
+
+Input: s1 = "aabcc", s2 = "dbbca", s3 = "aadbbcbcac"
+Output: true
+Example 2:
+
+Input: s1 = "aabcc", s2 = "dbbca", s3 = "aadbbbaccc"
+Output: false
+
+19)Maximum Frequency Stack
+Implement FreqStack, a class which simulates the operation of a stack-like data structure.
+
+FreqStack has two functions:
+
+push(int x), which pushes an integer x onto the stack.
+pop(), which removes and returns the most frequent element in the stack.
+If there is a tie for most frequent element, the element closest to the top of the stack is removed and returned.
+
+
+Example 1:
+
+Input:
+["FreqStack","push","push","push","push","push","push","pop","pop","pop","pop"],
+[[],[5],[7],[5],[7],[4],[5],[],[],[],[]]
+Output: [null,null,null,null,null,null,null,5,7,5,4]
+Explanation:
+After making six .push operations, the stack is [5,7,5,7,4,5] from bottom to top.  Then:
+
+pop() -> returns 5, as 5 is the most frequent.
+The stack becomes [5,7,5,7,4].
+
+pop() -> returns 7, as 5 and 7 is the most frequent, but 7 is closest to the top.
+The stack becomes [5,7,5,4].
+
+pop() -> returns 5.
+The stack becomes [5,7,4].
+
+pop() -> returns 4.
+The stack becomes [5,7].
+
+
+Note:
+
+Calls to FreqStack.push(int x) will be such that 0 <= x <= 10^9.
+It is guaranteed that FreqStack.pop() won't be called if the stack has zero elements.
+The total number of FreqStack.push calls will not exceed 10000 in a single test case.
+The total number of FreqStack.pop calls will not exceed 10000 in a single test case.
+The total number of FreqStack.push and FreqStack.pop calls will not exceed 150000 across all test cases.

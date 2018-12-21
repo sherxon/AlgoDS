@@ -1,9 +1,11 @@
+English | [简体中文](https://github.com/yunshuipiao/AlgoDS/blob/master/README-CN.md)
+
 # Algorithms and Data Structures
 This is the collection of **algorithms, data structures** and **Interview Questions** with solutions.
 This repository contains my solutions for common algorithmic problems and implementation of Data Structures in Java.
 I've created this repository to learn about algorithms. I am adding solutions continuously.   
 
-**Algorithms,  Data Structures** and **more than 250 Problems and Solutions** are provided so far.  
+**Algorithms,  Data Structures** and **more than 300 Problems and Solutions** are provided so far.  
 
 ### Questions  
 Here are questions divided by difficulty level:  

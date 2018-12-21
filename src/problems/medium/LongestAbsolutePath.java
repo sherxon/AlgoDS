@@ -1,40 +1,49 @@
 package problems.medium;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Created by sherxon on 4/27/17.
  */
 public class LongestAbsolutePath {
 
-
     public int lengthLongestPath(String input) {
-        if(input.length()==0)return 0;
-        int max=0;
-        String[] a= input.split("\\n");
-        int[] map= new int[a.length];
-
-        for(int i=0; i<a.length; i++){
-            int count = tabCount(a[i].toCharArray());
-            map[i] = a[i].length();
-            for(int j = i-1; j>=0; j--){
-                int tc = tabCount(a[j].toCharArray());
-                if(tc == count - 1){
-                    map[i]=map[j] + 1 + a[i].length() - count;
-                    break;
-                }
+        if (input == null || !input.contains("."))
+            return 0;
+        Map<Integer, String> map = new HashMap<>();
+        String[] lines = input.split("\n");
+        int max = 0;
+        for (int i = 0; i < lines.length; i++) {
+            String current = lines[i];
+            int tabCount = getTabCount(current);
+            if (current.contains(".")) {
+                int size = getAbsPathSize(map, tabCount);
+                max = Math.max(max, size + current.substring(tabCount).length());
+            } else {
+                map.put(tabCount, current.substring(tabCount));
             }
-            if(a[i].contains("."))  max= Math.max(map[i], max);
-
         }
 
         return max;
     }
-    int tabCount(char[] a){
-        int count=0;
-        int i=0;
-        while(a[i] == '\t') {
-            i++;
-            count++;
+
+    private int getAbsPathSize(Map<Integer, String> map, int ts) {
+        int size = 0;
+        for (int i = 0; i < ts; i++) {
+            size += map.get(i).length() + 1;
         }
-        return count;
+        return size;
+    }
+
+    private int getTabCount(String current) {
+        int i = 0;
+        while (i < current.length()) {
+            if (current.charAt(i) == '\t')
+                i++;
+            else
+                return i;
+        }
+        return i;
     }
 }

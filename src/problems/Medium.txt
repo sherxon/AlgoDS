@@ -1972,3 +1972,1253 @@ The repeated subarray with maximum length is [3, 2, 1].
 Note:
 1 <= len(A), len(B) <= 1000
 0 <= A[i], B[i] < 100
+
+158)Remove Comments
+Given a C++ program, remove comments from it. The program source is an array where source[i] is the i-th line of the source code. This represents the result of splitting the original source code string by the newline character \n.
+
+In C++, there are two types of comments, line comments, and block comments.
+
+The string // denotes a line comment, which represents that it and rest of the characters to the right of it in the same line should be ignored.
+
+The string /* denotes a block comment, which represents that all characters until the next (non-overlapping) occurrence of */ should be ignored. (Here, occurrences happen in reading order: line by line from left to right.) To be clear, the string /*/ does not yet end the block comment, as the ending would be overlapping the beginning.
+
+The first effective comment takes precedence over others: if the string // occurs in a block comment, it is ignored. Similarly, if the string /* occurs in a line or block comment, it is also ignored.
+
+If a certain line of code is empty after removing comments, you must not output that line: each string in the answer list will be non-empty.
+
+There will be no control characters, single quote, or double quote characters. For example, source = "string s = "/* Not a comment. */";" will not be a test case. (Also, nothing else such as defines or macros will interfere with the comments.)
+
+It is guaranteed that every open block comment will eventually be closed, so /* outside of a line or block comment always starts a new comment.
+
+Finally, implicit newline characters can be deleted by block comments. Please see the examples below for details.
+
+After removing the comments from the source code, return the source code in the same format.
+
+Example 1:
+Input:
+source = ["/*Test program */", "int main()", "{ ", "  // variable declaration ", "int a, b, c;", "/* This is a test", "   multiline  ", "   comment for ", "   testing */", "a = b + c;", "}"]
+
+The line by line code is visualized as below:
+/*Test program */
+int main()
+{
+  // variable declaration
+int a, b, c;
+/* This is a test
+   multiline
+   comment for
+   testing */
+a = b + c;
+}
+
+Output: ["int main()","{ ","  ","int a, b, c;","a = b + c;","}"]
+
+The line by line code is visualized as below:
+int main()
+{
+int a, b, c;
+a = b + c;
+}
+
+Explanation:
+The string
+/*
+ denotes a block comment, including line 1 and lines 6-9. The string
+//
+ denotes line 4 as comments.
+Example 2:
+Input:
+source = ["a/*comment", "line", "more_comment*/b"]
+Output: ["ab"]
+Explanation: The original source string is "a/*comment\nline\nmore_comment*/b", where we have bolded the newline characters.  After deletion, the implicit newline characters are deleted, leaving the string "ab", which when delimited by newline characters becomes ["ab"].
+Note:
+
+The length of source is in the range [1, 100].
+The length of source[i] is in the range [0, 80].
+Every open block comment is eventually closed.
+There are no single-quote, double-quote, or control characters in the source code.
+
+159)Split Linked List in Parts
+Given a (singly) linked list with head node root, write a function to split the linked list into k consecutive linked list "parts".
+
+The length of each part should be as equal as possible: no two parts should have a size differing by more than 1. This may lead to some parts being null.
+
+The parts should be in order of occurrence in the input list, and parts occurring earlier should always have a size greater than or equal parts occurring later.
+
+Return a List of ListNode's representing the linked list parts that are formed.
+
+Examples 1->2->3->4, k = 5 // 5 equal parts [ [1], [2], [3], [4], null ]
+Example 1:
+Input:
+root = [1, 2, 3], k = 5
+Output: [[1],[2],[3],[],[]]
+Explanation:
+The input and each element of the output are ListNodes, not arrays.
+For example, the input root has root.val = 1, root.next.val = 2, \root.next.next.val = 3, and root.next.next.next = null.
+The first element output[0] has output[0].val = 1, output[0].next = null.
+The last element output[4] is null, but it's string representation as a ListNode is [].
+Example 2:
+Input:
+root = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], k = 3
+Output: [[1, 2, 3, 4], [5, 6, 7], [8, 9, 10]]
+Explanation:
+The input has been split into consecutive parts with size difference at most 1, and earlier parts are a larger size than the later parts.
+Note:
+
+The length of root will be in the range [0, 1000].
+Each value of a node in the input will be an integer in the range [0, 999].
+k will be an integer in the range [1, 50].
+
+160)Shopping Offers
+In LeetCode Store, there are some kinds of items to sell. Each item has a price.
+
+However, there are some special offers, and a special offer consists of one or more different kinds of items with a sale price.
+
+You are given the each item's price, a set of special offers, and the number we need to buy for each item. The job is to output the lowest price you have to pay for exactly certain items as given, where you could make optimal use of the special offers.
+
+Each special offer is represented in the form of an array, the last number represents the price you need to pay for this special offer, other numbers represents how many specific items you could get if you buy this offer.
+
+You could use any of special offers as many times as you want.
+
+Example 1:
+Input: [2,5], [[3,0,5],[1,2,10]], [3,2]
+Output: 14
+Explanation:
+There are two kinds of items, A and B. Their prices are $2 and $5 respectively.
+In special offer 1, you can pay $5 for 3A and 0B
+In special offer 2, you can pay $10 for 1A and 2B.
+You need to buy 3A and 2B, so you may pay $10 for 1A and 2B (special offer #2), and $4 for 2A.
+Example 2:
+Input: [2,3,4], [[1,1,0,4],[2,2,1,9]], [1,2,1]
+Output: 11
+Explanation:
+The price of A is $2, and $3 for B, $4 for C.
+You may pay $4 for 1A and 1B, and $9 for 2A ,2B and 1C.
+You need to buy 1A ,2B and 1C, so you may pay $4 for 1A and 1B (special offer #1), and $3 for 1B, $4 for 1C.
+You cannot add more items, though only $9 for 2A ,2B and 1C.
+Note:
+There are at most 6 kinds of items, 100 special offers.
+For each item, you need to buy at most 6 of them.
+You are not allowed to buy more items than you want, even if that would lower the overall price.
+
+161)My Calendar I
+Implement a MyCalendar class to store your events. A new event can be added if adding the event will not cause a double booking.
+
+Your class will have the method, book(int start, int end). Formally, this represents a booking on the half open interval [start, end), the range of real numbers x such that start <= x < end.
+
+A double booking happens when two events have some non-empty intersection (ie., there is some time that is common to both events.)
+
+For each call to the method MyCalendar.book, return true if the event can be added to the calendar successfully without causing a double booking. Otherwise, return false and do not add the event to the calendar.
+
+Your class will be called like this: MyCalendar cal = new MyCalendar(); MyCalendar.book(start, end)
+Example 1:
+MyCalendar();
+MyCalendar.book(10, 20); // returns true
+MyCalendar.book(15, 25); // returns false
+MyCalendar.book(20, 30); // returns true
+Explanation:
+The first event can be booked.  The second can't because time 15 is already booked by another event.
+The third event can be booked, as the first event takes every time less than 20, but not including 20.
+Note:
+
+The number of calls to MyCalendar.book per test case will be at most 1000.
+In calls to MyCalendar.book(start, end), start and end are integers in the range [0, 10^9].
+162) Asteroid Collision
+We are given an array asteroids of integers representing asteroids in a row.
+
+For each asteroid, the absolute value represents its size, and the sign represents its direction (positive meaning right, negative meaning left). Each asteroid moves at the same speed.
+
+Find out the state of the asteroids after all collisions. If two asteroids meet, the smaller one will explode. If both are the same size, both will explode. Two asteroids moving in the same direction will never meet.
+
+Example 1:
+Input:
+asteroids = [5, 10, -5]
+Output: [5, 10]
+Explanation:
+The 10 and -5 collide resulting in 10.  The 5 and 10 never collide.
+Example 2:
+Input:
+asteroids = [8, -8]
+Output: []
+Explanation:
+The 8 and -8 collide exploding each other.
+Example 3:
+Input:
+asteroids = [10, 2, -5]
+Output: [10]
+Explanation:
+The 2 and -5 collide resulting in -5.  The 10 and -5 collide resulting in 10.
+Example 4:
+Input:
+asteroids = [-2, -1, 1, 2]
+Output: [-2, -1, 1, 2]
+Explanation:
+The -2 and -1 are moving left, while the 1 and 2 are moving right.
+Asteroids moving the same direction never meet, so no asteroids will meet each other.
+Note:
+
+The length of asteroids will be at most 10000.
+Each asteroid will be a non-zero integer in the range [-1000, 1000]..
+
+163)Monotone Increasing Digits
+Given a non-negative integer N, find the largest number that is less than or equal to N with monotone increasing digits.
+
+(Recall that an integer has monotone increasing digits if and only if each pair of adjacent digits x and y satisfy x <= y.)
+
+Example 1:
+Input: N = 10
+Output: 9
+Example 2:
+Input: N = 1234
+Output: 1234
+Example 3:
+Input: N = 332
+Output: 299
+Note: N is an integer in the range [0, 10^9].
+
+
+164) Daily Temperature
+Given a list of daily temperatures, produce a list that, for each day in the input, tells you how many days you would have to wait until a warmer temperature. If there is no future day for which this is possible, put 0 instead.
+
+For example, given the list temperatures = [73, 74, 75, 71, 69, 72, 76, 73], your output should be [1, 1, 4, 2, 1, 1, 0, 0].
+
+Note: The length of temperatures will be in the range [1, 30000]. Each temperature will be an integer in the range [30, 100].
+
+
+165) 43. Multiply Strings
+
+Given two non-negative integers num1 and num2 represented as strings, return the product of num1 and num2.
+
+Note:
+
+The length of both num1 and num2 is < 110.
+Both num1 and num2 contains only digits 0-9.
+Both num1 and num2 does not contain any leading zero.
+You must not use any built-in BigInteger library or convert the inputs to integer directly.
+
+166) Rabbits in Forest
+In a forest, each rabbit has some color. Some subset of rabbits (possibly all of them) tell you how many other rabbits have the same color as them. Those answers are placed in an array.
+
+Return the minimum number of rabbits that could be in the forest.
+
+Examples:
+Input: answers = [1, 1, 2]
+Output: 5
+Explanation:
+The two rabbits that answered "1" could both be the same color, say red.
+The rabbit than answered "2" can't be red or the answers would be inconsistent.
+Say the rabbit that answered "2" was blue.
+Then there should be 2 other blue rabbits in the forest that didn't answer into the array.
+The smallest possible number of rabbits in the forest is therefore 5: 3 that answered plus 2 that didn't.
+
+Input: answers = [10, 10, 10]
+Output: 11
+
+Input: answers = []
+Output: 0
+Note:
+
+answers will have length at most 1000.
+Each answers[i] will be an integer in the range [0, 999].
+
+167) K-th Symbol in Grammar
+On the first row, we write a 0. Now in every subsequent row, we look at the previous row and replace each occurrence of 0 with 01, and each occurrence of 1 with 10.
+
+Given row N and index K, return the K-th indexed symbol in row N. (The values of K are 1-indexed.) (1 indexed).
+
+Examples:
+Input: N = 1, K = 1
+Output: 0
+
+Input: N = 2, K = 1
+Output: 0
+
+Input: N = 2, K = 2
+Output: 1
+
+Input: N = 4, K = 5
+Output: 1
+
+Explanation:
+row 1: 0
+row 2: 01
+row 3: 0110
+row 4: 01101001
+Note:
+
+N will be an integer in the range [1, 30].
+K will be an integer in the range [1, 2^(N-1)].
+
+168)Largest Plus Sign
+In a 2D grid from (0, 0) to (N-1, N-1), every cell contains a 1, except those cells in the given list mines which are 0. What is the largest axis-aligned plus sign of 1s contained in the grid? Return the order of the plus sign. If there is none, return 0.
+
+An "axis-aligned plus sign of 1s of order k" has some center grid[x][y] = 1 along with 4 arms of length k-1 going up, down, left, and right, and made of 1s. This is demonstrated in the diagrams below. Note that there could be 0s or 1s beyond the arms of the plus sign, only the relevant area of the plus sign is checked for 1s.
+
+Examples of Axis-Aligned Plus Signs of Order k:
+
+Order 1:
+000
+010
+000
+
+Order 2:
+00000
+00100
+01110
+00100
+00000
+
+Order 3:
+0000000
+0001000
+0001000
+0111110
+0001000
+0001000
+0000000
+Example 1:
+
+Input: N = 5, mines = [[4, 2]]
+Output: 2
+Explanation:
+11111
+11111
+11111
+11111
+11011
+In the above grid, the largest plus sign can only be order 2.  One of them is marked in bold.
+Example 2:
+
+Input: N = 2, mines = []
+Output: 1
+Explanation:
+There is no plus sign of order 2, but there is of order 1.
+Example 3:
+
+Input: N = 1, mines = [[0, 0]]
+Output: 0
+Explanation:
+There is no plus sign, so return 0.
+Note:
+
+N will be an integer in the range [1, 500].
+mines will have length at most 5000.
+mines[i] will be length 2 and consist of integers in the range [0, N-1].
+
+169) Partition Labels
+A string S of lowercase letters is given. We want to partition this string into as many parts as possible so that each letter appears in at most one part, and return a list of integers representing the size of these parts.
+
+Example 1:
+Input: S = "ababcbacadefegdehijhklij"
+Output: [9,7,8]
+Explanation:
+The partition is "ababcbaca", "defegde", "hijhklij".
+This is a partition so that each letter appears in at most one part.
+A partition like "ababcbacadefegde", "hijhklij" is incorrect, because it splits S into less parts.
+Note:
+
+S will have length in range [1, 500].
+S will consist of lowercase letters ('a' to 'z') only.
+
+170)
+There are n cities connected by m flights. Each fight starts from city u and arrives at v with a price w.
+
+Now given all the cities and fights, together with starting city src and the destination dst, your task is to find the cheapest price from src to dst with up to k stops. If there is no such route, output -1.
+
+Example 1:
+Input:
+n = 3, edges = [[0,1,100],[1,2,100],[0,2,500]]
+src = 0, dst = 2, k = 1
+Output: 200
+Explanation:
+The graph looks like this:
+
+
+The cheapest price from city 0 to city 2 with at most 1 stop costs 200, as marked red in the picture.
+Example 2:
+Input:
+n = 3, edges = [[0,1,100],[1,2,100],[0,2,500]]
+src = 0, dst = 2, k = 0
+Output: 500
+Explanation:
+The graph looks like this:
+
+
+The cheapest price from city 0 to city 2 with at most 0 stop costs 500, as marked blue in the picture.
+Note:
+
+The number of nodes n will be in range [1, 100], with nodes labeled from 0 to n - 1.
+The size of flights will be in range [0, n * (n - 1) / 2].
+The format of each flight will be (src, dst, price).
+The price of each flight will be in the range [1, 10000].
+k is in the range of [0, n - 1].
+There will not be any duplicated flights or self cycles.
+
+171)Max Chunks To Make Sorted
+Given an array arr that is a permutation of [0, 1, ..., arr.length - 1], we split the array into some number of "chunks" (partitions), and individually sort each chunk.  After concatenating them, the result equals the sorted array.
+
+What is the most number of chunks we could have made?
+
+Example 1:
+
+Input: arr = [4,3,2,1,0]
+Output: 1
+Explanation:
+Splitting into two or more chunks will not return the required result.
+For example, splitting into [4, 3], [2, 1, 0] will result in [3, 4, 0, 1, 2], which isn't sorted.
+Example 2:
+
+Input: arr = [1,0,2,3,4]
+Output: 4
+Explanation:
+We can split into two chunks, such as [1, 0], [2, 3, 4].
+However, splitting into [1, 0], [2], [3], [4] is the highest number of chunks possible.
+Note:
+
+arr will have length in range [1, 10].
+arr[i] will be a permutation of [0, 1, ..., arr.length - 1].
+
+172) Is Graph Bipartite?
+Given a graph, return true if and only if it is bipartite.
+
+Recall that a graph is bipartite if we can split it's set of nodes into two independent subsets A and B such that every edge in the graph has one node in A and another node in B.
+
+The graph is given in the following form: graph[i] is a list of indexes j for which the edge between nodes i and j exists.  Each node is an integer between 0 and graph.length - 1.  There are no self edges or parallel edges: graph[i] does not contain i, and it doesn't contain any element twice.
+
+Example 1:
+Input: [[1,3], [0,2], [1,3], [0,2]]
+Output: true
+Explanation:
+The graph looks like this:
+0----1
+|    |
+|    |
+3----2
+We can divide the vertices into two groups: {0, 2} and {1, 3}.
+Example 2:
+Input: [[1,2,3], [0,2], [0,1,3], [0,2]]
+Output: false
+Explanation:
+The graph looks like this:
+0----1
+| \  |
+|  \ |
+3----2
+We cannot find a way to divide the set of nodes into two independent subsets.
+
+
+Note:
+
+graph will have length in range [1, 100].
+graph[i] will contain integers in range [0, graph.length - 1].
+graph[i] will not contain i or duplicate values.
+
+173) Custom Sort String
+S and T are strings composed of lowercase letters. In S, no letter occurs more than once.
+
+S was sorted in some custom order previously. We want to permute the characters of T so that they match the order that S was sorted. More specifically, if x occurs before y in S, then x should occur before y in the returned string.
+
+Return any permutation of T (as a string) that satisfies this property.
+
+Example :
+Input:
+S = "cba"
+T = "abcd"
+Output: "cbad"
+Explanation:
+"a", "b", "c" appear in S, so the order of "a", "b", "c" should be "c", "b", and "a".
+Since "d" does not appear in S, it can be at any position in T. "dcba", "cdba", "cbda" are also valid outputs.
+
+
+Note:
+
+S has length at most 26, and no character is repeated in S.
+T has length at most 200.
+S and T consist of lowercase letters only.
+
+174) Number of Matching Subsequences
+Given string S and a dictionary of words words, find the number of words[i] that is a subsequence of S.
+
+Example :
+Input:
+S = "abcde"
+words = ["a", "bb", "acd", "ace"]
+Output: 3
+Explanation: There are three words in words that are a subsequence of S: "a", "acd", "ace".
+Note:
+
+All words in words and S will only consists of lowercase letters.
+The length of S will be in the range of [1, 50000].
+The length of words will be in the range of [1, 5000].
+The length of words[i] will be in the range of [1, 50].
+
+175)Network Delay Time
+There are N network nodes, labelled 1 to N.
+
+Given times, a list of travel times as directed edges times[i] = (u, v, w), where u is the source node, v is the target node, and w is the time it takes for a signal to travel from source to target.
+
+Now, we send a signal from a certain node K. How long will it take for all nodes to receive the signal? If it is impossible, return -1.
+
+Note:
+N will be in the range [1, 100].
+K will be in the range [1, N].
+The length of times will be in the range [1, 6000].
+All edges times[i] = (u, v, w) will have 1 <= u, v <= N and 1 <= w <= 100.
+
+176)All Paths From Source to Target
+Given a directed, acyclic graph of N nodes.  Find all possible paths from node 0 to node N-1, and return them in any order.
+
+The graph is given as follows:  the nodes are 0, 1, ..., graph.length - 1.  graph[i] is a list of all nodes j for which the edge (i, j) exists.
+
+Example:
+Input: [[1,2], [3], [3], []]
+Output: [[0,1,3],[0,2,3]]
+Explanation: The graph looks like this:
+0--->1
+|    |
+v    v
+2--->3
+There are two paths: 0 -> 1 -> 3 and 0 -> 2 -> 3.
+Note:
+
+The number of nodes in the graph will be in the range [2, 15].
+You can print different paths in any order, but you should keep the order of nodes inside one path.
+
+177)Find Eventual Safe States
+
+In a directed graph, we start at some node and every turn, walk along a directed edge of the graph.  If we reach a node that is terminal (that is, it has no outgoing directed edges), we stop.
+
+Now, say our starting node is eventually safe if and only if we must eventually walk to a terminal node.  More specifically, there exists a natural number K so that for any choice of where to walk, we must have stopped at a terminal node in less than K steps.
+
+Which nodes are eventually safe?  Return them as an array in sorted order.
+
+The directed graph has N nodes with labels 0, 1, ..., N-1, where N is the length of graph.  The graph is given in the following form: graph[i] is a list of labels j such that (i, j) is a directed edge of the graph.
+
+Example:
+Input: graph = [[1,2],[2,3],[5],[0],[5],[],[]]
+Output: [2,4,5,6]
+Here is a diagram of the above graph.
+
+178)Max Increase to Keep City Skyline
+In a 2 dimensional array grid, each value grid[i][j] represents the height of a building located there. We are allowed to increase the height of any number of buildings, by any amount (the amounts can be different for different buildings). Height 0 is considered to be a building as well.
+
+At the end, the "skyline" when viewed from all four directions of the grid, i.e. top, bottom, left, and right, must be the same as the skyline of the original grid. A city's skyline is the outer contour of the rectangles formed by all the buildings when viewed from a distance. See the following example.
+
+What is the maximum total sum that the height of the buildings can be increased?
+
+Example:
+Input: grid = [[3,0,8,4],[2,4,5,7],[9,2,6,3],[0,3,1,0]]
+Output: 35
+Explanation:
+The grid is:
+[ [3, 0, 8, 4],
+  [2, 4, 5, 7],
+  [9, 2, 6, 3],
+  [0, 3, 1, 0] ]
+
+The skyline viewed from top or bottom is: [9, 4, 8, 7]
+The skyline viewed from left or right is: [8, 7, 9, 3]
+
+The grid after increasing the height of buildings without affecting skylines is:
+
+gridNew = [ [8, 4, 8, 7],
+            [7, 4, 7, 7],
+            [9, 4, 8, 7],
+            [3, 3, 3, 3] ]
+
+Notes:
+
+1 < grid.length = grid[0].length <= 50.
+All heights grid[i][j] are in the range [0, 100].
+All buildings in grid[i][j] occupy the entire grid cell: that is, they are a 1 x 1 x grid[i][j] rectangular prism.
+179)Binary Tree Pruning
+We are given the head node root of a binary tree, where additionally every node's value is either a 0 or a 1.
+
+Return the same tree where every subtree (of the given tree) not containing a 1 has been removed.
+
+(Recall that the subtree of a node X is X, plus every node that is a descendant of X.)
+
+Example 1:
+Input: [1,null,0,0,1]
+Output: [1,null,0,null,1]
+
+Explanation:
+Only the red nodes satisfy the property "every subtree not containing a 1".
+The diagram on the right represents the answer.
+
+The binary tree will have at most 100 nodes.
+The value of each node will only be 0 or 1.
+
+180) Linked List Components
+We are given head, the head node of a linked list containing unique integer values.
+
+We are also given the list G, a subset of the values in the linked list.
+
+Return the number of connected components in G, where two values are connected if they appear consecutively in the linked list.
+
+Example 1:
+
+Input:
+head: 0->1->2->3
+G = [0, 1, 3]
+Output: 2
+Explanation:
+0 and 1 are connected, so [0, 1] and [3] are the two connected components.
+Example 2:
+
+Input:
+head: 0->1->2->3->4
+G = [0, 3, 1, 4]
+Output: 2
+Explanation:
+0 and 1 are connected, 3 and 4 are connected, so [0, 1] and [3, 4] are the two connected components.
+Note:
+
+If N is the length of the linked list given by head, 1 <= N <= 10000.
+The value of each node in the linked list will be in the range [0, N - 1].
+1 <= G.length <= 10000.
+G is a subset of all values in the linked list.
+
+181) Short Encoding of Words
+Given a list of words, we may encode it by writing a reference string S and a list of indexes A.
+
+For example, if the list of words is ["time", "me", "bell"], we can write it as S = "time#bell#" and indexes = [0, 2, 5].
+
+Then for each index, we will recover the word by reading from the reference string from that index until we reach a "#" character.
+
+What is the length of the shortest reference string S possible that encodes the given words?
+
+Example:
+
+Input: words = ["time", "me", "bell"]
+Output: 10
+Explanation: S = "time#bell#" and indexes = [0, 2, 5].
+Note:
+
+1 <= words.length <= 2000.
+1 <= words[i].length <= 7.
+Each word has only lowercase letters.
+
+182)Most Profit Assigning Work
+We have jobs: difficulty[i] is the difficulty of the ith job, and profit[i] is the profit of the ith job.
+
+Now we have some workers. worker[i] is the ability of the ith worker, which means that this worker can only complete a job with difficulty at most worker[i].
+
+Every worker can be assigned at most one job, but one job can be completed multiple times.
+
+For example, if 3 people attempt the same job that pays $1, then the total profit will be $3.  If a worker cannot complete any job, his profit is $0.
+
+What is the most profit we can make?
+
+Example 1:
+
+Input: difficulty = [2,4,6,8,10], profit = [10,20,30,40,50], worker = [4,5,6,7]
+Output: 100
+Explanation: Workers are assigned jobs of difficulty [4,4,6,6] and they get profit of [20,20,30,30] seperately.
+Notes:
+
+1 <= difficulty.length = profit.length <= 10000
+1 <= worker.length <= 10000
+difficulty[i], profit[i], worker[i]  are in range [1, 10^5]
+
+183) Consecutive Numbers Sum
+Given a positive integer N, how many ways can we write it as a sum of consecutive positive integers?
+
+Example 1:
+
+Input: 5
+Output: 2
+Explanation: 5 = 5 = 2 + 3
+Example 2:
+
+Input: 9
+Output: 3
+Explanation: 9 = 9 = 4 + 5 = 2 + 3 + 4
+Example 3:
+
+Input: 15
+Output: 4
+Explanation: 15 = 15 = 8 + 7 = 4 + 5 + 6 = 1 + 2 + 3 + 4 + 5
+Note: 1 <= N <= 10 ^ 9.
+
+183)Combination Sum II
+Given a collection of candidate numbers (candidates) and a target number (target), find all unique combinations in candidates where the candidate numbers sums to target.
+
+Each number in candidates may only be used once in the combination.
+
+Note:
+
+All numbers (including target) will be positive integers.
+The solution set must not contain duplicate combinations.
+Example 1:
+
+Input: candidates = [10,1,2,7,6,1,5], target = 8,
+A solution set is:
+[
+  [1, 7],
+  [1, 2, 5],
+  [2, 6],
+  [1, 1, 6]
+]
+Example 2:
+
+Input: candidates = [2,5,2,1,2], target = 5,
+A solution set is:
+[
+  [1,2,2],
+  [5]
+]
+184) Find And Replace in String
+
+To some string S, we will perform some replacement operations that replace groups of letters with new ones (not necessarily the same size).
+
+Each replacement operation has 3 parameters: a starting index i, a source word x and a target word y.  The rule is that if x starts at position i in the original string S, then we will replace that occurrence of x with y.  If not, we do nothing.
+
+For example, if we have S = "abcd" and we have some replacement operation i = 2, x = "cd", y = "ffff", then because "cd" starts at position 2 in the original string S, we will replace it with "ffff".
+
+Using another example on S = "abcd", if we have both the replacement operation i = 0, x = "ab", y = "eee", as well as another replacement operation i = 2, x = "ec", y = "ffff", this second operation does nothing because in the original string S[2] = 'c', which doesn't match x[0] = 'e'.
+
+All these operations occur simultaneously.  It's guaranteed that there won't be any overlap in replacement: for example, S = "abc", indexes = [0, 1], sources = ["ab","bc"] is not a valid test case.
+
+Example 1:
+
+Input: S = "abcd", indexes = [0,2], sources = ["a","cd"], targets = ["eee","ffff"]
+Output: "eeebffff"
+Explanation: "a" starts at index 0 in S, so it's replaced by "eee".
+"cd" starts at index 2 in S, so it's replaced by "ffff".
+Example 2:
+
+Input: S = "abcd", indexes = [0,2], sources = ["ab","ec"], targets = ["eee","ffff"]
+Output: "eeecd"
+Explanation: "ab" starts at index 0 in S, so it's replaced by "eee".
+"ec" doesn't starts at index 2 in the original S, so we do nothing.
+Notes:
+
+0 <= indexes.length = sources.length = targets.length <= 100
+0 < indexes[i] < S.length <= 1000
+All characters in given inputs are lowercase letters.
+
+185)Keys and Rooms
+There are N rooms and you start in room 0.  Each room has a distinct number in 0, 1, 2, ..., N-1, and each room may have some keys to access the next room.
+
+Formally, each room i has a list of keys rooms[i], and each key rooms[i][j] is an integer in [0, 1, ..., N-1] where N = rooms.length.  A key rooms[i][j] = v opens the room with number v.
+
+Initially, all the rooms start locked (except for room 0).
+
+You can walk back and forth between rooms freely.
+
+Return true if and only if you can enter every room.
+
+Example 1:
+
+Input: [[1],[2],[3],[]]
+Output: true
+Explanation:
+We start in room 0, and pick up key 1.
+We then go to room 1, and pick up key 2.
+We then go to room 2, and pick up key 3.
+We then go to room 3.  Since we were able to go to every room, we return true.
+Example 2:
+
+Input: [[1,3],[3,0,1],[2],[0]]
+Output: false
+Explanation: We can't enter the room with number 2.
+Note:
+
+1 <= rooms.length <= 1000
+0 <= rooms[i].length <= 1000
+The number of keys in all rooms combined is at most 3000.
+
+186)Longest Palindromic Substring
+Given a string s, find the longest palindromic substring in s. You may assume that the maximum length of s is 1000.
+
+Example 1:
+
+Input: "babad"
+Output: "bab"
+Note: "aba" is also a valid answer.
+Example 2:
+
+Input: "cbbd"
+Output: "bb"
+
+187)Container With Most Water
+Given n non-negative integers a1, a2, ..., an, where each represents a point at coordinate (i, ai). n vertical lines are drawn such that the two endpoints of line i is at (i, ai) and (i, 0). Find two lines, which together with x-axis forms a container, such that the container contains the most water.
+
+Note: You may not slant the container and n is at least 2.
+
+188)Longest Mountain in Array
+Let's call any (contiguous) subarray B (of A) a mountain if the following properties hold:
+
+B.length >= 3
+There exists some 0 < i < B.length - 1 such that B[0] < B[1] < ... B[i-1] < B[i] > B[i+1] > ... > B[B.length - 1]
+(Note that B could be any subarray of A, including the entire array A.)
+
+Given an array A of integers, return the length of the longest mountain.
+
+Return 0 if there is no mountain.
+
+Example 1:
+
+Input: [2,1,4,7,3,2,5]
+Output: 5
+Explanation: The largest mountain is [1,4,7,3,2] which has length 5.
+Example 2:
+
+Input: [2,2,2]
+Output: 0
+Explanation: There is no mountain.
+Note:
+
+0 <= A.length <= 10000
+0 <= A[i] <= 10000
+Follow up:
+
+Can you solve it using only one pass?
+Can you solve it in O(1) space?
+
+189)Hand of Straights
+Alice has a hand of cards, given as an array of integers.
+
+Now she wants to rearrange the cards into groups so that each group is size W, and consists of W consecutive cards.
+
+Return true if and only if she can.
+
+
+
+Example 1:
+
+Input: hand = [1,2,3,6,2,3,4,7,8], W = 3
+Output: true
+Explanation: Alice's hand can be rearranged as [1,2,3],[2,3,4],[6,7,8].
+Example 2:
+
+Input: hand = [1,2,3,4,5], W = 4
+Output: false
+Explanation: Alice's hand can't be rearranged into groups of 4.
+ Note:
+
+ 1 <= hand.length <= 10000
+ 0 <= hand[i] <= 10^9
+ 1 <= W <= hand.length
+190)Shifting Letters
+ We have a string S of lowercase letters, and an integer array shifts.
+
+ Call the shift of a letter, the next letter in the alphabet, (wrapping around so that 'z' becomes 'a').
+
+ For example, shift('a') = 'b', shift('t') = 'u', and shift('z') = 'a'.
+
+ Now for each shifts[i] = x, we want to shift the first i+1 letters of S, x times.
+
+ Return the final string after all such shifts to S are applied.
+
+ Example 1:
+
+ Input: S = "abc", shifts = [3,5,9]
+ Output: "rpl"
+ Explanation:
+ We start with "abc".
+ After shifting the first 1 letters of S by 3, we have "dbc".
+ After shifting the first 2 letters of S by 5, we have "igc".
+ After shifting the first 3 letters of S by 9, we have "rpl", the answer.
+ Note:
+
+ 1 <= S.length = shifts.length <= 20000
+ 0 <= shifts[i] <= 10 ^ 9
+191)Car Fleet
+N cars are going to the same destination along a one lane road.  The destination is target miles away.
+
+Each car i has a constant speed speed[i] (in miles per hour), and initial position position[i] miles towards the target along the road.
+
+A car can never pass another car ahead of it, but it can catch up to it, and drive bumper to bumper at the same speed.
+
+The distance between these two cars is ignored - they are assumed to have the same position.
+
+A car fleet is some non-empty set of cars driving at the same position and same speed.  Note that a single car is also a car fleet.
+
+If a car catches up to a car fleet right at the destination point, it will still be considered as one car fleet.
+
+
+How many car fleets will arrive at the destination?
+
+Example 1:
+
+Input: target = 12, position = [10,8,0,5,3], speed = [2,4,1,1,3]
+Output: 3
+Explanation:
+The cars starting at 10 and 8 become a fleet, meeting each other at 12.
+The car starting at 0 doesn't catch up to any other car, so it is a fleet by itself.
+The cars starting at 5 and 3 become a fleet, meeting each other at 6.
+Note that no other cars meet these fleets before the destination, so the answer is 3.
+
+Note:
+
+0 <= N <= 10 ^ 4
+0 < target <= 10 ^ 6
+0 < speed[i] <= 10 ^ 6
+0 <= position[i] < target
+All initial positions are different.
+
+192)All Nodes Distance K in Binary Tree
+We are given a binary tree (with root node root), a target node, and an integer value K.
+
+Return a list of the values of all nodes that have a distance K from the target node.  The answer can be returned in any order.
+
+
+
+Example 1:
+
+Input: root = [3,5,1,6,2,0,8,null,null,7,4], target = 5, K = 2
+
+Output: [7,4,1]
+
+Explanation:
+The nodes that are a distance 2 from the target node (with value 5)
+have values 7, 4, and 1.
+
+
+
+Note that the inputs "root" and "target" are actually TreeNodes.
+The descriptions of the inputs above are just serializations of these objects.
+
+
+Note:
+
+The given tree is non-empty.
+Each node in the tree has unique values 0 <= node.val <= 500.
+The target node is a node in the tree.
+0 <= K <= 1000.
+
+193)Smallest Subtree with all the Deepest Nodes
+Given a binary tree rooted at root, the depth of each node is the shortest distance to the root.
+
+A node is deepest if it has the largest depth possible among any node in the entire tree.
+
+The subtree of a node is that node, plus the set of all descendants of that node.
+
+Return the node with the largest depth such that it contains all the deepest nodes in its subtree.
+
+
+
+Example 1:
+
+Input: [3,5,1,6,2,0,8,null,null,7,4]
+Output: [2,7,4]
+Explanation:
+
+
+
+We return the node with value 2, colored in yellow in the diagram.
+The nodes colored in blue are the deepest nodes of the tree.
+The input "[3, 5, 1, 6, 2, 0, 8, null, null, 7, 4]" is a serialization of the given tree.
+The output "[2, 7, 4]" is a serialization of the subtree rooted at the node with value 2.
+Both the input and output have TreeNode type.
+
+
+Note:
+
+The number of nodes in the tree will be between 1 and 500.
+The values of each node are unique.
+194)Reordered Power of 2
+Starting with a positive integer N, we reorder the digits in any order (including the original order) such that the leading digit is not zero.
+
+Return true if and only if we can do this in a way such that the resulting number is a power of 2.
+
+Example 1:
+
+Input: 1
+Output: true
+Example 2:
+
+Input: 10
+Output: false
+Example 3:
+
+Input: 16
+Output: true
+Example 4:
+
+Input: 24
+Output: false
+Example 5:
+
+Input: 46
+Output: true
+
+
+Note:
+
+1 <= N <= 10^9
+195) Insert Into Binary Search Tree
+Given the root node of a binary search tree (BST) and a value to be inserted into the tree, insert the value into the BST. Return the root node of the BST after the insertion. It is guaranteed that the new value does not exist in the original BST.
+
+Note that there may exist multiple valid ways for the insertion, as long as the tree remains a BST after insertion. You can return any of them.
+
+For example,
+
+Given the tree:
+        4
+       / \
+      2   7
+     / \
+    1   3
+And the value to insert: 5
+You can return this binary search tree:
+
+         4
+       /   \
+      2     7
+     / \   /
+    1   3 5
+This tree is also valid:
+
+         5
+       /   \
+      2     7
+     / \
+    1   3
+         \
+          4
+196)Possible Bipartition
+Given a set of N people (numbered 1, 2, ..., N), we would like to split everyone into two groups of any size.
+
+Each person may dislike some other people, and they should not go into the same group.
+
+Formally, if dislikes[i] = [a, b], it means it is not allowed to put the people numbered a and b into the same group.
+
+Return true if and only if it is possible to split everyone into two groups in this way.
+
+
+
+Example 1:
+
+Input: N = 4, dislikes = [[1,2],[1,3],[2,4]]
+Output: true
+Explanation: group1 [1,4], group2 [2,3]
+Example 2:
+
+Input: N = 3, dislikes = [[1,2],[1,3],[2,3]]
+Output: false
+Example 3:
+
+Input: N = 5, dislikes = [[1,2],[2,3],[3,4],[4,5],[1,5]]
+Output: false
+
+Note:
+
+1 <= N <= 2000
+0 <= dislikes.length <= 10000
+1 <= dislikes[i][j] <= N
+dislikes[i][0] < dislikes[i][1]
+There does not exist i != j for which dislikes[i] == dislikes[j].
+
+197)Advantage Shuffle
+Given two arrays A and B of equal size, the advantage of A with respect to B is the number of indices i for which A[i] > B[i].
+
+Return any permutation of A that maximizes its advantage with respect to B.
+
+
+
+Example 1:
+
+Input: A = [2,7,11,15], B = [1,10,4,11]
+Output: [2,11,7,15]
+Example 2:
+
+Input: A = [12,24,8,32], B = [13,25,32,11]
+Output: [24,32,8,12]
+
+
+Note:
+
+1 <= A.length = B.length <= 10000
+0 <= A[i] <= 10^9
+0 <= B[i] <= 10^9
+
+198)Boats to Save People
+The i-th person has weight people[i], and each boat can carry a maximum weight of limit.
+
+Each boat carries at most 2 people at the same time, provided the sum of the weight of those people is at most limit.
+
+Return the minimum number of boats to carry every given person.  (It is guaranteed each person can be carried by a boat.)
+
+
+
+Example 1:
+
+Input: people = [1,2], limit = 3
+Output: 1
+Explanation: 1 boat (1, 2)
+Example 2:
+
+Input: people = [3,2,2,1], limit = 3
+Output: 3
+Explanation: 3 boats (1, 2), (2) and (3)
+Example 3:
+
+Input: people = [3,5,3,4], limit = 5
+Output: 4
+Explanation: 4 boats (3), (3), (4), (5)
+Note:
+
+1 <= people.length <= 50000
+1 <= people[i] <= limit <= 30000
+
+199) Find and Replace Pattern
+You have a list of words and a pattern, and you want to know which words in words matches the pattern.
+
+A word matches the pattern if there exists a permutation of letters p so that after replacing every letter x in the pattern with p(x), we get the desired word.
+
+(Recall that a permutation of letters is a bijection from letters to letters: every letter maps to another letter, and no two letters map to the same letter.)
+
+Return a list of the words in words that match the given pattern.
+
+You may return the answer in any order.
+
+
+
+Example 1:
+
+Input: words = ["abc","deq","mee","aqq","dkd","ccc"], pattern = "abb"
+Output: ["mee","aqq"]
+Explanation: "mee" matches the pattern because there is a permutation {a -> m, b -> e, ...}.
+"ccc" does not match the pattern because {a -> c, b -> c, ...} is not a permutation,
+since a and b map to the same letter.
+
+
+Note:
+
+1 <= words.length <= 50
+1 <= pattern.length = words[i].length <= 20
+
+
+200)  House Robber 2
+
+A robber is planning to rob houses along a street. Each house has a certain amount of money stashed. All houses at
+this place are arranged in a circle. That means the first house is the neighbor of the last one. Meanwhile, adjacent houses have
+security system connected and it will automatically contact the police if two adjacent houses were broken into on the same night.
+
+You are given a list of non-negative integers representing the amount of money of each house, we need to determine the maximum amount of
+money the robber can rob tonight without alerting the police.
+
+Eg: Suppose you are given an array of money of houses like   [2,3,2] , max amount of money robber can rob is 3, as he cannot rob
+house 1 (money = 2) and then rob house 3 (money = 2),  because they are adjacent houses.
+
+201) Egg Dropping Puzzle
+The following is a description of the instance of this famous puzzle involving n=2 eggs and a building with k=36 floors.
+
+Suppose that we wish to know which stories in a 36-story building are safe to drop eggs from, and which will cause the eggs to
+break on landing. We make a few assumptions:
+
+…..An egg that survives a fall can be used again.
+…..A broken egg must be discarded.
+…..The effect of a fall is the same for all eggs.
+…..If an egg breaks when dropped, then it would break if dropped from a higher floor.
+…..If an egg survives a fall then it would survive a shorter fall.
+…..It is not ruled out that the first-floor windows break eggs, nor is it ruled out that the 36th-floor do not cause an egg to break.
+
+If only one egg is available and we wish to be sure of obtaining the right result, the experiment can be carried out in only one way.
+ Drop the egg from the first-floor window; if it survives, drop it from the second floor window. Continue upward until it breaks.
+  In the worst case, this method may require 36 droppings. Suppose 2 eggs are available. What is the least number of egg-droppings
+   that is guaranteed to work in all cases?
+The problem is not actually to find the critical floor, but merely to decide floors from which eggs should be dropped so that total
+ number of trials are minimized.
+
+ Here, we need to design a solution to a general problem with n eggs and k floors.
+
+ Eg: For 10 floors and 2 eggs, minimum number of trials in worst case with 2 eggs and 10 floors is 4,
+     as we can first drop egg from 4th floor, if it doesn't break, then from 7th and then from 9th and eventually 10.
+
+202)Online election
+In an election, the i-th vote was cast for persons[i] at time times[i].
+
+Now, we would like to implement the following query function: TopVotedCandidate.q(int t) will return the number of the person that was leading the election at time t.
+
+Votes cast at time t will count towards our query.  In the case of a tie, the most recent vote (among tied candidates) wins.
+
+
+
+Example 1:
+
+Input: ["TopVotedCandidate","q","q","q","q","q","q"], [[[0,1,1,0,0,1,0],[0,5,10,15,20,25,30]],[3],[12],[25],[15],[24],[8]]
+Output: [null,0,1,1,0,0,1]
+Explanation:
+At time 3, the votes are [0], and 0 is leading.
+At time 12, the votes are [0,1,1], and 1 is leading.
+At time 25, the votes are [0,1,1,0,0,1], and 1 is leading (as ties go to the most recent vote.)
+This continues for 3 more queries at time 15, 24, and 8.
+
+
+Note:
+
+1 <= persons.length = times.length <= 5000
+0 <= persons[i] <= persons.length
+times is a strictly increasing array with all elements in [0, 10^9].
+TopVotedCandidate.q is called at most 10000 times per test case.
+TopVotedCandidate.q(int t) is always called with t >= times[0].
+
+203)Complete Binary Tree Inserter
+A complete binary tree is a binary tree in which every level, except possibly the last, is completely filled, and all nodes are as far left as possible.
+
+Write a data structure CBTInserter that is initialized with a complete binary tree and supports the following operations:
+
+CBTInserter(TreeNode root) initializes the data structure on a given tree with head node root;
+CBTInserter.insert(int v) will insert a TreeNode into the tree with value node.val = v so that the tree remains complete, and returns the value of the parent of the inserted TreeNode;
+CBTInserter.get_root() will return the head node of the tree.
+
+
+Example 1:
+
+Input: inputs = ["CBTInserter","insert","get_root"], inputs = [[[1]],[2],[]]
+Output: [null,1,[1,2]]
+Example 2:
+
+Input: inputs = ["CBTInserter","insert","insert","get_root"], inputs = [[[1,2,3,4,5,6]],[7],[8],[]]
+Output: [null,3,4,[1,2,3,4,5,6,7,8]]
+
+
+Note:
+
+The initial given tree is complete and contains between 1 and 1000 nodes.
+CBTInserter.insert is called at most 10000 times per test case.
+Every value of a given or inserted node is between 0 and 5000.
+
+204)Word Subsets
+We are given two arrays A and B of words.  Each word is a string of lowercase letters.
+
+Now, say that word b is a subset of word a if every letter in b occurs in a, including multiplicity.  For example, "wrr" is a subset of "warrior", but is not a subset of "world".
+
+Now say a word a from A is universal if for every b in B, b is a subset of a.
+
+Return a list of all universal words in A.  You can return the words in any order.
+
+
+
+Example 1:
+
+Input: A = ["amazon","apple","facebook","google","leetcode"], B = ["e","o"]
+Output: ["facebook","google","leetcode"]
+Example 2:
+
+Input: A = ["amazon","apple","facebook","google","leetcode"], B = ["l","e"]
+Output: ["apple","google","leetcode"]
+Example 3:
+
+Input: A = ["amazon","apple","facebook","google","leetcode"], B = ["e","oo"]
+Output: ["facebook","google"]
+Example 4:
+
+Input: A = ["amazon","apple","facebook","google","leetcode"], B = ["lo","eo"]
+Output: ["google","leetcode"]
+Example 5:
+
+Input: A = ["amazon","apple","facebook","google","leetcode"], B = ["ec","oc","ceo"]
+Output: ["facebook","leetcode"]
+
+
+Note:
+
+1 <= A.length, B.length <= 10000
+1 <= A[i].length, B[i].length <= 10
+A[i] and B[i] consist only of lowercase letters.
+All words in A[i] are unique: there isn't i != j with A[i] == A[j].

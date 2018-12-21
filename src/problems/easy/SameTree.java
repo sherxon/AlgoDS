@@ -8,6 +8,6 @@ import problems.utils.TreeNode;
 public class SameTree {
     public boolean isSameTree(TreeNode p, TreeNode q) {
         if(p==null && q==null)return true;
-        return p!=null && q!=null && isSameTree(p.left, q.left) && isSameTree(p.right, q.right) && q.val==p.val;
+        return q.val == p.val && isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
     }
 }

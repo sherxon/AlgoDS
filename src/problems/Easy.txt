@@ -424,10 +424,10 @@ You have an array of integers, find the largest difference between a[i] and a[j]
 Write an algorithm to determine if a number is "happy".
 A happy number is a number defined by the following process: Starting with any positive integer, replace the number by the sum of the squares of its digits, and repeat the process until the number equals 1 (where it will stay), or it loops endlessly in a cycle which does not include 1. Those numbers for which this process ends in 1 are happy numbers.
 Example: 19 is a happy number
-12 + 92 = 82
-82 + 22 = 68
-62 + 82 = 100
-12 + 02 + 02 = 1
+1^2 + 9^2 = 82
+8^2 + 2^2 = 68
+6^2 + 8^2 = 100
+1^2 + 0^2 + 0^2 = 1
 
 69)**Max Consecutive Ones**
 Given a binary array, find the maximum number of consecutive 1s in this array.
@@ -944,3 +944,477 @@ Note:
 
 nums.length will be between 1 and 50,000.
 nums[i] will be an integer between 0 and 49,999.
+
+105)Find Pivot Element
+Given an array of integers nums, write a method that returns the "pivot" index of this array.
+
+We define the pivot index as the index where the sum of the numbers to the left of the index is equal to the sum of the numbers to the right of the index.
+
+If no such index exists, we should return -1. If there are multiple pivot indexes, you should return the left-most pivot index.
+
+Example 1:
+Input:
+nums = [1, 7, 3, 6, 5, 6]
+Output: 3
+Explanation:
+The sum of the numbers to the left of index 3 (nums[3] = 6) is equal to the sum of numbers to the right of index 3.
+Also, 3 is the first index where this occurs.
+Example 2:
+Input:
+nums = [1, 2, 3]
+Output: -1
+Explanation:
+There is no index that satisfies the conditions in the problem statement.
+
+
+106) Check whether the given string is Pangram
+Given a string, check whether it contains all alphabets from A to Z.
+
+Example 1:
+Input: The quick brown fox jumps over the lazy dog
+Output: True
+Explanation: The above sentence contains all alphabets from A to Z. Upper Case or Lower Case don't matter. Also, repeatition don't matter.
+
+Example 2:
+Input: Hello GitHub
+Output: False
+Explanation: Only 9 alphabets are present in the string - "b, e, g, h, i, l, o, t, u". Hence, the string is not a Pangram.
+
+107) 744. Find Smallest Letter Greater Than Target
+
+Given a list of sorted characters letters containing only lowercase letters, and given a target letter target, find the smallest element in the list that is larger than the given target.
+
+Letters also wrap around. For example, if the target is target = 'z' and letters = ['a', 'b'], the answer is 'a'.
+
+Examples:
+Input:
+letters = ["c", "f", "j"]
+target = "a"
+Output: "c"
+
+Input:
+letters = ["c", "f", "j"]
+target = "c"
+Output: "f"
+
+Input:
+letters = ["c", "f", "j"]
+target = "d"
+Output: "f"
+
+Input:
+letters = ["c", "f", "j"]
+target = "g"
+Output: "j"
+
+Input:
+letters = ["c", "f", "j"]
+target = "j"
+Output: "c"
+
+Input:
+letters = ["c", "f", "j"]
+target = "k"
+Output: "c"
+Note:
+letters has a length in range [2, 10000].
+letters consists of lowercase letters, and contains at least 2 unique letters.
+target is a lowercase letter.
+
+108) Minimum Distance Between BST Nodes
+Given a Binary Search Tree (BST) with the root node root, return the minimum difference between the values of any two different nodes in the tree.
+
+Example :
+
+Input: root = [4,2,6,1,3,null,null]
+Output: 1
+Explanation:
+Note that root is a TreeNode object, not an array.
+
+The given tree [4,2,6,1,3,null,null] is represented by the following diagram:
+
+          4
+        /   \
+      2      6
+     / \
+    1   3
+
+while the minimum difference in this tree is 1, it occurs between node 1 and node 2, also between node 3 and node 2.
+Note:
+
+The size of the BST will be between 2 and 100.
+The BST is always valid, each node's value is an integer, and each node's value is different.
+
+109)Min Cost Climbing Stairs
+On a staircase, the i-th step has some non-negative cost cost[i] assigned (0 indexed).
+
+Once you pay the cost, you can either climb one or two steps. You need to find minimum cost to reach the top of the floor, and you can either start from the step with index 0, or the step with index 1.
+
+Example 1:
+Input: cost = [10, 15, 20]
+Output: 15
+Explanation: Cheapest is start on cost[1], pay that cost and go to the top.
+Example 2:
+Input: cost = [1, 100, 1, 1, 1, 100, 1, 1, 100, 1]
+Output: 6
+Explanation: Cheapest is start on cost[0], and only step on 1s, skipping cost[3].
+Note:
+cost will have a length in the range [2, 1000].
+Every cost[i] will be an integer in the range [0, 999].
+
+110) Rotate String
+We are given two strings, A and B.
+
+A shift on A consists of taking string A and moving the leftmost character to the rightmost position. For example, if A = 'abcde', then it will be 'bcdea' after one shift on A. Return True if and only if A can become B after some number of shifts on A.
+
+Example 1:
+Input: A = 'abcde', B = 'cdeab'
+Output: true
+
+Example 2:
+Input: A = 'abcde', B = 'abced'
+Output: false
+Note:
+
+A and B will have length at most 100.
+
+111)Unique Morse Code Words
+International Morse Code defines a standard encoding where each letter is mapped to a series of dots and dashes, as follows: "a" maps to ".-", "b" maps to "-...", "c" maps to "-.-.", and so on.
+
+For convenience, the full table for the 26 letters of the English alphabet is given below:
+
+[".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."]
+Now, given a list of words, each word can be written as a concatenation of the Morse code of each letter. For example, "cab" can be written as "-.-.-....-", (which is the concatenation "-.-." + "-..." + ".-"). We'll call such a concatenation, the transformation of a word.
+
+Return the number of different transformations among all words we have.
+
+Example:
+Input: words = ["gin", "zen", "gig", "msg"]
+Output: 2
+Explanation:
+The transformation of each word is:
+"gin" -> "--...-."
+"zen" -> "--...-."
+"gig" -> "--...--."
+"msg" -> "--...--."
+
+There are 2 different transformations, "--...-." and "--...--.".
+
+
+Note:
+
+The length of words will be at most 100.
+Each words[i] will have length in range [1, 12].
+words[i] will only consist of lowercase letters.
+112)Most Common Word
+Given a paragraph and a list of banned words, return the most frequent word that is not in the list of banned words.  It is guaranteed there is at least one word that isn't banned, and that the answer is unique.
+
+Words in the list of banned words are given in lowercase, and free of punctuation.  Words in the paragraph are not case sensitive.  The answer is in lowercase.
+
+Example:
+Input:
+paragraph = "Bob hit a ball, the hit BALL flew far after it was hit."
+banned = ["hit"]
+Output: "ball"
+Explanation:
+"hit" occurs 3 times, but it is a banned word.
+"ball" occurs twice (and no other word does), so it is the most frequent non-banned word in the paragraph.
+Note that words in the paragraph are not case sensitive,
+that punctuation is ignored (even if adjacent to words, such as "ball,"),
+and that "hit" isn't the answer even though it occurs more because it is banned.
+
+
+Note:
+
+1 <= paragraph.length <= 1000.
+1 <= banned.length <= 100.
+1 <= banned[i].length <= 10.
+The answer is unique, and written in lowercase (even if its occurrences in paragraph may have uppercase symbols, and even if it is a proper noun.)
+paragraph only consists of letters, spaces, or the punctuation symbols !?',;.
+Different words in paragraph are always separated by a space.
+There are no hyphens or hyphenated words.
+Words only consist of letters, never apostrophes or other punctuation symbols.
+
+113)Letter Case Permutation
+Given a string S, we can transform every letter individually to be lowercase or uppercase to create another string.  Return a list of all possible strings we could create.
+
+Examples:
+Input: S = "a1b2"
+Output: ["a1b2", "a1B2", "A1b2", "A1B2"]
+
+Input: S = "3z4"
+Output: ["3z4", "3Z4"]
+
+Input: S = "12345"
+Output: ["12345"]
+Note:
+
+S will be a string with length at most 12.
+S will consist only of letters or digits.
+
+114)Rotated Digits
+X is a good number if after rotating each digit individually by 180 degrees, we get a valid number that is different from X.  Each digit must be rotated - we cannot choose to leave it alone.
+
+A number is valid if each digit remains a digit after rotation. 0, 1, and 8 rotate to themselves; 2 and 5 rotate to each other; 6 and 9 rotate to each other, and the rest of the numbers do not rotate to any other number and become invalid.
+
+Now given a positive number N, how many numbers X from 1 to N are good?
+
+Example:
+Input: 10
+Output: 4
+Explanation:
+There are four good numbers in the range [1, 10] : 2, 5, 6, 9.
+Note that 1 and 10 are not good numbers, since they remain unchanged after rotating.
+Note:
+
+N  will be in range [1, 10000].
+114) Shortest Distance to a Character
+Given a string S and a character C, return an array of integers representing the shortest distance from the character C in the string.
+
+Example 1:
+
+Input: S = "loveleetcode", C = 'e'
+Output: [3, 2, 1, 0, 1, 0, 0, 1, 2, 2, 1, 0]
+
+
+Note:
+
+S string length is in [1, 10000].
+C is a single character, and guaranteed to be in string S.
+All letters in S and C are lowercase.
+
+115)Positions of Large Groups
+In a string S of lowercase letters, these letters form consecutive groups of the same character.
+
+For example, a string like S = "abbxxxxzyy" has the groups "a", "bb", "xxxx", "z" and "yy".
+
+Call a group large if it has 3 or more characters.  We would like the starting and ending positions of every large group.
+
+The final answer should be in lexicographic order.
+
+
+
+Example 1:
+
+Input: "abbxxxxzzy"
+Output: [[3,6]]
+Explanation: "xxxx" is the single large group with starting  3 and ending positions 6.
+Example 2:
+
+Input: "abc"
+Output: []
+Explanation: We have "a","b" and "c" but no large group.
+Example 3:
+
+Input: "abcdddeeeeaabbbcd"
+Output: [[3,5],[6,9],[12,14]]
+
+116)Flipping an Image
+Given a binary matrix A, we want to flip the image horizontally, then invert it, and return the resulting image.
+
+To flip an image horizontally means that each row of the image is reversed.  For example, flipping [1, 1, 0] horizontally results in [0, 1, 1].
+
+To invert an image means that each 0 is replaced by 1, and each 1 is replaced by 0. For example, inverting [0, 1, 1] results in [1, 0, 0].
+
+Example 1:
+
+Input: [[1,1,0],[1,0,1],[0,0,0]]
+Output: [[1,0,0],[0,1,0],[1,1,1]]
+Explanation: First reverse each row: [[0,1,1],[1,0,1],[0,0,0]].
+Then, invert the image: [[1,0,0],[0,1,0],[1,1,1]]
+Example 2:
+
+Input: [[1,1,0,0],[1,0,0,1],[0,1,1,1],[1,0,1,0]]
+Output: [[1,1,0,0],[0,1,1,0],[0,0,0,1],[1,0,1,0]]
+Explanation: First reverse each row: [[0,0,1,1],[1,0,0,1],[1,1,1,0],[0,1,0,1]].
+Then invert the image: [[1,1,0,0],[0,1,1,0],[0,0,0,1],[1,0,1,0]]
+Notes:
+
+1 <= A.length = A[0].length <= 20
+0 <= A[i][j] <= 1
+
+117)Jewels and Stones
+You're given strings J representing the types of stones that are jewels, and S representing the stones you have.  Each character in S is a type of stone you have.  You want to know how many of the stones you have are also jewels.
+
+The letters in J are guaranteed distinct, and all characters in J and S are letters. Letters are case sensitive, so "a" is considered a different type of stone from "A".
+
+Example 1:
+
+Input: J = "aA", S = "aAAbbbb"
+Output: 3
+Example 2:
+
+Input: J = "z", S = "ZZ"
+Output: 0
+Note:
+
+S and J will consist of letters and have length at most 50.
+The characters in J are distinct.
+
+118)Average of Levels in Binary Tree
+Given a non-empty binary tree, return the average value of the nodes on each level in the form of an array.
+Example 1:
+Input:
+    3
+   / \
+  9  20
+    /  \
+   15   7
+Output: [3, 14.5, 11]
+Explanation:
+The average value of nodes on level 0 is 3,  on level 1 is 14.5, and on level 2 is 11. Hence return [3, 14.5, 11].
+Note:
+The range of node's value is in the range of 32-bit signed integer.
+
+119)Convert BST to Greater Tree
+Given a Binary Search Tree (BST), convert it to a Greater Tree such that every key of the original BST is changed to the original key plus sum of all keys greater than the original key in BST.
+
+Example:
+
+Input: The root of a Binary Search Tree like this:
+              5
+            /   \
+           2     13
+
+Output: The root of a Greater Tree like this:
+             18
+            /   \
+          20     13
+120)Leaf-Similar Trees
+Consider all the leaves of a binary tree.  From left to right order, the values of those leaves form a leaf value sequence.
+
+
+
+For example, in the given tree above, the leaf value sequence is (6, 7, 4, 9, 8).
+
+Two binary trees are considered leaf-similar if their leaf value sequence is the same.
+
+Return true if and only if the two given trees with head nodes root1 and root2 are leaf-similar.
+
+
+
+Note:
+
+Both of the given trees will have between 1 and 100 nodes.
+
+121)Maximize Distance to Closest Person
+In a row of seats, 1 represents a person sitting in that seat, and 0 represents that the seat is empty.
+
+There is at least one empty seat, and at least one person sitting.
+
+Alex wants to sit in the seat such that the distance between him and the closest person to him is maximized.
+
+Return that maximum distance to closest person.
+
+Example 1:
+
+Input: [1,0,0,0,1,0,1]
+Output: 2
+Explanation:
+If Alex sits in the second open seat (seats[2]), then the closest person has distance 2.
+If Alex sits in any other open seat, the closest person has distance 1.
+Thus, the maximum distance to the closest person is 2.
+Example 2:
+
+Input: [1,0,0,0]
+Output: 3
+Explanation:
+If Alex sits in the last seat, the closest person is 3 seats away.
+This is the maximum distance possible, so the answer is 3.
+Note:
+
+1 <= seats.length <= 20000
+seats contains only 0s or 1s, at least one 0, and at least one 1.
+
+122)Middle of the Linked List
+Given a non-empty, singly linked list with head node head, return a middle node of linked list.
+
+If there are two middle nodes, return the second middle node.
+
+
+
+Example 1:
+
+Input: [1,2,3,4,5]
+Output: Node 3 from this list (Serialization: [3,4,5])
+The returned node has value 3.  (The judge's serialization of this node is [3,4,5]).
+Note that we returned a ListNode object ans, such that:
+ans.val = 3, ans.next.val = 4, ans.next.next.val = 5, and ans.next.next.next = NULL.
+Example 2:
+
+Input: [1,2,3,4,5,6]
+Output: Node 4 from this list (Serialization: [4,5,6])
+Since the list has two middle nodes with values 3 and 4, we return the second one.
+
+
+Note:
+
+The number of nodes in the given list will be between 1 and 100.
+
+123)Lemonade Change
+At a lemonade stand, each lemonade costs $5.
+
+Customers are standing in a queue to buy from you, and order one at a time (in the order specified by bills).
+
+Each customer will only buy one lemonade and pay with either a $5, $10, or $20 bill.  You must provide the correct change to each customer, so that the net transaction is that the customer pays $5.
+
+Note that you don't have any change in hand at first.
+
+Return true if and only if you can provide every customer with correct change.
+
+
+
+Example 1:
+
+Input: [5,5,5,10,20]
+Output: true
+Explanation:
+From the first 3 customers, we collect three $5 bills in order.
+From the fourth customer, we collect a $10 bill and give back a $5.
+From the fifth customer, we give a $10 bill and a $5 bill.
+Since all customers got correct change, we output true.
+Example 2:
+
+Input: [5,5,10]
+Output: true
+Example 3:
+
+Input: [10,10]
+Output: false
+Example 4:
+
+Input: [5,5,10,10,20]
+Output: false
+Explanation:
+From the first two customers in order, we collect two $5 bills.
+For the next two customers in order, we collect a $10 bill and give back a $5 bill.
+For the last customer, we can't give change of $15 back because we only have two $10 bills.
+Since not every customer received correct change, the answer is false.
+
+
+Note:
+
+0 <= bills.length <= 10000
+bills[i] will be either 5, 10, or 20.
+124)Reverse Only Letters
+Given a string S, return the "reversed" string where all characters that are not a letter stay in the same place, and all letters reverse their positions.
+
+Example 1:
+
+Input: "ab-cd"
+Output: "dc-ba"
+Example 2:
+
+Input: "a-bC-dEf-ghIj"
+Output: "j-Ih-gfE-dCba"
+Example 3:
+
+Input: "Test1ng-Leet=code-Q!"
+Output: "Qedo1ct-eeLg=ntse-T!"
+
+
+Note:
+
+S.length <= 100
+33 <= S[i].ASCIIcode <= 122
+S doesn't contain \ or "

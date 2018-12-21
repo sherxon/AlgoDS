@@ -1,5 +1,8 @@
 package problems.medium;
 
+import problems.utils.TreeNode;
+
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -7,31 +10,25 @@ import java.util.List;
  */
 public class LongestWordinDictionarythroughDeleting {
     public String findLongestWord(String s, List<String> d) {
-        String res = "";
-
-        for (String ss : d) {
-            if (ss.length() == 0) continue;
-            int x = s.indexOf(ss.charAt(0));
-            if (x < 0) continue;
-            boolean b = true;
-            for (int i = 1; i < ss.length(); i++) {
-                int m = s.indexOf(ss.charAt(i), x + 1);
-                if (m <= 0) {
-                    b = false;
-                    break;
-                }
-                x = m;
+        Collections.sort(d);
+        if (s == null || s.length() == 0)
+            return s;
+        String r = "";
+        for (String w : d) {
+            if (w.length() > r.length() && canBeMade(s, w)) {
+                r = w;
             }
-            if (b) {
-                if (res.length() < ss.length()) {
-                    res = ss;
-                } else if (res.length() == ss.length() && ss.compareTo(res) < 0) {
-                    res = ss;
-                }
-            }
-
         }
+        return r;
+    }
 
-        return res;
+    boolean canBeMade(String s, String w) {
+        int ind = -1;
+        for (int i = 0; i < w.length(); i++) {
+            ind = s.indexOf(w.charAt(i), ind + 1);
+            if (ind < 0)
+                return false;
+        }
+        return true;
     }
 }
