@@ -22,8 +22,8 @@ public class WeightedGraph {
     }
 
     public void addEdge(Integer v1, Integer v2, Double weight) {
-        if(!map.containsKey(v1))return;
-        if(!map.containsKey(v2))return;
+        if(!map.containsKey(v1) || !map.containsKey(v2))return;
+        
         Edge edge = new Edge(v1, v2, weight);
 
         map.get(v1).add(edge);
