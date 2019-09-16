@@ -7,7 +7,7 @@ public class ReplaceString {
     public static void main(String[] args) {
         System.out.println(replaceAll("x%20x%20", "%2", "c"));
     }
-    static String replaceAll(String s, String s1, String s2){
+    public static String replaceAll(String s, String s1, String s2){
         StringBuilder sb= new StringBuilder();
         char[] a= s.toCharArray();
         for (int i = 0; i < a.length; i++) {
