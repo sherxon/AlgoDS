@@ -11,7 +11,7 @@ public class AddStrings {
     /**
      * Start adding from the least significant digit.
      */
-   static String addStrings(String a, String b) {
+   public static String addStrings(String a, String b) {
        int i=a.length()-1;
        int j=b.length()-1;
        int carry=0;
