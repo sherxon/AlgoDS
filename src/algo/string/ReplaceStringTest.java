@@ -1,13 +1,13 @@
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+        import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class ReplaceStringTest {
     @Test
     void testReplaceAll() {
-        String s1 = "abcabc123123@@@";
-        String s2 = "a";
+        String s1 = "abcabc";
+        String s2 = "bc";
         String s3 = "1";
         String s4 = "@";
         String s8 = " ";
