@@ -42,6 +42,6 @@ public class CheckSUm_2Test {
 	public void testsolve4() {
 		CheckSUm_2 cke= new CheckSUm_2();
 		int a= cke.solve2("5\t2\t9\t5\n");
-		assertTrue(a==0);
+		assertTrue(a==1);
 	}
 }
