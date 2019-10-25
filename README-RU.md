@@ -1,4 +1,4 @@
-English | [简体中文](https://github.com/yunshuipiao/AlgoDS/blob/master/README-CN.md)
+[English](https://github.com/yunshuipiao/AlgoDS) | [简体中文](https://github.com/yunshuipiao/AlgoDS/blob/master/README-CN.md) | Русский
 
 # Алгоритмы и структуры данных
 Эта коллекция **алгоритмов и структур данных** и **Вопросов со интервью** c ответами.
