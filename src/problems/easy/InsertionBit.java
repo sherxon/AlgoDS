@@ -1,4 +1,5 @@
 package problems.easy;
+import junit.framework.TestCase;+
 
 /**
  * Created by sherxon on 5/3/17.
@@ -24,3 +25,14 @@ public class InsertionBit {
         return m;
     }
 }
+public class Testinsert(){
+	public void test1{
+			assertEquals(4, insert(3,4,0,5));
+		}
+	public void test2{
+			assertEquals(0, insert(0,0,0,1));
+		}
+	public void test2{
+			assertEquals(1, insert(1,1,0,5));
+		}
+    }
