@@ -1,4 +1,4 @@
-package problems.easy;
+9package problems.easy;
 
 /**
  * Created by sherxon on 1/11/17.
@@ -9,7 +9,7 @@ public class PalindromeNumber {
     }
 
     static boolean isPalindrome(int x) {
-        if (x == 0) return true;
+        if (x>=0 && x<=9) return true;
         if (x < 0) return false;
         int xx = x;
         int m = x % 10;
