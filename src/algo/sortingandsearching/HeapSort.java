@@ -34,7 +34,7 @@ public class HeapSort {
 		}
 	}
 
-	public static void heapSort(int[] arr, int heapSize) {
+	private static void heapSort(int[] arr, int heapSize) {
 		for (int i = heapSize / 2 - 1; i >= 0; i--)
 			heapify(arr, i, heapSize);	// Iterating through the array to build the max heap.
 
